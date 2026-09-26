@@ -1,0 +1,5 @@
+{
+  "response": "impl Solution {\n    pub fn classify_t_primes(nums: Vec<u64>) -> Vec<bool> {\n        let mut result = Vec::new();\n        for &num in &nums {\n            result.push(is_t_prime(num as i64));\n        }\n        result\n    }\n}\n\nfn is_prime(n: i64) -> bool {\n    if n <= 1 {\n        return false;\n    }\n    let mut i = 2;\n    while i * i <= n {\n        if n % i == 0 {\n            return false;\n        }\n        i += 1;\n    }\n    true\n}\n\nfn is_t_prime(x: i64) -> bool {\n    let root = (x as f64).sqrt() as i64;\n    if root * root == x && is_prime(root) {\n        true\n    } else {\n        false\n    }\n}\n",
+  "impl": "impl Solution {\n    pub fn classify_t_primes(nums: Vec<u64>) -> Vec<bool> {\n        let mut result = Vec::new();\n        for &num in &nums {\n            result.push(is_t_prime(num as i64));\n        }\n        result\n    }\n}",
+  "source_record_sha256": "6804620a733f0559f3405eb8f096dbdc7186fad8d5b4c0b39734d0916e25bec0"
+}

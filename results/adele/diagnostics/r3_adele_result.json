@@ -1,0 +1,2478 @@
+{
+  "analysis": "CDE R3 ADeLe raw monotonicity then curve-form comparison",
+  "curve_cv": "per model x dimension leave-one-demand-level-out; decreasing logistic, decreasing probit, isotonic and monotone PCHIP; pooled item-weighted log loss",
+  "dimensions": {
+    "AS": {
+      "best_monotone_nonparametric_log_loss": NaN,
+      "leave_one_level_out_pooled_log_loss": {
+        "isotonic": NaN,
+        "logistic": NaN,
+        "pchip": NaN,
+        "probit": NaN
+      },
+      "logistic_within_0p01_of_best_nonparametric": false,
+      "model_curve_scores": [],
+      "monotone_raw_pass": true,
+      "n_dominant_items": 1996,
+      "n_flagged_reverse_pairs": 0,
+      "n_raw_pair_tests": 30,
+      "reproducible_reverse_level_pairs": []
+    },
+    "AT": {
+      "best_monotone_nonparametric_log_loss": 0.567734157303482,
+      "leave_one_level_out_pooled_log_loss": {
+        "isotonic": 0.567734157303482,
+        "logistic": 0.5750808459935429,
+        "pchip": 0.6018315512962229,
+        "probit": 0.5748822716825669
+      },
+      "logistic_within_0p01_of_best_nonparametric": true,
+      "model_curve_scores": [
+        {
+          "log_loss": {
+            "isotonic": 0.6261566615673786,
+            "logistic": 0.6328216290993237,
+            "pchip": 0.6567926342348138,
+            "probit": 0.6319917992025464
+          },
+          "model": "DK-R1-Dist-Qwen-1.5B",
+          "n_test_item_predictions": 4529
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.55431671290495,
+            "logistic": 0.5485042138804533,
+            "pchip": 0.5534109026238407,
+            "probit": 0.5496441517275806
+          },
+          "model": "DK-R1-Dist-Qwen-14B",
+          "n_test_item_predictions": 4529
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.5347654172734578,
+            "logistic": 0.5340181711256888,
+            "pchip": 0.5377029006829601,
+            "probit": 0.5359313799706767
+          },
+          "model": "DK-R1-Dist-Qwen-32B",
+          "n_test_item_predictions": 4529
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6481794383691694,
+            "logistic": 0.6459086630245012,
+            "pchip": 0.6455363762802898,
+            "probit": 0.6464332716320789
+          },
+          "model": "DK-R1-Dist-Qwen-7B",
+          "n_test_item_predictions": 4529
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.4143578218957372,
+            "logistic": 0.4472412766159369,
+            "pchip": 0.4187960995010894,
+            "probit": 0.4480469416868943
+          },
+          "model": "babbage-002",
+          "n_test_item_predictions": 4529
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.5192211205241571,
+            "logistic": 0.5727521258190502,
+            "pchip": 0.5392092956926746,
+            "probit": 0.5708086220815903
+          },
+          "model": "davinci-002",
+          "n_test_item_predictions": 4529
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6190023493514677,
+            "logistic": 0.6131840804724856,
+            "pchip": 0.6491536363973835,
+            "probit": 0.6136297991287131
+          },
+          "model": "gpt-35-turbo",
+          "n_test_item_predictions": 4529
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.5890899873720935,
+            "logistic": 0.5629160786131199,
+            "pchip": 0.693442604069499,
+            "probit": 0.5633367013645
+          },
+          "model": "gpt4o",
+          "n_test_item_predictions": 4529
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6071195956274921,
+            "logistic": 0.5845244285083995,
+            "pchip": 0.7112666796588557,
+            "probit": 0.5864141285583803
+          },
+          "model": "llama3d1-405b",
+          "n_test_item_predictions": 4529
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6407890477126826,
+            "logistic": 0.6437493759149097,
+            "pchip": 0.6916474237757879,
+            "probit": 0.6445515132124122
+          },
+          "model": "llama3d2-11b",
+          "n_test_item_predictions": 4529
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.5414597178201787,
+            "logistic": 0.6007026057761058,
+            "pchip": 0.5574221938492644,
+            "probit": 0.5980856089261325
+          },
+          "model": "llama3d2-1b",
+          "n_test_item_predictions": 4529
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6366034691222433,
+            "logistic": 0.6806344791051544,
+            "pchip": 0.689947288854984,
+            "probit": 0.6758858955045215
+          },
+          "model": "llama3d2-3b",
+          "n_test_item_predictions": 4529
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6305079734584327,
+            "logistic": 0.6057759251797005,
+            "pchip": 0.7271005359593695,
+            "probit": 0.6077159468431146
+          },
+          "model": "llama3d2-90b",
+          "n_test_item_predictions": 4529
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.5045356134035753,
+            "logistic": 0.5044063587759264,
+            "pchip": 0.5044024293814137,
+            "probit": 0.5026176149939365
+          },
+          "model": "o1-mini",
+          "n_test_item_predictions": 4529
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.44990743314921505,
+            "logistic": 0.44907327799238755,
+            "pchip": 0.45164226848111605,
+            "probit": 0.4481407004054243
+          },
+          "model": "o1_re=low",
+          "n_test_item_predictions": 4529
+        }
+      ],
+      "monotone_raw_pass": false,
+      "n_dominant_items": 4529,
+      "n_flagged_reverse_pairs": 3,
+      "n_raw_pair_tests": 60,
+      "reproducible_reverse_level_pairs": [
+        {
+          "hi": 3,
+          "lo": 2,
+          "models": [
+            "babbage-002",
+            "davinci-002",
+            "llama3d2-1b"
+          ],
+          "n_models": 3
+        }
+      ]
+    },
+    "CEc": {
+      "best_monotone_nonparametric_log_loss": 0.5021675842434429,
+      "leave_one_level_out_pooled_log_loss": {
+        "isotonic": 0.5021675842434429,
+        "logistic": 0.5138581747939053,
+        "pchip": 0.5475953577428974,
+        "probit": 0.5139993575478191
+      },
+      "logistic_within_0p01_of_best_nonparametric": false,
+      "model_curve_scores": [
+        {
+          "log_loss": {
+            "isotonic": 0.596216441273322,
+            "logistic": 0.5914044218230363,
+            "pchip": 0.7164465698180646,
+            "probit": 0.5917417122972769
+          },
+          "model": "DK-R1-Dist-Qwen-1.5B",
+          "n_test_item_predictions": 2411
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.5121844910309158,
+            "logistic": 0.5054221280452145,
+            "pchip": 0.5300973693616783,
+            "probit": 0.5052649238340908
+          },
+          "model": "DK-R1-Dist-Qwen-14B",
+          "n_test_item_predictions": 2411
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.47684172135529795,
+            "logistic": 0.4775965142987709,
+            "pchip": 0.5001427583094076,
+            "probit": 0.4754047702095147
+          },
+          "model": "DK-R1-Dist-Qwen-32B",
+          "n_test_item_predictions": 2411
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.5938514767941889,
+            "logistic": 0.585046484721889,
+            "pchip": 0.6050845997034514,
+            "probit": 0.5858429806009203
+          },
+          "model": "DK-R1-Dist-Qwen-7B",
+          "n_test_item_predictions": 2411
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.261741041884503,
+            "logistic": 0.26983385864628784,
+            "pchip": 0.2719462367219322,
+            "probit": 0.2695186945198168
+          },
+          "model": "babbage-002",
+          "n_test_item_predictions": 2411
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.3738191570616496,
+            "logistic": 0.37649591480660216,
+            "pchip": 0.433938645129798,
+            "probit": 0.3757410344700512
+          },
+          "model": "davinci-002",
+          "n_test_item_predictions": 2411
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.5942495991202292,
+            "logistic": 0.6046477583671075,
+            "pchip": 0.766116297852495,
+            "probit": 0.6091598062179294
+          },
+          "model": "gpt-35-turbo",
+          "n_test_item_predictions": 2411
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.5473478894537499,
+            "logistic": 0.6015583921584287,
+            "pchip": 0.5727678264793967,
+            "probit": 0.5973834655743194
+          },
+          "model": "gpt4o",
+          "n_test_item_predictions": 2411
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.5578900325589986,
+            "logistic": 0.6175389811640838,
+            "pchip": 0.5559351767107272,
+            "probit": 0.6154359854312358
+          },
+          "model": "llama3d1-405b",
+          "n_test_item_predictions": 2411
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.589483754774207,
+            "logistic": 0.5941763339828076,
+            "pchip": 0.6625380105444807,
+            "probit": 0.5992677149620309
+          },
+          "model": "llama3d2-11b",
+          "n_test_item_predictions": 2411
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.4700604360185886,
+            "logistic": 0.4683823524493191,
+            "pchip": 0.4757100981496103,
+            "probit": 0.4671373455600333
+          },
+          "model": "llama3d2-1b",
+          "n_test_item_predictions": 2411
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.5719537851679211,
+            "logistic": 0.5804534308949136,
+            "pchip": 0.7206297874625515,
+            "probit": 0.5870067707711222
+          },
+          "model": "llama3d2-3b",
+          "n_test_item_predictions": 2411
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.5937800010695925,
+            "logistic": 0.6502597689097012,
+            "pchip": 0.608718275917063,
+            "probit": 0.6497832036002603
+          },
+          "model": "llama3d2-90b",
+          "n_test_item_predictions": 2411
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.42814822014739917,
+            "logistic": 0.4176385780086958,
+            "pchip": 0.4213770754391151,
+            "probit": 0.41554398024970723
+          },
+          "model": "o1-mini",
+          "n_test_item_predictions": 2411
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.36494571594108005,
+            "logistic": 0.36741770363172116,
+            "pchip": 0.37248163854368993,
+            "probit": 0.36575797491897766
+          },
+          "model": "o1_re=low",
+          "n_test_item_predictions": 2411
+        }
+      ],
+      "monotone_raw_pass": false,
+      "n_dominant_items": 2411,
+      "n_flagged_reverse_pairs": 2,
+      "n_raw_pair_tests": 60,
+      "reproducible_reverse_level_pairs": [
+        {
+          "hi": 5,
+          "lo": 4,
+          "models": [
+            "gpt4o",
+            "llama3d2-90b"
+          ],
+          "n_models": 2
+        }
+      ]
+    },
+    "CEe": {
+      "best_monotone_nonparametric_log_loss": NaN,
+      "leave_one_level_out_pooled_log_loss": {
+        "isotonic": NaN,
+        "logistic": NaN,
+        "pchip": NaN,
+        "probit": NaN
+      },
+      "logistic_within_0p01_of_best_nonparametric": false,
+      "model_curve_scores": [],
+      "monotone_raw_pass": true,
+      "n_dominant_items": 290,
+      "n_flagged_reverse_pairs": 0,
+      "n_raw_pair_tests": 15,
+      "reproducible_reverse_level_pairs": []
+    },
+    "CL": {
+      "best_monotone_nonparametric_log_loss": 0.5636240087484053,
+      "leave_one_level_out_pooled_log_loss": {
+        "isotonic": 0.5636240087484053,
+        "logistic": 0.5995592804357546,
+        "pchip": 0.8350062637988366,
+        "probit": 0.6021306039925238
+      },
+      "logistic_within_0p01_of_best_nonparametric": false,
+      "model_curve_scores": [
+        {
+          "log_loss": {
+            "isotonic": 0.5063619649643898,
+            "logistic": 0.48325323509421203,
+            "pchip": 0.5100334522404352,
+            "probit": 0.482364834013787
+          },
+          "model": "DK-R1-Dist-Qwen-1.5B",
+          "n_test_item_predictions": 2068
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6741978871668719,
+            "logistic": 0.720163299236162,
+            "pchip": 1.1730023042173365,
+            "probit": 0.7185974359271246
+          },
+          "model": "DK-R1-Dist-Qwen-14B",
+          "n_test_item_predictions": 2068
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.7403543720934738,
+            "logistic": 0.8757641469567019,
+            "pchip": 1.450256839274059,
+            "probit": 0.8688318987895012
+          },
+          "model": "DK-R1-Dist-Qwen-32B",
+          "n_test_item_predictions": 2068
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6253897796508852,
+            "logistic": 0.6086213629751728,
+            "pchip": 0.8368948731478224,
+            "probit": 0.613738086437596
+          },
+          "model": "DK-R1-Dist-Qwen-7B",
+          "n_test_item_predictions": 2068
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.19863621252107355,
+            "logistic": 0.21404990699820117,
+            "pchip": 0.21637214147846662,
+            "probit": 0.20669710249468895
+          },
+          "model": "babbage-002",
+          "n_test_item_predictions": 2068
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.26422202382143434,
+            "logistic": 0.28095112849214177,
+            "pchip": 0.3196579826361832,
+            "probit": 0.27819192104364465
+          },
+          "model": "davinci-002",
+          "n_test_item_predictions": 2068
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.44957930618154834,
+            "logistic": 0.4245801977385249,
+            "pchip": 0.41656289631521043,
+            "probit": 0.43503968305015434
+          },
+          "model": "gpt-35-turbo",
+          "n_test_item_predictions": 2068
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.8409192242808119,
+            "logistic": 0.9340044831750706,
+            "pchip": 1.5659828533596472,
+            "probit": 0.9532137309524411
+          },
+          "model": "gpt4o",
+          "n_test_item_predictions": 2068
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.7801452797618923,
+            "logistic": 0.8461490058503329,
+            "pchip": 1.3980507795422472,
+            "probit": 0.8605803524624482
+          },
+          "model": "llama3d1-405b",
+          "n_test_item_predictions": 2068
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.5384898599843324,
+            "logistic": 0.5391725554876382,
+            "pchip": 0.51697034286477,
+            "probit": 0.5514011588222558
+          },
+          "model": "llama3d2-11b",
+          "n_test_item_predictions": 2068
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.2982305844178179,
+            "logistic": 0.2847951245679269,
+            "pchip": 0.3033564960251633,
+            "probit": 0.2839051922374589
+          },
+          "model": "llama3d2-1b",
+          "n_test_item_predictions": 2068
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.4033972474154361,
+            "logistic": 0.3618035172661929,
+            "pchip": 0.37658869359164,
+            "probit": 0.368063326844491
+          },
+          "model": "llama3d2-3b",
+          "n_test_item_predictions": 2068
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.7773432853644769,
+            "logistic": 0.8686926102136857,
+            "pchip": 1.4485860124813146,
+            "probit": 0.8858397339086782
+          },
+          "model": "llama3d2-90b",
+          "n_test_item_predictions": 2068
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6381543371661419,
+            "logistic": 0.703015560688235,
+            "pchip": 1.1331614603144882,
+            "probit": 0.6927539832947514
+          },
+          "model": "o1-mini",
+          "n_test_item_predictions": 2068
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.718938766435495,
+            "logistic": 0.8483730717961184,
+            "pchip": 0.8596168294937683,
+            "probit": 0.8327406196088378
+          },
+          "model": "o1_re=low",
+          "n_test_item_predictions": 2068
+        }
+      ],
+      "monotone_raw_pass": false,
+      "n_dominant_items": 2069,
+      "n_flagged_reverse_pairs": 7,
+      "n_raw_pair_tests": 45,
+      "reproducible_reverse_level_pairs": [
+        {
+          "hi": 5,
+          "lo": 4,
+          "models": [
+            "DK-R1-Dist-Qwen-32B",
+            "gpt-35-turbo",
+            "gpt4o",
+            "llama3d1-405b",
+            "llama3d2-11b",
+            "llama3d2-90b",
+            "o1_re=low"
+          ],
+          "n_models": 7
+        }
+      ]
+    },
+    "KNa": {
+      "best_monotone_nonparametric_log_loss": 0.5549964163595061,
+      "leave_one_level_out_pooled_log_loss": {
+        "isotonic": 0.5549964163595061,
+        "logistic": 0.5415515364390516,
+        "pchip": 0.5645202595581715,
+        "probit": 0.5380711059642599
+      },
+      "logistic_within_0p01_of_best_nonparametric": true,
+      "model_curve_scores": [
+        {
+          "log_loss": {
+            "isotonic": 0.5623096016927751,
+            "logistic": 0.535275977941671,
+            "pchip": 0.7486723027355734,
+            "probit": 0.5332335828876495
+          },
+          "model": "DK-R1-Dist-Qwen-1.5B",
+          "n_test_item_predictions": 7019
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6362187992467295,
+            "logistic": 0.5948217033752264,
+            "pchip": 0.6298013864347081,
+            "probit": 0.5952249833413418
+          },
+          "model": "DK-R1-Dist-Qwen-14B",
+          "n_test_item_predictions": 7019
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.5870950785336824,
+            "logistic": 0.56914036453655,
+            "pchip": 0.5877583480422401,
+            "probit": 0.5627360977001922
+          },
+          "model": "DK-R1-Dist-Qwen-32B",
+          "n_test_item_predictions": 7019
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.644771382774832,
+            "logistic": 0.5987143887528389,
+            "pchip": 0.6624718507035554,
+            "probit": 0.5984609894447093
+          },
+          "model": "DK-R1-Dist-Qwen-7B",
+          "n_test_item_predictions": 7019
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.31785573397266237,
+            "logistic": 0.319484818942529,
+            "pchip": 0.3163789155498716,
+            "probit": 0.31942464480682753
+          },
+          "model": "babbage-002",
+          "n_test_item_predictions": 7019
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.39894837772792024,
+            "logistic": 0.3982165916896172,
+            "pchip": 0.39845919757425474,
+            "probit": 0.39815374933296654
+          },
+          "model": "davinci-002",
+          "n_test_item_predictions": 7019
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6614337322622708,
+            "logistic": 0.6439487689125223,
+            "pchip": 0.6483200384577339,
+            "probit": 0.6438676592969962
+          },
+          "model": "gpt-35-turbo",
+          "n_test_item_predictions": 7019
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.5454244973518473,
+            "logistic": 0.5533070204410326,
+            "pchip": 0.5522717472811238,
+            "probit": 0.5425323699027146
+          },
+          "model": "gpt4o",
+          "n_test_item_predictions": 7019
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.5788903710520376,
+            "logistic": 0.5654779362218647,
+            "pchip": 0.5607034164361618,
+            "probit": 0.5593161983927665
+          },
+          "model": "llama3d1-405b",
+          "n_test_item_predictions": 7019
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6649876537450491,
+            "logistic": 0.6477052153443854,
+            "pchip": 0.6530204636454872,
+            "probit": 0.6477546779208951
+          },
+          "model": "llama3d2-11b",
+          "n_test_item_predictions": 7019
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.4842066967091954,
+            "logistic": 0.4757981974389409,
+            "pchip": 0.479244914969962,
+            "probit": 0.47476606454465525
+          },
+          "model": "llama3d2-1b",
+          "n_test_item_predictions": 7019
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6193270583431794,
+            "logistic": 0.6014696831839914,
+            "pchip": 0.6297164674484633,
+            "probit": 0.6021958800956754
+          },
+          "model": "llama3d2-3b",
+          "n_test_item_predictions": 7019
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6029956834630823,
+            "logistic": 0.5887301439350623,
+            "pchip": 0.5996408599585423,
+            "probit": 0.5854306496451359
+          },
+          "model": "llama3d2-90b",
+          "n_test_item_predictions": 7019
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.5702124560444577,
+            "logistic": 0.5476365048822245,
+            "pchip": 0.5429616432781924,
+            "probit": 0.5405035103228099
+          },
+          "model": "o1-mini",
+          "n_test_item_predictions": 7019
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.4502691224728703,
+            "logistic": 0.48354573098731785,
+            "pchip": 0.4583823408567049,
+            "probit": 0.4674655318285621
+          },
+          "model": "o1_re=low",
+          "n_test_item_predictions": 7019
+        }
+      ],
+      "monotone_raw_pass": true,
+      "n_dominant_items": 7023,
+      "n_flagged_reverse_pairs": 0,
+      "n_raw_pair_tests": 45,
+      "reproducible_reverse_level_pairs": []
+    },
+    "KNc": {
+      "best_monotone_nonparametric_log_loss": 0.5339029464386601,
+      "leave_one_level_out_pooled_log_loss": {
+        "isotonic": 0.5339029464386601,
+        "logistic": 0.5362042256354018,
+        "pchip": 0.5405691494828447,
+        "probit": 0.5356357263027168
+      },
+      "logistic_within_0p01_of_best_nonparametric": true,
+      "model_curve_scores": [
+        {
+          "log_loss": {
+            "isotonic": 0.6531965017599134,
+            "logistic": 0.6516771339766259,
+            "pchip": 0.6571137867981874,
+            "probit": 0.6518684895558926
+          },
+          "model": "DK-R1-Dist-Qwen-1.5B",
+          "n_test_item_predictions": 4843
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.4982403697263188,
+            "logistic": 0.49874647264663774,
+            "pchip": 0.49673359215083107,
+            "probit": 0.4977972540210317
+          },
+          "model": "DK-R1-Dist-Qwen-14B",
+          "n_test_item_predictions": 4843
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.4491860611389463,
+            "logistic": 0.44610558357760716,
+            "pchip": 0.4542256590616557,
+            "probit": 0.44572074313375454
+          },
+          "model": "DK-R1-Dist-Qwen-32B",
+          "n_test_item_predictions": 4843
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6272478949128409,
+            "logistic": 0.6256657105171093,
+            "pchip": 0.644846135847213,
+            "probit": 0.6250030435055587
+          },
+          "model": "DK-R1-Dist-Qwen-7B",
+          "n_test_item_predictions": 4843
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.45368417154299595,
+            "logistic": 0.45290796395373945,
+            "pchip": 0.4531207343959588,
+            "probit": 0.4529645450108531
+          },
+          "model": "babbage-002",
+          "n_test_item_predictions": 4843
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.570011751583489,
+            "logistic": 0.5713166708939095,
+            "pchip": 0.5702969056385387,
+            "probit": 0.571350079013052
+          },
+          "model": "davinci-002",
+          "n_test_item_predictions": 4843
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6815341585071764,
+            "logistic": 0.6844192505029568,
+            "pchip": 0.6943120337239711,
+            "probit": 0.6839858567131868
+          },
+          "model": "gpt-35-turbo",
+          "n_test_item_predictions": 4843
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.4035316557697123,
+            "logistic": 0.4165340292415352,
+            "pchip": 0.414922601327248,
+            "probit": 0.4155148362003115
+          },
+          "model": "gpt4o",
+          "n_test_item_predictions": 4843
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.4298261587306664,
+            "logistic": 0.4410368960179994,
+            "pchip": 0.4402626568511719,
+            "probit": 0.43986173997482836
+          },
+          "model": "llama3d1-405b",
+          "n_test_item_predictions": 4843
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6447733039986286,
+            "logistic": 0.645085550233341,
+            "pchip": 0.6511067328670639,
+            "probit": 0.6448379388995865
+          },
+          "model": "llama3d2-11b",
+          "n_test_item_predictions": 4843
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6305103705851708,
+            "logistic": 0.6290640154482874,
+            "pchip": 0.6278483073724073,
+            "probit": 0.6291137437900725
+          },
+          "model": "llama3d2-1b",
+          "n_test_item_predictions": 4843
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6846202264263179,
+            "logistic": 0.6842208064619545,
+            "pchip": 0.6847898540114283,
+            "probit": 0.6842007208812086
+          },
+          "model": "llama3d2-3b",
+          "n_test_item_predictions": 4843
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.49175448635368624,
+            "logistic": 0.501631485136393,
+            "pchip": 0.5104961752642722,
+            "probit": 0.5004606265377218
+          },
+          "model": "llama3d2-90b",
+          "n_test_item_predictions": 4843
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.43353875069901976,
+            "logistic": 0.4372292127145847,
+            "pchip": 0.4393807742659745,
+            "probit": 0.4351498725596002
+          },
+          "model": "o1-mini",
+          "n_test_item_predictions": 4843
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.35688833484501714,
+            "logistic": 0.3574226032083466,
+            "pchip": 0.36908129266675027,
+            "probit": 0.35670640474409115
+          },
+          "model": "o1_re=low",
+          "n_test_item_predictions": 4843
+        }
+      ],
+      "monotone_raw_pass": false,
+      "n_dominant_items": 4843,
+      "n_flagged_reverse_pairs": 2,
+      "n_raw_pair_tests": 60,
+      "reproducible_reverse_level_pairs": [
+        {
+          "hi": 3,
+          "lo": 2,
+          "models": [
+            "babbage-002",
+            "davinci-002"
+          ],
+          "n_models": 2
+        }
+      ]
+    },
+    "KNf": {
+      "best_monotone_nonparametric_log_loss": 0.5093041186927104,
+      "leave_one_level_out_pooled_log_loss": {
+        "isotonic": 0.5093041186927104,
+        "logistic": 0.5114859654094098,
+        "pchip": 0.5416189022739062,
+        "probit": 0.5079068587590504
+      },
+      "logistic_within_0p01_of_best_nonparametric": true,
+      "model_curve_scores": [
+        {
+          "log_loss": {
+            "isotonic": 0.5989637945287131,
+            "logistic": 0.5746595720898502,
+            "pchip": 0.7974515164237915,
+            "probit": 0.577680216163516
+          },
+          "model": "DK-R1-Dist-Qwen-1.5B",
+          "n_test_item_predictions": 5816
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.5685604062905764,
+            "logistic": 0.5607169876505523,
+            "pchip": 0.5734192650307796,
+            "probit": 0.5554525691135841
+          },
+          "model": "DK-R1-Dist-Qwen-14B",
+          "n_test_item_predictions": 5816
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.5469110897242481,
+            "logistic": 0.5603324878082212,
+            "pchip": 0.5598135128623121,
+            "probit": 0.5485942849375725
+          },
+          "model": "DK-R1-Dist-Qwen-32B",
+          "n_test_item_predictions": 5816
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6027366794162975,
+            "logistic": 0.5733684046117934,
+            "pchip": 0.5991160263112093,
+            "probit": 0.5764756542418038
+          },
+          "model": "DK-R1-Dist-Qwen-7B",
+          "n_test_item_predictions": 5816
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.1660192781942294,
+            "logistic": 0.1670477364305326,
+            "pchip": 0.16431654215401115,
+            "probit": 0.16720876189216746
+          },
+          "model": "babbage-002",
+          "n_test_item_predictions": 5816
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.263114905720806,
+            "logistic": 0.2641052223287793,
+            "pchip": 0.33629173519308386,
+            "probit": 0.2638645466709952
+          },
+          "model": "davinci-002",
+          "n_test_item_predictions": 5816
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.5653590095132279,
+            "logistic": 0.559255760722482,
+            "pchip": 0.6316799614424031,
+            "probit": 0.5613464268702141
+          },
+          "model": "gpt-35-turbo",
+          "n_test_item_predictions": 5816
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6071686553025658,
+            "logistic": 0.6325126921611147,
+            "pchip": 0.6408645767186588,
+            "probit": 0.6273507485283886
+          },
+          "model": "gpt4o",
+          "n_test_item_predictions": 5816
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.616211317423712,
+            "logistic": 0.6333139679574125,
+            "pchip": 0.6258058463651588,
+            "probit": 0.6310649050607475
+          },
+          "model": "llama3d1-405b",
+          "n_test_item_predictions": 5816
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.5840764162123361,
+            "logistic": 0.5790578349561449,
+            "pchip": 0.6049189357191835,
+            "probit": 0.582419420335538
+          },
+          "model": "llama3d2-11b",
+          "n_test_item_predictions": 5816
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.3836482243595606,
+            "logistic": 0.37469255830898474,
+            "pchip": 0.38389826041784325,
+            "probit": 0.3735738621805723
+          },
+          "model": "llama3d2-1b",
+          "n_test_item_predictions": 5816
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.5290711269616951,
+            "logistic": 0.5156863945226353,
+            "pchip": 0.5776459651841012,
+            "probit": 0.5182435149457808
+          },
+          "model": "llama3d2-3b",
+          "n_test_item_predictions": 5816
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6326439883888143,
+            "logistic": 0.6496618342312834,
+            "pchip": 0.6505671165997472,
+            "probit": 0.6483943894211818
+          },
+          "model": "llama3d2-90b",
+          "n_test_item_predictions": 5816
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.5155422187043786,
+            "logistic": 0.511442734744238,
+            "pchip": 0.4996088874456754,
+            "probit": 0.4975982665506524
+          },
+          "model": "o1-mini",
+          "n_test_item_predictions": 5816
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.4595346696494942,
+            "logistic": 0.5164352926171233,
+            "pchip": 0.47888538624063376,
+            "probit": 0.48933531447304207
+          },
+          "model": "o1_re=low",
+          "n_test_item_predictions": 5816
+        }
+      ],
+      "monotone_raw_pass": true,
+      "n_dominant_items": 5816,
+      "n_flagged_reverse_pairs": 1,
+      "n_raw_pair_tests": 60,
+      "reproducible_reverse_level_pairs": []
+    },
+    "KNn": {
+      "best_monotone_nonparametric_log_loss": 0.5461204890399957,
+      "leave_one_level_out_pooled_log_loss": {
+        "isotonic": 0.5461204890399957,
+        "logistic": 0.5380016627009496,
+        "pchip": 0.5909759250509996,
+        "probit": 0.5274085282619696
+      },
+      "logistic_within_0p01_of_best_nonparametric": true,
+      "model_curve_scores": [
+        {
+          "log_loss": {
+            "isotonic": 0.5062768323831802,
+            "logistic": 0.47472999735554133,
+            "pchip": 0.5754760976292638,
+            "probit": 0.4659194910972915
+          },
+          "model": "DK-R1-Dist-Qwen-1.5B",
+          "n_test_item_predictions": 3785
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6347993055213805,
+            "logistic": 0.5995317645127561,
+            "pchip": 0.6404653623357992,
+            "probit": 0.5943352458761438
+          },
+          "model": "DK-R1-Dist-Qwen-14B",
+          "n_test_item_predictions": 3785
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6269384548793004,
+            "logistic": 0.6507113102064888,
+            "pchip": 0.6542031825593768,
+            "probit": 0.6245478981574947
+          },
+          "model": "DK-R1-Dist-Qwen-32B",
+          "n_test_item_predictions": 3785
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6243709367696387,
+            "logistic": 0.5613516312901835,
+            "pchip": 0.8632209255022638,
+            "probit": 0.5629576777200647
+          },
+          "model": "DK-R1-Dist-Qwen-7B",
+          "n_test_item_predictions": 3785
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.25286675850373896,
+            "logistic": 0.25838004359713396,
+            "pchip": 0.24849496119039896,
+            "probit": 0.25817146393131374
+          },
+          "model": "babbage-002",
+          "n_test_item_predictions": 3785
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.3201313641527284,
+            "logistic": 0.31707944587467407,
+            "pchip": 0.32695043245914657,
+            "probit": 0.3170745163875304
+          },
+          "model": "davinci-002",
+          "n_test_item_predictions": 3785
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6116776811301425,
+            "logistic": 0.5868936719395181,
+            "pchip": 0.8346560398072942,
+            "probit": 0.5836735147336044
+          },
+          "model": "gpt-35-turbo",
+          "n_test_item_predictions": 3785
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6120035768355162,
+            "logistic": 0.6461008568821862,
+            "pchip": 0.620271902531114,
+            "probit": 0.6215295525972596
+          },
+          "model": "gpt4o",
+          "n_test_item_predictions": 3785
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6265655161765966,
+            "logistic": 0.612829073017599,
+            "pchip": 0.6157131080298145,
+            "probit": 0.6026224088792086
+          },
+          "model": "llama3d1-405b",
+          "n_test_item_predictions": 3785
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6319947880577064,
+            "logistic": 0.600120342376128,
+            "pchip": 0.6474329934376681,
+            "probit": 0.5986828914109275
+          },
+          "model": "llama3d2-11b",
+          "n_test_item_predictions": 3785
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.40140970065274445,
+            "logistic": 0.3951862223665824,
+            "pchip": 0.40233797347359285,
+            "probit": 0.39042797493550874
+          },
+          "model": "llama3d2-1b",
+          "n_test_item_predictions": 3785
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.5509075326888739,
+            "logistic": 0.5238567980593947,
+            "pchip": 0.6515493708005505,
+            "probit": 0.5190632881300548
+          },
+          "model": "llama3d2-3b",
+          "n_test_item_predictions": 3785
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.641521709007333,
+            "logistic": 0.6295589267330444,
+            "pchip": 0.6562220724921994,
+            "probit": 0.6234155032615217
+          },
+          "model": "llama3d2-90b",
+          "n_test_item_predictions": 3785
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.615563042134357,
+            "logistic": 0.5732473618410416,
+            "pchip": 0.5668710387293299,
+            "probit": 0.5543081454521812
+          },
+          "model": "o1-mini",
+          "n_test_item_predictions": 3785
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.5347801367066961,
+            "logistic": 0.6404474944619717,
+            "pchip": 0.5607734147871816,
+            "probit": 0.594398351359441
+          },
+          "model": "o1_re=low",
+          "n_test_item_predictions": 3785
+        }
+      ],
+      "monotone_raw_pass": true,
+      "n_dominant_items": 3785,
+      "n_flagged_reverse_pairs": 0,
+      "n_raw_pair_tests": 45,
+      "reproducible_reverse_level_pairs": []
+    },
+    "KNs": {
+      "best_monotone_nonparametric_log_loss": 0.5697275165701372,
+      "leave_one_level_out_pooled_log_loss": {
+        "isotonic": 0.5697275165701372,
+        "logistic": 0.5706410037151829,
+        "pchip": 0.574327778377194,
+        "probit": 0.5708950706683306
+      },
+      "logistic_within_0p01_of_best_nonparametric": true,
+      "model_curve_scores": [
+        {
+          "log_loss": {
+            "isotonic": 0.6102603897453905,
+            "logistic": 0.6078855498020419,
+            "pchip": 0.6073629335465153,
+            "probit": 0.6079962785062519
+          },
+          "model": "DK-R1-Dist-Qwen-1.5B",
+          "n_test_item_predictions": 2950
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.604802820550923,
+            "logistic": 0.6063383818778312,
+            "pchip": 0.6096713474578106,
+            "probit": 0.6067007170030767
+          },
+          "model": "DK-R1-Dist-Qwen-14B",
+          "n_test_item_predictions": 2950
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.546881082360446,
+            "logistic": 0.5489684170380592,
+            "pchip": 0.555999340005864,
+            "probit": 0.5498449452259947
+          },
+          "model": "DK-R1-Dist-Qwen-32B",
+          "n_test_item_predictions": 2950
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6950619182998086,
+            "logistic": 0.701520418950611,
+            "pchip": 0.7032045639441915,
+            "probit": 0.6994340302058749
+          },
+          "model": "DK-R1-Dist-Qwen-7B",
+          "n_test_item_predictions": 2950
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.4596067233026082,
+            "logistic": 0.459960864751863,
+            "pchip": 0.4634688198292628,
+            "probit": 0.4600372989752134
+          },
+          "model": "babbage-002",
+          "n_test_item_predictions": 2950
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.5618196553193919,
+            "logistic": 0.5613697835743315,
+            "pchip": 0.5612845033787403,
+            "probit": 0.5614502232987392
+          },
+          "model": "davinci-002",
+          "n_test_item_predictions": 2950
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6982559816835278,
+            "logistic": 0.6979306966399426,
+            "pchip": 0.7060822501923618,
+            "probit": 0.6977755797896034
+          },
+          "model": "gpt-35-turbo",
+          "n_test_item_predictions": 2950
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.44794200879445917,
+            "logistic": 0.44976047011315223,
+            "pchip": 0.45507138625495147,
+            "probit": 0.45138008573265415
+          },
+          "model": "gpt4o",
+          "n_test_item_predictions": 2950
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.47957899445020524,
+            "logistic": 0.4808037378043816,
+            "pchip": 0.48411112010793145,
+            "probit": 0.48136689402548827
+          },
+          "model": "llama3d1-405b",
+          "n_test_item_predictions": 2950
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6686029208542982,
+            "logistic": 0.6672328830826632,
+            "pchip": 0.6698294121266152,
+            "probit": 0.6672660876754628
+          },
+          "model": "llama3d2-11b",
+          "n_test_item_predictions": 2950
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6128056299334198,
+            "logistic": 0.6109426651006356,
+            "pchip": 0.6156497819748666,
+            "probit": 0.6105547727213302
+          },
+          "model": "llama3d2-1b",
+          "n_test_item_predictions": 2950
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6837571916230765,
+            "logistic": 0.6816535615136552,
+            "pchip": 0.6816296744543855,
+            "probit": 0.6816106192711433
+          },
+          "model": "llama3d2-3b",
+          "n_test_item_predictions": 2950
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.5478656087820668,
+            "logistic": 0.5510990555418686,
+            "pchip": 0.5566213032369801,
+            "probit": 0.5520433340977202
+          },
+          "model": "llama3d2-90b",
+          "n_test_item_predictions": 2950
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.5517837747340193,
+            "logistic": 0.5536229277243708,
+            "pchip": 0.5649085646180287,
+            "probit": 0.5555226752026865
+          },
+          "model": "o1-mini",
+          "n_test_item_predictions": 2950
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.3768880481184179,
+            "logistic": 0.3805256422123348,
+            "pchip": 0.38002167452940344,
+            "probit": 0.38044251829371845
+          },
+          "model": "o1_re=low",
+          "n_test_item_predictions": 2950
+        }
+      ],
+      "monotone_raw_pass": true,
+      "n_dominant_items": 2950,
+      "n_flagged_reverse_pairs": 0,
+      "n_raw_pair_tests": 45,
+      "reproducible_reverse_level_pairs": []
+    },
+    "MCr": {
+      "best_monotone_nonparametric_log_loss": 0.5133735510834272,
+      "leave_one_level_out_pooled_log_loss": {
+        "isotonic": 0.5178795392105688,
+        "logistic": 0.5043729630670439,
+        "pchip": 0.5133735510834272,
+        "probit": 0.5049005687074294
+      },
+      "logistic_within_0p01_of_best_nonparametric": true,
+      "model_curve_scores": [
+        {
+          "log_loss": {
+            "isotonic": 0.5717209680811774,
+            "logistic": 0.5726610716116304,
+            "pchip": 0.5699462613090704,
+            "probit": 0.5712542109224245
+          },
+          "model": "DK-R1-Dist-Qwen-1.5B",
+          "n_test_item_predictions": 1463
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6225773874646835,
+            "logistic": 0.6057367617222736,
+            "pchip": 0.6014434923452765,
+            "probit": 0.6043254151679857
+          },
+          "model": "DK-R1-Dist-Qwen-14B",
+          "n_test_item_predictions": 1463
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.5916198145385617,
+            "logistic": 0.5686003951787235,
+            "pchip": 0.5670241281436303,
+            "probit": 0.5700182085584421
+          },
+          "model": "DK-R1-Dist-Qwen-32B",
+          "n_test_item_predictions": 1463
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6915473674122353,
+            "logistic": 0.677932676284333,
+            "pchip": 0.6690146989751643,
+            "probit": 0.6765144645913462
+          },
+          "model": "DK-R1-Dist-Qwen-7B",
+          "n_test_item_predictions": 1463
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.21046353360324846,
+            "logistic": 0.2306768188317002,
+            "pchip": 0.23060032049594348,
+            "probit": 0.22569686866292948
+          },
+          "model": "babbage-002",
+          "n_test_item_predictions": 1463
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.37766688076295113,
+            "logistic": 0.3833282442844888,
+            "pchip": 0.41358496204405953,
+            "probit": 0.382917455977988
+          },
+          "model": "davinci-002",
+          "n_test_item_predictions": 1463
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.4524979593883941,
+            "logistic": 0.43104393312535627,
+            "pchip": 0.4306766010313884,
+            "probit": 0.44326487177256574
+          },
+          "model": "gpt-35-turbo",
+          "n_test_item_predictions": 1463
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6250666661976879,
+            "logistic": 0.6126601846789832,
+            "pchip": 0.7238146727066657,
+            "probit": 0.6142923056349866
+          },
+          "model": "gpt4o",
+          "n_test_item_predictions": 1463
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6359910463326542,
+            "logistic": 0.6275579627543162,
+            "pchip": 0.6583871967603373,
+            "probit": 0.6279932660246629
+          },
+          "model": "llama3d1-405b",
+          "n_test_item_predictions": 1463
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.4927917157035859,
+            "logistic": 0.4648613788966089,
+            "pchip": 0.46646996055361445,
+            "probit": 0.4660375132064532
+          },
+          "model": "llama3d2-11b",
+          "n_test_item_predictions": 1463
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.32461952431517854,
+            "logistic": 0.32373722539891453,
+            "pchip": 0.31769565318286974,
+            "probit": 0.3183939974482941
+          },
+          "model": "llama3d2-1b",
+          "n_test_item_predictions": 1463
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.4345463808452513,
+            "logistic": 0.3946696287757739,
+            "pchip": 0.3965895298508753,
+            "probit": 0.41092291654418805
+          },
+          "model": "llama3d2-3b",
+          "n_test_item_predictions": 1463
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6115066688294767,
+            "logistic": 0.6043516596148264,
+            "pchip": 0.6117931960636885,
+            "probit": 0.6027406750436133
+          },
+          "model": "llama3d2-90b",
+          "n_test_item_predictions": 1463
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6062646105488521,
+            "logistic": 0.5802150625148125,
+            "pchip": 0.5570963105304334,
+            "probit": 0.5720127084648884
+          },
+          "model": "o1-mini",
+          "n_test_item_predictions": 1463
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.5193125641345937,
+            "logistic": 0.48756144233291704,
+            "pchip": 0.48646628225838967,
+            "probit": 0.487123652590674
+          },
+          "model": "o1_re=low",
+          "n_test_item_predictions": 1463
+        }
+      ],
+      "monotone_raw_pass": true,
+      "n_dominant_items": 1471,
+      "n_flagged_reverse_pairs": 0,
+      "n_raw_pair_tests": 45,
+      "reproducible_reverse_level_pairs": []
+    },
+    "MCt": {
+      "best_monotone_nonparametric_log_loss": 0.5021789884772312,
+      "leave_one_level_out_pooled_log_loss": {
+        "isotonic": 0.5021789884772312,
+        "logistic": 0.5030418352900519,
+        "pchip": 0.5196892785453605,
+        "probit": 0.5022855466588927
+      },
+      "logistic_within_0p01_of_best_nonparametric": true,
+      "model_curve_scores": [
+        {
+          "log_loss": {
+            "isotonic": 0.611267295208496,
+            "logistic": 0.6036598903633356,
+            "pchip": 0.6221616512509812,
+            "probit": 0.604245698956235
+          },
+          "model": "DK-R1-Dist-Qwen-1.5B",
+          "n_test_item_predictions": 3302
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.49342543653433457,
+            "logistic": 0.48163292737616653,
+            "pchip": 0.4852937373318714,
+            "probit": 0.48294248762433106
+          },
+          "model": "DK-R1-Dist-Qwen-14B",
+          "n_test_item_predictions": 3302
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.4373020870776452,
+            "logistic": 0.42598952332101847,
+            "pchip": 0.42897257643326636,
+            "probit": 0.42784988632114473
+          },
+          "model": "DK-R1-Dist-Qwen-32B",
+          "n_test_item_predictions": 3302
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.5846032340285529,
+            "logistic": 0.57427739086999,
+            "pchip": 0.5726466778751823,
+            "probit": 0.575645176284724
+          },
+          "model": "DK-R1-Dist-Qwen-7B",
+          "n_test_item_predictions": 3302
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.30062432824348123,
+            "logistic": 0.30245813375534947,
+            "pchip": 0.3000413068190176,
+            "probit": 0.30263316543392693
+          },
+          "model": "babbage-002",
+          "n_test_item_predictions": 3302
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.38929935085047007,
+            "logistic": 0.38964161631691274,
+            "pchip": 0.3900990010251035,
+            "probit": 0.3895954282284827
+          },
+          "model": "davinci-002",
+          "n_test_item_predictions": 3302
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6276632956317287,
+            "logistic": 0.6400976918865867,
+            "pchip": 0.759270255797083,
+            "probit": 0.6392695016105606
+          },
+          "model": "gpt-35-turbo",
+          "n_test_item_predictions": 3302
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.5198557113212114,
+            "logistic": 0.5307342897684065,
+            "pchip": 0.5144694680417736,
+            "probit": 0.5259335106424752
+          },
+          "model": "gpt4o",
+          "n_test_item_predictions": 3302
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.5412069474258357,
+            "logistic": 0.5677775687338089,
+            "pchip": 0.5342888396955415,
+            "probit": 0.562387968416864
+          },
+          "model": "llama3d1-405b",
+          "n_test_item_predictions": 3302
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6151145322727477,
+            "logistic": 0.6203129666440695,
+            "pchip": 0.6714657651685544,
+            "probit": 0.6190050051953673
+          },
+          "model": "llama3d2-11b",
+          "n_test_item_predictions": 3302
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.5146544021798688,
+            "logistic": 0.5130767068729589,
+            "pchip": 0.5238655451783188,
+            "probit": 0.5133972755235306
+          },
+          "model": "llama3d2-1b",
+          "n_test_item_predictions": 3302
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.5990724089341951,
+            "logistic": 0.6027421156420221,
+            "pchip": 0.7127931029378276,
+            "probit": 0.603423841627971
+          },
+          "model": "llama3d2-3b",
+          "n_test_item_predictions": 3302
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.574963016784606,
+            "logistic": 0.5947675347705184,
+            "pchip": 0.5827129746607905,
+            "probit": 0.5901407496660276
+          },
+          "model": "llama3d2-90b",
+          "n_test_item_predictions": 3302
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.406415959886716,
+            "logistic": 0.3856606569424029,
+            "pchip": 0.38409872455788985,
+            "probit": 0.38458647012116287
+          },
+          "model": "o1-mini",
+          "n_test_item_predictions": 3302
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.3172168207785792,
+            "logistic": 0.3127985160872312,
+            "pchip": 0.3131595514072052,
+            "probit": 0.31322703423058573
+          },
+          "model": "o1_re=low",
+          "n_test_item_predictions": 3302
+        }
+      ],
+      "monotone_raw_pass": true,
+      "n_dominant_items": 3302,
+      "n_flagged_reverse_pairs": 0,
+      "n_raw_pair_tests": 60,
+      "reproducible_reverse_level_pairs": []
+    },
+    "MCu": {
+      "best_monotone_nonparametric_log_loss": 0.53058641670455,
+      "leave_one_level_out_pooled_log_loss": {
+        "isotonic": 0.53058641670455,
+        "logistic": 0.5302696687304518,
+        "pchip": 0.5747440798870014,
+        "probit": 0.5322135224850042
+      },
+      "logistic_within_0p01_of_best_nonparametric": true,
+      "model_curve_scores": [
+        {
+          "log_loss": {
+            "isotonic": 0.5227862166278949,
+            "logistic": 0.5403203309440113,
+            "pchip": 0.5274535421177181,
+            "probit": 0.5339801536660601
+          },
+          "model": "DK-R1-Dist-Qwen-1.5B",
+          "n_test_item_predictions": 2867
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6260419961578602,
+            "logistic": 0.6269801879791662,
+            "pchip": 0.7091171565955636,
+            "probit": 0.6366355804611479
+          },
+          "model": "DK-R1-Dist-Qwen-14B",
+          "n_test_item_predictions": 2867
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6148069893856832,
+            "logistic": 0.628933124403591,
+            "pchip": 0.723612480913888,
+            "probit": 0.641329578200608
+          },
+          "model": "DK-R1-Dist-Qwen-32B",
+          "n_test_item_predictions": 2867
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6158377615211762,
+            "logistic": 0.6203647879852074,
+            "pchip": 0.6458802553088491,
+            "probit": 0.6267322294493106
+          },
+          "model": "DK-R1-Dist-Qwen-7B",
+          "n_test_item_predictions": 2867
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.2504505205821758,
+            "logistic": 0.25927909959019174,
+            "pchip": 0.25459373047832157,
+            "probit": 0.25852007728374166
+          },
+          "model": "babbage-002",
+          "n_test_item_predictions": 2867
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.3341363880136746,
+            "logistic": 0.34459388087396303,
+            "pchip": 0.3537400381913011,
+            "probit": 0.3435603578038724
+          },
+          "model": "davinci-002",
+          "n_test_item_predictions": 2867
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.5282298345804224,
+            "logistic": 0.5172651391432507,
+            "pchip": 0.5416882700963516,
+            "probit": 0.5177269132985598
+          },
+          "model": "gpt-35-turbo",
+          "n_test_item_predictions": 2867
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6266582598175267,
+            "logistic": 0.6080989264945184,
+            "pchip": 0.7226109761560507,
+            "probit": 0.6117555116226946
+          },
+          "model": "gpt4o",
+          "n_test_item_predictions": 2867
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6225513794470016,
+            "logistic": 0.6039534503433147,
+            "pchip": 0.6948965785933396,
+            "probit": 0.6064521304180699
+          },
+          "model": "llama3d1-405b",
+          "n_test_item_predictions": 2867
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.5503378534075807,
+            "logistic": 0.5431540831162223,
+            "pchip": 0.5547305762682637,
+            "probit": 0.5426047321417138
+          },
+          "model": "llama3d2-11b",
+          "n_test_item_predictions": 2867
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.38067409577272293,
+            "logistic": 0.38899189004082185,
+            "pchip": 0.3784939975726415,
+            "probit": 0.38520371787403535
+          },
+          "model": "llama3d2-1b",
+          "n_test_item_predictions": 2867
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.4988182257166985,
+            "logistic": 0.48516840677031015,
+            "pchip": 0.5211592878706779,
+            "probit": 0.4860203461714555
+          },
+          "model": "llama3d2-3b",
+          "n_test_item_predictions": 2867
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6188523792304613,
+            "logistic": 0.6032674155303543,
+            "pchip": 0.6761585565340037,
+            "probit": 0.6034951811005365
+          },
+          "model": "llama3d2-90b",
+          "n_test_item_predictions": 2867
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.5863975310613851,
+            "logistic": 0.5770579006844911,
+            "pchip": 0.6855336571662425,
+            "probit": 0.5821243212202529
+          },
+          "model": "o1-mini",
+          "n_test_item_predictions": 2867
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.5822168192459845,
+            "logistic": 0.6066164070573624,
+            "pchip": 0.6314920944418094,
+            "probit": 0.6070620065630034
+          },
+          "model": "o1_re=low",
+          "n_test_item_predictions": 2867
+        }
+      ],
+      "monotone_raw_pass": true,
+      "n_dominant_items": 2867,
+      "n_flagged_reverse_pairs": 0,
+      "n_raw_pair_tests": 60,
+      "reproducible_reverse_level_pairs": []
+    },
+    "MS": {
+      "best_monotone_nonparametric_log_loss": NaN,
+      "leave_one_level_out_pooled_log_loss": {
+        "isotonic": NaN,
+        "logistic": NaN,
+        "pchip": NaN,
+        "probit": NaN
+      },
+      "logistic_within_0p01_of_best_nonparametric": false,
+      "model_curve_scores": [],
+      "monotone_raw_pass": true,
+      "n_dominant_items": 343,
+      "n_flagged_reverse_pairs": 1,
+      "n_raw_pair_tests": 30,
+      "reproducible_reverse_level_pairs": []
+    },
+    "QLl": {
+      "best_monotone_nonparametric_log_loss": 0.48419975850954194,
+      "leave_one_level_out_pooled_log_loss": {
+        "isotonic": 0.48419975850954194,
+        "logistic": 0.47240239244520543,
+        "pchip": 0.5386186196111066,
+        "probit": 0.4738638130686571
+      },
+      "logistic_within_0p01_of_best_nonparametric": true,
+      "model_curve_scores": [
+        {
+          "log_loss": {
+            "isotonic": 0.5922621518562756,
+            "logistic": 0.5837881694774948,
+            "pchip": 0.7052172529975911,
+            "probit": 0.5850499375600536
+          },
+          "model": "DK-R1-Dist-Qwen-1.5B",
+          "n_test_item_predictions": 3286
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.5956505873621483,
+            "logistic": 0.5649805125240193,
+            "pchip": 0.5620859077651407,
+            "probit": 0.5669500815374351
+          },
+          "model": "DK-R1-Dist-Qwen-14B",
+          "n_test_item_predictions": 3286
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.5459060818705692,
+            "logistic": 0.5162464928275753,
+            "pchip": 0.5217267072379989,
+            "probit": 0.517353561637448
+          },
+          "model": "DK-R1-Dist-Qwen-32B",
+          "n_test_item_predictions": 3286
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6390840804819681,
+            "logistic": 0.6229119763060442,
+            "pchip": 0.6640027129168458,
+            "probit": 0.6245697854997053
+          },
+          "model": "DK-R1-Dist-Qwen-7B",
+          "n_test_item_predictions": 3286
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.16780005203724202,
+            "logistic": 0.17170269822536138,
+            "pchip": 0.19906649704908577,
+            "probit": 0.17099014153151165
+          },
+          "model": "babbage-002",
+          "n_test_item_predictions": 3286
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.2761908227803148,
+            "logistic": 0.27580425131562025,
+            "pchip": 0.2808407542908294,
+            "probit": 0.2751236987317662
+          },
+          "model": "davinci-002",
+          "n_test_item_predictions": 3286
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.43341872897869343,
+            "logistic": 0.4218776782080911,
+            "pchip": 0.5486384011615614,
+            "probit": 0.42427284207448396
+          },
+          "model": "gpt-35-turbo",
+          "n_test_item_predictions": 3286
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6205973973291398,
+            "logistic": 0.6278249779567444,
+            "pchip": 1.0256119783338438,
+            "probit": 0.6317786011385348
+          },
+          "model": "gpt4o",
+          "n_test_item_predictions": 3286
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6169745411642785,
+            "logistic": 0.6114243588656376,
+            "pchip": 0.6634547433367057,
+            "probit": 0.6135379703828604
+          },
+          "model": "llama3d1-405b",
+          "n_test_item_predictions": 3286
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.464840470501508,
+            "logistic": 0.44659166252827265,
+            "pchip": 0.5108440358085319,
+            "probit": 0.45055582349032747
+          },
+          "model": "llama3d2-11b",
+          "n_test_item_predictions": 3286
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.3155417951715938,
+            "logistic": 0.3147378961455397,
+            "pchip": 0.32077476552938694,
+            "probit": 0.3109227189115396
+          },
+          "model": "llama3d2-1b",
+          "n_test_item_predictions": 3286
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.4150897042751972,
+            "logistic": 0.396042457604244,
+            "pchip": 0.5142851996217608,
+            "probit": 0.3987026121212769
+          },
+          "model": "llama3d2-3b",
+          "n_test_item_predictions": 3286
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.6088265680093025,
+            "logistic": 0.6107112787590965,
+            "pchip": 0.6345024920290834,
+            "probit": 0.6156431575289532
+          },
+          "model": "llama3d2-90b",
+          "n_test_item_predictions": 3286
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.5331158570907113,
+            "logistic": 0.4953930960476112,
+            "pchip": 0.5018063042779605,
+            "probit": 0.4978072678683062
+          },
+          "model": "o1-mini",
+          "n_test_item_predictions": 3286
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.4376975387341853,
+            "logistic": 0.42599837988672773,
+            "pchip": 0.42642154181027286,
+            "probit": 0.4246989960156536
+          },
+          "model": "o1_re=low",
+          "n_test_item_predictions": 3286
+        }
+      ],
+      "monotone_raw_pass": true,
+      "n_dominant_items": 3286,
+      "n_flagged_reverse_pairs": 0,
+      "n_raw_pair_tests": 60,
+      "reproducible_reverse_level_pairs": []
+    },
+    "QLq": {
+      "best_monotone_nonparametric_log_loss": 0.436116918352656,
+      "leave_one_level_out_pooled_log_loss": {
+        "isotonic": 0.436116918352656,
+        "logistic": 0.4294995857511046,
+        "pchip": 0.4866819737645902,
+        "probit": 0.4303316633095836
+      },
+      "logistic_within_0p01_of_best_nonparametric": true,
+      "model_curve_scores": [
+        {
+          "log_loss": {
+            "isotonic": 0.6393425340246705,
+            "logistic": 0.6618191865904283,
+            "pchip": 0.7258767288904023,
+            "probit": 0.6614273967342806
+          },
+          "model": "DK-R1-Dist-Qwen-1.5B",
+          "n_test_item_predictions": 1961
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.4243933469036516,
+            "logistic": 0.4124474339319328,
+            "pchip": 0.42339892335029583,
+            "probit": 0.41645200884589895
+          },
+          "model": "DK-R1-Dist-Qwen-14B",
+          "n_test_item_predictions": 1961
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.39077537891620867,
+            "logistic": 0.38580143033305314,
+            "pchip": 0.3922795169318924,
+            "probit": 0.3916404321160389
+          },
+          "model": "DK-R1-Dist-Qwen-32B",
+          "n_test_item_predictions": 1961
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.5295631298157364,
+            "logistic": 0.5342260959513794,
+            "pchip": 0.5335685837350712,
+            "probit": 0.5367214725847801
+          },
+          "model": "DK-R1-Dist-Qwen-7B",
+          "n_test_item_predictions": 1961
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.13090783814400425,
+            "logistic": 0.13217144822178986,
+            "pchip": 0.13855700373967653,
+            "probit": 0.13222034476037023
+          },
+          "model": "babbage-002",
+          "n_test_item_predictions": 1961
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.20609143091525542,
+            "logistic": 0.2083779715589043,
+            "pchip": 0.2077267638657778,
+            "probit": 0.20940304307404506
+          },
+          "model": "davinci-002",
+          "n_test_item_predictions": 1961
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.5702537281509075,
+            "logistic": 0.5582424230775799,
+            "pchip": 0.7607256608068168,
+            "probit": 0.5627270135553104
+          },
+          "model": "gpt-35-turbo",
+          "n_test_item_predictions": 1961
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.45123361245681043,
+            "logistic": 0.42560876205935777,
+            "pchip": 0.5919558809243067,
+            "probit": 0.4244998586310962
+          },
+          "model": "gpt4o",
+          "n_test_item_predictions": 1961
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.48272799157601937,
+            "logistic": 0.4605428764561744,
+            "pchip": 0.57406689138366,
+            "probit": 0.45929455316674944
+          },
+          "model": "llama3d1-405b",
+          "n_test_item_predictions": 1961
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.5625084561089677,
+            "logistic": 0.5428645909265754,
+            "pchip": 0.675534649632117,
+            "probit": 0.5465015071097785
+          },
+          "model": "llama3d2-11b",
+          "n_test_item_predictions": 1961
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.45878444198500073,
+            "logistic": 0.46694253803957064,
+            "pchip": 0.45565477285151235,
+            "probit": 0.4623019237571791
+          },
+          "model": "llama3d2-1b",
+          "n_test_item_predictions": 1961
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.5757206627651362,
+            "logistic": 0.5712710890775138,
+            "pchip": 0.5927364258841799,
+            "probit": 0.5709001135005876
+          },
+          "model": "llama3d2-3b",
+          "n_test_item_predictions": 1961
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.5092843073917678,
+            "logistic": 0.4866135430409745,
+            "pchip": 0.6235194774661507,
+            "probit": 0.4893977971070977
+          },
+          "model": "llama3d2-90b",
+          "n_test_item_predictions": 1961
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.32541123475840045,
+            "logistic": 0.3173605340370264,
+            "pchip": 0.3257007270726299,
+            "probit": 0.31425363591603245
+          },
+          "model": "o1-mini",
+          "n_test_item_predictions": 1961
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.2847556813773016,
+            "logistic": 0.278203862964309,
+            "pchip": 0.2789275999343649,
+            "probit": 0.27723384878450885
+          },
+          "model": "o1_re=low",
+          "n_test_item_predictions": 1961
+        }
+      ],
+      "monotone_raw_pass": true,
+      "n_dominant_items": 1961,
+      "n_flagged_reverse_pairs": 0,
+      "n_raw_pair_tests": 60,
+      "reproducible_reverse_level_pairs": []
+    },
+    "SNs": {
+      "best_monotone_nonparametric_log_loss": NaN,
+      "leave_one_level_out_pooled_log_loss": {
+        "isotonic": NaN,
+        "logistic": NaN,
+        "pchip": NaN,
+        "probit": NaN
+      },
+      "logistic_within_0p01_of_best_nonparametric": false,
+      "model_curve_scores": [],
+      "monotone_raw_pass": false,
+      "n_dominant_items": 618,
+      "n_flagged_reverse_pairs": 10,
+      "n_raw_pair_tests": 30,
+      "reproducible_reverse_level_pairs": [
+        {
+          "hi": 5,
+          "lo": 4,
+          "models": [
+            "DK-R1-Dist-Qwen-14B",
+            "DK-R1-Dist-Qwen-32B",
+            "gpt-35-turbo",
+            "gpt4o",
+            "llama3d1-405b",
+            "llama3d2-11b",
+            "llama3d2-3b",
+            "llama3d2-90b",
+            "o1-mini",
+            "o1_re=low"
+          ],
+          "n_models": 10
+        }
+      ]
+    },
+    "VO": {
+      "best_monotone_nonparametric_log_loss": 0.46803560569656677,
+      "leave_one_level_out_pooled_log_loss": {
+        "isotonic": 0.46803560569656677,
+        "logistic": 0.47165319760534324,
+        "pchip": 0.5626148231583957,
+        "probit": 0.47469303668989893
+      },
+      "logistic_within_0p01_of_best_nonparametric": true,
+      "model_curve_scores": [
+        {
+          "log_loss": {
+            "isotonic": 0.6170158022803013,
+            "logistic": 0.6172288403401281,
+            "pchip": 0.7563907471058994,
+            "probit": 0.6191095305991637
+          },
+          "model": "DK-R1-Dist-Qwen-1.5B",
+          "n_test_item_predictions": 1030
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.4878541709469458,
+            "logistic": 0.4832070843852713,
+            "pchip": 0.536387972871226,
+            "probit": 0.48203771719021754
+          },
+          "model": "DK-R1-Dist-Qwen-14B",
+          "n_test_item_predictions": 1030
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.4715490071159816,
+            "logistic": 0.47467710859417095,
+            "pchip": 0.5538266566629501,
+            "probit": 0.4724304272788343
+          },
+          "model": "DK-R1-Dist-Qwen-32B",
+          "n_test_item_predictions": 1030
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.5812900731588063,
+            "logistic": 0.5801243732528892,
+            "pchip": 0.6055680957462242,
+            "probit": 0.5816826773917724
+          },
+          "model": "DK-R1-Dist-Qwen-7B",
+          "n_test_item_predictions": 1030
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.2269868692220299,
+            "logistic": 0.24649339554447763,
+            "pchip": 0.22892355453730276,
+            "probit": 0.243838933670421
+          },
+          "model": "babbage-002",
+          "n_test_item_predictions": 1030
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.33395337362597893,
+            "logistic": 0.38538073863917954,
+            "pchip": 0.35281385583766445,
+            "probit": 0.3641929841144229
+          },
+          "model": "davinci-002",
+          "n_test_item_predictions": 1030
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.5350599116647827,
+            "logistic": 0.52795565935092,
+            "pchip": 0.7517704820224587,
+            "probit": 0.5376688704636743
+          },
+          "model": "gpt-35-turbo",
+          "n_test_item_predictions": 1030
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.48179964127902636,
+            "logistic": 0.4813571520782073,
+            "pchip": 0.7208217693310116,
+            "probit": 0.4948580881143809
+          },
+          "model": "gpt4o",
+          "n_test_item_predictions": 1030
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.4940661508290494,
+            "logistic": 0.4910772611799853,
+            "pchip": 0.7230744799125735,
+            "probit": 0.5096479962942836
+          },
+          "model": "llama3d1-405b",
+          "n_test_item_predictions": 1030
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.5010239903554922,
+            "logistic": 0.4744080024957901,
+            "pchip": 0.633347769838401,
+            "probit": 0.4864379158866383
+          },
+          "model": "llama3d2-11b",
+          "n_test_item_predictions": 1030
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.45827173469494364,
+            "logistic": 0.47895102999894595,
+            "pchip": 0.46747097407037813,
+            "probit": 0.47041417444538736
+          },
+          "model": "llama3d2-1b",
+          "n_test_item_predictions": 1030
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.513830730197038,
+            "logistic": 0.5012525122052309,
+            "pchip": 0.7157925900821397,
+            "probit": 0.5111935008756998
+          },
+          "model": "llama3d2-3b",
+          "n_test_item_predictions": 1030
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.5080935415426194,
+            "logistic": 0.5099114702216049,
+            "pchip": 0.5244654752357543,
+            "probit": 0.5316245974805036
+          },
+          "model": "llama3d2-90b",
+          "n_test_item_predictions": 1030
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.411101853751443,
+            "logistic": 0.4126513776644409,
+            "pchip": 0.44697846956792686,
+            "probit": 0.4083180771407386
+          },
+          "model": "o1-mini",
+          "n_test_item_predictions": 1030
+        },
+        {
+          "log_loss": {
+            "isotonic": 0.39863723478406315,
+            "logistic": 0.4101219581289068,
+            "pchip": 0.42158945455402524,
+            "probit": 0.40694005940234557
+          },
+          "model": "o1_re=low",
+          "n_test_item_predictions": 1030
+        }
+      ],
+      "monotone_raw_pass": true,
+      "n_dominant_items": 1030,
+      "n_flagged_reverse_pairs": 0,
+      "n_raw_pair_tests": 60,
+      "reproducible_reverse_level_pairs": []
+    }
+  },
+  "logistic_reporting_rule": "accept logistic form only if pooled held-out log loss <= best monotone nonparametric + 0.01",
+  "minimum_items_per_level": 20,
+  "n_dimensions_logistic_adequate": 12,
+  "n_dimensions_raw_monotone_pass": 13,
+  "raw_nonmonotonicity_flag": "higher adjacent level success >=5 percentage points, BH q<0.05; reproducible if same level pair flags in >=2 models",
+  "seed": 20260926
+}

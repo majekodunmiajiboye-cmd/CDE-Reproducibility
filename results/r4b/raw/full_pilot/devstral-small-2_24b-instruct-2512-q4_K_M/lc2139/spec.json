@@ -1,0 +1,5 @@
+{
+  "response": "impl Solution {\n    pub fn min_moves(target: i32, max_doubles: i32) -> i32 {\n        let mut target = target;\n        let mut max_doubles = max_doubles;\n        let mut moves = 0;\n\n        while target > 1 {\n            if max_doubles > 0 && target % 2 == 0 {\n                target /= 2;\n                max_doubles -= 1;\n            } else {\n                target -= 1;\n            }\n            moves += 1;\n        }\n\n        moves\n    }\n}",
+  "impl": "impl Solution {\n    pub fn min_moves(target: i32, max_doubles: i32) -> i32 {\n        let mut target = target;\n        let mut max_doubles = max_doubles;\n        let mut moves = 0;\n\n        while target > 1 {\n            if max_doubles > 0 && target % 2 == 0 {\n                target /= 2;\n                max_doubles -= 1;\n            } else {\n                target -= 1;\n            }\n            moves += 1;\n        }\n\n        moves\n    }\n}",
+  "source_record_sha256": "76d59b43fe632b6239ac9f537a25279bd1d85ba1b31990f1757e3c79928e1b2d"
+}

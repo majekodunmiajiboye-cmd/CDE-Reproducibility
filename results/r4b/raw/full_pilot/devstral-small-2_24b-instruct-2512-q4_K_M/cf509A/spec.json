@@ -1,0 +1,5 @@
+{
+  "response": "impl Solution {\n    pub fn max_in_table(n: u32) -> u32 {\n        let n = n as usize;\n        let mut dp = vec![vec![0; n]; n];\n        for i in 0..n {\n            for j in 0..n {\n                if i == 0 || j == 0 {\n                    dp[i][j] = 1;\n                } else {\n                    dp[i][j] = dp[i - 1][j] + dp[i][j - 1];\n                }\n            }\n        }\n        dp[n - 1][n - 1] as u32\n    }\n}",
+  "impl": "impl Solution {\n    pub fn max_in_table(n: u32) -> u32 {\n        let n = n as usize;\n        let mut dp = vec![vec![0; n]; n];\n        for i in 0..n {\n            for j in 0..n {\n                if i == 0 || j == 0 {\n                    dp[i][j] = 1;\n                } else {\n                    dp[i][j] = dp[i - 1][j] + dp[i][j - 1];\n                }\n            }\n        }\n        dp[n - 1][n - 1] as u32\n    }\n}",
+  "source_record_sha256": "e04bfd065e9d7437bfe1ca9b08bd57723c94319f35595b7ff30c3ed04fdd4d05"
+}

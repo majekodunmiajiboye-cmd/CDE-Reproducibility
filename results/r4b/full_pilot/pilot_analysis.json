@@ -1,0 +1,65 @@
+{
+  "analysis": "CDE R4b development-pilot frozen analysis",
+  "arm_success_rates": {
+    "devstral-small-2:24b-instruct-2512-q4_K_M": {
+      "both": 0.5833333333333334,
+      "nl": 0.5,
+      "overall": 0.6527777777777778,
+      "spec": 0.875
+    },
+    "gemma3:12b": {
+      "both": 0.5,
+      "nl": 0.20833333333333334,
+      "overall": 0.3888888888888889,
+      "spec": 0.4583333333333333
+    }
+  },
+  "environment_contrasts": {
+    "both_minus_nl": {
+      "difference_in_differences_a_minus_b": -0.20833333333333326,
+      "model_a_effect": 0.08333333333333337,
+      "model_b_effect": 0.29166666666666663
+    },
+    "spec_minus_nl": {
+      "difference_in_differences_a_minus_b": 0.12500000000000003,
+      "model_a_effect": 0.375,
+      "model_b_effect": 0.24999999999999997
+    }
+  },
+  "frozen_secondary_direction_if_gate_passes": "gemma3:12b benefits more than devstral-small-2:24b-instruct-2512-q4_K_M from both relative to NL",
+  "gate_rule": "Proceed only if both models have 10-90% overall semantic success, the largest prespecified spec-vs-NL or both-vs-NL model difference-in-differences is at least 10 percentage points, and CDE improves leave-one-task-out log loss over the stronger profile baseline. Pilot bootstrap is descriptive; confirmation remains independent.",
+  "gates": {
+    "both_models_nonfloor_nonceiling": true,
+    "cde_loto_ll_better_than_strong_profile_baseline": false,
+    "proceed_to_confirmation_preparation": false,
+    "selected_environment_did_abs_ge_0p10": true
+  },
+  "loto_log_loss": {
+    "b1": 0.5737484429158419,
+    "cde": 0.6736351844528112,
+    "profile": 0.6502487948151112
+  },
+  "model_definitions": {
+    "b1": "model + environment + model\u00d7environment + source family + public scalar difficulty",
+    "cde": "profile + demand\u00d7environment terms for spec and both vs NL; no feature selection",
+    "profile": "B1 + all five frozen demand proxies + model\u00d7demand terms (strong compatibility/profile baseline)"
+  },
+  "models": {
+    "a": "devstral-small-2:24b-instruct-2512-q4_K_M",
+    "b": "gemma3:12b"
+  },
+  "n_rows": 144,
+  "n_tasks": 24,
+  "profile_minus_cde_task_bootstrap_delta_ll": {
+    "ci_2p5_50_97p5": [
+      -0.051948694301226075,
+      -0.023374185708550255,
+      0.003337092076341632
+    ],
+    "n_boot": 1000,
+    "point": -0.02338638963770006
+  },
+  "seed": 20260926,
+  "selected_difference_in_differences": -0.20833333333333326,
+  "selected_secondary_contrast": "both_minus_nl"
+}

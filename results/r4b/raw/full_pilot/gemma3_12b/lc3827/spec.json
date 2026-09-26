@@ -1,0 +1,5 @@
+{
+  "response": "impl Solution {\n    pub fn count_monobit(n: i32) -> i32 {\n        let mut count = 0;\n        let mut current_monobit = 1;\n        while current_monobit <= n {\n            count += 1;\n            current_monobit = current_monobit * 2 + 1;\n        }\n        count\n    }\n}\n",
+  "impl": "impl Solution {\n    pub fn count_monobit(n: i32) -> i32 {\n        let mut count = 0;\n        let mut current_monobit = 1;\n        while current_monobit <= n {\n            count += 1;\n            current_monobit = current_monobit * 2 + 1;\n        }\n        count\n    }\n}",
+  "source_record_sha256": "82a714e1e35e7c56226de16c288f8c12ffaab5dd0df4e120d33e74ed8e4426a5"
+}

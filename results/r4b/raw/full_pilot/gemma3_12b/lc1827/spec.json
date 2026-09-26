@@ -1,0 +1,5 @@
+{
+  "response": "impl Solution {\n    pub fn min_operations(nums: Vec<i32>) -> i32 {\n        let n = nums.len();\n        let mut adjusted_nums = nums.clone();\n        for i in (1..n).rev() {\n            if adjusted_nums[i] <= adjusted_nums[i - 1] {\n                adjusted_nums[i] = adjusted_nums[i - 1] + 1;\n            }\n        }\n\n        let mut operations = 0;\n        for i in 1..n {\n            operations += adjusted_nums[i] - nums[i];\n        }\n\n        operations\n    }\n}\n",
+  "impl": "impl Solution {\n    pub fn min_operations(nums: Vec<i32>) -> i32 {\n        let n = nums.len();\n        let mut adjusted_nums = nums.clone();\n        for i in (1..n).rev() {\n            if adjusted_nums[i] <= adjusted_nums[i - 1] {\n                adjusted_nums[i] = adjusted_nums[i - 1] + 1;\n            }\n        }\n\n        let mut operations = 0;\n        for i in 1..n {\n            operations += adjusted_nums[i] - nums[i];\n        }\n\n        operations\n    }\n}",
+  "source_record_sha256": "f5d905f0c57d1df0b4bd4ba50b05c664eeb897093aaaa50d26a16255a0311a4b"
+}

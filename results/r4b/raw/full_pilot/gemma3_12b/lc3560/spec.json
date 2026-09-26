@@ -1,0 +1,5 @@
+{
+  "response": "impl Solution {\n    pub fn min_cutting_cost(n: i32, m: i32, k: i32) -> i64 {\n        if n <= k && m <= k {\n            0\n        } else if n > k {\n            (n as i64 - k as i64) * k as i64\n        } else {\n            (m as i64 - k as i64) * k as i64\n        }\n    }\n}\n",
+  "impl": "impl Solution {\n    pub fn min_cutting_cost(n: i32, m: i32, k: i32) -> i64 {\n        if n <= k && m <= k {\n            0\n        } else if n > k {\n            (n as i64 - k as i64) * k as i64\n        } else {\n            (m as i64 - k as i64) * k as i64\n        }\n    }\n}",
+  "source_record_sha256": "126ac4a631e311124877be528cda20d7baa1b0c3af2cedd49a6234c12761e8d0"
+}

@@ -1,0 +1,5 @@
+{
+  "response": "pub fn minimum_deletions(nums: Vec<i32>) -> i32 {\n    if nums.len() == 1 {\n        return 1;\n    }\n\n    let mut min_index = 0;\n    let mut max_index = 0;\n\n    for i in 1..nums.len() {\n        if nums[i] < nums[min_index] {\n            min_index = i;\n        }\n        if nums[i] > nums[max_index] {\n            max_index = i;\n        }\n    }\n\n    let mut deletions = 0;\n\n    if min_index < max_index {\n        deletions = std::cmp::min(min_index + 1, nums.len() - max_index);\n    } else {\n        deletions = std::cmp::min(max_index + 1, nums.len() - min_index);\n    }\n\n    deletions\n}\n",
+  "impl": null,
+  "source_record_sha256": "cc709bb54543ead37d9ef9984d228c270d7f27558e3209d9ae93f22f1e009dc4"
+}

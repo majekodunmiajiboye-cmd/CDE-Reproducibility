@@ -1,0 +1,382 @@
+{
+  "cells": [
+    {
+      "claude": 1,
+      "codex": 1,
+      "consensus": 1.0,
+      "feature": "observability",
+      "harness": "codex"
+    },
+    {
+      "claude": 1,
+      "codex": 0,
+      "consensus": 0.5,
+      "feature": "action_granularity",
+      "harness": "codex"
+    },
+    {
+      "claude": 1,
+      "codex": 1,
+      "consensus": 1.0,
+      "feature": "context_state_management",
+      "harness": "codex"
+    },
+    {
+      "claude": 1,
+      "codex": 1,
+      "consensus": 1.0,
+      "feature": "verification",
+      "harness": "codex"
+    },
+    {
+      "claude": 1,
+      "codex": 1,
+      "consensus": 1.0,
+      "feature": "recoverability",
+      "harness": "codex"
+    },
+    {
+      "claude": 0,
+      "codex": 0,
+      "consensus": 0.0,
+      "feature": "decomposition_control",
+      "harness": "codex"
+    },
+    {
+      "claude": 2,
+      "codex": 2,
+      "consensus": 2.0,
+      "feature": "observability",
+      "harness": "hermes"
+    },
+    {
+      "claude": 2,
+      "codex": 2,
+      "consensus": 2.0,
+      "feature": "action_granularity",
+      "harness": "hermes"
+    },
+    {
+      "claude": 1,
+      "codex": 1,
+      "consensus": 1.0,
+      "feature": "context_state_management",
+      "harness": "hermes"
+    },
+    {
+      "claude": 1,
+      "codex": 1,
+      "consensus": 1.0,
+      "feature": "verification",
+      "harness": "hermes"
+    },
+    {
+      "claude": 1,
+      "codex": 1,
+      "consensus": 1.0,
+      "feature": "recoverability",
+      "harness": "hermes"
+    },
+    {
+      "claude": 2,
+      "codex": 2,
+      "consensus": 2.0,
+      "feature": "decomposition_control",
+      "harness": "hermes"
+    },
+    {
+      "claude": 1,
+      "codex": 2,
+      "consensus": 1.5,
+      "feature": "observability",
+      "harness": "moltis-local"
+    },
+    {
+      "claude": 2,
+      "codex": 1,
+      "consensus": 1.5,
+      "feature": "action_granularity",
+      "harness": "moltis-local"
+    },
+    {
+      "claude": 2,
+      "codex": 2,
+      "consensus": 2.0,
+      "feature": "context_state_management",
+      "harness": "moltis-local"
+    },
+    {
+      "claude": 1,
+      "codex": 1,
+      "consensus": 1.0,
+      "feature": "verification",
+      "harness": "moltis-local"
+    },
+    {
+      "claude": 1,
+      "codex": 2,
+      "consensus": 1.5,
+      "feature": "recoverability",
+      "harness": "moltis-local"
+    },
+    {
+      "claude": 1,
+      "codex": 1,
+      "consensus": 1.0,
+      "feature": "decomposition_control",
+      "harness": "moltis-local"
+    },
+    {
+      "claude": 1,
+      "codex": 1,
+      "consensus": 1.0,
+      "feature": "observability",
+      "harness": "nanobot"
+    },
+    {
+      "claude": 1,
+      "codex": 1,
+      "consensus": 1.0,
+      "feature": "action_granularity",
+      "harness": "nanobot"
+    },
+    {
+      "claude": 2,
+      "codex": 2,
+      "consensus": 2.0,
+      "feature": "context_state_management",
+      "harness": "nanobot"
+    },
+    {
+      "claude": 1,
+      "codex": 1,
+      "consensus": 1.0,
+      "feature": "verification",
+      "harness": "nanobot"
+    },
+    {
+      "claude": 1,
+      "codex": 1,
+      "consensus": 1.0,
+      "feature": "recoverability",
+      "harness": "nanobot"
+    },
+    {
+      "claude": 1,
+      "codex": 1,
+      "consensus": 1.0,
+      "feature": "decomposition_control",
+      "harness": "nanobot"
+    },
+    {
+      "claude": 1,
+      "codex": 1,
+      "consensus": 1.0,
+      "feature": "observability",
+      "harness": "nullclaw"
+    },
+    {
+      "claude": 2,
+      "codex": 1,
+      "consensus": 1.5,
+      "feature": "action_granularity",
+      "harness": "nullclaw"
+    },
+    {
+      "claude": 1,
+      "codex": 1,
+      "consensus": 1.0,
+      "feature": "context_state_management",
+      "harness": "nullclaw"
+    },
+    {
+      "claude": 1,
+      "codex": 1,
+      "consensus": 1.0,
+      "feature": "verification",
+      "harness": "nullclaw"
+    },
+    {
+      "claude": 0,
+      "codex": 1,
+      "consensus": 0.5,
+      "feature": "recoverability",
+      "harness": "nullclaw"
+    },
+    {
+      "claude": 0,
+      "codex": 0,
+      "consensus": 0.0,
+      "feature": "decomposition_control",
+      "harness": "nullclaw"
+    },
+    {
+      "claude": 1,
+      "codex": 1,
+      "consensus": 1.0,
+      "feature": "observability",
+      "harness": "openclaw-local"
+    },
+    {
+      "claude": 1,
+      "codex": 0,
+      "consensus": 0.5,
+      "feature": "action_granularity",
+      "harness": "openclaw-local"
+    },
+    {
+      "claude": 1,
+      "codex": 1,
+      "consensus": 1.0,
+      "feature": "context_state_management",
+      "harness": "openclaw-local"
+    },
+    {
+      "claude": 1,
+      "codex": 1,
+      "consensus": 1.0,
+      "feature": "verification",
+      "harness": "openclaw-local"
+    },
+    {
+      "claude": 1,
+      "codex": 1,
+      "consensus": 1.0,
+      "feature": "recoverability",
+      "harness": "openclaw-local"
+    },
+    {
+      "claude": 1,
+      "codex": 0,
+      "consensus": 0.5,
+      "feature": "decomposition_control",
+      "harness": "openclaw-local"
+    },
+    {
+      "claude": 1,
+      "codex": 1,
+      "consensus": 1.0,
+      "feature": "observability",
+      "harness": "zeroclaw-local"
+    },
+    {
+      "claude": 1,
+      "codex": 1,
+      "consensus": 1.0,
+      "feature": "action_granularity",
+      "harness": "zeroclaw-local"
+    },
+    {
+      "claude": 1,
+      "codex": 1,
+      "consensus": 1.0,
+      "feature": "context_state_management",
+      "harness": "zeroclaw-local"
+    },
+    {
+      "claude": 1,
+      "codex": 1,
+      "consensus": 1.0,
+      "feature": "verification",
+      "harness": "zeroclaw-local"
+    },
+    {
+      "claude": 1,
+      "codex": 1,
+      "consensus": 1.0,
+      "feature": "recoverability",
+      "harness": "zeroclaw-local"
+    },
+    {
+      "claude": 0,
+      "codex": 0,
+      "consensus": 0.0,
+      "feature": "decomposition_control",
+      "harness": "zeroclaw-local"
+    }
+  ],
+  "coders": {
+    "claude": "Claude Opus 5.5 (claude-opus-5-5) via Claude Agent SDK",
+    "codex": "Codex (GPT-6)"
+  },
+  "consensus": {
+    "codex": {
+      "action_granularity": 0.5,
+      "context_state_management": 1.0,
+      "decomposition_control": 0.0,
+      "observability": 1.0,
+      "recoverability": 1.0,
+      "verification": 1.0
+    },
+    "hermes": {
+      "action_granularity": 2.0,
+      "context_state_management": 1.0,
+      "decomposition_control": 2.0,
+      "observability": 2.0,
+      "recoverability": 1.0,
+      "verification": 1.0
+    },
+    "moltis-local": {
+      "action_granularity": 1.5,
+      "context_state_management": 2.0,
+      "decomposition_control": 1.0,
+      "observability": 1.5,
+      "recoverability": 1.5,
+      "verification": 1.0
+    },
+    "nanobot": {
+      "action_granularity": 1.0,
+      "context_state_management": 2.0,
+      "decomposition_control": 1.0,
+      "observability": 1.0,
+      "recoverability": 1.0,
+      "verification": 1.0
+    },
+    "nullclaw": {
+      "action_granularity": 1.5,
+      "context_state_management": 1.0,
+      "decomposition_control": 0.0,
+      "observability": 1.0,
+      "recoverability": 0.5,
+      "verification": 1.0
+    },
+    "openclaw-local": {
+      "action_granularity": 0.5,
+      "context_state_management": 1.0,
+      "decomposition_control": 0.5,
+      "observability": 1.0,
+      "recoverability": 1.0,
+      "verification": 1.0
+    },
+    "zeroclaw-local": {
+      "action_granularity": 1.0,
+      "context_state_management": 1.0,
+      "decomposition_control": 0.0,
+      "observability": 1.0,
+      "recoverability": 1.0,
+      "verification": 1.0
+    }
+  },
+  "consensus_rule": "arithmetic mean of the two outcome-blind ordinal scores; no post-outcome adjudication",
+  "exact_agreement": 0.8095238095238095,
+  "features": [
+    "observability",
+    "action_granularity",
+    "context_state_management",
+    "verification",
+    "recoverability",
+    "decomposition_control"
+  ],
+  "harnesses": [
+    "codex",
+    "hermes",
+    "moltis-local",
+    "nanobot",
+    "nullclaw",
+    "openclaw-local",
+    "zeroclaw-local"
+  ],
+  "mean_absolute_score_difference": 0.19047619047619047,
+  "n_cells": 42,
+  "quadratic_weighted_kappa": 0.6646706586826348
+}

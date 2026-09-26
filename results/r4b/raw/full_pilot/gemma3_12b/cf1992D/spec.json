@@ -1,0 +1,5 @@
+{
+  "response": "impl Solution {\n    pub fn can_cross(a: Vec<u8>, m: usize, k: i64) -> bool {\n        let n = a.len();\n        let dp = compute_dp(a, m as i64);\n        dp[n as usize + 1] < i64::MAX && dp[n as usize + 1] <= k\n    }\n}\n",
+  "impl": "impl Solution {\n    pub fn can_cross(a: Vec<u8>, m: usize, k: i64) -> bool {\n        let n = a.len();\n        let dp = compute_dp(a, m as i64);\n        dp[n as usize + 1] < i64::MAX && dp[n as usize + 1] <= k\n    }\n}",
+  "source_record_sha256": "bd29c0f85890220cbe773cd0b02665acc0a2b4ee0bb95def22c55e566ccf3209"
+}

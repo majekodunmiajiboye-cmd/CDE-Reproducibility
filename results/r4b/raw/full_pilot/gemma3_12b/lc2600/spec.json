@@ -1,0 +1,5 @@
+{
+  "response": "impl Solution {\n    pub fn k_items_with_maximum_sum(num_ones: i32, num_zeros: i32, num_neg_ones: i32, k: i32) -> i32 {\n        let num_total = num_ones + num_zeros + num_neg_ones;\n        if k <= num_ones {\n            k\n        } else if k <= num_ones + num_zeros {\n            num_ones\n        } else {\n            num_ones - (k - num_ones - num_zeros)\n        }\n    }\n}\n",
+  "impl": "impl Solution {\n    pub fn k_items_with_maximum_sum(num_ones: i32, num_zeros: i32, num_neg_ones: i32, k: i32) -> i32 {\n        let num_total = num_ones + num_zeros + num_neg_ones;\n        if k <= num_ones {\n            k\n        } else if k <= num_ones + num_zeros {\n            num_ones\n        } else {\n            num_ones - (k - num_ones - num_zeros)\n        }\n    }\n}",
+  "source_record_sha256": "d36ed53da57f45005e578be64abc5c6b050f9398565b77ce5917230b72e9e19e"
+}

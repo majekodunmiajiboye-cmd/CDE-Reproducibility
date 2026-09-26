@@ -1,0 +1,3838 @@
+{
+  "arms": [
+    "nl",
+    "spec",
+    "both"
+  ],
+  "models": [
+    "devstral-small-2:24b-instruct-2512-q4_K_M",
+    "gemma3:12b"
+  ],
+  "n_tasks": 24,
+  "results": [
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": true,
+        "error": "wrong output",
+        "n_checked": 1,
+        "semantic_pass": false
+      },
+      "family": "codeforces",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 296,
+        "eval_duration": 8171320000,
+        "load_duration": 3552182250,
+        "prompt_eval_count": 1884,
+        "prompt_eval_duration": 2157495000,
+        "total_duration": 13887886333,
+        "wall_seconds_client": 13.897013902664185
+      },
+      "problem": "cf1992D",
+      "prompt_chars": 4379,
+      "response_chars": 1233,
+      "target_signature": "pub fn can_cross(a: Vec<u8>, m: usize, k: i64) -> bool",
+      "task_index": 1
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 300,
+        "semantic_pass": true
+      },
+      "family": "codeforces",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 311,
+        "eval_duration": 8705509000,
+        "load_duration": 1882375,
+        "prompt_eval_count": 1714,
+        "prompt_eval_duration": 1154052000,
+        "total_duration": 9911419375,
+        "wall_seconds_client": 9.916479110717773
+      },
+      "problem": "cf1992D",
+      "prompt_chars": 3578,
+      "response_chars": 1103,
+      "target_signature": "pub fn can_cross(a: Vec<u8>, m: usize, k: i64) -> bool",
+      "task_index": 1
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "error": "wrong output",
+        "n_checked": 2,
+        "semantic_pass": false
+      },
+      "family": "codeforces",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 262,
+        "eval_duration": 7411487000,
+        "load_duration": 1587583,
+        "prompt_eval_count": 2867,
+        "prompt_eval_duration": 1288197000,
+        "total_duration": 8756188083,
+        "wall_seconds_client": 8.76230788230896
+      },
+      "problem": "cf1992D",
+      "prompt_chars": 7188,
+      "response_chars": 966,
+      "target_signature": "pub fn can_cross(a: Vec<u8>, m: usize, k: i64) -> bool",
+      "task_index": 1
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 300,
+        "semantic_pass": true
+      },
+      "family": "codeforces",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 258,
+        "eval_duration": 7156519000,
+        "load_duration": 2033750,
+        "prompt_eval_count": 1109,
+        "prompt_eval_duration": 637610000,
+        "total_duration": 7852300625,
+        "wall_seconds_client": 7.855986833572388
+      },
+      "problem": "cf230B",
+      "prompt_chars": 2053,
+      "response_chars": 1000,
+      "target_signature": "pub fn classify_t_primes(nums: Vec<u64>) -> Vec<bool>",
+      "task_index": 2
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 300,
+        "semantic_pass": true
+      },
+      "family": "codeforces",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 214,
+        "eval_duration": 5925429000,
+        "load_duration": 1524709,
+        "prompt_eval_count": 994,
+        "prompt_eval_duration": 482324000,
+        "total_duration": 6420890542,
+        "wall_seconds_client": 6.424276828765869
+      },
+      "problem": "cf230B",
+      "prompt_chars": 1506,
+      "response_chars": 775,
+      "target_signature": "pub fn classify_t_primes(nums: Vec<u64>) -> Vec<bool>",
+      "task_index": 2
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 300,
+        "semantic_pass": true
+      },
+      "family": "codeforces",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 218,
+        "eval_duration": 6048396000,
+        "load_duration": 2058542,
+        "prompt_eval_count": 1379,
+        "prompt_eval_duration": 972141000,
+        "total_duration": 7037254333,
+        "wall_seconds_client": 7.041285753250122
+      },
+      "problem": "cf230B",
+      "prompt_chars": 2791,
+      "response_chars": 787,
+      "target_signature": "pub fn classify_t_primes(nums: Vec<u64>) -> Vec<bool>",
+      "task_index": 2
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": false,
+        "error": "mplementation for `i128 + i64`\n    |\n    = help: the trait `Add<i64>` is not implemented for `i128`\nhelp: the following other types implement trait `Add<Rhs>`\n   --> /opt/homebrew/Cellar/rust/1.98.1/lib/rustlib/src/rust/library/core/src/ops/arith.rs:98:9\n    |\n 98 |         const impl Add for $t {\n    |         ^^^^^^^^^^^^^^^^^^^^^ `i128` implements `Add`\n...\n113 | add_impl! { usize u8 u16 u32 u64 u128 isize i8 i16 i32 i64 i128 f16 f32 f64 f128 }\n    | ---------------------------------------------------------------------------------- in this macro invocation\n    |\n   ::: /opt/homebrew/Cellar/rust/1.98.1/lib/rustlib/src/rust/library/core/src/internal_macros.rs:22:9\n    |\n 22 |         const impl $imp<$u> for &$t {\n    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^ `&i128` implements `Add<i128>`\n...\n 33 |         const impl $imp<&$u> for $t {\n    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^ `i128` implements `Add<&i128>`\n...\n 44 |         const impl $imp<&$u> for &$t {\n    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `&i128` implements `Add`\n    = note: this error originates in the macro `add_impl` (in Nightly builds, run with -Z macro-backtrace for more info)\n\nerror[E0308]: mismatched types\n  --> <temporary-directory>/candidate.rs:25:58\n   |\n25 | ...                   dp[i][j + 1] = current + sum;\n   |                                                ^^^ expected `i128`, found `i64`\n\nerror[E0277]: cannot add `i64` to `i128`\n   --> <temporary-directory>/candidate.rs:25:56\n    |\n 25 | ...                   dp[i][j + 1] = current + sum;\n    |                                              ^ no implementation for `i128 + i64`\n    |\n    = help: the trait `Add<i64>` is not implemented for `i128`\nhelp: the following other types implement trait `Add<Rhs>`\n   --> /opt/homebrew/Cellar/rust/1.98.1/lib/rustlib/src/rust/library/core/src/ops/arith.rs:98:9\n    |\n 98 |         const impl Add for $t {\n    |         ^^^^^^^^^^^^^^^^^^^^^ `i128` implements `Add`\n...\n113 | add_impl! { usize u8 u16 u32 u64 u128 isize i8 i16 i32 i64 i128 f16 f32 f64 f128 }\n    | ---------------------------------------------------------------------------------- in this macro invocation\n    |\n   ::: /opt/homebrew/Cellar/rust/1.98.1/lib/rustlib/src/rust/library/core/src/internal_macros.rs:22:9\n    |\n 22 |         const impl $imp<$u> for &$t {\n    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^ `&i128` implements `Add<i128>`\n...\n 33 |         const impl $imp<&$u> for $t {\n    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^ `i128` implements `Add<&i128>`\n...\n 44 |         const impl $imp<&$u> for &$t {\n    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `&i128` implements `Add`\n    = note: this error originates in the macro `add_impl` (in Nightly builds, run with -Z macro-backtrace for more info)\n\nerror: aborting due to 4 previous errors\n\nSome errors have detailed explanations: E0277, E0308.\nFor more information about an error, try `rustc --explain E0277`.\n",
+        "semantic_pass": false
+      },
+      "family": "codeforces",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 289,
+        "eval_duration": 8007557000,
+        "load_duration": 2486959,
+        "prompt_eval_count": 1097,
+        "prompt_eval_duration": 606921000,
+        "total_duration": 8639711667,
+        "wall_seconds_client": 8.643343210220337
+      },
+      "problem": "cf467C",
+      "prompt_chars": 1770,
+      "response_chars": 1156,
+      "target_signature": "pub fn max_k_segments_sum(nums: Vec<i64>, m: usize, k: usize) -> i128",
+      "task_index": 3
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 300,
+        "semantic_pass": true
+      },
+      "family": "codeforces",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 308,
+        "eval_duration": 8679693000,
+        "load_duration": 858875,
+        "prompt_eval_count": 1640,
+        "prompt_eval_duration": 1421097000,
+        "total_duration": 10108707208,
+        "wall_seconds_client": 10.113288879394531
+      },
+      "problem": "cf467C",
+      "prompt_chars": 3741,
+      "response_chars": 1032,
+      "target_signature": "pub fn max_k_segments_sum(nums: Vec<i64>, m: usize, k: usize) -> i128",
+      "task_index": 3
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "error": "runtime timeout",
+        "n_checked": 101,
+        "semantic_pass": false
+      },
+      "family": "codeforces",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 269,
+        "eval_duration": 7590296000,
+        "load_duration": 1345916,
+        "prompt_eval_count": 2002,
+        "prompt_eval_duration": 1827919000,
+        "total_duration": 9465748541,
+        "wall_seconds_client": 9.47086787223816
+      },
+      "problem": "cf467C",
+      "prompt_chars": 4727,
+      "response_chars": 976,
+      "target_signature": "pub fn max_k_segments_sum(nums: Vec<i64>, m: usize, k: usize) -> i128",
+      "task_index": 3
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": false,
+        "error": "mp<&$u> for &$t {\n    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `&usize` implements `Sub`\n    = note: this error originates in the macro `sub_impl` (in Nightly builds, run with -Z macro-backtrace for more info)\n\nerror[E0308]: mismatched types\n  --> <temporary-directory>/candidate.rs:29:27\n   |\n29 |         if missing_sum == s {\n   |            -----------    ^ expected `usize`, found `u32`\n   |            |\n   |            expected because this is `usize`\n   |\nhelp: you can convert a `u32` to a `usize` and panic if the converted value doesn't fit\n   |\n29 |         if missing_sum == s.try_into().unwrap() {\n   |                            ++++++++++++++++++++\n\nerror[E0308]: mismatched types\n  --> <temporary-directory>/candidate.rs:33:26\n   |\n33 |         if missing_sum < s {\n   |            -----------   ^ expected `usize`, found `u32`\n   |            |\n   |            expected because this is `usize`\n   |\nhelp: you can convert a `u32` to a `usize` and panic if the converted value doesn't fit\n   |\n33 |         if missing_sum < s.try_into().unwrap() {\n   |                           ++++++++++++++++++++\n\nerror[E0308]: mismatched types\n  --> <temporary-directory>/candidate.rs:37:29\n   |\n37 |         let remaining = s - missing_sum;\n   |                             ^^^^^^^^^^^ expected `u32`, found `usize`\n\nerror[E0277]: cannot subtract `usize` from `u32`\n   --> <temporary-directory>/candidate.rs:37:27\n    |\n 37 |         let remaining = s - missing_sum;\n    |                           ^ no implementation for `u32 - usize`\n    |\n    = help: the trait `Sub<usize>` is not implemented for `u32`\nhelp: the following other types implement trait `Sub<Rhs>`\n   --> /opt/homebrew/Cellar/rust/1.98.1/lib/rustlib/src/rust/library/core/src/ops/arith.rs:210:9\n    |\n210 |         const impl Sub for $t {\n    |         ^^^^^^^^^^^^^^^^^^^^^ `u32` implements `Sub`\n...\n225 | sub_impl! { usize u8 u16 u32 u64 u128 isize i8 i16 i32 i64 i128 f16 f32 f64 f128 }\n    | ---------------------------------------------------------------------------------- in this macro invocation\n    |\n   ::: /opt/homebrew/Cellar/rust/1.98.1/lib/rustlib/src/rust/library/core/src/internal_macros.rs:22:9\n    |\n 22 |         const impl $imp<$u> for &$t {\n    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^ `&u32` implements `Sub<u32>`\n...\n 33 |         const impl $imp<&$u> for $t {\n    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^ `u32` implements `Sub<&u32>`\n...\n 44 |         const impl $imp<&$u> for &$t {\n    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `&u32` implements `Sub`\n    = note: this error originates in the macro `sub_impl` (in Nightly builds, run with -Z macro-backtrace for more info)\n\nerror: aborting due to 6 previous errors\n\nSome errors have detailed explanations: E0277, E0308.\nFor more information about an error, try `rustc --explain E0277`.\n",
+        "semantic_pass": false
+      },
+      "family": "codeforces",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 299,
+        "eval_duration": 9051728000,
+        "load_duration": 2442250,
+        "prompt_eval_count": 1542,
+        "prompt_eval_duration": 1189853000,
+        "total_duration": 10295003417,
+        "wall_seconds_client": 10.299878120422363
+      },
+      "problem": "cf1759B",
+      "prompt_chars": 3169,
+      "response_chars": 1255,
+      "target_signature": "pub fn lost_permutation(b: Vec<u32>, m: usize, s: u32) -> bool",
+      "task_index": 4
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": false,
+        "error": "error[E0308]: mismatched types\n  --> <temporary-directory>/candidate.rs:27:18\n   |\n27 |         max_b <= n && n <= 100 && n * (n + 1) / 2 == target_sum\n   |         -----    ^ expected `u32`, found `i64`\n   |         |\n   |         expected because this is `u32`\n   |\nhelp: you can convert `max_b` from `u32` to `i64`, matching the type of `n`\n   |\n27 |         i64::from(max_b) <= n && n <= 100 && n * (n + 1) / 2 == target_sum\n   |         ++++++++++     +\n\nerror[E0308]: mismatched types\n  --> <temporary-directory>/candidate.rs:27:54\n   |\n27 |         max_b <= n && n <= 100 && n * (n + 1) / 2 == target_sum\n   |                                   ---------------    ^^^^^^^^^^ expected `i64`, found `u32`\n   |                                   |\n   |                                   expected because this is `i64`\n   |\nhelp: you can convert a `u32` to an `i64`\n   |\n27 |         max_b <= n && n <= 100 && n * (n + 1) / 2 == target_sum.into()\n   |                                                                +++++++\n\nerror: aborting due to 2 previous errors\n\nFor more information about this error, try `rustc --explain E0308`.\n",
+        "semantic_pass": false
+      },
+      "family": "codeforces",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 276,
+        "eval_duration": 8397521000,
+        "load_duration": 902000,
+        "prompt_eval_count": 1107,
+        "prompt_eval_duration": 859642000,
+        "total_duration": 9283172042,
+        "wall_seconds_client": 9.286657810211182
+      },
+      "problem": "cf1759B",
+      "prompt_chars": 1823,
+      "response_chars": 819,
+      "target_signature": "pub fn lost_permutation(b: Vec<u32>, m: usize, s: u32) -> bool",
+      "task_index": 4
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "error": "wrong output",
+        "n_checked": 1,
+        "semantic_pass": false
+      },
+      "family": "codeforces",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 164,
+        "eval_duration": 5014955000,
+        "load_duration": 832333,
+        "prompt_eval_count": 1917,
+        "prompt_eval_duration": 2209844000,
+        "total_duration": 7232165208,
+        "wall_seconds_client": 7.236753940582275
+      },
+      "problem": "cf1759B",
+      "prompt_chars": 4215,
+      "response_chars": 702,
+      "target_signature": "pub fn lost_permutation(b: Vec<u32>, m: usize, s: u32) -> bool",
+      "task_index": 4
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 290,
+        "semantic_pass": true
+      },
+      "family": "codeforces",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 72,
+        "eval_duration": 2002688000,
+        "load_duration": 2323417,
+        "prompt_eval_count": 1020,
+        "prompt_eval_duration": 443872000,
+        "total_duration": 2494326167,
+        "wall_seconds_client": 2.4974660873413086
+      },
+      "problem": "cf266A",
+      "prompt_chars": 1811,
+      "response_chars": 254,
+      "target_signature": "pub fn min_stones_to_remove(colors: Vec<u8>, n: usize) -> usize",
+      "task_index": 5
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 290,
+        "semantic_pass": true
+      },
+      "family": "codeforces",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 72,
+        "eval_duration": 2082384000,
+        "load_duration": 1679334,
+        "prompt_eval_count": 1083,
+        "prompt_eval_duration": 486413000,
+        "total_duration": 2579267834,
+        "wall_seconds_client": 2.5824787616729736
+      },
+      "problem": "cf266A",
+      "prompt_chars": 1878,
+      "response_chars": 254,
+      "target_signature": "pub fn min_stones_to_remove(colors: Vec<u8>, n: usize) -> usize",
+      "task_index": 5
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 290,
+        "semantic_pass": true
+      },
+      "family": "codeforces",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 72,
+        "eval_duration": 2083043999,
+        "load_duration": 1672417,
+        "prompt_eval_count": 1375,
+        "prompt_eval_duration": 1057444999,
+        "total_duration": 3152498833,
+        "wall_seconds_client": 3.156602144241333
+      },
+      "problem": "cf266A",
+      "prompt_chars": 2911,
+      "response_chars": 254,
+      "target_signature": "pub fn min_stones_to_remove(colors: Vec<u8>, n: usize) -> usize",
+      "task_index": 5
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 272,
+        "semantic_pass": true
+      },
+      "family": "codeforces",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 137,
+        "eval_duration": 4192654999,
+        "load_duration": 1427208,
+        "prompt_eval_count": 1150,
+        "prompt_eval_duration": 648593000,
+        "total_duration": 4876610875,
+        "wall_seconds_client": 4.8798158168792725
+      },
+      "problem": "cf509A",
+      "prompt_chars": 1935,
+      "response_chars": 448,
+      "target_signature": "pub fn max_in_table(n: u32) -> u32",
+      "task_index": 6
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 272,
+        "semantic_pass": true
+      },
+      "family": "codeforces",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 138,
+        "eval_duration": 4232300000,
+        "load_duration": 1569000,
+        "prompt_eval_count": 930,
+        "prompt_eval_duration": 302155000,
+        "total_duration": 4543221416,
+        "wall_seconds_client": 4.546584129333496
+      },
+      "problem": "cf509A",
+      "prompt_chars": 1341,
+      "response_chars": 417,
+      "target_signature": "pub fn max_in_table(n: u32) -> u32",
+      "task_index": 6
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 272,
+        "semantic_pass": true
+      },
+      "family": "codeforces",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 101,
+        "eval_duration": 3014126000,
+        "load_duration": 1597083,
+        "prompt_eval_count": 1357,
+        "prompt_eval_duration": 1088558000,
+        "total_duration": 4113847875,
+        "wall_seconds_client": 4.117450952529907
+      },
+      "problem": "cf509A",
+      "prompt_chars": 2527,
+      "response_chars": 298,
+      "target_signature": "pub fn max_in_table(n: u32) -> u32",
+      "task_index": 6
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 269,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 119,
+        "eval_duration": 3603091000,
+        "load_duration": 1646917,
+        "prompt_eval_count": 959,
+        "prompt_eval_duration": 511907000,
+        "total_duration": 4151633459,
+        "wall_seconds_client": 4.154742956161499
+      },
+      "problem": "lc674",
+      "prompt_chars": 1566,
+      "response_chars": 481,
+      "target_signature": "pub fn find_length_of_lcis(nums: Vec<i32>) -> i32",
+      "task_index": 7
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 269,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 126,
+        "eval_duration": 3874622000,
+        "load_duration": 2258291,
+        "prompt_eval_count": 1054,
+        "prompt_eval_duration": 575077000,
+        "total_duration": 4463683208,
+        "wall_seconds_client": 4.4670069217681885
+      },
+      "problem": "lc674",
+      "prompt_chars": 1811,
+      "response_chars": 509,
+      "target_signature": "pub fn find_length_of_lcis(nums: Vec<i32>) -> i32",
+      "task_index": 7
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 269,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 119,
+        "eval_duration": 3643521000,
+        "load_duration": 2198708,
+        "prompt_eval_count": 1287,
+        "prompt_eval_duration": 1011331000,
+        "total_duration": 4671028500,
+        "wall_seconds_client": 4.675039052963257
+      },
+      "problem": "lc674",
+      "prompt_chars": 2613,
+      "response_chars": 481,
+      "target_signature": "pub fn find_length_of_lcis(nums: Vec<i32>) -> i32",
+      "task_index": 7
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": true,
+        "error": "wrong output",
+        "n_checked": 200,
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 87,
+        "eval_duration": 2582798000,
+        "load_duration": 2287208,
+        "prompt_eval_count": 938,
+        "prompt_eval_duration": 359177000,
+        "total_duration": 2982725791,
+        "wall_seconds_client": 2.9857730865478516
+      },
+      "problem": "lc3392",
+      "prompt_chars": 1499,
+      "response_chars": 275,
+      "target_signature": "pub fn count_subarrays(nums: Vec<i32>) -> i32",
+      "task_index": 8
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 310,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 84,
+        "eval_duration": 2483851000,
+        "load_duration": 2142292,
+        "prompt_eval_count": 967,
+        "prompt_eval_duration": 579407000,
+        "total_duration": 3077800167,
+        "wall_seconds_client": 3.0808351039886475
+      },
+      "problem": "lc3392",
+      "prompt_chars": 1487,
+      "response_chars": 265,
+      "target_signature": "pub fn count_subarrays(nums: Vec<i32>) -> i32",
+      "task_index": 8
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "error": "wrong output",
+        "n_checked": 200,
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 83,
+        "eval_duration": 2454807000,
+        "load_duration": 2255292,
+        "prompt_eval_count": 1181,
+        "prompt_eval_duration": 792289000,
+        "total_duration": 3263485500,
+        "wall_seconds_client": 3.267064094543457
+      },
+      "problem": "lc3392",
+      "prompt_chars": 2226,
+      "response_chars": 263,
+      "target_signature": "pub fn count_subarrays(nums: Vec<i32>) -> i32",
+      "task_index": 8
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": true,
+        "error": "wrong output",
+        "n_checked": 200,
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 227,
+        "eval_duration": 7265501000,
+        "load_duration": 2199208,
+        "prompt_eval_count": 1047,
+        "prompt_eval_duration": 616455000,
+        "total_duration": 7896600000,
+        "wall_seconds_client": 7.899957895278931
+      },
+      "problem": "lc3560",
+      "prompt_chars": 1768,
+      "response_chars": 775,
+      "target_signature": "pub fn min_cutting_cost(n: i32, m: i32, k: i32) -> i64",
+      "task_index": 9
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 300,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 100,
+        "eval_duration": 3013324000,
+        "load_duration": 2060625,
+        "prompt_eval_count": 1012,
+        "prompt_eval_duration": 604392000,
+        "total_duration": 3631251709,
+        "wall_seconds_client": 3.6346828937530518
+      },
+      "problem": "lc3560",
+      "prompt_chars": 1599,
+      "response_chars": 257,
+      "target_signature": "pub fn min_cutting_cost(n: i32, m: i32, k: i32) -> i64",
+      "task_index": 9
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 300,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 112,
+        "eval_duration": 3446140000,
+        "load_duration": 2224000,
+        "prompt_eval_count": 1322,
+        "prompt_eval_duration": 1046415000,
+        "total_duration": 4508929875,
+        "wall_seconds_client": 4.512670040130615
+      },
+      "problem": "lc3560",
+      "prompt_chars": 2598,
+      "response_chars": 308,
+      "target_signature": "pub fn min_cutting_cost(n: i32, m: i32, k: i32) -> i64",
+      "task_index": 9
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": true,
+        "error": "wrong output",
+        "n_checked": 200,
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 136,
+        "eval_duration": 4256022000,
+        "load_duration": 2134792,
+        "prompt_eval_count": 891,
+        "prompt_eval_duration": 359080000,
+        "total_duration": 4660583042,
+        "wall_seconds_client": 4.663769245147705
+      },
+      "problem": "lc520",
+      "prompt_chars": 1397,
+      "response_chars": 604,
+      "target_signature": "pub fn detect_capital_use(word: String) -> bool",
+      "task_index": 10
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 261,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 127,
+        "eval_duration": 3952175000,
+        "load_duration": 1787083,
+        "prompt_eval_count": 1013,
+        "prompt_eval_duration": 602828000,
+        "total_duration": 4569669708,
+        "wall_seconds_client": 4.572939872741699
+      },
+      "problem": "lc520",
+      "prompt_chars": 1570,
+      "response_chars": 443,
+      "target_signature": "pub fn detect_capital_use(word: String) -> bool",
+      "task_index": 10
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 261,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 119,
+        "eval_duration": 3704366000,
+        "load_duration": 2333583,
+        "prompt_eval_count": 1184,
+        "prompt_eval_duration": 802987000,
+        "total_duration": 4523514583,
+        "wall_seconds_client": 4.527109861373901
+      },
+      "problem": "lc520",
+      "prompt_chars": 2205,
+      "response_chars": 419,
+      "target_signature": "pub fn detect_capital_use(word: String) -> bool",
+      "task_index": 10
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 245,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 87,
+        "eval_duration": 2593231000,
+        "load_duration": 2192792,
+        "prompt_eval_count": 974,
+        "prompt_eval_duration": 588757000,
+        "total_duration": 3196153667,
+        "wall_seconds_client": 3.199225902557373
+      },
+      "problem": "lc9",
+      "prompt_chars": 1560,
+      "response_chars": 324,
+      "target_signature": "pub fn is_palindrome(x: i32) -> bool",
+      "task_index": 11
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 245,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 87,
+        "eval_duration": 2617617000,
+        "load_duration": 2261417,
+        "prompt_eval_count": 1020,
+        "prompt_eval_duration": 586551000,
+        "total_duration": 3218449584,
+        "wall_seconds_client": 3.221693992614746
+      },
+      "problem": "lc9",
+      "prompt_chars": 1878,
+      "response_chars": 325,
+      "target_signature": "pub fn is_palindrome(x: i32) -> bool",
+      "task_index": 11
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 245,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 87,
+        "eval_duration": 2587824000,
+        "load_duration": 2314000,
+        "prompt_eval_count": 1272,
+        "prompt_eval_duration": 1056035000,
+        "total_duration": 3660799917,
+        "wall_seconds_client": 3.6644480228424072
+      },
+      "problem": "lc9",
+      "prompt_chars": 2687,
+      "response_chars": 325,
+      "target_signature": "pub fn is_palindrome(x: i32) -> bool",
+      "task_index": 11
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 115,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 167,
+        "eval_duration": 5380271000,
+        "load_duration": 2270375,
+        "prompt_eval_count": 926,
+        "prompt_eval_duration": 378533000,
+        "total_duration": 5771625500,
+        "wall_seconds_client": 5.775055885314941
+      },
+      "problem": "lc3827",
+      "prompt_chars": 1345,
+      "response_chars": 678,
+      "target_signature": "pub fn count_monobit(n: i32) -> i32",
+      "task_index": 12
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 115,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 70,
+        "eval_duration": 2046397000,
+        "load_duration": 1765334,
+        "prompt_eval_count": 925,
+        "prompt_eval_duration": 394027000,
+        "total_duration": 2450070542,
+        "wall_seconds_client": 2.4530880451202393
+      },
+      "problem": "lc3827",
+      "prompt_chars": 1367,
+      "response_chars": 237,
+      "target_signature": "pub fn count_monobit(n: i32) -> i32",
+      "task_index": 12
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 115,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 86,
+        "eval_duration": 2579978000,
+        "load_duration": 1978334,
+        "prompt_eval_count": 1126,
+        "prompt_eval_duration": 790177000,
+        "total_duration": 3385059792,
+        "wall_seconds_client": 3.3885738849639893
+      },
+      "problem": "lc3827",
+      "prompt_chars": 1962,
+      "response_chars": 292,
+      "target_signature": "pub fn count_monobit(n: i32) -> i32",
+      "task_index": 12
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 270,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 97,
+        "eval_duration": 2986667000,
+        "load_duration": 2134291,
+        "prompt_eval_count": 1074,
+        "prompt_eval_duration": 614875000,
+        "total_duration": 3614702875,
+        "wall_seconds_client": 3.617762804031372
+      },
+      "problem": "lc1827",
+      "prompt_chars": 1837,
+      "response_chars": 385,
+      "target_signature": "pub fn min_operations(nums: Vec<i32>) -> i32",
+      "task_index": 13
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 270,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 107,
+        "eval_duration": 3322119000,
+        "load_duration": 1591625,
+        "prompt_eval_count": 1128,
+        "prompt_eval_duration": 794203000,
+        "total_duration": 4129107375,
+        "wall_seconds_client": 4.132517099380493
+      },
+      "problem": "lc1827",
+      "prompt_chars": 2089,
+      "response_chars": 438,
+      "target_signature": "pub fn min_operations(nums: Vec<i32>) -> i32",
+      "task_index": 13
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 270,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 97,
+        "eval_duration": 2974466000,
+        "load_duration": 2309041,
+        "prompt_eval_count": 1478,
+        "prompt_eval_duration": 1257024000,
+        "total_duration": 4249701791,
+        "wall_seconds_client": 4.2540717124938965
+      },
+      "problem": "lc1827",
+      "prompt_chars": 3167,
+      "response_chars": 383,
+      "target_signature": "pub fn min_operations(nums: Vec<i32>) -> i32",
+      "task_index": 13
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 274,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 94,
+        "eval_duration": 2879783000,
+        "load_duration": 2327250,
+        "prompt_eval_count": 1047,
+        "prompt_eval_duration": 589274000,
+        "total_duration": 3524912916,
+        "wall_seconds_client": 3.5287370681762695
+      },
+      "problem": "lc1313",
+      "prompt_chars": 1719,
+      "response_chars": 330,
+      "target_signature": "pub fn decompress_rl_elist(nums: Vec<i32>) -> Vec<i32>",
+      "task_index": 14
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 274,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 94,
+        "eval_duration": 2855756000,
+        "load_duration": 2209292,
+        "prompt_eval_count": 1043,
+        "prompt_eval_duration": 619688000,
+        "total_duration": 3488844000,
+        "wall_seconds_client": 3.4925310611724854
+      },
+      "problem": "lc1313",
+      "prompt_chars": 1805,
+      "response_chars": 336,
+      "target_signature": "pub fn decompress_rl_elist(nums: Vec<i32>) -> Vec<i32>",
+      "task_index": 14
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 274,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 94,
+        "eval_duration": 2859578000,
+        "load_duration": 2188125,
+        "prompt_eval_count": 1361,
+        "prompt_eval_duration": 1245860000,
+        "total_duration": 4124346250,
+        "wall_seconds_client": 4.128188848495483
+      },
+      "problem": "lc1313",
+      "prompt_chars": 2755,
+      "response_chars": 330,
+      "target_signature": "pub fn decompress_rl_elist(nums: Vec<i32>) -> Vec<i32>",
+      "task_index": 14
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 258,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 183,
+        "eval_duration": 5968134000,
+        "load_duration": 2198208,
+        "prompt_eval_count": 1176,
+        "prompt_eval_duration": 801005000,
+        "total_duration": 6822492667,
+        "wall_seconds_client": 6.826113939285278
+      },
+      "problem": "lc2600",
+      "prompt_chars": 2111,
+      "response_chars": 614,
+      "target_signature": "pub fn k_items_with_maximum_sum(num_ones: i32, num_zeros: i32, num_neg_ones: i32, k: i32) -> i32",
+      "task_index": 15
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 258,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 105,
+        "eval_duration": 3274025000,
+        "load_duration": 2270167,
+        "prompt_eval_count": 1059,
+        "prompt_eval_duration": 591350000,
+        "total_duration": 3878787833,
+        "wall_seconds_client": 3.8820338249206543
+      },
+      "problem": "lc2600",
+      "prompt_chars": 1768,
+      "response_chars": 311,
+      "target_signature": "pub fn k_items_with_maximum_sum(num_ones: i32, num_zeros: i32, num_neg_ones: i32, k: i32) -> i32",
+      "task_index": 15
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 258,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 175,
+        "eval_duration": 5728890000,
+        "load_duration": 2231583,
+        "prompt_eval_count": 1483,
+        "prompt_eval_duration": 1269664000,
+        "total_duration": 7015566208,
+        "wall_seconds_client": 7.019479036331177
+      },
+      "problem": "lc2600",
+      "prompt_chars": 3068,
+      "response_chars": 491,
+      "target_signature": "pub fn k_items_with_maximum_sum(num_ones: i32, num_zeros: i32, num_neg_ones: i32, k: i32) -> i32",
+      "task_index": 15
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": true,
+        "error": "wrong output",
+        "n_checked": 200,
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 277,
+        "eval_duration": 9236682000,
+        "load_duration": 2081791,
+        "prompt_eval_count": 1190,
+        "prompt_eval_duration": 783591000,
+        "total_duration": 10074656625,
+        "wall_seconds_client": 10.078125953674316
+      },
+      "problem": "lc1563",
+      "prompt_chars": 2402,
+      "response_chars": 1056,
+      "target_signature": "pub fn stone_game_v(stone_value: Vec<i32>) -> i32",
+      "task_index": 16
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 263,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 246,
+        "eval_duration": 8194664000,
+        "load_duration": 3384500,
+        "prompt_eval_count": 1319,
+        "prompt_eval_duration": 955412000,
+        "total_duration": 9203714000,
+        "wall_seconds_client": 9.207679986953735
+      },
+      "problem": "lc1563",
+      "prompt_chars": 2675,
+      "response_chars": 951,
+      "target_signature": "pub fn stone_game_v(stone_value: Vec<i32>) -> i32",
+      "task_index": 16
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "error": "wrong output",
+        "n_checked": 200,
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 274,
+        "eval_duration": 8214909000,
+        "load_duration": 3079541,
+        "prompt_eval_count": 1783,
+        "prompt_eval_duration": 750057000,
+        "total_duration": 9028345625,
+        "wall_seconds_client": 9.033047199249268
+      },
+      "problem": "lc1563",
+      "prompt_chars": 4313,
+      "response_chars": 1066,
+      "target_signature": "pub fn stone_game_v(stone_value: Vec<i32>) -> i32",
+      "task_index": 16
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": false,
+        "error": " - cost as usize][i]) % MOD;\n    |                               ^ slice indices are of type `usize` or ranges of `usize`\n    |\n    = help: the trait `SliceIndex<[{integer}]>` is not implemented for `i32`\nhelp: `usize` implements trait `SliceIndex<T>`\n   --> /opt/homebrew/Cellar/rust/1.98.1/lib/rustlib/src/rust/library/core/src/bstr/traits.rs:197:1\n    |\n197 | unsafe impl SliceIndex<ByteStr> for usize {\n    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `SliceIndex<ByteStr>`\n    |\n   ::: /opt/homebrew/Cellar/rust/1.98.1/lib/rustlib/src/rust/library/core/src/slice/index.rs:179:1\n    |\n179 | const unsafe impl<T> SliceIndex<[T]> for usize {\n    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `SliceIndex<[T]>`\n    = note: required for `Vec<{integer}>` to implement `Index<i32>`\n\nerror[E0277]: the type `[{integer}]` cannot be indexed by `i32`\n   --> <temporary-directory>/candidate.rs:24:43\n    |\n 24 |                         dp[f][j] = (dp[f][j] + dp[f - cost as usize][i]) % MOD;\n    |                                           ^ slice indices are of type `usize` or ranges of `usize`\n    |\n    = help: the trait `SliceIndex<[{integer}]>` is not implemented for `i32`\nhelp: `usize` implements trait `SliceIndex<T>`\n   --> /opt/homebrew/Cellar/rust/1.98.1/lib/rustlib/src/rust/library/core/src/bstr/traits.rs:197:1\n    |\n197 | unsafe impl SliceIndex<ByteStr> for usize {\n    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `SliceIndex<ByteStr>`\n    |\n   ::: /opt/homebrew/Cellar/rust/1.98.1/lib/rustlib/src/rust/library/core/src/slice/index.rs:179:1\n    |\n179 | const unsafe impl<T> SliceIndex<[T]> for usize {\n    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `SliceIndex<[T]>`\n    = note: required for `Vec<{integer}>` to implement `Index<i32>`\n\nerror[E0277]: the type `[{integer}]` cannot be indexed by `i32`\n   --> <temporary-directory>/candidate.rs:24:70\n    |\n 24 |                         dp[f][j] = (dp[f][j] + dp[f - cost as usize][i]) % MOD;\n    |                                                                      ^ slice indices are of type `usize` or ranges of `usize`\n    |\n    = help: the trait `SliceIndex<[{integer}]>` is not implemented for `i32`\nhelp: `usize` implements trait `SliceIndex<T>`\n   --> /opt/homebrew/Cellar/rust/1.98.1/lib/rustlib/src/rust/library/core/src/bstr/traits.rs:197:1\n    |\n197 | unsafe impl SliceIndex<ByteStr> for usize {\n    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `SliceIndex<ByteStr>`\n    |\n   ::: /opt/homebrew/Cellar/rust/1.98.1/lib/rustlib/src/rust/library/core/src/slice/index.rs:179:1\n    |\n179 | const unsafe impl<T> SliceIndex<[T]> for usize {\n    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `SliceIndex<[T]>`\n    = note: required for `Vec<{integer}>` to implement `Index<i32>`\n\nerror: aborting due to 7 previous errors\n\nSome errors have detailed explanations: E0277, E0308.\nFor more information about an error, try `rustc --explain E0277`.\n",
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 295,
+        "eval_duration": 9944664000,
+        "load_duration": 3412375,
+        "prompt_eval_count": 1396,
+        "prompt_eval_duration": 1042257000,
+        "total_duration": 11075438833,
+        "wall_seconds_client": 11.079859972000122
+      },
+      "problem": "lc1575",
+      "prompt_chars": 2767,
+      "response_chars": 1053,
+      "target_signature": "pub fn count_routes(locations: Vec<i32>, start: i32, finish: i32, fuel: i32) -> i32",
+      "task_index": 17
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": false,
+        "error": "][j as usize][remaining_fuel as usize]) % MOD;\n    |       ------------------------------------------------------------- ^ ------------------------------------------------------ Vec<{integer}>\n    |       |\n    |       Vec<{integer}>\n    |\nnote: `Vec<{integer}>` does not implement `Add`\n   --> /opt/homebrew/Cellar/rust/1.98.1/lib/rustlib/src/rust/library/alloc/src/vec/mod.rs:436:1\n    |\n436 | pub struct Vec<T, #[unstable(feature = \"allocator_api\", issue = \"32838\")] A: Allocator = Global> {\n    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `Vec<{integer}>` is defined in another crate\n\nerror[E0369]: cannot add `Vec<{integer}>` to `Vec<{integer}>`\n   --> <temporary-directory>/candidate.rs:31:91\n    |\n 31 | ...    (dp[city as usize][(j + 1) as usize][remaining_fuel as usize] + dp[city as usize][j as usize][remaining_fuel as usize]) % MOD;\n    |         ------------------------------------------------------------ ^ ------------------------------------------------------ Vec<{integer}>\n    |         |\n    |         Vec<{integer}>\n    |\nnote: `Vec<{integer}>` does not implement `Add`\n   --> /opt/homebrew/Cellar/rust/1.98.1/lib/rustlib/src/rust/library/alloc/src/vec/mod.rs:436:1\n    |\n436 | pub struct Vec<T, #[unstable(feature = \"allocator_api\", issue = \"32838\")] A: Allocator = Global> {\n    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `Vec<{integer}>` is defined in another crate\n\nerror[E0308]: mismatched types\n  --> <temporary-directory>/candidate.rs:40:79\n   |\n40 |                 if dp[finish as usize][j as usize][remaining_fuel as usize] > 0 {\n   |                                                                               ^ expected `Vec<{integer}, _>`, found integer\n   |\n   = note: expected struct `Vec<{integer}, _>`\n                found type `{integer}`\n\nerror[E0277]: cannot add `Vec<{integer}>` to `{integer}`\n  --> <temporary-directory>/candidate.rs:41:38\n   |\n41 |                     result = (result + dp[finish as usize][j as usize][remaining_fuel as usize]) % MOD;\n   |                                      ^ no implementation for `{integer} + Vec<{integer}>`\n   |\n   = help: the trait `Add<Vec<{integer}>>` is not implemented for `{integer}`\n   = help: the following other types implement trait `Add<Rhs>`:\n             `&f128` implements `Add<f128>`\n             `&f128` implements `Add`\n             `&f16` implements `Add<f16>`\n             `&f16` implements `Add`\n             `&f32` implements `Add<f32>`\n             `&f32` implements `Add`\n             `&f64` implements `Add<f64>`\n             `&f64` implements `Add`\n           and 56 others\n\nerror: aborting due to 6 previous errors\n\nSome errors have detailed explanations: E0277, E0308, E0369.\nFor more information about an error, try `rustc --explain E0277`.\n",
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 496,
+        "eval_duration": 16953296999,
+        "load_duration": 2616833,
+        "prompt_eval_count": 1294,
+        "prompt_eval_duration": 1150763000,
+        "total_duration": 18232045792,
+        "wall_seconds_client": 18.23656964302063
+      },
+      "problem": "lc1575",
+      "prompt_chars": 2582,
+      "response_chars": 1961,
+      "target_signature": "pub fn count_routes(locations: Vec<i32>, start: i32, finish: i32, fuel: i32) -> i32",
+      "task_index": 17
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "error": "wrong output",
+        "n_checked": 200,
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 378,
+        "eval_duration": 12973599000,
+        "load_duration": 829708,
+        "prompt_eval_count": 1947,
+        "prompt_eval_duration": 1289990000,
+        "total_duration": 14317409541,
+        "wall_seconds_client": 14.32242727279663
+      },
+      "problem": "lc1575",
+      "prompt_chars": 4551,
+      "response_chars": 1602,
+      "target_signature": "pub fn count_routes(locations: Vec<i32>, start: i32, finish: i32, fuel: i32) -> i32",
+      "task_index": 17
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 320,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 224,
+        "eval_duration": 7486208000,
+        "load_duration": 3263583,
+        "prompt_eval_count": 1116,
+        "prompt_eval_duration": 673998000,
+        "total_duration": 8327501542,
+        "wall_seconds_client": 8.33131217956543
+      },
+      "problem": "lc33",
+      "prompt_chars": 1913,
+      "response_chars": 976,
+      "target_signature": "pub fn search(nums: Vec<i32>, target: i32) -> i32",
+      "task_index": 18
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 320,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 190,
+        "eval_duration": 6288725000,
+        "load_duration": 2894166,
+        "prompt_eval_count": 1128,
+        "prompt_eval_duration": 764935000,
+        "total_duration": 7069367875,
+        "wall_seconds_client": 7.0730791091918945
+      },
+      "problem": "lc33",
+      "prompt_chars": 1989,
+      "response_chars": 790,
+      "target_signature": "pub fn search(nums: Vec<i32>, target: i32) -> i32",
+      "task_index": 18
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 320,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 228,
+        "eval_duration": 7719303000,
+        "load_duration": 2995500,
+        "prompt_eval_count": 1516,
+        "prompt_eval_duration": 1495359000,
+        "total_duration": 9232010125,
+        "wall_seconds_client": 9.236470937728882
+      },
+      "problem": "lc33",
+      "prompt_chars": 3138,
+      "response_chars": 993,
+      "target_signature": "pub fn search(nums: Vec<i32>, target: i32) -> i32",
+      "task_index": 18
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": true,
+        "error": "runtime timeout",
+        "n_checked": 200,
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 255,
+        "eval_duration": 8644744000,
+        "load_duration": 2975667,
+        "prompt_eval_count": 1034,
+        "prompt_eval_duration": 604855000,
+        "total_duration": 9346433792,
+        "wall_seconds_client": 9.350428819656372
+      },
+      "problem": "lc845",
+      "prompt_chars": 1645,
+      "response_chars": 1013,
+      "target_signature": "pub fn longest_mountain(arr: Vec<i32>) -> i32",
+      "task_index": 19
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 240,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 313,
+        "eval_duration": 9252166000,
+        "load_duration": 4036375,
+        "prompt_eval_count": 1104,
+        "prompt_eval_duration": 556844000,
+        "total_duration": 9825019083,
+        "wall_seconds_client": 9.829401016235352
+      },
+      "problem": "lc845",
+      "prompt_chars": 1908,
+      "response_chars": 1257,
+      "target_signature": "pub fn longest_mountain(arr: Vec<i32>) -> i32",
+      "task_index": 19
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "error": "wrong output",
+        "n_checked": 200,
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 246,
+        "eval_duration": 6784812000,
+        "load_duration": 2276167,
+        "prompt_eval_count": 1414,
+        "prompt_eval_duration": 863119000,
+        "total_duration": 7663400542,
+        "wall_seconds_client": 7.667742967605591
+      },
+      "problem": "lc845",
+      "prompt_chars": 2793,
+      "response_chars": 1017,
+      "target_signature": "pub fn longest_mountain(arr: Vec<i32>) -> i32",
+      "task_index": 19
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": false,
+        "error": "^-----^^^^^^^^\n     |                                     |\n     |                                     this argument influences the return type of `min`\nhelp: the return type of this call is `usize` due to the type of the argument passed\n    --> <temporary-directory>/candidate.rs:26:23\n     |\n  26 |         std::cmp::min(std::cmp::min(case1, case2), case3)\n     |                       ^^^^^^^^^^^^^^^^^^^^^-----^\n     |                                            |\n     |                                            this argument influences the return type of `min`\nnote: function defined here\n    --> /opt/homebrew/Cellar/rust/1.98.1/lib/rustlib/src/rust/library/core/src/cmp.rs:1574:14\n     |\n1574 | pub const fn min<T: [const] Ord + [const] Destruct>(v1: T, v2: T) -> T {\n     |              ^^^\nhelp: you can convert a `usize` to an `i32` and panic if the converted value doesn't fit\n     |\n  26 |         std::cmp::min(std::cmp::min(case1.try_into().unwrap(), case2), case3)\n     |                                          ++++++++++++++++++++\nhelp: you can convert a `usize` to an `i32` and panic if the converted value doesn't fit\n     |\n  26 |         std::cmp::min(std::cmp::min(case1, case2.try_into().unwrap()), case3)\n     |                                                 ++++++++++++++++++++\n\nerror[E0308]: mismatched types\n    --> <temporary-directory>/candidate.rs:26:52\n     |\n   5 |     pub fn minimum_deletions(nums: Vec<i32>) -> i32 {\n     |                                                 --- this return type influences the call expression's return type\n...\n  26 |         std::cmp::min(std::cmp::min(case1, case2), case3)\n     |         -------------                              ^^^^^ expected `i32`, found `usize`\n     |         |\n     |         arguments to this function are incorrect\n     |\nhelp: the return type of this call is `usize` due to the type of the argument passed\n    --> <temporary-directory>/candidate.rs:26:9\n     |\n  26 |         std::cmp::min(std::cmp::min(case1, case2), case3)\n     |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-----^\n     |                                                    |\n     |                                                    this argument influences the return type of `min`\nnote: function defined here\n    --> /opt/homebrew/Cellar/rust/1.98.1/lib/rustlib/src/rust/library/core/src/cmp.rs:1574:14\n     |\n1574 | pub const fn min<T: [const] Ord + [const] Destruct>(v1: T, v2: T) -> T {\n     |              ^^^\nhelp: you can convert a `usize` to an `i32` and panic if the converted value doesn't fit\n     |\n  26 |         std::cmp::min(std::cmp::min(case1, case2), case3.try_into().unwrap())\n     |                                                         ++++++++++++++++++++\n\nerror: aborting due to 2 previous errors\n\nFor more information about this error, try `rustc --explain E0308`.\n",
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 214,
+        "eval_duration": 5869845000,
+        "load_duration": 1266750,
+        "prompt_eval_count": 1124,
+        "prompt_eval_duration": 553308000,
+        "total_duration": 6447776208,
+        "wall_seconds_client": 6.451260089874268
+      },
+      "problem": "lc2091",
+      "prompt_chars": 2112,
+      "response_chars": 763,
+      "target_signature": "pub fn minimum_deletions(nums: Vec<i32>) -> i32",
+      "task_index": 20
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 212,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 246,
+        "eval_duration": 6982045000,
+        "load_duration": 819000,
+        "prompt_eval_count": 1252,
+        "prompt_eval_duration": 791727000,
+        "total_duration": 7781243333,
+        "wall_seconds_client": 7.785531997680664
+      },
+      "problem": "lc2091",
+      "prompt_chars": 2964,
+      "response_chars": 927,
+      "target_signature": "pub fn minimum_deletions(nums: Vec<i32>) -> i32",
+      "task_index": 20
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "error": "wrong output",
+        "n_checked": 200,
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 190,
+        "eval_duration": 5358473000,
+        "load_duration": 2083875,
+        "prompt_eval_count": 1651,
+        "prompt_eval_duration": 1195574000,
+        "total_duration": 6603672042,
+        "wall_seconds_client": 6.608317852020264
+      },
+      "problem": "lc2091",
+      "prompt_chars": 4314,
+      "response_chars": 640,
+      "target_signature": "pub fn minimum_deletions(nums: Vec<i32>) -> i32",
+      "task_index": 20
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": true,
+        "error": "wrong output",
+        "n_checked": 159,
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 238,
+        "eval_duration": 6802831000,
+        "load_duration": 2401917,
+        "prompt_eval_count": 1101,
+        "prompt_eval_duration": 561821000,
+        "total_duration": 7430076542,
+        "wall_seconds_client": 7.433716058731079
+      },
+      "problem": "lc1073",
+      "prompt_chars": 1825,
+      "response_chars": 767,
+      "target_signature": "pub fn add_negabinary(arr1: Vec<i32>, arr2: Vec<i32>) -> Vec<i32>",
+      "task_index": 21
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "error": "wrong output",
+        "n_checked": 159,
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 247,
+        "eval_duration": 7135065000,
+        "load_duration": 2092083,
+        "prompt_eval_count": 1110,
+        "prompt_eval_duration": 571304000,
+        "total_duration": 7720264125,
+        "wall_seconds_client": 7.723968982696533
+      },
+      "problem": "lc1073",
+      "prompt_chars": 1859,
+      "response_chars": 872,
+      "target_signature": "pub fn add_negabinary(arr1: Vec<i32>, arr2: Vec<i32>) -> Vec<i32>",
+      "task_index": 21
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "error": "wrong output",
+        "n_checked": 159,
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 254,
+        "eval_duration": 7391413000,
+        "load_duration": 2467333,
+        "prompt_eval_count": 1475,
+        "prompt_eval_duration": 979468000,
+        "total_duration": 8387562833,
+        "wall_seconds_client": 8.391727209091187
+      },
+      "problem": "lc1073",
+      "prompt_chars": 2904,
+      "response_chars": 847,
+      "target_signature": "pub fn add_negabinary(arr1: Vec<i32>, arr2: Vec<i32>) -> Vec<i32>",
+      "task_index": 21
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": true,
+        "error": "wrong output",
+        "n_checked": 200,
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 129,
+        "eval_duration": 3693691000,
+        "load_duration": 2451458,
+        "prompt_eval_count": 1130,
+        "prompt_eval_duration": 639125000,
+        "total_duration": 4420686041,
+        "wall_seconds_client": 4.42480206489563
+      },
+      "problem": "lc2139",
+      "prompt_chars": 2028,
+      "response_chars": 536,
+      "target_signature": "pub fn min_moves(target: i32, max_doubles: i32) -> i32",
+      "task_index": 22
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 229,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 124,
+        "eval_duration": 3562211000,
+        "load_duration": 1573209,
+        "prompt_eval_count": 984,
+        "prompt_eval_duration": 474490000,
+        "total_duration": 4049333417,
+        "wall_seconds_client": 4.052469968795776
+      },
+      "problem": "lc2139",
+      "prompt_chars": 1571,
+      "response_chars": 443,
+      "target_signature": "pub fn min_moves(target: i32, max_doubles: i32) -> i32",
+      "task_index": 22
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "error": "wrong output",
+        "n_checked": 200,
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 127,
+        "eval_duration": 3687081000,
+        "load_duration": 2324458,
+        "prompt_eval_count": 1382,
+        "prompt_eval_duration": 892578000,
+        "total_duration": 4595388583,
+        "wall_seconds_client": 4.59937596321106
+      },
+      "problem": "lc2139",
+      "prompt_chars": 2830,
+      "response_chars": 525,
+      "target_signature": "pub fn min_moves(target: i32, max_doubles: i32) -> i32",
+      "task_index": 22
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 19,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 104,
+        "eval_duration": 2991523000,
+        "load_duration": 2778416,
+        "prompt_eval_count": 828,
+        "prompt_eval_duration": 271105000,
+        "total_duration": 3309357166,
+        "wall_seconds_client": 3.3123059272766113
+      },
+      "problem": "lc96",
+      "prompt_chars": 1072,
+      "response_chars": 291,
+      "target_signature": "pub fn num_trees(n: i32) -> i32",
+      "task_index": 23
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 19,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 253,
+        "eval_duration": 7434789000,
+        "load_duration": 1727917,
+        "prompt_eval_count": 1139,
+        "prompt_eval_duration": 645238000,
+        "total_duration": 8091360250,
+        "wall_seconds_client": 8.094963073730469
+      },
+      "problem": "lc96",
+      "prompt_chars": 1773,
+      "response_chars": 573,
+      "target_signature": "pub fn num_trees(n: i32) -> i32",
+      "task_index": 23
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 19,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 104,
+        "eval_duration": 2991989000,
+        "load_duration": 1983000,
+        "prompt_eval_count": 1244,
+        "prompt_eval_duration": 869900000,
+        "total_duration": 3876408042,
+        "wall_seconds_client": 3.8797900676727295
+      },
+      "problem": "lc96",
+      "prompt_chars": 2099,
+      "response_chars": 291,
+      "target_signature": "pub fn num_trees(n: i32) -> i32",
+      "task_index": 23
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 244,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 133,
+        "eval_duration": 3869984000,
+        "load_duration": 1459292,
+        "prompt_eval_count": 1066,
+        "prompt_eval_duration": 490621000,
+        "total_duration": 4370538917,
+        "wall_seconds_client": 4.37382698059082
+      },
+      "problem": "lc1283",
+      "prompt_chars": 1785,
+      "response_chars": 486,
+      "target_signature": "pub fn smallest_divisor(nums: Vec<i32>, threshold: i32) -> i32",
+      "task_index": 24
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 244,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 136,
+        "eval_duration": 3958526000,
+        "load_duration": 1639125,
+        "prompt_eval_count": 1262,
+        "prompt_eval_duration": 827998000,
+        "total_duration": 4802064334,
+        "wall_seconds_client": 4.8056440353393555
+      },
+      "problem": "lc1283",
+      "prompt_chars": 2291,
+      "response_chars": 491,
+      "target_signature": "pub fn smallest_divisor(nums: Vec<i32>, threshold: i32) -> i32",
+      "task_index": 24
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 244,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 133,
+        "eval_duration": 3890439000,
+        "load_duration": 1923000,
+        "prompt_eval_count": 1597,
+        "prompt_eval_duration": 1194030000,
+        "total_duration": 5102038875,
+        "wall_seconds_client": 5.106367111206055
+      },
+      "problem": "lc1283",
+      "prompt_chars": 3299,
+      "response_chars": 483,
+      "target_signature": "pub fn smallest_divisor(nums: Vec<i32>, threshold: i32) -> i32",
+      "task_index": 24
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": true,
+        "error": "\nthread 'main' (20483130) panicked at <temporary-directory>/candidate.rs:23:25:\nindex out of bounds: the len is 26 but the index is 26\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n",
+        "n_checked": 1,
+        "semantic_pass": false
+      },
+      "family": "codeforces",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 189,
+        "eval_duration": 3178011000,
+        "load_duration": 3090957584,
+        "prompt_eval_count": 1297,
+        "prompt_eval_duration": 857337000,
+        "total_duration": 7130603250,
+        "wall_seconds_client": 7.1342198848724365
+      },
+      "problem": "cf1992D",
+      "prompt_chars": 4379,
+      "response_chars": 591,
+      "target_signature": "pub fn can_cross(a: Vec<u8>, m: usize, k: i64) -> bool",
+      "task_index": 1
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": false,
+        "error": "error[E0425]: cannot find function `compute_dp` in this scope\n --> <temporary-directory>/candidate.rs:8:18\n  |\n8 |         let dp = compute_dp(a, m as i64);\n  |                  ^^^^^^^^^^ not found in this scope\n\nerror: aborting due to 1 previous error\n\nFor more information about this error, try `rustc --explain E0425`.\n",
+        "semantic_pass": false
+      },
+      "family": "codeforces",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 93,
+        "eval_duration": 1595850000,
+        "load_duration": 2020209,
+        "prompt_eval_count": 1349,
+        "prompt_eval_duration": 902534000,
+        "total_duration": 2561413125,
+        "wall_seconds_client": 2.564362049102783
+      },
+      "problem": "cf1992D",
+      "prompt_chars": 3578,
+      "response_chars": 217,
+      "target_signature": "pub fn can_cross(a: Vec<u8>, m: usize, k: i64) -> bool",
+      "task_index": 1
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "error": "wrong output",
+        "n_checked": 2,
+        "semantic_pass": false
+      },
+      "family": "codeforces",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 212,
+        "eval_duration": 3902603000,
+        "load_duration": 793875,
+        "prompt_eval_count": 2455,
+        "prompt_eval_duration": 1881687000,
+        "total_duration": 5863500250,
+        "wall_seconds_client": 5.867822170257568
+      },
+      "problem": "cf1992D",
+      "prompt_chars": 7188,
+      "response_chars": 573,
+      "target_signature": "pub fn can_cross(a: Vec<u8>, m: usize, k: i64) -> bool",
+      "task_index": 1
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": false,
+        "error": "no impl Solution block",
+        "semantic_pass": false
+      },
+      "family": "codeforces",
+      "impl_extracted": false,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 187,
+        "eval_duration": 3347168000,
+        "load_duration": 2147458,
+        "prompt_eval_count": 598,
+        "prompt_eval_duration": 415408000,
+        "total_duration": 3848046333,
+        "wall_seconds_client": 3.850558042526245
+      },
+      "problem": "cf230B",
+      "prompt_chars": 2053,
+      "response_chars": 506,
+      "target_signature": "pub fn classify_t_primes(nums: Vec<u64>) -> Vec<bool>",
+      "task_index": 2
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": false,
+        "error": "error[E0425]: cannot find function `is_t_prime` in this scope\n --> <temporary-directory>/candidate.rs:9:25\n  |\n9 |             result.push(is_t_prime(num as i64));\n  |                         ^^^^^^^^^^ not found in this scope\n\nerror: aborting due to 1 previous error\n\nFor more information about this error, try `rustc --explain E0425`.\n",
+        "semantic_pass": false
+      },
+      "family": "codeforces",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 227,
+        "eval_duration": 4100328000,
+        "load_duration": 711209,
+        "prompt_eval_count": 485,
+        "prompt_eval_duration": 460234000,
+        "total_duration": 4578963209,
+        "wall_seconds_client": 4.58137321472168
+      },
+      "problem": "cf230B",
+      "prompt_chars": 1506,
+      "response_chars": 599,
+      "target_signature": "pub fn classify_t_primes(nums: Vec<u64>) -> Vec<bool>",
+      "task_index": 2
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": false,
+        "error": "error[E0425]: cannot find function `is_t_prime` in this scope\n --> <temporary-directory>/candidate.rs:9:16\n  |\n9 |             if is_t_prime(num) {\n  |                ^^^^^^^^^^ not found in this scope\n  |\nhelp: consider using the associated function on `Self`\n  |\n9 |             if Self::is_t_prime(num) {\n  |                ++++++\n\nerror[E0425]: cannot find function `is_prime` in this scope\n  --> <temporary-directory>/candidate.rs:25:36\n   |\n25 |         if sqrt_n * sqrt_n == n && is_prime(sqrt_n as u64) {\n   |                                    ^^^^^^^^ not found in this scope\n   |\nhelp: consider using the associated function on `Self`\n   |\n25 |         if sqrt_n * sqrt_n == n && Self::is_prime(sqrt_n as u64) {\n   |                                    ++++++\n\nerror: aborting due to 2 previous errors\n\nFor more information about this error, try `rustc --explain E0425`.\n",
+        "semantic_pass": false
+      },
+      "family": "codeforces",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 272,
+        "eval_duration": 4988982000,
+        "load_duration": 818000,
+        "prompt_eval_count": 896,
+        "prompt_eval_duration": 792657000,
+        "total_duration": 5807757917,
+        "wall_seconds_client": 5.810551166534424
+      },
+      "problem": "cf230B",
+      "prompt_chars": 2791,
+      "response_chars": 832,
+      "target_signature": "pub fn classify_t_primes(nums: Vec<u64>) -> Vec<bool>",
+      "task_index": 2
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": false,
+        "error": "error[E0689]: can't call method `count_ones` on ambiguous numeric type `{integer}`\n  --> <temporary-directory>/candidate.rs:11:18\n   |\n10 |         for i in 0..(1 << n) {\n   |             - you must specify a type for this binding, like `i32`\n11 |             if i.count_ones() as usize != k {\n   |                  ^^^^^^^^^^\n\nerror: aborting due to 1 previous error\n\nFor more information about this error, try `rustc --explain E0689`.\n",
+        "semantic_pass": false
+      },
+      "family": "codeforces",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 426,
+        "eval_duration": 7831393000,
+        "load_duration": 747792,
+        "prompt_eval_count": 641,
+        "prompt_eval_duration": 528571000,
+        "total_duration": 8404381334,
+        "wall_seconds_client": 8.407409906387329
+      },
+      "problem": "cf467C",
+      "prompt_chars": 1770,
+      "response_chars": 1623,
+      "target_signature": "pub fn max_k_segments_sum(nums: Vec<i64>, m: usize, k: usize) -> i128",
+      "task_index": 3
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "error": "runtime timeout",
+        "n_checked": 12,
+        "semantic_pass": false
+      },
+      "family": "codeforces",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 406,
+        "eval_duration": 7569981000,
+        "load_duration": 939875,
+        "prompt_eval_count": 1221,
+        "prompt_eval_duration": 1085965000,
+        "total_duration": 8703744917,
+        "wall_seconds_client": 8.70734691619873
+      },
+      "problem": "cf467C",
+      "prompt_chars": 3741,
+      "response_chars": 1373,
+      "target_signature": "pub fn max_k_segments_sum(nums: Vec<i64>, m: usize, k: usize) -> i128",
+      "task_index": 3
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "error": "runtime timeout",
+        "n_checked": 12,
+        "semantic_pass": false
+      },
+      "family": "codeforces",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 519,
+        "eval_duration": 9760238000,
+        "load_duration": 2141334,
+        "prompt_eval_count": 1665,
+        "prompt_eval_duration": 1302578000,
+        "total_duration": 11148189875,
+        "wall_seconds_client": 11.152162075042725
+      },
+      "problem": "cf467C",
+      "prompt_chars": 4727,
+      "response_chars": 1894,
+      "target_signature": "pub fn max_k_segments_sum(nums: Vec<i64>, m: usize, k: usize) -> i128",
+      "task_index": 3
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": false,
+        "error": "no impl Solution block",
+        "semantic_pass": false
+      },
+      "family": "codeforces",
+      "impl_extracted": false,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 307,
+        "eval_duration": 5687658000,
+        "load_duration": 1915542,
+        "prompt_eval_count": 991,
+        "prompt_eval_duration": 619902000,
+        "total_duration": 6393070958,
+        "wall_seconds_client": 6.396735906600952
+      },
+      "problem": "cf1759B",
+      "prompt_chars": 3169,
+      "response_chars": 891,
+      "target_signature": "pub fn lost_permutation(b: Vec<u32>, m: usize, s: u32) -> bool",
+      "task_index": 4
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "error": "wrong output",
+        "n_checked": 56,
+        "semantic_pass": false
+      },
+      "family": "codeforces",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 183,
+        "eval_duration": 3307233000,
+        "load_duration": 724208,
+        "prompt_eval_count": 622,
+        "prompt_eval_duration": 585601000,
+        "total_duration": 3924356125,
+        "wall_seconds_client": 3.926673173904419
+      },
+      "problem": "cf1759B",
+      "prompt_chars": 1823,
+      "response_chars": 508,
+      "target_signature": "pub fn lost_permutation(b: Vec<u32>, m: usize, s: u32) -> bool",
+      "task_index": 4
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "error": "wrong output",
+        "n_checked": 1,
+        "semantic_pass": false
+      },
+      "family": "codeforces",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 336,
+        "eval_duration": 6227716000,
+        "load_duration": 1894209,
+        "prompt_eval_count": 1421,
+        "prompt_eval_duration": 1131102000,
+        "total_duration": 7409106459,
+        "wall_seconds_client": 7.4131081104278564
+      },
+      "problem": "cf1759B",
+      "prompt_chars": 4215,
+      "response_chars": 1148,
+      "target_signature": "pub fn lost_permutation(b: Vec<u32>, m: usize, s: u32) -> bool",
+      "task_index": 4
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": false,
+        "error": "no impl Solution block",
+        "semantic_pass": false
+      },
+      "family": "codeforces",
+      "impl_extracted": false,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 119,
+        "eval_duration": 2083618000,
+        "load_duration": 1807916,
+        "prompt_eval_count": 511,
+        "prompt_eval_duration": 346415000,
+        "total_duration": 2507567958,
+        "wall_seconds_client": 2.5105042457580566
+      },
+      "problem": "cf266A",
+      "prompt_chars": 1811,
+      "response_chars": 312,
+      "target_signature": "pub fn min_stones_to_remove(colors: Vec<u8>, n: usize) -> usize",
+      "task_index": 5
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 290,
+        "semantic_pass": true
+      },
+      "family": "codeforces",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 90,
+        "eval_duration": 1599540000,
+        "load_duration": 817291,
+        "prompt_eval_count": 585,
+        "prompt_eval_duration": 597716000,
+        "total_duration": 2216805708,
+        "wall_seconds_client": 2.2192251682281494
+      },
+      "problem": "cf266A",
+      "prompt_chars": 1878,
+      "response_chars": 259,
+      "target_signature": "pub fn min_stones_to_remove(colors: Vec<u8>, n: usize) -> usize",
+      "task_index": 5
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "error": "wrong output",
+        "n_checked": 2,
+        "semantic_pass": false
+      },
+      "family": "codeforces",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 161,
+        "eval_duration": 2881538000,
+        "load_duration": 2326375,
+        "prompt_eval_count": 907,
+        "prompt_eval_duration": 644876000,
+        "total_duration": 3590077208,
+        "wall_seconds_client": 3.5931708812713623
+      },
+      "problem": "cf266A",
+      "prompt_chars": 2911,
+      "response_chars": 497,
+      "target_signature": "pub fn min_stones_to_remove(colors: Vec<u8>, n: usize) -> usize",
+      "task_index": 5
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": true,
+        "error": "wrong output",
+        "n_checked": 2,
+        "semantic_pass": false
+      },
+      "family": "codeforces",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 349,
+        "eval_duration": 6398958000,
+        "load_duration": 2123875,
+        "prompt_eval_count": 738,
+        "prompt_eval_duration": 543486000,
+        "total_duration": 7020235875,
+        "wall_seconds_client": 7.023371934890747
+      },
+      "problem": "cf509A",
+      "prompt_chars": 1935,
+      "response_chars": 1015,
+      "target_signature": "pub fn max_in_table(n: u32) -> u32",
+      "task_index": 6
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": false,
+        "error": "error[E0425]: cannot find function `table_value` in this scope\n --> <temporary-directory>/candidate.rs:8:9\n  |\n8 |         table_value(n_int, (n - 1) as i32, (n - 1) as i32) as u32\n  |         ^^^^^^^^^^^ not found in this scope\n  |\nhelp: consider using the associated function on `Self`\n  |\n8 |         Self::table_value(n_int, (n - 1) as i32, (n - 1) as i32) as u32\n  |         ++++++\n\nerror[E0425]: cannot find function `table_value` in this scope\n  --> <temporary-directory>/candidate.rs:17:13\n   |\n17 |             table_value(n, i - 1, j) + table_value(n, i, j - 1)\n   |             ^^^^^^^^^^^ not found in this scope\n   |\nhelp: consider using the associated function on `Self`\n   |\n17 |             Self::table_value(n, i - 1, j) + table_value(n, i, j - 1)\n   |             ++++++\n\nerror[E0425]: cannot find function `table_value` in this scope\n  --> <temporary-directory>/candidate.rs:17:40\n   |\n17 |             table_value(n, i - 1, j) + table_value(n, i, j - 1)\n   |                                        ^^^^^^^^^^^ not found in this scope\n   |\nhelp: consider using the associated function on `Self`\n   |\n17 |             table_value(n, i - 1, j) + Self::table_value(n, i, j - 1)\n   |                                        ++++++\n\nerror: aborting due to 3 previous errors\n\nFor more information about this error, try `rustc --explain E0425`.\n",
+        "semantic_pass": false
+      },
+      "family": "codeforces",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 192,
+        "eval_duration": 3422559000,
+        "load_duration": 1761167,
+        "prompt_eval_count": 418,
+        "prompt_eval_duration": 332453000,
+        "total_duration": 3837980375,
+        "wall_seconds_client": 3.840345859527588
+      },
+      "problem": "cf509A",
+      "prompt_chars": 1341,
+      "response_chars": 424,
+      "target_signature": "pub fn max_in_table(n: u32) -> u32",
+      "task_index": 6
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "error": "wrong output",
+        "n_checked": 2,
+        "semantic_pass": false
+      },
+      "family": "codeforces",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 228,
+        "eval_duration": 4205240000,
+        "load_duration": 774167,
+        "prompt_eval_count": 972,
+        "prompt_eval_duration": 917719000,
+        "total_duration": 5147041833,
+        "wall_seconds_client": 5.149906873703003
+      },
+      "problem": "cf509A",
+      "prompt_chars": 2527,
+      "response_chars": 619,
+      "target_signature": "pub fn max_in_table(n: u32) -> u32",
+      "task_index": 6
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 269,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 163,
+        "eval_duration": 2903018000,
+        "load_duration": 2292708,
+        "prompt_eval_count": 425,
+        "prompt_eval_duration": 338925000,
+        "total_duration": 3277970792,
+        "wall_seconds_client": 3.2807369232177734
+      },
+      "problem": "lc674",
+      "prompt_chars": 1566,
+      "response_chars": 475,
+      "target_signature": "pub fn find_length_of_lcis(nums: Vec<i32>) -> i32",
+      "task_index": 7
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 269,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 137,
+        "eval_duration": 2403582000,
+        "load_duration": 1998333,
+        "prompt_eval_count": 542,
+        "prompt_eval_duration": 402775000,
+        "total_duration": 2842565125,
+        "wall_seconds_client": 2.8450233936309814
+      },
+      "problem": "lc674",
+      "prompt_chars": 1811,
+      "response_chars": 394,
+      "target_signature": "pub fn find_length_of_lcis(nums: Vec<i32>) -> i32",
+      "task_index": 7
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 269,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 156,
+        "eval_duration": 2785697000,
+        "load_duration": 3377625,
+        "prompt_eval_count": 778,
+        "prompt_eval_duration": 591599000,
+        "total_duration": 3422737459,
+        "wall_seconds_client": 3.425671100616455
+      },
+      "problem": "lc674",
+      "prompt_chars": 2613,
+      "response_chars": 458,
+      "target_signature": "pub fn find_length_of_lcis(nums: Vec<i32>) -> i32",
+      "task_index": 7
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": true,
+        "error": "wrong output",
+        "n_checked": 200,
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 100,
+        "eval_duration": 1741002000,
+        "load_duration": 2077500,
+        "prompt_eval_count": 405,
+        "prompt_eval_duration": 331258000,
+        "total_duration": 2122562625,
+        "wall_seconds_client": 2.1232900619506836
+      },
+      "problem": "lc3392",
+      "prompt_chars": 1499,
+      "response_chars": 264,
+      "target_signature": "pub fn count_subarrays(nums: Vec<i32>) -> i32",
+      "task_index": 8
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "error": "wrong output",
+        "n_checked": 200,
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 110,
+        "eval_duration": 1921268000,
+        "load_duration": 2292541,
+        "prompt_eval_count": 466,
+        "prompt_eval_duration": 341986000,
+        "total_duration": 2290149083,
+        "wall_seconds_client": 2.289766311645508
+      },
+      "problem": "lc3392",
+      "prompt_chars": 1487,
+      "response_chars": 291,
+      "target_signature": "pub fn count_subarrays(nums: Vec<i32>) -> i32",
+      "task_index": 8
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "error": "wrong output",
+        "n_checked": 200,
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 114,
+        "eval_duration": 2038161000,
+        "load_duration": 1685750,
+        "prompt_eval_count": 686,
+        "prompt_eval_duration": 523331000,
+        "total_duration": 2606246125,
+        "wall_seconds_client": 2.605889081954956
+      },
+      "problem": "lc3392",
+      "prompt_chars": 2226,
+      "response_chars": 287,
+      "target_signature": "pub fn count_subarrays(nums: Vec<i32>) -> i32",
+      "task_index": 8
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": false,
+        "error": "no impl Solution block",
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": false,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 294,
+        "eval_duration": 5370887000,
+        "load_duration": 1884291,
+        "prompt_eval_count": 512,
+        "prompt_eval_duration": 349922000,
+        "total_duration": 5769887083,
+        "wall_seconds_client": 5.767977952957153
+      },
+      "problem": "lc3560",
+      "prompt_chars": 1768,
+      "response_chars": 777,
+      "target_signature": "pub fn min_cutting_cost(n: i32, m: i32, k: i32) -> i64",
+      "task_index": 9
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 300,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 116,
+        "eval_duration": 2095495000,
+        "load_duration": 803417,
+        "prompt_eval_count": 497,
+        "prompt_eval_duration": 485234000,
+        "total_duration": 2594410167,
+        "wall_seconds_client": 2.5950987339019775
+      },
+      "problem": "lc3560",
+      "prompt_chars": 1599,
+      "response_chars": 272,
+      "target_signature": "pub fn min_cutting_cost(n: i32, m: i32, k: i32) -> i64",
+      "task_index": 9
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 300,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 152,
+        "eval_duration": 2752813000,
+        "load_duration": 2218792,
+        "prompt_eval_count": 813,
+        "prompt_eval_duration": 618424000,
+        "total_duration": 3421481833,
+        "wall_seconds_client": 3.4227991104125977
+      },
+      "problem": "lc3560",
+      "prompt_chars": 2598,
+      "response_chars": 393,
+      "target_signature": "pub fn min_cutting_cost(n: i32, m: i32, k: i32) -> i64",
+      "task_index": 9
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": true,
+        "error": "wrong output",
+        "n_checked": 200,
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 279,
+        "eval_duration": 5163674000,
+        "load_duration": 1681750,
+        "prompt_eval_count": 357,
+        "prompt_eval_duration": 268694000,
+        "total_duration": 5462834833,
+        "wall_seconds_client": 5.463623285293579
+      },
+      "problem": "lc520",
+      "prompt_chars": 1397,
+      "response_chars": 968,
+      "target_signature": "pub fn detect_capital_use(word: String) -> bool",
+      "task_index": 10
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 261,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 307,
+        "eval_duration": 5668426000,
+        "load_duration": 2342042,
+        "prompt_eval_count": 468,
+        "prompt_eval_duration": 344904000,
+        "total_duration": 6037047042,
+        "wall_seconds_client": 6.038246154785156
+      },
+      "problem": "lc520",
+      "prompt_chars": 1570,
+      "response_chars": 1121,
+      "target_signature": "pub fn detect_capital_use(word: String) -> bool",
+      "task_index": 10
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 261,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 269,
+        "eval_duration": 5009233000,
+        "load_duration": 2325208,
+        "prompt_eval_count": 645,
+        "prompt_eval_duration": 522914999,
+        "total_duration": 5568159291,
+        "wall_seconds_client": 5.570418834686279
+      },
+      "problem": "lc520",
+      "prompt_chars": 2205,
+      "response_chars": 964,
+      "target_signature": "pub fn detect_capital_use(word: String) -> bool",
+      "task_index": 10
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 245,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 107,
+        "eval_duration": 1910997000,
+        "load_duration": 2281583,
+        "prompt_eval_count": 439,
+        "prompt_eval_duration": 340683000,
+        "total_duration": 2281482583,
+        "wall_seconds_client": 2.2837929725646973
+      },
+      "problem": "lc9",
+      "prompt_chars": 1560,
+      "response_chars": 359,
+      "target_signature": "pub fn is_palindrome(x: i32) -> bool",
+      "task_index": 11
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 245,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 140,
+        "eval_duration": 2561981000,
+        "load_duration": 2071625,
+        "prompt_eval_count": 529,
+        "prompt_eval_duration": 418147000,
+        "total_duration": 3004697625,
+        "wall_seconds_client": 3.006800889968872
+      },
+      "problem": "lc9",
+      "prompt_chars": 1878,
+      "response_chars": 478,
+      "target_signature": "pub fn is_palindrome(x: i32) -> bool",
+      "task_index": 11
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 245,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 107,
+        "eval_duration": 1907368000,
+        "load_duration": 1972583,
+        "prompt_eval_count": 788,
+        "prompt_eval_duration": 651101000,
+        "total_duration": 2608469500,
+        "wall_seconds_client": 2.6113719940185547
+      },
+      "problem": "lc9",
+      "prompt_chars": 2687,
+      "response_chars": 359,
+      "target_signature": "pub fn is_palindrome(x: i32) -> bool",
+      "task_index": 11
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": false,
+        "error": "error[E0425]: cannot find function `is_monobit` in this scope\n --> <temporary-directory>/candidate.rs:8:16\n  |\n8 |             if is_monobit(i) {\n  |                ^^^^^^^^^^ not found in this scope\n  |\nhelp: consider using the associated function on `Self`\n  |\n8 |             if Self::is_monobit(i) {\n  |                ++++++\n\nerror: aborting due to 1 previous error\n\nFor more information about this error, try `rustc --explain E0425`.\n",
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 193,
+        "eval_duration": 3566361000,
+        "load_duration": 1969666,
+        "prompt_eval_count": 386,
+        "prompt_eval_duration": 282844000,
+        "total_duration": 3884321583,
+        "wall_seconds_client": 3.8863837718963623
+      },
+      "problem": "lc3827",
+      "prompt_chars": 1345,
+      "response_chars": 598,
+      "target_signature": "pub fn count_monobit(n: i32) -> i32",
+      "task_index": 12
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "error": "wrong output",
+        "n_checked": 115,
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 92,
+        "eval_duration": 1647869000,
+        "load_duration": 812500,
+        "prompt_eval_count": 400,
+        "prompt_eval_duration": 477810000,
+        "total_duration": 2136759917,
+        "wall_seconds_client": 2.138842821121216
+      },
+      "problem": "lc3827",
+      "prompt_chars": 1367,
+      "response_chars": 270,
+      "target_signature": "pub fn count_monobit(n: i32) -> i32",
+      "task_index": 12
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": false,
+        "error": "error[E0425]: cannot find function `is_monobit` in this scope\n --> <temporary-directory>/candidate.rs:8:16\n  |\n8 |             if is_monobit(i) {\n  |                ^^^^^^^^^^ not found in this scope\n  |\nhelp: consider using the associated function on `Self`\n  |\n8 |             if Self::is_monobit(i) {\n  |                ++++++\n\nerror: aborting due to 1 previous error\n\nFor more information about this error, try `rustc --explain E0425`.\n",
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 198,
+        "eval_duration": 3667985000,
+        "load_duration": 1459333,
+        "prompt_eval_count": 603,
+        "prompt_eval_duration": 429588000,
+        "total_duration": 4135762958,
+        "wall_seconds_client": 4.138542652130127
+      },
+      "problem": "lc3827",
+      "prompt_chars": 1962,
+      "response_chars": 596,
+      "target_signature": "pub fn count_monobit(n: i32) -> i32",
+      "task_index": 12
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": false,
+        "error": "no impl Solution block",
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": false,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 131,
+        "eval_duration": 2417542000,
+        "load_duration": 898584,
+        "prompt_eval_count": 547,
+        "prompt_eval_duration": 603284000,
+        "total_duration": 3037064459,
+        "wall_seconds_client": 3.039638042449951
+      },
+      "problem": "lc1827",
+      "prompt_chars": 1837,
+      "response_chars": 345,
+      "target_signature": "pub fn min_operations(nums: Vec<i32>) -> i32",
+      "task_index": 13
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "error": "wrong output",
+        "n_checked": 200,
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 153,
+        "eval_duration": 2815266000,
+        "load_duration": 739292,
+        "prompt_eval_count": 646,
+        "prompt_eval_duration": 821431000,
+        "total_duration": 3660710459,
+        "wall_seconds_client": 3.6630430221557617
+      },
+      "problem": "lc1827",
+      "prompt_chars": 2089,
+      "response_chars": 465,
+      "target_signature": "pub fn min_operations(nums: Vec<i32>) -> i32",
+      "task_index": 13
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 270,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 127,
+        "eval_duration": 2389675000,
+        "load_duration": 2352583,
+        "prompt_eval_count": 1009,
+        "prompt_eval_duration": 793280000,
+        "total_duration": 3229360208,
+        "wall_seconds_client": 3.2324275970458984
+      },
+      "problem": "lc1827",
+      "prompt_chars": 3167,
+      "response_chars": 402,
+      "target_signature": "pub fn min_operations(nums: Vec<i32>) -> i32",
+      "task_index": 13
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 274,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 124,
+        "eval_duration": 2277152000,
+        "load_duration": 1947542,
+        "prompt_eval_count": 528,
+        "prompt_eval_duration": 428410000,
+        "total_duration": 2778261167,
+        "wall_seconds_client": 2.7810111045837402
+      },
+      "problem": "lc1313",
+      "prompt_chars": 1719,
+      "response_chars": 358,
+      "target_signature": "pub fn decompress_rl_elist(nums: Vec<i32>) -> Vec<i32>",
+      "task_index": 14
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 274,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 118,
+        "eval_duration": 2156248000,
+        "load_duration": 2408541,
+        "prompt_eval_count": 561,
+        "prompt_eval_duration": 439511000,
+        "total_duration": 2631941958,
+        "wall_seconds_client": 2.6344010829925537
+      },
+      "problem": "lc1313",
+      "prompt_chars": 1805,
+      "response_chars": 349,
+      "target_signature": "pub fn decompress_rl_elist(nums: Vec<i32>) -> Vec<i32>",
+      "task_index": 14
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 274,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 120,
+        "eval_duration": 2255028000,
+        "load_duration": 1610334,
+        "prompt_eval_count": 899,
+        "prompt_eval_duration": 669943000,
+        "total_duration": 2958899750,
+        "wall_seconds_client": 2.9618921279907227
+      },
+      "problem": "lc1313",
+      "prompt_chars": 2755,
+      "response_chars": 345,
+      "target_signature": "pub fn decompress_rl_elist(nums: Vec<i32>) -> Vec<i32>",
+      "task_index": 14
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 258,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 214,
+        "eval_duration": 4076759000,
+        "load_duration": 2313334,
+        "prompt_eval_count": 653,
+        "prompt_eval_duration": 546098000,
+        "total_duration": 4659818709,
+        "wall_seconds_client": 4.662487030029297
+      },
+      "problem": "lc2600",
+      "prompt_chars": 2111,
+      "response_chars": 582,
+      "target_signature": "pub fn k_items_with_maximum_sum(num_ones: i32, num_zeros: i32, num_neg_ones: i32, k: i32) -> i32",
+      "task_index": 15
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 258,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 139,
+        "eval_duration": 2578471000,
+        "load_duration": 2016416,
+        "prompt_eval_count": 550,
+        "prompt_eval_duration": 421839000,
+        "total_duration": 3043178125,
+        "wall_seconds_client": 3.045742988586426
+      },
+      "problem": "lc2600",
+      "prompt_chars": 1768,
+      "response_chars": 373,
+      "target_signature": "pub fn k_items_with_maximum_sum(num_ones: i32, num_zeros: i32, num_neg_ones: i32, k: i32) -> i32",
+      "task_index": 15
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 258,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 205,
+        "eval_duration": 3986994000,
+        "load_duration": 1690125,
+        "prompt_eval_count": 989,
+        "prompt_eval_duration": 787843000,
+        "total_duration": 4807728541,
+        "wall_seconds_client": 4.810588836669922
+      },
+      "problem": "lc2600",
+      "prompt_chars": 3068,
+      "response_chars": 537,
+      "target_signature": "pub fn k_items_with_maximum_sum(num_ones: i32, num_zeros: i32, num_neg_ones: i32, k: i32) -> i32",
+      "task_index": 15
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": true,
+        "error": "wrong output",
+        "n_checked": 200,
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 136,
+        "eval_duration": 2534238000,
+        "load_duration": 1835833,
+        "prompt_eval_count": 671,
+        "prompt_eval_duration": 560546000,
+        "total_duration": 3131125500,
+        "wall_seconds_client": 3.1341047286987305
+      },
+      "problem": "lc1563",
+      "prompt_chars": 2402,
+      "response_chars": 351,
+      "target_signature": "pub fn stone_game_v(stone_value: Vec<i32>) -> i32",
+      "task_index": 16
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "error": "wrong output",
+        "n_checked": 200,
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 261,
+        "eval_duration": 5114405000,
+        "load_duration": 2365125,
+        "prompt_eval_count": 867,
+        "prompt_eval_duration": 681288000,
+        "total_duration": 5836856042,
+        "wall_seconds_client": 5.839670896530151
+      },
+      "problem": "lc1563",
+      "prompt_chars": 2675,
+      "response_chars": 696,
+      "target_signature": "pub fn stone_game_v(stone_value: Vec<i32>) -> i32",
+      "task_index": 16
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "error": "wrong output",
+        "n_checked": 200,
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 213,
+        "eval_duration": 4164615000,
+        "load_duration": 1915625,
+        "prompt_eval_count": 1350,
+        "prompt_eval_duration": 1146178000,
+        "total_duration": 5376553750,
+        "wall_seconds_client": 5.380199909210205
+      },
+      "problem": "lc1563",
+      "prompt_chars": 4313,
+      "response_chars": 600,
+      "target_signature": "pub fn stone_game_v(stone_value: Vec<i32>) -> i32",
+      "task_index": 16
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": false,
+        "error": "no impl Solution block",
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": false,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 375,
+        "eval_duration": 7409649000,
+        "load_duration": 2257500,
+        "prompt_eval_count": 870,
+        "prompt_eval_duration": 668758000,
+        "total_duration": 8123882625,
+        "wall_seconds_client": 8.127802848815918
+      },
+      "problem": "lc1575",
+      "prompt_chars": 2767,
+      "response_chars": 1176,
+      "target_signature": "pub fn count_routes(locations: Vec<i32>, start: i32, finish: i32, fuel: i32) -> i32",
+      "task_index": 17
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "error": "wrong output",
+        "n_checked": 200,
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 339,
+        "eval_duration": 6641321000,
+        "load_duration": 932041,
+        "prompt_eval_count": 808,
+        "prompt_eval_duration": 949305000,
+        "total_duration": 7640737333,
+        "wall_seconds_client": 7.643743276596069
+      },
+      "problem": "lc1575",
+      "prompt_chars": 2582,
+      "response_chars": 1064,
+      "target_signature": "pub fn count_routes(locations: Vec<i32>, start: i32, finish: i32, fuel: i32) -> i32",
+      "task_index": 17
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "error": "wrong output",
+        "n_checked": 200,
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 315,
+        "eval_duration": 6191272000,
+        "load_duration": 2074875,
+        "prompt_eval_count": 1476,
+        "prompt_eval_duration": 1315142000,
+        "total_duration": 7557097625,
+        "wall_seconds_client": 7.561269044876099
+      },
+      "problem": "lc1575",
+      "prompt_chars": 4551,
+      "response_chars": 1007,
+      "target_signature": "pub fn count_routes(locations: Vec<i32>, start: i32, finish: i32, fuel: i32) -> i32",
+      "task_index": 17
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 320,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 232,
+        "eval_duration": 4451025000,
+        "load_duration": 2261084,
+        "prompt_eval_count": 603,
+        "prompt_eval_duration": 437978000,
+        "total_duration": 4962275209,
+        "wall_seconds_client": 4.964871883392334
+      },
+      "problem": "lc33",
+      "prompt_chars": 1913,
+      "response_chars": 838,
+      "target_signature": "pub fn search(nums: Vec<i32>, target: i32) -> i32",
+      "task_index": 18
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "error": "wrong output",
+        "n_checked": 200,
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 156,
+        "eval_duration": 2949844000,
+        "load_duration": 1645792,
+        "prompt_eval_count": 628,
+        "prompt_eval_duration": 443502000,
+        "total_duration": 3438689042,
+        "wall_seconds_client": 3.4413869380950928
+      },
+      "problem": "lc33",
+      "prompt_chars": 1989,
+      "response_chars": 506,
+      "target_signature": "pub fn search(nums: Vec<i32>, target: i32) -> i32",
+      "task_index": 18
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 320,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 232,
+        "eval_duration": 4581705000,
+        "load_duration": 1795083,
+        "prompt_eval_count": 1043,
+        "prompt_eval_duration": 1002876000,
+        "total_duration": 5619178375,
+        "wall_seconds_client": 5.622669696807861
+      },
+      "problem": "lc33",
+      "prompt_chars": 3138,
+      "response_chars": 838,
+      "target_signature": "pub fn search(nums: Vec<i32>, target: i32) -> i32",
+      "task_index": 18
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": false,
+        "error": "no impl Solution block",
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": false,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 215,
+        "eval_duration": 4083655000,
+        "load_duration": 3297209,
+        "prompt_eval_count": 511,
+        "prompt_eval_duration": 383821000,
+        "total_duration": 4503558459,
+        "wall_seconds_client": 4.506245851516724
+      },
+      "problem": "lc845",
+      "prompt_chars": 1645,
+      "response_chars": 587,
+      "target_signature": "pub fn longest_mountain(arr: Vec<i32>) -> i32",
+      "task_index": 19
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 240,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 223,
+        "eval_duration": 4286961000,
+        "load_duration": 817750,
+        "prompt_eval_count": 594,
+        "prompt_eval_duration": 666307000,
+        "total_duration": 4971925375,
+        "wall_seconds_client": 4.974499940872192
+      },
+      "problem": "lc845",
+      "prompt_chars": 1908,
+      "response_chars": 689,
+      "target_signature": "pub fn longest_mountain(arr: Vec<i32>) -> i32",
+      "task_index": 19
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 240,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 223,
+        "eval_duration": 4374005000,
+        "load_duration": 2243125,
+        "prompt_eval_count": 921,
+        "prompt_eval_duration": 731906000,
+        "total_duration": 5145883042,
+        "wall_seconds_client": 5.148958921432495
+      },
+      "problem": "lc845",
+      "prompt_chars": 2793,
+      "response_chars": 689,
+      "target_signature": "pub fn longest_mountain(arr: Vec<i32>) -> i32",
+      "task_index": 19
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": false,
+        "error": "no impl Solution block",
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": false,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 224,
+        "eval_duration": 4322882000,
+        "load_duration": 2396584,
+        "prompt_eval_count": 596,
+        "prompt_eval_duration": 458141000,
+        "total_duration": 4817248584,
+        "wall_seconds_client": 4.819932222366333
+      },
+      "problem": "lc2091",
+      "prompt_chars": 2112,
+      "response_chars": 586,
+      "target_signature": "pub fn minimum_deletions(nums: Vec<i32>) -> i32",
+      "task_index": 20
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 212,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 268,
+        "eval_duration": 5274928000,
+        "load_duration": 701667,
+        "prompt_eval_count": 802,
+        "prompt_eval_duration": 899726000,
+        "total_duration": 6188264292,
+        "wall_seconds_client": 6.191208839416504
+      },
+      "problem": "lc2091",
+      "prompt_chars": 2964,
+      "response_chars": 780,
+      "target_signature": "pub fn minimum_deletions(nums: Vec<i32>) -> i32",
+      "task_index": 20
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": false,
+        "error": "error[E0308]: mismatched types\n  --> <temporary-directory>/candidate.rs:40:9\n   |\n 5 |     pub fn minimum_deletions(nums: Vec<i32>) -> i32 {\n   |                                                 --- expected `i32` because of return type\n...\n40 |         left.min(right).min(both)\n   |         ^^^^^^^^^^^^^^^^^^^^^^^^^ expected `i32`, found `usize`\n   |\nhelp: you can convert a `usize` to an `i32` and panic if the converted value doesn't fit\n   |\n40 |         left.min(right).min(both).try_into().unwrap()\n   |                                  ++++++++++++++++++++\n\nerror: aborting due to 1 previous error\n\nFor more information about this error, try `rustc --explain E0308`.\n",
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 298,
+        "eval_duration": 5911120000,
+        "load_duration": 3249417,
+        "prompt_eval_count": 1212,
+        "prompt_eval_duration": 1010750000,
+        "total_duration": 6968568375,
+        "wall_seconds_client": 6.9725072383880615
+      },
+      "problem": "lc2091",
+      "prompt_chars": 4314,
+      "response_chars": 871,
+      "target_signature": "pub fn minimum_deletions(nums: Vec<i32>) -> i32",
+      "task_index": 20
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": false,
+        "error": "no impl Solution block",
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": false,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 258,
+        "eval_duration": 5005751000,
+        "load_duration": 860209,
+        "prompt_eval_count": 582,
+        "prompt_eval_duration": 616811000,
+        "total_duration": 5678908834,
+        "wall_seconds_client": 5.681636095046997
+      },
+      "problem": "lc1073",
+      "prompt_chars": 1825,
+      "response_chars": 658,
+      "target_signature": "pub fn add_negabinary(arr1: Vec<i32>, arr2: Vec<i32>) -> Vec<i32>",
+      "task_index": 21
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "error": "wrong output",
+        "n_checked": 159,
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 288,
+        "eval_duration": 5609788000,
+        "load_duration": 614708,
+        "prompt_eval_count": 625,
+        "prompt_eval_duration": 693387000,
+        "total_duration": 6316117042,
+        "wall_seconds_client": 6.318613052368164
+      },
+      "problem": "lc1073",
+      "prompt_chars": 1859,
+      "response_chars": 883,
+      "target_signature": "pub fn add_negabinary(arr1: Vec<i32>, arr2: Vec<i32>) -> Vec<i32>",
+      "task_index": 21
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "error": "wrong output",
+        "n_checked": 159,
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 338,
+        "eval_duration": 6722123000,
+        "load_duration": 2195333,
+        "prompt_eval_count": 1008,
+        "prompt_eval_duration": 832364000,
+        "total_duration": 7595959166,
+        "wall_seconds_client": 7.599269866943359
+      },
+      "problem": "lc1073",
+      "prompt_chars": 2904,
+      "response_chars": 1034,
+      "target_signature": "pub fn add_negabinary(arr1: Vec<i32>, arr2: Vec<i32>) -> Vec<i32>",
+      "task_index": 21
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": true,
+        "error": "wrong output",
+        "n_checked": 200,
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 146,
+        "eval_duration": 2697310000,
+        "load_duration": 3247250,
+        "prompt_eval_count": 604,
+        "prompt_eval_duration": 468382000,
+        "total_duration": 3247268375,
+        "wall_seconds_client": 3.2500221729278564
+      },
+      "problem": "lc2139",
+      "prompt_chars": 2028,
+      "response_chars": 462,
+      "target_signature": "pub fn min_moves(target: i32, max_doubles: i32) -> i32",
+      "task_index": 22
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 229,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 132,
+        "eval_duration": 2435990000,
+        "load_duration": 2366708,
+        "prompt_eval_count": 469,
+        "prompt_eval_duration": 339347000,
+        "total_duration": 2804793417,
+        "wall_seconds_client": 2.8074851036071777
+      },
+      "problem": "lc2139",
+      "prompt_chars": 1571,
+      "response_chars": 373,
+      "target_signature": "pub fn min_moves(target: i32, max_doubles: i32) -> i32",
+      "task_index": 22
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 229,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 141,
+        "eval_duration": 2627952000,
+        "load_duration": 2336083,
+        "prompt_eval_count": 882,
+        "prompt_eval_duration": 705717000,
+        "total_duration": 3366780542,
+        "wall_seconds_client": 3.3698549270629883
+      },
+      "problem": "lc2139",
+      "prompt_chars": 2830,
+      "response_chars": 444,
+      "target_signature": "pub fn min_moves(target: i32, max_doubles: i32) -> i32",
+      "task_index": 22
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": false,
+        "error": "no impl Solution block",
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": false,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 125,
+        "eval_duration": 2230591000,
+        "load_duration": 2189167,
+        "prompt_eval_count": 290,
+        "prompt_eval_duration": 262279000,
+        "total_duration": 2538344875,
+        "wall_seconds_client": 2.5405378341674805
+      },
+      "problem": "lc96",
+      "prompt_chars": 1072,
+      "response_chars": 268,
+      "target_signature": "pub fn num_trees(n: i32) -> i32",
+      "task_index": 23
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 19,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 456,
+        "eval_duration": 8620603000,
+        "load_duration": 764209,
+        "prompt_eval_count": 631,
+        "prompt_eval_duration": 658762000,
+        "total_duration": 9290870459,
+        "wall_seconds_client": 9.293335914611816
+      },
+      "problem": "lc96",
+      "prompt_chars": 1773,
+      "response_chars": 1196,
+      "target_signature": "pub fn num_trees(n: i32) -> i32",
+      "task_index": 23
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 19,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 132,
+        "eval_duration": 2396897000,
+        "load_duration": 1578250,
+        "prompt_eval_count": 739,
+        "prompt_eval_duration": 529813000,
+        "total_duration": 2965907583,
+        "wall_seconds_client": 2.968855857849121
+      },
+      "problem": "lc96",
+      "prompt_chars": 2099,
+      "response_chars": 314,
+      "target_signature": "pub fn num_trees(n: i32) -> i32",
+      "task_index": 23
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": false,
+        "error": "no impl Solution block",
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": false,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 174,
+        "eval_duration": 3145556000,
+        "load_duration": 1404208,
+        "prompt_eval_count": 531,
+        "prompt_eval_duration": 443851000,
+        "total_duration": 3628697417,
+        "wall_seconds_client": 3.6315410137176514
+      },
+      "problem": "lc1283",
+      "prompt_chars": 1785,
+      "response_chars": 511,
+      "target_signature": "pub fn smallest_divisor(nums: Vec<i32>, threshold: i32) -> i32",
+      "task_index": 24
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": false,
+        "error": "\n505 | | }\n    | |_- in this macro invocation\n    |\n   ::: /opt/homebrew/Cellar/rust/1.98.1/lib/rustlib/src/rust/library/core/src/internal_macros.rs:22:9\n    |\n 22 |           const impl $imp<$u> for &$t {\n    |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^ `&i32` implements `Div<i32>`\n...\n 33 |           const impl $imp<&$u> for $t {\n    |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^ `i32` implements `Div<&i32>`\n...\n 44 |           const impl $imp<&$u> for &$t {\n    |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `&i32` implements `Div`\n    = note: this error originates in the macro `div_impl_integer` (in Nightly builds, run with -Z macro-backtrace for more info)\n\nerror[E0277]: a value of type `i64` cannot be made by summing an iterator over elements of type `i32`\n    --> <temporary-directory>/candidate.rs:12:84\n     |\n  12 |             let sum: i64 = nums.iter().map(|&x| (x + mid - 1) / mid as i32 as i64).sum();\n     |                                                                                    ^^^ value of type `i64` cannot be made by summing a `std::iter::Iterator<Item=i32>`\n     |\n     = help: the trait `Sum<i32>` is not implemented for `i64`\nhelp: `i64` implements trait `Sum<A>`\n    --> /opt/homebrew/Cellar/rust/1.98.1/lib/rustlib/src/rust/library/core/src/iter/traits/accum.rs:50:9\n     |\n  50 |         impl Sum for $a {\n     |         ^^^^^^^^^^^^^^^ `Sum`\n...\n  72 |         impl<'a> Sum<&'a $a> for $a {\n     |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^ `Sum<&i64>`\n...\n 206 | integer_sum_product! { i8 i16 i32 i64 i128 isize u8 u16 u32 u64 u128 usize }\n     | ---------------------------------------------------------------------------- in this macro invocation\nnote: the method call chain might not have had the expected associated types\n    --> <temporary-directory>/candidate.rs:12:40\n     |\n  12 |             let sum: i64 = nums.iter().map(|&x| (x + mid - 1) / mid as i32 as i64).sum();\n     |                            ---- ------ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `Iterator::Item` changed to `i32` here\n     |                            |    |\n     |                            |    `Iterator::Item` is `&i32` here\n     |                            this expression has type `Vec<i32>`\nnote: required by a bound in `std::iter::Iterator::sum`\n    --> /opt/homebrew/Cellar/rust/1.98.1/lib/rustlib/src/rust/library/core/src/iter/traits/iterator.rs:3672:12\n     |\n3669 |     fn sum<S>(self) -> S\n     |        --- required by a bound in this associated function\n...\n3672 |         S: [const] Sum<Self::Item>,\n     |            ^^^^^^^^^^^^^^^^^^^^^^^ required by this bound in `Iterator::sum`\n     = note: this error originates in the macro `integer_sum_product` (in Nightly builds, run with -Z macro-backtrace for more info)\n\nerror: aborting due to 3 previous errors\n\nSome errors have detailed explanations: E0277, E0308.\nFor more information about an error, try `rustc --explain E0277`.\n",
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 180,
+        "eval_duration": 3299598000,
+        "load_duration": 778208,
+        "prompt_eval_count": 772,
+        "prompt_eval_duration": 769456000,
+        "total_duration": 4080838291,
+        "wall_seconds_client": 4.08336877822876
+      },
+      "problem": "lc1283",
+      "prompt_chars": 2291,
+      "response_chars": 563,
+      "target_signature": "pub fn smallest_divisor(nums: Vec<i32>, threshold: i32) -> i32",
+      "task_index": 24
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 244,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 190,
+        "eval_duration": 3523220000,
+        "load_duration": 801500,
+        "prompt_eval_count": 1113,
+        "prompt_eval_duration": 1071462000,
+        "total_duration": 4619882125,
+        "wall_seconds_client": 4.622920989990234
+      },
+      "problem": "lc1283",
+      "prompt_chars": 3299,
+      "response_chars": 617,
+      "target_signature": "pub fn smallest_divisor(nums: Vec<i32>, threshold: i32) -> i32",
+      "task_index": 24
+    }
+  ],
+  "seed": 20260926,
+  "summary": {
+    "devstral-small-2:24b-instruct-2512-q4_K_M": {
+      "both": {
+        "compile_rate": 1.0,
+        "n": 24,
+        "semantic_success_rate": 0.5833333333333334
+      },
+      "nl": {
+        "compile_rate": 0.8333333333333334,
+        "n": 24,
+        "semantic_success_rate": 0.5
+      },
+      "spec": {
+        "compile_rate": 0.9166666666666666,
+        "n": 24,
+        "semantic_success_rate": 0.875
+      }
+    },
+    "gemma3:12b": {
+      "both": {
+        "compile_rate": 0.875,
+        "n": 24,
+        "semantic_success_rate": 0.5
+      },
+      "nl": {
+        "compile_rate": 0.4583333333333333,
+        "n": 24,
+        "semantic_success_rate": 0.20833333333333334
+      },
+      "spec": {
+        "compile_rate": 0.8333333333333334,
+        "n": 24,
+        "semantic_success_rate": 0.4583333333333333
+      }
+    }
+  }
+}

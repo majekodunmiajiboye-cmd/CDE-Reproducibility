@@ -1,0 +1,1836 @@
+{
+  "features": [
+    "d_algorithmic_difficulty",
+    "d_nl_log_tokens",
+    "d_spec_log_tokens",
+    "d_spec_logic_density",
+    "d_interface_complexity"
+  ],
+  "purpose": "Outcome-blind R4b task-demand proxy features frozen before local pilot outcomes",
+  "rows": [
+    {
+      "d_algorithmic_difficulty": 0.25,
+      "d_interface_complexity": 5.0,
+      "d_nl_log_tokens": 6.490723534502507,
+      "d_spec_log_tokens": 6.1675164908883415,
+      "d_spec_logic_density": 0.03361344537815126,
+      "family": "codeforces",
+      "problem": "cf1992D",
+      "raw": {
+        "helper_spec_fns": 9,
+        "logic_terms": 7,
+        "n_params": 3,
+        "nl_tokens": 658,
+        "spec_tokens": 476,
+        "type_nesting": 2
+      },
+      "split": "pilot",
+      "target_signature": "pub fn can_cross(a: Vec<u8>, m: usize, k: i64) -> (result: bool)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.3125,
+      "d_interface_complexity": 4.0,
+      "d_nl_log_tokens": 5.429345628954441,
+      "d_spec_log_tokens": 4.770684624465665,
+      "d_spec_logic_density": 0.06837606837606838,
+      "family": "codeforces",
+      "problem": "cf230B",
+      "raw": {
+        "helper_spec_fns": 2,
+        "logic_terms": 6,
+        "n_params": 1,
+        "nl_tokens": 227,
+        "spec_tokens": 117,
+        "type_nesting": 3
+      },
+      "split": "pilot",
+      "target_signature": "pub fn classify_t_primes(nums: Vec<u64>) -> (res: Vec<bool>)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.5625,
+      "d_interface_complexity": 5.0,
+      "d_nl_log_tokens": 5.272999558563747,
+      "d_spec_log_tokens": 6.0844994130751715,
+      "d_spec_logic_density": 0.02968036529680365,
+      "family": "codeforces",
+      "problem": "cf467C",
+      "raw": {
+        "helper_spec_fns": 6,
+        "logic_terms": 7,
+        "n_params": 3,
+        "nl_tokens": 194,
+        "spec_tokens": 438,
+        "type_nesting": 2
+      },
+      "split": "pilot",
+      "target_signature": "pub fn max_k_segments_sum(nums: Vec<i64>, m: usize, k: usize) -> (result: i128)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.0,
+      "d_interface_complexity": 5.0,
+      "d_nl_log_tokens": 6.030685260261263,
+      "d_spec_log_tokens": 5.176149732573829,
+      "d_spec_logic_density": 0.03977272727272727,
+      "family": "codeforces",
+      "problem": "cf1759B",
+      "raw": {
+        "helper_spec_fns": 2,
+        "logic_terms": 5,
+        "n_params": 3,
+        "nl_tokens": 415,
+        "spec_tokens": 176,
+        "type_nesting": 2
+      },
+      "split": "pilot",
+      "target_signature": "pub fn lost_permutation(b: Vec<u32>, m: usize, s: u32) -> (result: bool)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.0,
+      "d_interface_complexity": 4.0,
+      "d_nl_log_tokens": 5.25227342804663,
+      "d_spec_log_tokens": 5.153291594497779,
+      "d_spec_logic_density": 0.046511627906976744,
+      "family": "codeforces",
+      "problem": "cf266A",
+      "raw": {
+        "helper_spec_fns": 3,
+        "logic_terms": 5,
+        "n_params": 2,
+        "nl_tokens": 190,
+        "spec_tokens": 172,
+        "type_nesting": 2
+      },
+      "split": "pilot",
+      "target_signature": "pub fn min_stones_to_remove(colors: Vec<u8>, n: usize) -> (result: usize)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.0,
+      "d_interface_complexity": 2.0,
+      "d_nl_log_tokens": 5.5053315359323625,
+      "d_spec_log_tokens": 4.718498871295094,
+      "d_spec_logic_density": 0.02702702702702703,
+      "family": "codeforces",
+      "problem": "cf509A",
+      "raw": {
+        "helper_spec_fns": 1,
+        "logic_terms": 2,
+        "n_params": 1,
+        "nl_tokens": 245,
+        "spec_tokens": 111,
+        "type_nesting": 1
+      },
+      "split": "pilot",
+      "target_signature": "pub fn max_in_table(n: u32) -> (result: u32)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.0,
+      "d_interface_complexity": 3.0,
+      "d_nl_log_tokens": 4.727387818712341,
+      "d_spec_log_tokens": 4.948759890378168,
+      "d_spec_logic_density": 0.05,
+      "family": "leetcode",
+      "problem": "lc674",
+      "raw": {
+        "helper_spec_fns": 1,
+        "logic_terms": 6,
+        "n_params": 1,
+        "nl_tokens": 112,
+        "spec_tokens": 140,
+        "type_nesting": 2
+      },
+      "split": "pilot",
+      "target_signature": "pub fn find_length_of_lcis(nums: Vec<i32>) -> (res: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.0,
+      "d_interface_complexity": 3.0,
+      "d_nl_log_tokens": 4.770684624465665,
+      "d_spec_log_tokens": 4.700480365792417,
+      "d_spec_logic_density": 0.03669724770642202,
+      "family": "leetcode",
+      "problem": "lc3392",
+      "raw": {
+        "helper_spec_fns": 1,
+        "logic_terms": 3,
+        "n_params": 1,
+        "nl_tokens": 117,
+        "spec_tokens": 109,
+        "type_nesting": 2
+      },
+      "split": "pilot",
+      "target_signature": "pub fn count_subarrays(nums: Vec<i32>) -> (count: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.0,
+      "d_interface_complexity": 4.0,
+      "d_nl_log_tokens": 5.318119993844216,
+      "d_spec_log_tokens": 4.976733742420574,
+      "d_spec_logic_density": 0.027777777777777776,
+      "family": "leetcode",
+      "problem": "lc3560",
+      "raw": {
+        "helper_spec_fns": 1,
+        "logic_terms": 3,
+        "n_params": 3,
+        "nl_tokens": 203,
+        "spec_tokens": 144,
+        "type_nesting": 1
+      },
+      "split": "pilot",
+      "target_signature": "pub fn min_cutting_cost(n: i32, m: i32, k: i32) -> (result: i64)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.0,
+      "d_interface_complexity": 2.0,
+      "d_nl_log_tokens": 4.700480365792417,
+      "d_spec_log_tokens": 4.770684624465665,
+      "d_spec_logic_density": 0.05128205128205128,
+      "family": "leetcode",
+      "problem": "lc520",
+      "raw": {
+        "helper_spec_fns": 0,
+        "logic_terms": 6,
+        "n_params": 1,
+        "nl_tokens": 109,
+        "spec_tokens": 117,
+        "type_nesting": 1
+      },
+      "split": "pilot",
+      "target_signature": "pub fn detect_capital_use(word: String) -> (res: bool)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.0,
+      "d_interface_complexity": 2.0,
+      "d_nl_log_tokens": 4.983606621708336,
+      "d_spec_log_tokens": 4.969813299576001,
+      "d_spec_logic_density": 0.03496503496503497,
+      "family": "leetcode",
+      "problem": "lc9",
+      "raw": {
+        "helper_spec_fns": 3,
+        "logic_terms": 2,
+        "n_params": 1,
+        "nl_tokens": 145,
+        "spec_tokens": 143,
+        "type_nesting": 1
+      },
+      "split": "pilot",
+      "target_signature": "pub fn is_palindrome(x: i32) -> (res: bool)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.0,
+      "d_interface_complexity": 2.0,
+      "d_nl_log_tokens": 4.663439094112067,
+      "d_spec_log_tokens": 4.51085950651685,
+      "d_spec_logic_density": 0.044444444444444446,
+      "family": "leetcode",
+      "problem": "lc3827",
+      "raw": {
+        "helper_spec_fns": 1,
+        "logic_terms": 3,
+        "n_params": 1,
+        "nl_tokens": 105,
+        "spec_tokens": 90,
+        "type_nesting": 1
+      },
+      "split": "pilot",
+      "target_signature": "pub fn count_monobit(n: i32) -> (res: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.0,
+      "d_interface_complexity": 3.0,
+      "d_nl_log_tokens": 5.087596335232384,
+      "d_spec_log_tokens": 5.19295685089021,
+      "d_spec_logic_density": 0.03910614525139665,
+      "family": "leetcode",
+      "problem": "lc1827",
+      "raw": {
+        "helper_spec_fns": 2,
+        "logic_terms": 5,
+        "n_params": 1,
+        "nl_tokens": 161,
+        "spec_tokens": 179,
+        "type_nesting": 2
+      },
+      "split": "pilot",
+      "target_signature": "pub fn min_operations(nums: Vec<i32>) -> (res: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.0,
+      "d_interface_complexity": 4.0,
+      "d_nl_log_tokens": 5.049856007249537,
+      "d_spec_log_tokens": 4.852030263919617,
+      "d_spec_logic_density": 0.03937007874015748,
+      "family": "leetcode",
+      "problem": "lc1313",
+      "raw": {
+        "helper_spec_fns": 2,
+        "logic_terms": 3,
+        "n_params": 1,
+        "nl_tokens": 155,
+        "spec_tokens": 127,
+        "type_nesting": 3
+      },
+      "split": "pilot",
+      "target_signature": "pub fn decompress_rl_elist(nums: Vec<i32>) -> (result: Vec<i32>)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.0,
+      "d_interface_complexity": 5.0,
+      "d_nl_log_tokens": 5.517452896464707,
+      "d_spec_log_tokens": 4.882801922586371,
+      "d_spec_logic_density": 0.030534351145038167,
+      "family": "leetcode",
+      "problem": "lc2600",
+      "raw": {
+        "helper_spec_fns": 1,
+        "logic_terms": 3,
+        "n_params": 4,
+        "nl_tokens": 248,
+        "spec_tokens": 131,
+        "type_nesting": 1
+      },
+      "split": "pilot",
+      "target_signature": "pub fn k_items_with_maximum_sum(num_ones: i32, num_zeros: i32, num_neg_ones: i32, k: i32) -> (result: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 1.0,
+      "d_interface_complexity": 3.0,
+      "d_nl_log_tokens": 5.697093486505405,
+      "d_spec_log_tokens": 5.700443573390687,
+      "d_spec_logic_density": 0.026845637583892617,
+      "family": "leetcode",
+      "problem": "lc1563",
+      "raw": {
+        "helper_spec_fns": 4,
+        "logic_terms": 4,
+        "n_params": 1,
+        "nl_tokens": 297,
+        "spec_tokens": 298,
+        "type_nesting": 2
+      },
+      "split": "pilot",
+      "target_signature": "pub fn stone_game_v(stone_value: Vec<i32>) -> (result: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 1.0,
+      "d_interface_complexity": 6.0,
+      "d_nl_log_tokens": 5.945420608606575,
+      "d_spec_log_tokens": 5.560681631015528,
+      "d_spec_logic_density": 0.023166023166023165,
+      "family": "leetcode",
+      "problem": "lc1575",
+      "raw": {
+        "helper_spec_fns": 2,
+        "logic_terms": 4,
+        "n_params": 4,
+        "nl_tokens": 381,
+        "spec_tokens": 259,
+        "type_nesting": 2
+      },
+      "split": "pilot",
+      "target_signature": "pub fn count_routes(locations: Vec<i32>, start: i32, finish: i32, fuel: i32) -> (result: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.5,
+      "d_interface_complexity": 4.0,
+      "d_nl_log_tokens": 5.247024072160486,
+      "d_spec_log_tokens": 5.111987788356544,
+      "d_spec_logic_density": 0.04242424242424243,
+      "family": "leetcode",
+      "problem": "lc33",
+      "raw": {
+        "helper_spec_fns": 2,
+        "logic_terms": 5,
+        "n_params": 2,
+        "nl_tokens": 189,
+        "spec_tokens": 165,
+        "type_nesting": 2
+      },
+      "split": "pilot",
+      "target_signature": "pub fn search(nums: Vec<i32>, target: i32) -> (res: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.5,
+      "d_interface_complexity": 3.0,
+      "d_nl_log_tokens": 5.099866427824199,
+      "d_spec_log_tokens": 5.181783550292085,
+      "d_spec_logic_density": 0.05084745762711865,
+      "family": "leetcode",
+      "problem": "lc845",
+      "raw": {
+        "helper_spec_fns": 1,
+        "logic_terms": 8,
+        "n_params": 1,
+        "nl_tokens": 163,
+        "spec_tokens": 177,
+        "type_nesting": 2
+      },
+      "split": "pilot",
+      "target_signature": "pub fn longest_mountain(arr: Vec<i32>) -> (result: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.5,
+      "d_interface_complexity": 3.0,
+      "d_nl_log_tokens": 5.455321115357702,
+      "d_spec_log_tokens": 5.568344503761097,
+      "d_spec_logic_density": 0.034482758620689655,
+      "family": "leetcode",
+      "problem": "lc2091",
+      "raw": {
+        "helper_spec_fns": 2,
+        "logic_terms": 7,
+        "n_params": 1,
+        "nl_tokens": 233,
+        "spec_tokens": 261,
+        "type_nesting": 2
+      },
+      "split": "pilot",
+      "target_signature": "pub fn minimum_deletions(nums: Vec<i32>) -> (result: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.5,
+      "d_interface_complexity": 6.0,
+      "d_nl_log_tokens": 5.209486152841421,
+      "d_spec_log_tokens": 4.976733742420574,
+      "d_spec_logic_density": 0.041666666666666664,
+      "family": "leetcode",
+      "problem": "lc1073",
+      "raw": {
+        "helper_spec_fns": 1,
+        "logic_terms": 5,
+        "n_params": 2,
+        "nl_tokens": 182,
+        "spec_tokens": 144,
+        "type_nesting": 4
+      },
+      "split": "pilot",
+      "target_signature": "pub fn add_negabinary(arr1: Vec<i32>, arr2: Vec<i32>) -> (result: Vec<i32>)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.5,
+      "d_interface_complexity": 3.0,
+      "d_nl_log_tokens": 5.424950017481403,
+      "d_spec_log_tokens": 4.663439094112067,
+      "d_spec_logic_density": 0.02857142857142857,
+      "family": "leetcode",
+      "problem": "lc2139",
+      "raw": {
+        "helper_spec_fns": 1,
+        "logic_terms": 2,
+        "n_params": 2,
+        "nl_tokens": 226,
+        "spec_tokens": 105,
+        "type_nesting": 1
+      },
+      "split": "pilot",
+      "target_signature": "pub fn min_moves(target: i32, max_doubles: i32) -> (result: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.5,
+      "d_interface_complexity": 2.0,
+      "d_nl_log_tokens": 4.07753744390572,
+      "d_spec_log_tokens": 5.356586274672012,
+      "d_spec_logic_density": 0.014218009478672985,
+      "family": "leetcode",
+      "problem": "lc96",
+      "raw": {
+        "helper_spec_fns": 1,
+        "logic_terms": 2,
+        "n_params": 1,
+        "nl_tokens": 58,
+        "spec_tokens": 211,
+        "type_nesting": 1
+      },
+      "split": "pilot",
+      "target_signature": "pub fn num_trees(n: i32) -> (result: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.5,
+      "d_interface_complexity": 4.0,
+      "d_nl_log_tokens": 5.236441962829949,
+      "d_spec_log_tokens": 5.342334251964811,
+      "d_spec_logic_density": 0.04807692307692308,
+      "family": "leetcode",
+      "problem": "lc1283",
+      "raw": {
+        "helper_spec_fns": 3,
+        "logic_terms": 7,
+        "n_params": 2,
+        "nl_tokens": 187,
+        "spec_tokens": 208,
+        "type_nesting": 2
+      },
+      "split": "pilot",
+      "target_signature": "pub fn smallest_divisor(nums: Vec<i32>, threshold: i32) -> (res: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.1875,
+      "d_interface_complexity": 8.0,
+      "d_nl_log_tokens": 6.0867747269123065,
+      "d_spec_log_tokens": 5.081404364984463,
+      "d_spec_logic_density": 0.05625,
+      "family": "codeforces",
+      "problem": "cf519B",
+      "raw": {
+        "helper_spec_fns": 3,
+        "logic_terms": 6,
+        "n_params": 3,
+        "nl_tokens": 439,
+        "spec_tokens": 160,
+        "type_nesting": 5
+      },
+      "split": "confirm",
+      "target_signature": "pub fn find_compilation_errors(first: Vec<i64>, second: Vec<i64>, third: Vec<i64>) -> (result: (i64, i64))"
+    },
+    {
+      "d_algorithmic_difficulty": 0.3125,
+      "d_interface_complexity": 3.0,
+      "d_nl_log_tokens": 5.3706380281276624,
+      "d_spec_log_tokens": 5.746203190540153,
+      "d_spec_logic_density": 0.057692307692307696,
+      "family": "codeforces",
+      "problem": "cf1373C",
+      "raw": {
+        "helper_spec_fns": 8,
+        "logic_terms": 10,
+        "n_params": 1,
+        "nl_tokens": 214,
+        "spec_tokens": 312,
+        "type_nesting": 2
+      },
+      "split": "confirm",
+      "target_signature": "pub fn pluses_minuses_total_steps(deltas: Vec<i32>) -> (r: i64)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.25,
+      "d_interface_complexity": 3.0,
+      "d_nl_log_tokens": 5.318119993844216,
+      "d_spec_log_tokens": 5.14166355650266,
+      "d_spec_logic_density": 0.041176470588235294,
+      "family": "codeforces",
+      "problem": "cf1213C",
+      "raw": {
+        "helper_spec_fns": 4,
+        "logic_terms": 3,
+        "n_params": 2,
+        "nl_tokens": 203,
+        "spec_tokens": 170,
+        "type_nesting": 1
+      },
+      "split": "confirm",
+      "target_signature": "pub fn book_reading_digit_sum(n: u64, m: u64) -> (r: u64)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.3125,
+      "d_interface_complexity": 4.0,
+      "d_nl_log_tokens": 5.393627546352362,
+      "d_spec_log_tokens": 5.7899601708972535,
+      "d_spec_logic_density": 0.05214723926380368,
+      "family": "codeforces",
+      "problem": "cf1203C",
+      "raw": {
+        "helper_spec_fns": 7,
+        "logic_terms": 10,
+        "n_params": 2,
+        "nl_tokens": 219,
+        "spec_tokens": 326,
+        "type_nesting": 2
+      },
+      "split": "confirm",
+      "target_signature": "pub fn count_common_divisors(n: usize, a: Vec<i64>) -> (res: i64)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.5625,
+      "d_interface_complexity": 3.0,
+      "d_nl_log_tokens": 5.5254529391317835,
+      "d_spec_log_tokens": 5.924255797414532,
+      "d_spec_logic_density": 0.058981233243967826,
+      "family": "codeforces",
+      "problem": "cf546D",
+      "raw": {
+        "helper_spec_fns": 9,
+        "logic_terms": 13,
+        "n_params": 1,
+        "nl_tokens": 250,
+        "spec_tokens": 373,
+        "type_nesting": 2
+      },
+      "split": "confirm",
+      "target_signature": "pub fn max_scores_for_games(queries: Vec<(i32, i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.625,
+      "d_interface_complexity": 4.0,
+      "d_nl_log_tokens": 5.429345628954441,
+      "d_spec_log_tokens": 5.181783550292085,
+      "d_spec_logic_density": 0.03389830508474576,
+      "family": "codeforces",
+      "problem": "cf478C",
+      "raw": {
+        "helper_spec_fns": 3,
+        "logic_terms": 3,
+        "n_params": 3,
+        "nl_tokens": 227,
+        "spec_tokens": 177,
+        "type_nesting": 1
+      },
+      "split": "confirm",
+      "target_signature": "pub fn max_decorated_tables(r: i64, g: i64, b: i64) -> (result: i64)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.5625,
+      "d_interface_complexity": 5.0,
+      "d_nl_log_tokens": 5.860786223465865,
+      "d_spec_log_tokens": 6.09807428216624,
+      "d_spec_logic_density": 0.04954954954954955,
+      "family": "codeforces",
+      "problem": "cf382C",
+      "raw": {
+        "helper_spec_fns": 9,
+        "logic_terms": 13,
+        "n_params": 1,
+        "nl_tokens": 350,
+        "spec_tokens": 444,
+        "type_nesting": 4
+      },
+      "split": "confirm",
+      "target_signature": "pub fn arithmetic_progression_insertions(nums: Vec<i64>) -> (result: Option<Vec<i64>>)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.0,
+      "d_interface_complexity": 3.0,
+      "d_nl_log_tokens": 5.973809611869261,
+      "d_spec_log_tokens": 5.529429087511423,
+      "d_spec_logic_density": 0.03187250996015936,
+      "family": "codeforces",
+      "problem": "cf1560C",
+      "raw": {
+        "helper_spec_fns": 5,
+        "logic_terms": 3,
+        "n_params": 1,
+        "nl_tokens": 392,
+        "spec_tokens": 251,
+        "type_nesting": 2
+      },
+      "split": "confirm",
+      "target_signature": "pub fn infinity_table_cell(k: i64) -> (res: (i64, i64))"
+    },
+    {
+      "d_algorithmic_difficulty": 0.0,
+      "d_interface_complexity": 4.0,
+      "d_nl_log_tokens": 6.028278520230698,
+      "d_spec_log_tokens": 4.6913478822291435,
+      "d_spec_logic_density": 0.037037037037037035,
+      "family": "codeforces",
+      "problem": "cf1506A",
+      "raw": {
+        "helper_spec_fns": 2,
+        "logic_terms": 2,
+        "n_params": 3,
+        "nl_tokens": 414,
+        "spec_tokens": 108,
+        "type_nesting": 1
+      },
+      "split": "confirm",
+      "target_signature": "pub fn strange_table_number(n: u64, m: u64, x: u64) -> (result: u64)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.125,
+      "d_interface_complexity": 5.0,
+      "d_nl_log_tokens": 5.594711379601839,
+      "d_spec_log_tokens": 4.672828834461906,
+      "d_spec_logic_density": 0.03773584905660377,
+      "family": "codeforces",
+      "problem": "cf1256A",
+      "raw": {
+        "helper_spec_fns": 1,
+        "logic_terms": 3,
+        "n_params": 4,
+        "nl_tokens": 268,
+        "spec_tokens": 106,
+        "type_nesting": 1
+      },
+      "split": "confirm",
+      "target_signature": "pub fn payment_without_change(a: i64, b: i64, n: i64, S: i64) -> (res: bool)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.0625,
+      "d_interface_complexity": 4.0,
+      "d_nl_log_tokens": 6.07993319509559,
+      "d_spec_log_tokens": 5.389071729816501,
+      "d_spec_logic_density": 0.03211009174311927,
+      "family": "codeforces",
+      "problem": "cf935B",
+      "raw": {
+        "helper_spec_fns": 4,
+        "logic_terms": 3,
+        "n_params": 2,
+        "nl_tokens": 436,
+        "spec_tokens": 218,
+        "type_nesting": 2
+      },
+      "split": "confirm",
+      "target_signature": "pub fn fafa_and_gates(n: usize, s: Vec<i32>) -> (result: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.0,
+      "d_interface_complexity": 4.0,
+      "d_nl_log_tokens": 5.717027701406222,
+      "d_spec_log_tokens": 5.4680601411351315,
+      "d_spec_logic_density": 0.038135593220338986,
+      "family": "codeforces",
+      "problem": "cf2014A",
+      "raw": {
+        "helper_spec_fns": 3,
+        "logic_terms": 6,
+        "n_params": 2,
+        "nl_tokens": 303,
+        "spec_tokens": 236,
+        "type_nesting": 2
+      },
+      "split": "confirm",
+      "target_signature": "pub fn count_people_helped(people: Vec<i64>, k: i64) -> (result: usize)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.0,
+      "d_interface_complexity": 3.0,
+      "d_nl_log_tokens": 5.857933154483459,
+      "d_spec_log_tokens": 4.983606621708336,
+      "d_spec_logic_density": 0.05517241379310345,
+      "family": "codeforces",
+      "problem": "cf1399A",
+      "raw": {
+        "helper_spec_fns": 3,
+        "logic_terms": 5,
+        "n_params": 1,
+        "nl_tokens": 349,
+        "spec_tokens": 145,
+        "type_nesting": 2
+      },
+      "split": "confirm",
+      "target_signature": "pub fn remove_smallest_possible(a: Vec<i32>) -> (res: bool)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.0,
+      "d_interface_complexity": 4.0,
+      "d_nl_log_tokens": 6.218600119691729,
+      "d_spec_log_tokens": 4.543294782270004,
+      "d_spec_logic_density": 0.03225806451612903,
+      "family": "codeforces",
+      "problem": "cf1858A",
+      "raw": {
+        "helper_spec_fns": 1,
+        "logic_terms": 2,
+        "n_params": 3,
+        "nl_tokens": 501,
+        "spec_tokens": 93,
+        "type_nesting": 1
+      },
+      "split": "confirm",
+      "target_signature": "pub fn first_wins(a: i64, b: i64, c: i64) -> (result: bool)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.0,
+      "d_interface_complexity": 2.0,
+      "d_nl_log_tokens": 5.5093883366279774,
+      "d_spec_log_tokens": 4.543294782270004,
+      "d_spec_logic_density": 0.053763440860215055,
+      "family": "codeforces",
+      "problem": "cf1985B",
+      "raw": {
+        "helper_spec_fns": 1,
+        "logic_terms": 4,
+        "n_params": 1,
+        "nl_tokens": 246,
+        "spec_tokens": 93,
+        "type_nesting": 1
+      },
+      "split": "confirm",
+      "target_signature": "pub fn max_multiples_sum_x(n: i32) -> (result: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.0,
+      "d_interface_complexity": 5.0,
+      "d_nl_log_tokens": 5.594711379601839,
+      "d_spec_log_tokens": 5.017279836814924,
+      "d_spec_logic_density": 0.02666666666666667,
+      "family": "codeforces",
+      "problem": "cf1772B",
+      "raw": {
+        "helper_spec_fns": 2,
+        "logic_terms": 2,
+        "n_params": 4,
+        "nl_tokens": 268,
+        "spec_tokens": 150,
+        "type_nesting": 1
+      },
+      "split": "confirm",
+      "target_signature": "pub fn can_make_beautiful(a: i32, b: i32, c: i32, d: i32) -> (res: bool)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.0,
+      "d_interface_complexity": 8.0,
+      "d_nl_log_tokens": 5.459585514144159,
+      "d_spec_log_tokens": 5.351858133476067,
+      "d_spec_logic_density": 0.0380952380952381,
+      "family": "codeforces",
+      "problem": "cf302A",
+      "raw": {
+        "helper_spec_fns": 2,
+        "logic_terms": 6,
+        "n_params": 3,
+        "nl_tokens": 234,
+        "spec_tokens": 210,
+        "type_nesting": 5
+      },
+      "split": "confirm",
+      "target_signature": "pub fn answer_queries(a: Vec<i8>, qls: Vec<usize>, qrs: Vec<usize>) -> (result: Vec<u8>)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.5,
+      "d_interface_complexity": 3.0,
+      "d_nl_log_tokens": 6.137727054086234,
+      "d_spec_log_tokens": 5.272999558563747,
+      "d_spec_logic_density": 0.05670103092783505,
+      "family": "codeforces",
+      "problem": "cf1669D",
+      "raw": {
+        "helper_spec_fns": 5,
+        "logic_terms": 6,
+        "n_params": 1,
+        "nl_tokens": 462,
+        "spec_tokens": 194,
+        "type_nesting": 2
+      },
+      "split": "confirm",
+      "target_signature": "pub fn possible_picture(cells: Vec<i32>) -> (res: bool)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.0,
+      "d_interface_complexity": 3.0,
+      "d_nl_log_tokens": 4.406719247264253,
+      "d_spec_log_tokens": 3.912023005428146,
+      "d_spec_logic_density": 0.04081632653061224,
+      "family": "leetcode",
+      "problem": "lc2235",
+      "raw": {
+        "helper_spec_fns": 0,
+        "logic_terms": 2,
+        "n_params": 2,
+        "nl_tokens": 81,
+        "spec_tokens": 49,
+        "type_nesting": 1
+      },
+      "split": "confirm",
+      "target_signature": "pub fn sum(num1: i32, num2: i32) -> (result: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.0,
+      "d_interface_complexity": 4.0,
+      "d_nl_log_tokens": 4.890349128221754,
+      "d_spec_log_tokens": 5.0106352940962555,
+      "d_spec_logic_density": 0.04697986577181208,
+      "family": "leetcode",
+      "problem": "lc1539",
+      "raw": {
+        "helper_spec_fns": 2,
+        "logic_terms": 5,
+        "n_params": 2,
+        "nl_tokens": 132,
+        "spec_tokens": 149,
+        "type_nesting": 2
+      },
+      "split": "confirm",
+      "target_signature": "pub fn find_kth_positive(arr: Vec<i32>, k: i32) -> (result: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.0,
+      "d_interface_complexity": 3.0,
+      "d_nl_log_tokens": 4.897839799950911,
+      "d_spec_log_tokens": 4.330733340286331,
+      "d_spec_logic_density": 0.05333333333333334,
+      "family": "leetcode",
+      "problem": "lc3046",
+      "raw": {
+        "helper_spec_fns": 0,
+        "logic_terms": 4,
+        "n_params": 1,
+        "nl_tokens": 133,
+        "spec_tokens": 75,
+        "type_nesting": 2
+      },
+      "split": "confirm",
+      "target_signature": "pub fn is_possible_to_split(nums: Vec<i32>) -> (res: bool)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.0,
+      "d_interface_complexity": 5.0,
+      "d_nl_log_tokens": 5.831882477283517,
+      "d_spec_log_tokens": 5.365976015021851,
+      "d_spec_logic_density": 0.046948356807511735,
+      "family": "leetcode",
+      "problem": "lc2660",
+      "raw": {
+        "helper_spec_fns": 3,
+        "logic_terms": 7,
+        "n_params": 2,
+        "nl_tokens": 340,
+        "spec_tokens": 213,
+        "type_nesting": 3
+      },
+      "split": "confirm",
+      "target_signature": "pub fn is_winner(player1: Vec<i32>, player2: Vec<i32>) -> (result: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.0,
+      "d_interface_complexity": 2.0,
+      "d_nl_log_tokens": 5.204006687076795,
+      "d_spec_log_tokens": 4.990432586778736,
+      "d_spec_logic_density": 0.04794520547945205,
+      "family": "leetcode",
+      "problem": "lc551",
+      "raw": {
+        "helper_spec_fns": 3,
+        "logic_terms": 4,
+        "n_params": 1,
+        "nl_tokens": 181,
+        "spec_tokens": 146,
+        "type_nesting": 1
+      },
+      "split": "confirm",
+      "target_signature": "pub fn check_record(s: String) -> (res: bool)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.0,
+      "d_interface_complexity": 2.0,
+      "d_nl_log_tokens": 5.075173815233827,
+      "d_spec_log_tokens": 4.787491742782046,
+      "d_spec_logic_density": 0.04201680672268908,
+      "family": "leetcode",
+      "problem": "lc3622",
+      "raw": {
+        "helper_spec_fns": 3,
+        "logic_terms": 2,
+        "n_params": 1,
+        "nl_tokens": 159,
+        "spec_tokens": 119,
+        "type_nesting": 1
+      },
+      "split": "confirm",
+      "target_signature": "pub fn check_divisibility(n: i32) -> (result: bool)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.0,
+      "d_interface_complexity": 3.0,
+      "d_nl_log_tokens": 4.875197323201151,
+      "d_spec_log_tokens": 4.6443908991413725,
+      "d_spec_logic_density": 0.05825242718446602,
+      "family": "leetcode",
+      "problem": "lc1464",
+      "raw": {
+        "helper_spec_fns": 1,
+        "logic_terms": 5,
+        "n_params": 1,
+        "nl_tokens": 130,
+        "spec_tokens": 103,
+        "type_nesting": 2
+      },
+      "split": "confirm",
+      "target_signature": "pub fn max_product(nums: Vec<i32>) -> (res: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.0,
+      "d_interface_complexity": 2.0,
+      "d_nl_log_tokens": 5.181783550292085,
+      "d_spec_log_tokens": 4.356708826689592,
+      "d_spec_logic_density": 0.03896103896103896,
+      "family": "leetcode",
+      "problem": "lc3658",
+      "raw": {
+        "helper_spec_fns": 1,
+        "logic_terms": 2,
+        "n_params": 1,
+        "nl_tokens": 177,
+        "spec_tokens": 77,
+        "type_nesting": 1
+      },
+      "split": "confirm",
+      "target_signature": "pub fn gcd_of_odd_even_sums(n: i32) -> (res: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.0,
+      "d_interface_complexity": 3.0,
+      "d_nl_log_tokens": 5.093750200806762,
+      "d_spec_log_tokens": 5.5909869805108565,
+      "d_spec_logic_density": 0.026217228464419477,
+      "family": "leetcode",
+      "problem": "lc2815",
+      "raw": {
+        "helper_spec_fns": 4,
+        "logic_terms": 3,
+        "n_params": 1,
+        "nl_tokens": 162,
+        "spec_tokens": 267,
+        "type_nesting": 2
+      },
+      "split": "confirm",
+      "target_signature": "pub fn max_sum(nums: Vec<i32>) -> (result: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.0,
+      "d_interface_complexity": 4.0,
+      "d_nl_log_tokens": 5.8916442118257715,
+      "d_spec_log_tokens": 5.365976015021851,
+      "d_spec_logic_density": 0.046948356807511735,
+      "family": "leetcode",
+      "problem": "lc2073",
+      "raw": {
+        "helper_spec_fns": 3,
+        "logic_terms": 7,
+        "n_params": 2,
+        "nl_tokens": 361,
+        "spec_tokens": 213,
+        "type_nesting": 2
+      },
+      "split": "confirm",
+      "target_signature": "pub fn time_required_to_buy(tickets: Vec<i32>, k: i32) -> (result: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.0,
+      "d_interface_complexity": 4.0,
+      "d_nl_log_tokens": 5.5254529391317835,
+      "d_spec_log_tokens": 5.488937726156687,
+      "d_spec_logic_density": 0.029045643153526972,
+      "family": "leetcode",
+      "problem": "lc3069",
+      "raw": {
+        "helper_spec_fns": 3,
+        "logic_terms": 4,
+        "n_params": 1,
+        "nl_tokens": 250,
+        "spec_tokens": 241,
+        "type_nesting": 3
+      },
+      "split": "confirm",
+      "target_signature": "pub fn result_array(nums: Vec<i32>) -> (result: Vec<i32>)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.0,
+      "d_interface_complexity": 4.0,
+      "d_nl_log_tokens": 5.3981627015177525,
+      "d_spec_log_tokens": 5.272999558563747,
+      "d_spec_logic_density": 0.030927835051546393,
+      "family": "leetcode",
+      "problem": "lc3270",
+      "raw": {
+        "helper_spec_fns": 3,
+        "logic_terms": 3,
+        "n_params": 3,
+        "nl_tokens": 220,
+        "spec_tokens": 194,
+        "type_nesting": 1
+      },
+      "split": "confirm",
+      "target_signature": "pub fn generate_key(num1: i32, num2: i32, num3: i32) -> (result: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.0,
+      "d_interface_complexity": 3.0,
+      "d_nl_log_tokens": 5.455321115357702,
+      "d_spec_log_tokens": 4.890349128221754,
+      "d_spec_logic_density": 0.045454545454545456,
+      "family": "leetcode",
+      "problem": "lc575",
+      "raw": {
+        "helper_spec_fns": 2,
+        "logic_terms": 4,
+        "n_params": 1,
+        "nl_tokens": 233,
+        "spec_tokens": 132,
+        "type_nesting": 2
+      },
+      "split": "confirm",
+      "target_signature": "pub fn distribute_candies(candy_type: Vec<i32>) -> (res: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.0,
+      "d_interface_complexity": 3.0,
+      "d_nl_log_tokens": 4.8283137373023015,
+      "d_spec_log_tokens": 4.836281906951478,
+      "d_spec_logic_density": 0.04,
+      "family": "leetcode",
+      "problem": "lc1295",
+      "raw": {
+        "helper_spec_fns": 2,
+        "logic_terms": 3,
+        "n_params": 1,
+        "nl_tokens": 124,
+        "spec_tokens": 125,
+        "type_nesting": 2
+      },
+      "split": "confirm",
+      "target_signature": "pub fn find_numbers(nums: Vec<i32>) -> (result: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.0,
+      "d_interface_complexity": 3.0,
+      "d_nl_log_tokens": 4.804021044733257,
+      "d_spec_log_tokens": 5.1647859739235145,
+      "d_spec_logic_density": 0.028735632183908046,
+      "family": "leetcode",
+      "problem": "lc2455",
+      "raw": {
+        "helper_spec_fns": 2,
+        "logic_terms": 3,
+        "n_params": 1,
+        "nl_tokens": 121,
+        "spec_tokens": 174,
+        "type_nesting": 2
+      },
+      "split": "confirm",
+      "target_signature": "pub fn average_value(nums: Vec<i32>) -> (result: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.0,
+      "d_interface_complexity": 4.0,
+      "d_nl_log_tokens": 4.836281906951478,
+      "d_spec_log_tokens": 5.318119993844216,
+      "d_spec_logic_density": 0.054187192118226604,
+      "family": "leetcode",
+      "problem": "lc645",
+      "raw": {
+        "helper_spec_fns": 2,
+        "logic_terms": 9,
+        "n_params": 1,
+        "nl_tokens": 125,
+        "spec_tokens": 203,
+        "type_nesting": 3
+      },
+      "split": "confirm",
+      "target_signature": "pub fn find_error_nums(nums: Vec<i32>) -> (result: Vec<i32>)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.0,
+      "d_interface_complexity": 3.0,
+      "d_nl_log_tokens": 5.82600010738045,
+      "d_spec_log_tokens": 4.574710978503383,
+      "d_spec_logic_density": 0.041666666666666664,
+      "family": "leetcode",
+      "problem": "lc1863",
+      "raw": {
+        "helper_spec_fns": 1,
+        "logic_terms": 3,
+        "n_params": 1,
+        "nl_tokens": 338,
+        "spec_tokens": 96,
+        "type_nesting": 2
+      },
+      "split": "confirm",
+      "target_signature": "pub fn subset_xor_sum(nums: Vec<i32>) -> (result: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.0,
+      "d_interface_complexity": 6.0,
+      "d_nl_log_tokens": 5.572154032177765,
+      "d_spec_log_tokens": 5.602118820879701,
+      "d_spec_logic_density": 0.02962962962962963,
+      "family": "leetcode",
+      "problem": "lc1779",
+      "raw": {
+        "helper_spec_fns": 3,
+        "logic_terms": 5,
+        "n_params": 3,
+        "nl_tokens": 262,
+        "spec_tokens": 270,
+        "type_nesting": 3
+      },
+      "split": "confirm",
+      "target_signature": "pub fn nearest_valid_point(x: i32, y: i32, points: Vec<Vec<i32>>) -> (result: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.0,
+      "d_interface_complexity": 4.0,
+      "d_nl_log_tokens": 5.272999558563747,
+      "d_spec_log_tokens": 5.680172609017068,
+      "d_spec_logic_density": 0.05136986301369863,
+      "family": "leetcode",
+      "problem": "lc3000",
+      "raw": {
+        "helper_spec_fns": 4,
+        "logic_terms": 11,
+        "n_params": 1,
+        "nl_tokens": 194,
+        "spec_tokens": 292,
+        "type_nesting": 3
+      },
+      "split": "confirm",
+      "target_signature": "pub fn area_of_max_diagonal(dimensions: Vec<Vec<i32>>) -> (result: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.0,
+      "d_interface_complexity": 3.0,
+      "d_nl_log_tokens": 4.248495242049359,
+      "d_spec_log_tokens": 5.081404364984463,
+      "d_spec_logic_density": 0.05,
+      "family": "leetcode",
+      "problem": "lc242",
+      "raw": {
+        "helper_spec_fns": 4,
+        "logic_terms": 4,
+        "n_params": 2,
+        "nl_tokens": 69,
+        "spec_tokens": 160,
+        "type_nesting": 1
+      },
+      "split": "confirm",
+      "target_signature": "pub fn is_anagram(s: String, t: String) -> (res: bool)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.0,
+      "d_interface_complexity": 3.0,
+      "d_nl_log_tokens": 4.5217885770490405,
+      "d_spec_log_tokens": 4.634728988229636,
+      "d_spec_logic_density": 0.029411764705882353,
+      "family": "leetcode",
+      "problem": "lc119",
+      "raw": {
+        "helper_spec_fns": 1,
+        "logic_terms": 2,
+        "n_params": 1,
+        "nl_tokens": 91,
+        "spec_tokens": 102,
+        "type_nesting": 2
+      },
+      "split": "confirm",
+      "target_signature": "pub fn get_row(row_index: i32) -> (row: Vec<i32>)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.0,
+      "d_interface_complexity": 3.0,
+      "d_nl_log_tokens": 5.209486152841421,
+      "d_spec_log_tokens": 4.736198448394496,
+      "d_spec_logic_density": 0.035398230088495575,
+      "family": "leetcode",
+      "problem": "lc1752",
+      "raw": {
+        "helper_spec_fns": 1,
+        "logic_terms": 3,
+        "n_params": 1,
+        "nl_tokens": 182,
+        "spec_tokens": 113,
+        "type_nesting": 2
+      },
+      "split": "confirm",
+      "target_signature": "pub fn check(nums: Vec<i32>) -> (result: bool)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.0,
+      "d_interface_complexity": 3.0,
+      "d_nl_log_tokens": 5.204006687076795,
+      "d_spec_log_tokens": 5.247024072160486,
+      "d_spec_logic_density": 0.026455026455026454,
+      "family": "leetcode",
+      "problem": "lc2765",
+      "raw": {
+        "helper_spec_fns": 2,
+        "logic_terms": 3,
+        "n_params": 1,
+        "nl_tokens": 181,
+        "spec_tokens": 189,
+        "type_nesting": 2
+      },
+      "split": "confirm",
+      "target_signature": "pub fn alternating_subarray(nums: Vec<i32>) -> (result: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.0,
+      "d_interface_complexity": 2.0,
+      "d_nl_log_tokens": 5.017279836814924,
+      "d_spec_log_tokens": 4.663439094112067,
+      "d_spec_logic_density": 0.0380952380952381,
+      "family": "leetcode",
+      "problem": "lc2485",
+      "raw": {
+        "helper_spec_fns": 1,
+        "logic_terms": 3,
+        "n_params": 1,
+        "nl_tokens": 150,
+        "spec_tokens": 105,
+        "type_nesting": 1
+      },
+      "split": "confirm",
+      "target_signature": "pub fn pivot_integer(n: i32) -> (result: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.0,
+      "d_interface_complexity": 3.0,
+      "d_nl_log_tokens": 4.77912349311153,
+      "d_spec_log_tokens": 4.48863636973214,
+      "d_spec_logic_density": 0.03409090909090909,
+      "family": "leetcode",
+      "problem": "lc2894",
+      "raw": {
+        "helper_spec_fns": 1,
+        "logic_terms": 2,
+        "n_params": 2,
+        "nl_tokens": 118,
+        "spec_tokens": 88,
+        "type_nesting": 1
+      },
+      "split": "confirm",
+      "target_signature": "pub fn difference_of_sums(n: i32, m: i32) -> (result: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.0,
+      "d_interface_complexity": 3.0,
+      "d_nl_log_tokens": 5.198497031265826,
+      "d_spec_log_tokens": 5.153291594497779,
+      "d_spec_logic_density": 0.03488372093023256,
+      "family": "leetcode",
+      "problem": "lc3736",
+      "raw": {
+        "helper_spec_fns": 3,
+        "logic_terms": 3,
+        "n_params": 1,
+        "nl_tokens": 180,
+        "spec_tokens": 172,
+        "type_nesting": 2
+      },
+      "split": "confirm",
+      "target_signature": "pub fn min_moves(nums: Vec<i32>) -> (result: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.0,
+      "d_interface_complexity": 3.0,
+      "d_nl_log_tokens": 5.365976015021851,
+      "d_spec_log_tokens": 5.099866427824199,
+      "d_spec_logic_density": 0.024539877300613498,
+      "family": "leetcode",
+      "problem": "lc2582",
+      "raw": {
+        "helper_spec_fns": 2,
+        "logic_terms": 2,
+        "n_params": 2,
+        "nl_tokens": 213,
+        "spec_tokens": 163,
+        "type_nesting": 1
+      },
+      "split": "confirm",
+      "target_signature": "pub fn pass_the_pillow(n: i32, time: i32) -> (res: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 1.0,
+      "d_interface_complexity": 5.0,
+      "d_nl_log_tokens": 4.9344739331306915,
+      "d_spec_log_tokens": 5.860786223465865,
+      "d_spec_logic_density": 0.037142857142857144,
+      "family": "leetcode",
+      "problem": "lc2444",
+      "raw": {
+        "helper_spec_fns": 6,
+        "logic_terms": 7,
+        "n_params": 3,
+        "nl_tokens": 138,
+        "spec_tokens": 350,
+        "type_nesting": 2
+      },
+      "split": "confirm",
+      "target_signature": "pub fn count_subarrays(nums: Vec<i32>, min_k: i32, max_k: i32) -> (result: i64)"
+    },
+    {
+      "d_algorithmic_difficulty": 1.0,
+      "d_interface_complexity": 2.0,
+      "d_nl_log_tokens": 4.867534450455582,
+      "d_spec_log_tokens": 6.008813185442595,
+      "d_spec_logic_density": 0.017241379310344827,
+      "family": "leetcode",
+      "problem": "lc600",
+      "raw": {
+        "helper_spec_fns": 3,
+        "logic_terms": 4,
+        "n_params": 1,
+        "nl_tokens": 129,
+        "spec_tokens": 406,
+        "type_nesting": 1
+      },
+      "split": "confirm",
+      "target_signature": "pub fn find_integers(n: i32) -> (result: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 1.0,
+      "d_interface_complexity": 5.0,
+      "d_nl_log_tokens": 5.805134968916488,
+      "d_spec_log_tokens": 5.181783550292085,
+      "d_spec_logic_density": 0.02824858757062147,
+      "family": "leetcode",
+      "problem": "lc1770",
+      "raw": {
+        "helper_spec_fns": 1,
+        "logic_terms": 4,
+        "n_params": 2,
+        "nl_tokens": 331,
+        "spec_tokens": 177,
+        "type_nesting": 3
+      },
+      "split": "confirm",
+      "target_signature": "pub fn maximum_score(nums: Vec<i32>, multipliers: Vec<i32>) -> (result: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 1.0,
+      "d_interface_complexity": 4.0,
+      "d_nl_log_tokens": 5.786897381366708,
+      "d_spec_log_tokens": 5.703782474656201,
+      "d_spec_logic_density": 0.026755852842809364,
+      "family": "leetcode",
+      "problem": "lc1595",
+      "raw": {
+        "helper_spec_fns": 4,
+        "logic_terms": 4,
+        "n_params": 1,
+        "nl_tokens": 325,
+        "spec_tokens": 299,
+        "type_nesting": 3
+      },
+      "split": "confirm",
+      "target_signature": "pub fn connect_two_groups(cost: Vec<Vec<i32>>) -> (result: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 1.0,
+      "d_interface_complexity": 3.0,
+      "d_nl_log_tokens": 5.030437921392435,
+      "d_spec_log_tokens": 5.407171771460119,
+      "d_spec_logic_density": 0.03153153153153153,
+      "family": "leetcode",
+      "problem": "lc768",
+      "raw": {
+        "helper_spec_fns": 4,
+        "logic_terms": 3,
+        "n_params": 1,
+        "nl_tokens": 152,
+        "spec_tokens": 222,
+        "type_nesting": 2
+      },
+      "split": "confirm",
+      "target_signature": "pub fn max_chunks_to_sorted(arr: Vec<i32>) -> (result: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.5,
+      "d_interface_complexity": 4.0,
+      "d_nl_log_tokens": 4.812184355372417,
+      "d_spec_log_tokens": 6.483107351457199,
+      "d_spec_logic_density": 0.02450229709035222,
+      "family": "leetcode",
+      "problem": "lc840",
+      "raw": {
+        "helper_spec_fns": 6,
+        "logic_terms": 10,
+        "n_params": 1,
+        "nl_tokens": 122,
+        "spec_tokens": 653,
+        "type_nesting": 3
+      },
+      "split": "confirm",
+      "target_signature": "pub fn num_magic_squares_inside(grid: Vec<Vec<i32>>) -> (result: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.5,
+      "d_interface_complexity": 3.0,
+      "d_nl_log_tokens": 4.477336814478207,
+      "d_spec_log_tokens": 5.796057750765372,
+      "d_spec_logic_density": 0.042682926829268296,
+      "family": "leetcode",
+      "problem": "lc611",
+      "raw": {
+        "helper_spec_fns": 5,
+        "logic_terms": 9,
+        "n_params": 1,
+        "nl_tokens": 87,
+        "spec_tokens": 328,
+        "type_nesting": 2
+      },
+      "split": "confirm",
+      "target_signature": "pub fn triangle_number(nums: Vec<i32>) -> (result: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.5,
+      "d_interface_complexity": 7.0,
+      "d_nl_log_tokens": 5.159055299214529,
+      "d_spec_log_tokens": 5.043425116919247,
+      "d_spec_logic_density": 0.06493506493506493,
+      "family": "leetcode",
+      "problem": "lc3152",
+      "raw": {
+        "helper_spec_fns": 2,
+        "logic_terms": 8,
+        "n_params": 2,
+        "nl_tokens": 173,
+        "spec_tokens": 154,
+        "type_nesting": 5
+      },
+      "split": "confirm",
+      "target_signature": "pub fn is_array_special(nums: Vec<i32>, queries: Vec<Vec<i32>>) -> (answer: Vec<bool>)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.5,
+      "d_interface_complexity": 4.0,
+      "d_nl_log_tokens": 4.736198448394496,
+      "d_spec_log_tokens": 5.19295685089021,
+      "d_spec_logic_density": 0.03910614525139665,
+      "family": "leetcode",
+      "problem": "lc1004",
+      "raw": {
+        "helper_spec_fns": 1,
+        "logic_terms": 6,
+        "n_params": 2,
+        "nl_tokens": 113,
+        "spec_tokens": 179,
+        "type_nesting": 2
+      },
+      "split": "confirm",
+      "target_signature": "pub fn longest_ones(nums: Vec<i32>, k: i32) -> (result: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.5,
+      "d_interface_complexity": 4.0,
+      "d_nl_log_tokens": 5.043425116919247,
+      "d_spec_log_tokens": 5.4680601411351315,
+      "d_spec_logic_density": 0.046610169491525424,
+      "family": "leetcode",
+      "problem": "lc1300",
+      "raw": {
+        "helper_spec_fns": 3,
+        "logic_terms": 8,
+        "n_params": 2,
+        "nl_tokens": 154,
+        "spec_tokens": 236,
+        "type_nesting": 2
+      },
+      "split": "confirm",
+      "target_signature": "pub fn find_best_value(arr: Vec<i32>, target: i32) -> (result: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.5,
+      "d_interface_complexity": 4.0,
+      "d_nl_log_tokens": 5.181783550292085,
+      "d_spec_log_tokens": 5.808142489980444,
+      "d_spec_logic_density": 0.03313253012048193,
+      "family": "leetcode",
+      "problem": "lc3208",
+      "raw": {
+        "helper_spec_fns": 7,
+        "logic_terms": 4,
+        "n_params": 2,
+        "nl_tokens": 177,
+        "spec_tokens": 332,
+        "type_nesting": 2
+      },
+      "split": "confirm",
+      "target_signature": "pub fn number_of_alternating_groups(colors: Vec<i32>, k: i32) -> (result: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.5,
+      "d_interface_complexity": 4.0,
+      "d_nl_log_tokens": 5.424950017481403,
+      "d_spec_log_tokens": 4.7535901911063645,
+      "d_spec_logic_density": 0.02608695652173913,
+      "family": "leetcode",
+      "problem": "lc2240",
+      "raw": {
+        "helper_spec_fns": 1,
+        "logic_terms": 2,
+        "n_params": 3,
+        "nl_tokens": 226,
+        "spec_tokens": 115,
+        "type_nesting": 1
+      },
+      "split": "confirm",
+      "target_signature": "pub fn ways_to_buy_pens_pencils(total: i32, cost1: i32, cost2: i32) -> (ans: i64)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.5,
+      "d_interface_complexity": 3.0,
+      "d_nl_log_tokens": 5.442417710521793,
+      "d_spec_log_tokens": 5.356586274672012,
+      "d_spec_logic_density": 0.03317535545023697,
+      "family": "leetcode",
+      "problem": "lc1049",
+      "raw": {
+        "helper_spec_fns": 3,
+        "logic_terms": 4,
+        "n_params": 1,
+        "nl_tokens": 230,
+        "spec_tokens": 211,
+        "type_nesting": 2
+      },
+      "split": "confirm",
+      "target_signature": "pub fn last_stone_weight_ii(stones: Vec<i32>) -> (result: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.5,
+      "d_interface_complexity": 3.0,
+      "d_nl_log_tokens": 5.480638923341991,
+      "d_spec_log_tokens": 4.653960350157523,
+      "d_spec_logic_density": 0.038461538461538464,
+      "family": "leetcode",
+      "problem": "lc122",
+      "raw": {
+        "helper_spec_fns": 1,
+        "logic_terms": 3,
+        "n_params": 1,
+        "nl_tokens": 239,
+        "spec_tokens": 104,
+        "type_nesting": 2
+      },
+      "split": "confirm",
+      "target_signature": "pub fn max_profit(prices: Vec<i32>) -> (res: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.5,
+      "d_interface_complexity": 5.0,
+      "d_nl_log_tokens": 5.648974238161206,
+      "d_spec_log_tokens": 5.739792912179234,
+      "d_spec_logic_density": 0.041935483870967745,
+      "family": "leetcode",
+      "problem": "lc1105",
+      "raw": {
+        "helper_spec_fns": 5,
+        "logic_terms": 8,
+        "n_params": 2,
+        "nl_tokens": 283,
+        "spec_tokens": 310,
+        "type_nesting": 3
+      },
+      "split": "confirm",
+      "target_signature": "pub fn min_height_shelves(books: Vec<Vec<i32>>, shelf_width: i32) -> (res: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.5,
+      "d_interface_complexity": 3.0,
+      "d_nl_log_tokens": 5.53338948872752,
+      "d_spec_log_tokens": 5.863631175598097,
+      "d_spec_logic_density": 0.02849002849002849,
+      "family": "leetcode",
+      "problem": "lc1039",
+      "raw": {
+        "helper_spec_fns": 5,
+        "logic_terms": 5,
+        "n_params": 1,
+        "nl_tokens": 252,
+        "spec_tokens": 351,
+        "type_nesting": 2
+      },
+      "split": "confirm",
+      "target_signature": "pub fn min_score_triangulation(values: Vec<i32>) -> (res: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.5,
+      "d_interface_complexity": 2.0,
+      "d_nl_log_tokens": 5.8289456176102075,
+      "d_spec_log_tokens": 4.382026634673881,
+      "d_spec_logic_density": 0.0379746835443038,
+      "family": "leetcode",
+      "problem": "lc1969",
+      "raw": {
+        "helper_spec_fns": 1,
+        "logic_terms": 2,
+        "n_params": 1,
+        "nl_tokens": 339,
+        "spec_tokens": 79,
+        "type_nesting": 1
+      },
+      "split": "confirm",
+      "target_signature": "pub fn min_non_zero_product(p: i32) -> (result: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.5,
+      "d_interface_complexity": 3.0,
+      "d_nl_log_tokens": 4.543294782270004,
+      "d_spec_log_tokens": 5.147494476813453,
+      "d_spec_logic_density": 0.03508771929824561,
+      "family": "leetcode",
+      "problem": "lc3101",
+      "raw": {
+        "helper_spec_fns": 3,
+        "logic_terms": 3,
+        "n_params": 1,
+        "nl_tokens": 93,
+        "spec_tokens": 171,
+        "type_nesting": 2
+      },
+      "split": "confirm",
+      "target_signature": "pub fn count_alternating_subarrays(nums: Vec<i32>) -> (result: i64)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.5,
+      "d_interface_complexity": 7.0,
+      "d_nl_log_tokens": 5.66988092298052,
+      "d_spec_log_tokens": 5.918893854273146,
+      "d_spec_logic_density": 0.05121293800539083,
+      "family": "leetcode",
+      "problem": "lc1465",
+      "raw": {
+        "helper_spec_fns": 5,
+        "logic_terms": 14,
+        "n_params": 4,
+        "nl_tokens": 289,
+        "spec_tokens": 371,
+        "type_nesting": 3
+      },
+      "split": "confirm",
+      "target_signature": "pub fn max_area(h: i32, w: i32, horizontal_cuts: Vec<i32>, vertical_cuts: Vec<i32>) -> (result: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.5,
+      "d_interface_complexity": 4.0,
+      "d_nl_log_tokens": 5.4510384535657,
+      "d_spec_log_tokens": 4.955827057601261,
+      "d_spec_logic_density": 0.03546099290780142,
+      "family": "leetcode",
+      "problem": "lc1535",
+      "raw": {
+        "helper_spec_fns": 1,
+        "logic_terms": 4,
+        "n_params": 2,
+        "nl_tokens": 232,
+        "spec_tokens": 141,
+        "type_nesting": 2
+      },
+      "split": "confirm",
+      "target_signature": "pub fn get_winner(arr: Vec<i32>, k: i32) -> (result: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.5,
+      "d_interface_complexity": 3.0,
+      "d_nl_log_tokens": 5.176149732573829,
+      "d_spec_log_tokens": 4.890349128221754,
+      "d_spec_logic_density": 0.045454545454545456,
+      "family": "leetcode",
+      "problem": "lc2348",
+      "raw": {
+        "helper_spec_fns": 2,
+        "logic_terms": 4,
+        "n_params": 1,
+        "nl_tokens": 176,
+        "spec_tokens": 132,
+        "type_nesting": 2
+      },
+      "split": "confirm",
+      "target_signature": "pub fn zero_filled_subarray(nums: Vec<i32>) -> (result: i64)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.5,
+      "d_interface_complexity": 4.0,
+      "d_nl_log_tokens": 4.787491742782046,
+      "d_spec_log_tokens": 5.123963979403259,
+      "d_spec_logic_density": 0.04790419161676647,
+      "family": "leetcode",
+      "problem": "lc1288",
+      "raw": {
+        "helper_spec_fns": 2,
+        "logic_terms": 6,
+        "n_params": 1,
+        "nl_tokens": 119,
+        "spec_tokens": 167,
+        "type_nesting": 3
+      },
+      "split": "confirm",
+      "target_signature": "pub fn remove_covered_intervals(intervals: Vec<Vec<i32>>) -> (res: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.5,
+      "d_interface_complexity": 3.0,
+      "d_nl_log_tokens": 5.579729825986222,
+      "d_spec_log_tokens": 5.3706380281276624,
+      "d_spec_logic_density": 0.03271028037383177,
+      "family": "leetcode",
+      "problem": "lc1558",
+      "raw": {
+        "helper_spec_fns": 4,
+        "logic_terms": 3,
+        "n_params": 1,
+        "nl_tokens": 264,
+        "spec_tokens": 214,
+        "type_nesting": 2
+      },
+      "split": "confirm",
+      "target_signature": "pub fn min_operations(nums: Vec<i32>) -> (result: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.5,
+      "d_interface_complexity": 4.0,
+      "d_nl_log_tokens": 4.787491742782046,
+      "d_spec_log_tokens": 4.90527477843843,
+      "d_spec_logic_density": 0.05970149253731343,
+      "family": "leetcode",
+      "problem": "lc912",
+      "raw": {
+        "helper_spec_fns": 3,
+        "logic_terms": 5,
+        "n_params": 1,
+        "nl_tokens": 119,
+        "spec_tokens": 134,
+        "type_nesting": 3
+      },
+      "split": "confirm",
+      "target_signature": "pub fn sort_array(nums: Vec<i32>) -> (res: Vec<i32>)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.5,
+      "d_interface_complexity": 3.0,
+      "d_nl_log_tokens": 4.6913478822291435,
+      "d_spec_log_tokens": 5.225746673713202,
+      "d_spec_logic_density": 0.05405405405405406,
+      "family": "leetcode",
+      "problem": "lc932",
+      "raw": {
+        "helper_spec_fns": 3,
+        "logic_terms": 7,
+        "n_params": 1,
+        "nl_tokens": 108,
+        "spec_tokens": 185,
+        "type_nesting": 2
+      },
+      "split": "confirm",
+      "target_signature": "pub fn beautiful_array(n: i32) -> (result: Vec<i32>)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.5,
+      "d_interface_complexity": 9.0,
+      "d_nl_log_tokens": 5.908082938168931,
+      "d_spec_log_tokens": 5.730099782973574,
+      "d_spec_logic_density": 0.03257328990228013,
+      "family": "leetcode",
+      "problem": "lc2087",
+      "raw": {
+        "helper_spec_fns": 2,
+        "logic_terms": 8,
+        "n_params": 4,
+        "nl_tokens": 367,
+        "spec_tokens": 307,
+        "type_nesting": 5
+      },
+      "split": "confirm",
+      "target_signature": "pub fn min_cost(start_pos: Vec<i32>, home_pos: Vec<i32>, row_costs: Vec<i32>, col_costs: Vec<i32>) -> (result: i32)"
+    },
+    {
+      "d_algorithmic_difficulty": 0.5,
+      "d_interface_complexity": 3.0,
+      "d_nl_log_tokens": 5.726847747587197,
+      "d_spec_log_tokens": 5.5093883366279774,
+      "d_spec_logic_density": 0.032520325203252036,
+      "family": "leetcode",
+      "problem": "lc1509",
+      "raw": {
+        "helper_spec_fns": 3,
+        "logic_terms": 5,
+        "n_params": 1,
+        "nl_tokens": 306,
+        "spec_tokens": 246,
+        "type_nesting": 2
+      },
+      "split": "confirm",
+      "target_signature": "pub fn min_difference(nums: Vec<i32>) -> (res: i32)"
+    }
+  ]
+}

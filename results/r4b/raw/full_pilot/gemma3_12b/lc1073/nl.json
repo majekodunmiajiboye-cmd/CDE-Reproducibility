@@ -1,0 +1,5 @@
+{
+  "response": "pub fn add_negabinary(arr1: Vec<i32>, arr2: Vec<i32>) -> Vec<i32> {\n    let mut i = arr1.len() as i32 - 1;\n    let mut j = arr2.len() as i32 - 1;\n    let mut carry = 0;\n    let mut result = Vec::new();\n\n    while i >= 0 || j >= 0 || carry != 0 {\n        let digit1 = if i >= 0 { arr1[i as usize] } else { 0 };\n        let digit2 = if j >= 0 { arr2[j as usize] } else { 0 };\n\n        let sum = digit1 + digit2 + carry;\n\n        result.push(sum % 2);\n        carry = sum / 2;\n\n        i -= 1;\n        j -= 1;\n    }\n\n    result.reverse();\n\n    // Remove leading zeros\n    while result.len() > 1 && result[0] == 0 {\n        result.remove(0);\n    }\n\n    result\n}\n",
+  "impl": null,
+  "source_record_sha256": "bd98f5582e3c77ede833ec03f0773c1ba7af29426880414a0d7efa92680e5862"
+}

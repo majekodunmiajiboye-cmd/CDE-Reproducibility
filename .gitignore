@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+inputs/upstream/
+inputs/vericontest_tests/
+reproduced/
+.DS_Store

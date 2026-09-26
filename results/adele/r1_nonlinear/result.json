@@ -1,0 +1,48 @@
+{
+  "analysis": "CDE R1 submission-readiness nonlinear robustness diagnostic",
+  "bootstrap": {
+    "ci_2p5_50_97p5": [
+      0.005098943099243936,
+      0.007589470953460964,
+      0.0103087730558946
+    ],
+    "delta_ll_baseline_minus_demand": 0.007553102755646905,
+    "n_boot": 1000,
+    "relative_ll_reduction": 0.021373177283871565,
+    "seed": 20260926
+  },
+  "leakage_guard": "For every target model, the target is excluded from all panel-derived features; held-out task-family target outcomes are never used in fitting. Hyperparameters were fixed before running this analysis and were not tuned to outcomes.",
+  "metrics": {
+    "nonlinear_fullpanel": {
+      "brier": 0.11164542139132344,
+      "log_loss": 0.3533916672906915
+    },
+    "nonlinear_fullpanel_plus_demands": {
+      "brier": 0.10894134266357952,
+      "log_loss": 0.3458385645350445
+    }
+  },
+  "model": {
+    "augmented_features": "baseline + all 18 published ADeLe demand coordinates",
+    "baseline_features": "external-panel scalar item easiness + all 14 external-model binary item responses + benchmark identity",
+    "family": "HistGradientBoostingClassifier",
+    "fixed_hyperparameters": {
+      "early_stopping": false,
+      "l2_regularization": 1.0,
+      "learning_rate": 0.05,
+      "max_bins": 63,
+      "max_iter": 100,
+      "max_leaf_nodes": 15,
+      "min_samples_leaf": 40,
+      "random_state": 20260926
+    }
+  },
+  "n_items": 16108,
+  "n_models": 15,
+  "n_task_families": 63,
+  "status": "supplementary; frozen before this nonlinear analysis was run; does not rewrite the original R1 verdict",
+  "survival_check": {
+    "criterion": "The demand increment survives this nonlinear comparator if the task-family bootstrap 95% CI for LL(response-only)-LL(response+demands) is entirely > 0.",
+    "pass": true
+  }
+}

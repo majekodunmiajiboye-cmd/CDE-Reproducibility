@@ -1,0 +1,5 @@
+{
+  "response": "impl Solution {\n    pub fn count_subarrays(nums: Vec<i32>) -> i32 {\n        let mut count = 0;\n        for i in 0..nums.len() - 2 {\n            if nums[i] + nums[i + 2] == 2 * nums[i + 1] {\n                count += 1;\n            }\n        }\n        count\n    }\n}\n",
+  "impl": "impl Solution {\n    pub fn count_subarrays(nums: Vec<i32>) -> i32 {\n        let mut count = 0;\n        for i in 0..nums.len() - 2 {\n            if nums[i] + nums[i + 2] == 2 * nums[i + 1] {\n                count += 1;\n            }\n        }\n        count\n    }\n}",
+  "source_record_sha256": "e373476727f270c51d86895624ba4f4caf02b454d4a58fe18b1b754875636661"
+}

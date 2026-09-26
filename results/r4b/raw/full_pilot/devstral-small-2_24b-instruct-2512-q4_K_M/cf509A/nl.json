@@ -1,0 +1,5 @@
+{
+  "response": "impl Solution {\n    pub fn max_in_table(n: u32) -> u32 {\n        if n == 1 {\n            return 1;\n        }\n        let mut table = vec![vec![1; n as usize]; n as usize];\n        for i in 1..n {\n            for j in 1..n {\n                table[i as usize][j as usize] = table[(i-1) as usize][j as usize] + table[i as usize][(j-1) as usize];\n            }\n        }\n        *table.iter().map(|row| row.iter().max().unwrap()).max().unwrap()\n    }\n}",
+  "impl": "impl Solution {\n    pub fn max_in_table(n: u32) -> u32 {\n        if n == 1 {\n            return 1;\n        }\n        let mut table = vec![vec![1; n as usize]; n as usize];\n        for i in 1..n {\n            for j in 1..n {\n                table[i as usize][j as usize] = table[(i-1) as usize][j as usize] + table[i as usize][(j-1) as usize];\n            }\n        }\n        *table.iter().map(|row| row.iter().max().unwrap()).max().unwrap()\n    }\n}",
+  "source_record_sha256": "e283ef4bdbf53713695c1bf55f77236ab3c1aa38ee088ff3c0138a0d810a32ee"
+}

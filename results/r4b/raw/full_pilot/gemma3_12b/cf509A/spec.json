@@ -1,0 +1,5 @@
+{
+  "response": "impl Solution {\n    pub fn max_in_table(n: u32) -> u32 {\n        let n_int = n as i32;\n        table_value(n_int, (n - 1) as i32, (n - 1) as i32) as u32\n    }\n\n    fn table_value(n: i32, i: i32, j: i32) -> i32 {\n        if i < 0 || j < 0 || i >= n || j >= n {\n            0\n        } else if i == 0 || j == 0 {\n            1\n        } else {\n            table_value(n, i - 1, j) + table_value(n, i, j - 1)\n        }\n    }\n}\n",
+  "impl": "impl Solution {\n    pub fn max_in_table(n: u32) -> u32 {\n        let n_int = n as i32;\n        table_value(n_int, (n - 1) as i32, (n - 1) as i32) as u32\n    }\n\n    fn table_value(n: i32, i: i32, j: i32) -> i32 {\n        if i < 0 || j < 0 || i >= n || j >= n {\n            0\n        } else if i == 0 || j == 0 {\n            1\n        } else {\n            table_value(n, i - 1, j) + table_value(n, i, j - 1)\n        }\n    }\n}",
+  "source_record_sha256": "701bd14c5bd5962f912c4e0dd4e15be39323b3878d375cb87ae5b1fa90e07e51"
+}

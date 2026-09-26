@@ -1,0 +1,36 @@
+{
+  "analysis": "CDE R4 Fan et al. 176-setting reanalysis",
+  "benchmarks": [
+    "SWE",
+    "Terminal"
+  ],
+  "coded_features": [
+    "window_log2",
+    "elision",
+    "recall",
+    "summarization",
+    "planning",
+    "structured_tools"
+  ],
+  "fan_component_pass": false,
+  "frozen_checks": {
+    "cell_coded_no_worse_than_categorical": false,
+    "unseen_coded_beats_doc_hash": false,
+    "unseen_coded_beats_noenv": false
+  },
+  "leave_one_model_setting_cell_out_log_loss": {
+    "categorical": 0.6129274264466563,
+    "coded": 0.6215181093682637,
+    "doc": 0.6213581098538749,
+    "noenv": 0.6273147753994734
+  },
+  "leave_one_setting_out_log_loss": {
+    "categorical": 0.6276359598482756,
+    "coded": 0.6274379884101928,
+    "doc": 0.6249698685422891,
+    "noenv": 0.6273727822194057
+  },
+  "n_models": 4,
+  "n_rows": 176,
+  "n_settings": 22
+}

@@ -1,0 +1,5 @@
+{
+  "response": "impl Solution {\n    pub fn decompress_rl_elist(nums: Vec<i32>) -> Vec<i32> {\n        let mut result = Vec::new();\n        for i in (0..nums.len()).step_by(2) {\n            let freq = nums[i];\n            let val = nums[i + 1];\n            result.extend(std::iter::repeat(val).take(freq as usize));\n        }\n        result\n    }\n}",
+  "impl": "impl Solution {\n    pub fn decompress_rl_elist(nums: Vec<i32>) -> Vec<i32> {\n        let mut result = Vec::new();\n        for i in (0..nums.len()).step_by(2) {\n            let freq = nums[i];\n            let val = nums[i + 1];\n            result.extend(std::iter::repeat(val).take(freq as usize));\n        }\n        result\n    }\n}",
+  "source_record_sha256": "2b4214b2e2c15cc52fd3a828da511779880bc65c28e3636e11e4a5243ec5a07d"
+}

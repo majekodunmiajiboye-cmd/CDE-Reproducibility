@@ -1,0 +1,60 @@
+You are an independent blinded coder for a measurement study. Do not search the web and do not inspect any parent directory or any result/outcome/leaderboard files. Use ONLY the seven harness text files and HARNESSBENCH_CONFIG.yaml in this directory.
+
+Goal: code the harness configuration that HarnessBench plausibly exercised, not every optional product feature upstream. Give optional upstream capabilities no credit unless the HarnessBench adapter/config or default behavior in the supplied documentation makes them plausibly active in the benchmark invocation.
+
+Harness keys to return exactly: codex, hermes, moltis-local, nanobot, nullclaw, openclaw-local, zeroclaw-local.
+
+Score six predeclared environment features on 0,1,2 ordinal scales:
+
+1. observability
+0 = little/no ability to inspect workspace/environment state.
+1 = basic shell/file inspection or equivalent.
+2 = rich structured inspection/search/browser/state feedback exposed during normal task execution.
+
+2. action_granularity
+0 = mainly coarse/free-form or shell-only actions.
+1 = mixed shell plus some structured actions, or moderate structure.
+2 = broad fine-grained structured tools for reading/editing/search/execution rather than relying mainly on shell.
+
+3. context_state_management
+0 = no explicit management beyond the model context.
+1 = persistent/basic session history or simple memory/context handling.
+2 = explicit compaction/summarisation/context pruning plus durable task/session state during execution.
+
+4. verification
+0 = no meaningful mechanism to inspect execution results/check work.
+1 = model can manually run commands/tests or inspect results.
+2 = dedicated built-in verification/check workflow that systematically feeds verification state back to the agent.
+
+5. recoverability
+0 = no meaningful resume/retry/checkpoint/history recovery during a task.
+1 = session persistence/history/resume or retry support.
+2 = explicit checkpoint/rollback/recovery mechanisms that restore work/state after mistakes or interruption.
+
+6. decomposition_control
+0 = no explicit planning/decomposition/coordination mechanism.
+1 = plan/skills/task-list support or lightweight structured control.
+2 = explicit multi-step planning plus subagents/workflows/coordination that is plausibly active in the benchmark invocation.
+
+Rules:
+- Prefer under-coding over crediting features merely because the full upstream product can support them.
+- The same evidence may justify more than one feature, but do not infer capabilities not documented.
+- For each score give a one-sentence rationale and cite the supplied local filename plus a phrase/feature from it (no long quotations).
+- If evidence is ambiguous, choose the lower score and mark confidence low.
+- Do not use any performance/result information.
+
+Return ONLY valid JSON with this shape:
+{
+  "coder": "<model/tool name>",
+  "harnesses": {
+    "codex": {
+      "observability": {"score": 0, "confidence": "high|medium|low", "evidence": "..."},
+      "action_granularity": {"score": 0, "confidence": "...", "evidence": "..."},
+      "context_state_management": {"score": 0, "confidence": "...", "evidence": "..."},
+      "verification": {"score": 0, "confidence": "...", "evidence": "..."},
+      "recoverability": {"score": 0, "confidence": "...", "evidence": "..."},
+      "decomposition_control": {"score": 0, "confidence": "...", "evidence": "..."}
+    }
+  }
+}
+Include all seven harnesses and all six features.

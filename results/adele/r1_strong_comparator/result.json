@@ -1,0 +1,411 @@
+{
+  "analysis": "CDE R1 post-confirmatory strong-comparator diagnostic",
+  "comparisons": {
+    "demand_increment_over_domain": {
+      "ci_2p5_50_97p5": [
+        0.006978793652120286,
+        0.011703811058176368,
+        0.016802447960322837
+      ],
+      "delta_ll_lhs_minus_rhs": 0.01158993197999029,
+      "interpretation": "positive delta means rhs has lower log loss",
+      "lhs": "domain",
+      "lhs_log_loss": 0.37126933383826805,
+      "n_boot": 1000,
+      "relative_ll_reduction_of_rhs_vs_lhs": 0.031217046288663,
+      "rhs": "demand_domain",
+      "rhs_log_loss": 0.35967940185827774,
+      "seed": 20260926
+    },
+    "demand_increment_over_full_panel": {
+      "ci_2p5_50_97p5": [
+        0.0034402529387516203,
+        0.006254948926198962,
+        0.00913293552176092
+      ],
+      "delta_ll_lhs_minus_rhs": 0.006199955010174614,
+      "interpretation": "positive delta means rhs has lower log loss",
+      "lhs": "fullpanel_domain",
+      "lhs_log_loss": 0.35665373142314244,
+      "n_boot": 1000,
+      "relative_ll_reduction_of_rhs_vs_lhs": 0.0173836818850462,
+      "rhs": "fullpanel_demand_domain",
+      "rhs_log_loss": 0.3504537764129679,
+      "seed": 20260926
+    },
+    "demand_vs_full_panel": {
+      "ci_2p5_50_97p5": [
+        -0.0060510528546453245,
+        -0.00293958054426081,
+        0.0006565411150335106
+      ],
+      "delta_ll_lhs_minus_rhs": -0.0030256704351353707,
+      "interpretation": "positive delta means rhs has lower log loss",
+      "lhs": "fullpanel_domain",
+      "lhs_log_loss": 0.35665373142314244,
+      "n_boot": 1000,
+      "relative_ll_reduction_of_rhs_vs_lhs": -0.008483495807157682,
+      "rhs": "demand_domain",
+      "rhs_log_loss": 0.35967940185827774,
+      "seed": 20260926
+    },
+    "demand_vs_latent_panel": {
+      "ci_2p5_50_97p5": [
+        -0.006139823955242333,
+        -0.0028075406888773387,
+        0.0007390570613626841
+      ],
+      "delta_ll_lhs_minus_rhs": -0.002907467954804526,
+      "interpretation": "positive delta means rhs has lower log loss",
+      "lhs": "latent_domain",
+      "lhs_log_loss": 0.35677193390347334,
+      "n_boot": 1000,
+      "relative_ll_reduction_of_rhs_vs_lhs": -0.008149374091716413,
+      "rhs": "demand_domain",
+      "rhs_log_loss": 0.35967940185827774,
+      "seed": 20260926
+    }
+  },
+  "leakage_guard": "For each target model, all panel features and latent factors are computed from the other 14 models only. Target-model outcomes from the held-out task family never enter fitting or calibration.",
+  "metrics": {
+    "demand_domain": {
+      "brier": 0.11361014357748796,
+      "log_loss": 0.35967940185827774
+    },
+    "domain": {
+      "brier": 0.11767219099451327,
+      "log_loss": 0.37126933383826805
+    },
+    "fullpanel_demand_domain": {
+      "brier": 0.11038466145222213,
+      "log_loss": 0.3504537764129679
+    },
+    "fullpanel_domain": {
+      "brier": 0.11254214615549278,
+      "log_loss": 0.35665373142314244
+    },
+    "latent_domain": {
+      "brier": 0.11251873869666683,
+      "log_loss": 0.35677193390347334
+    }
+  },
+  "model_definitions": {
+    "demand_domain": "domain + all 18 published ADeLe demand coordinates",
+    "domain": "external-panel scalar item easiness + benchmark identity",
+    "fullpanel_demand_domain": "fullpanel_domain + all 18 ADeLe demand coordinates",
+    "fullpanel_domain": "domain + all 14 external-model binary item responses as a ridge-logistic multidimensional response-profile control",
+    "latent_domain": "domain + PCA90 differential item-response factors from the 14-model external panel; target model excluded"
+  },
+  "n_benchmarks": 20,
+  "n_items": 16108,
+  "n_models": 15,
+  "n_task_families": 63,
+  "predeclared_minimum_survival_check": {
+    "criterion": "ADeLe demand coordinates add unique held-out predictive information beyond the full external response profile only if the 95% task-family bootstrap CI for LL(fullpanel_domain)-LL(fullpanel_demand_domain) is entirely > 0. No new arbitrary effect-size threshold is introduced; magnitude is reported separately.",
+    "pass": true
+  },
+  "seed": 20260926,
+  "status": "supplementary; does not rewrite frozen R1 verdict",
+  "target_panel_metadata": [
+    {
+      "external_panel_models": [
+        "DK-R1-Dist-Qwen-14B",
+        "DK-R1-Dist-Qwen-32B",
+        "DK-R1-Dist-Qwen-7B",
+        "babbage-002",
+        "davinci-002",
+        "gpt-35-turbo",
+        "gpt4o",
+        "llama3d1-405b",
+        "llama3d2-11b",
+        "llama3d2-1b",
+        "llama3d2-3b",
+        "llama3d2-90b",
+        "o1-mini",
+        "o1_re=low"
+      ],
+      "latent_pca_components_90pct": 11,
+      "target_model": "DK-R1-Dist-Qwen-1.5B"
+    },
+    {
+      "external_panel_models": [
+        "DK-R1-Dist-Qwen-1.5B",
+        "DK-R1-Dist-Qwen-32B",
+        "DK-R1-Dist-Qwen-7B",
+        "babbage-002",
+        "davinci-002",
+        "gpt-35-turbo",
+        "gpt4o",
+        "llama3d1-405b",
+        "llama3d2-11b",
+        "llama3d2-1b",
+        "llama3d2-3b",
+        "llama3d2-90b",
+        "o1-mini",
+        "o1_re=low"
+      ],
+      "latent_pca_components_90pct": 11,
+      "target_model": "DK-R1-Dist-Qwen-14B"
+    },
+    {
+      "external_panel_models": [
+        "DK-R1-Dist-Qwen-1.5B",
+        "DK-R1-Dist-Qwen-14B",
+        "DK-R1-Dist-Qwen-7B",
+        "babbage-002",
+        "davinci-002",
+        "gpt-35-turbo",
+        "gpt4o",
+        "llama3d1-405b",
+        "llama3d2-11b",
+        "llama3d2-1b",
+        "llama3d2-3b",
+        "llama3d2-90b",
+        "o1-mini",
+        "o1_re=low"
+      ],
+      "latent_pca_components_90pct": 11,
+      "target_model": "DK-R1-Dist-Qwen-32B"
+    },
+    {
+      "external_panel_models": [
+        "DK-R1-Dist-Qwen-1.5B",
+        "DK-R1-Dist-Qwen-14B",
+        "DK-R1-Dist-Qwen-32B",
+        "babbage-002",
+        "davinci-002",
+        "gpt-35-turbo",
+        "gpt4o",
+        "llama3d1-405b",
+        "llama3d2-11b",
+        "llama3d2-1b",
+        "llama3d2-3b",
+        "llama3d2-90b",
+        "o1-mini",
+        "o1_re=low"
+      ],
+      "latent_pca_components_90pct": 11,
+      "target_model": "DK-R1-Dist-Qwen-7B"
+    },
+    {
+      "external_panel_models": [
+        "DK-R1-Dist-Qwen-1.5B",
+        "DK-R1-Dist-Qwen-14B",
+        "DK-R1-Dist-Qwen-32B",
+        "DK-R1-Dist-Qwen-7B",
+        "davinci-002",
+        "gpt-35-turbo",
+        "gpt4o",
+        "llama3d1-405b",
+        "llama3d2-11b",
+        "llama3d2-1b",
+        "llama3d2-3b",
+        "llama3d2-90b",
+        "o1-mini",
+        "o1_re=low"
+      ],
+      "latent_pca_components_90pct": 11,
+      "target_model": "babbage-002"
+    },
+    {
+      "external_panel_models": [
+        "DK-R1-Dist-Qwen-1.5B",
+        "DK-R1-Dist-Qwen-14B",
+        "DK-R1-Dist-Qwen-32B",
+        "DK-R1-Dist-Qwen-7B",
+        "babbage-002",
+        "gpt-35-turbo",
+        "gpt4o",
+        "llama3d1-405b",
+        "llama3d2-11b",
+        "llama3d2-1b",
+        "llama3d2-3b",
+        "llama3d2-90b",
+        "o1-mini",
+        "o1_re=low"
+      ],
+      "latent_pca_components_90pct": 11,
+      "target_model": "davinci-002"
+    },
+    {
+      "external_panel_models": [
+        "DK-R1-Dist-Qwen-1.5B",
+        "DK-R1-Dist-Qwen-14B",
+        "DK-R1-Dist-Qwen-32B",
+        "DK-R1-Dist-Qwen-7B",
+        "babbage-002",
+        "davinci-002",
+        "gpt4o",
+        "llama3d1-405b",
+        "llama3d2-11b",
+        "llama3d2-1b",
+        "llama3d2-3b",
+        "llama3d2-90b",
+        "o1-mini",
+        "o1_re=low"
+      ],
+      "latent_pca_components_90pct": 11,
+      "target_model": "gpt-35-turbo"
+    },
+    {
+      "external_panel_models": [
+        "DK-R1-Dist-Qwen-1.5B",
+        "DK-R1-Dist-Qwen-14B",
+        "DK-R1-Dist-Qwen-32B",
+        "DK-R1-Dist-Qwen-7B",
+        "babbage-002",
+        "davinci-002",
+        "gpt-35-turbo",
+        "llama3d1-405b",
+        "llama3d2-11b",
+        "llama3d2-1b",
+        "llama3d2-3b",
+        "llama3d2-90b",
+        "o1-mini",
+        "o1_re=low"
+      ],
+      "latent_pca_components_90pct": 11,
+      "target_model": "gpt4o"
+    },
+    {
+      "external_panel_models": [
+        "DK-R1-Dist-Qwen-1.5B",
+        "DK-R1-Dist-Qwen-14B",
+        "DK-R1-Dist-Qwen-32B",
+        "DK-R1-Dist-Qwen-7B",
+        "babbage-002",
+        "davinci-002",
+        "gpt-35-turbo",
+        "gpt4o",
+        "llama3d2-11b",
+        "llama3d2-1b",
+        "llama3d2-3b",
+        "llama3d2-90b",
+        "o1-mini",
+        "o1_re=low"
+      ],
+      "latent_pca_components_90pct": 11,
+      "target_model": "llama3d1-405b"
+    },
+    {
+      "external_panel_models": [
+        "DK-R1-Dist-Qwen-1.5B",
+        "DK-R1-Dist-Qwen-14B",
+        "DK-R1-Dist-Qwen-32B",
+        "DK-R1-Dist-Qwen-7B",
+        "babbage-002",
+        "davinci-002",
+        "gpt-35-turbo",
+        "gpt4o",
+        "llama3d1-405b",
+        "llama3d2-1b",
+        "llama3d2-3b",
+        "llama3d2-90b",
+        "o1-mini",
+        "o1_re=low"
+      ],
+      "latent_pca_components_90pct": 11,
+      "target_model": "llama3d2-11b"
+    },
+    {
+      "external_panel_models": [
+        "DK-R1-Dist-Qwen-1.5B",
+        "DK-R1-Dist-Qwen-14B",
+        "DK-R1-Dist-Qwen-32B",
+        "DK-R1-Dist-Qwen-7B",
+        "babbage-002",
+        "davinci-002",
+        "gpt-35-turbo",
+        "gpt4o",
+        "llama3d1-405b",
+        "llama3d2-11b",
+        "llama3d2-3b",
+        "llama3d2-90b",
+        "o1-mini",
+        "o1_re=low"
+      ],
+      "latent_pca_components_90pct": 11,
+      "target_model": "llama3d2-1b"
+    },
+    {
+      "external_panel_models": [
+        "DK-R1-Dist-Qwen-1.5B",
+        "DK-R1-Dist-Qwen-14B",
+        "DK-R1-Dist-Qwen-32B",
+        "DK-R1-Dist-Qwen-7B",
+        "babbage-002",
+        "davinci-002",
+        "gpt-35-turbo",
+        "gpt4o",
+        "llama3d1-405b",
+        "llama3d2-11b",
+        "llama3d2-1b",
+        "llama3d2-90b",
+        "o1-mini",
+        "o1_re=low"
+      ],
+      "latent_pca_components_90pct": 11,
+      "target_model": "llama3d2-3b"
+    },
+    {
+      "external_panel_models": [
+        "DK-R1-Dist-Qwen-1.5B",
+        "DK-R1-Dist-Qwen-14B",
+        "DK-R1-Dist-Qwen-32B",
+        "DK-R1-Dist-Qwen-7B",
+        "babbage-002",
+        "davinci-002",
+        "gpt-35-turbo",
+        "gpt4o",
+        "llama3d1-405b",
+        "llama3d2-11b",
+        "llama3d2-1b",
+        "llama3d2-3b",
+        "o1-mini",
+        "o1_re=low"
+      ],
+      "latent_pca_components_90pct": 11,
+      "target_model": "llama3d2-90b"
+    },
+    {
+      "external_panel_models": [
+        "DK-R1-Dist-Qwen-1.5B",
+        "DK-R1-Dist-Qwen-14B",
+        "DK-R1-Dist-Qwen-32B",
+        "DK-R1-Dist-Qwen-7B",
+        "babbage-002",
+        "davinci-002",
+        "gpt-35-turbo",
+        "gpt4o",
+        "llama3d1-405b",
+        "llama3d2-11b",
+        "llama3d2-1b",
+        "llama3d2-3b",
+        "llama3d2-90b",
+        "o1_re=low"
+      ],
+      "latent_pca_components_90pct": 11,
+      "target_model": "o1-mini"
+    },
+    {
+      "external_panel_models": [
+        "DK-R1-Dist-Qwen-1.5B",
+        "DK-R1-Dist-Qwen-14B",
+        "DK-R1-Dist-Qwen-32B",
+        "DK-R1-Dist-Qwen-7B",
+        "babbage-002",
+        "davinci-002",
+        "gpt-35-turbo",
+        "gpt4o",
+        "llama3d1-405b",
+        "llama3d2-11b",
+        "llama3d2-1b",
+        "llama3d2-3b",
+        "llama3d2-90b",
+        "o1-mini"
+      ],
+      "latent_pca_components_90pct": 11,
+      "target_model": "o1_re=low"
+    }
+  ]
+}

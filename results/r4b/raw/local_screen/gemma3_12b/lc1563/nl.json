@@ -1,0 +1,5 @@
+{
+  "response": "impl Solution {\n    pub fn stone_game_v(stone_value: Vec<i32>) -> i32 {\n        let n = stone_value.len();\n        let mut dp = vec![0; n];\n\n        for i in (0..n).rev() {\n            dp[i] = 0;\n            for j in i + 1..n {\n                dp[i] = dp[i].max(stone_value[i] + stone_value[j] - dp[j]);\n            }\n        }\n\n        dp[0]\n    }\n}\n",
+  "impl": "impl Solution {\n    pub fn stone_game_v(stone_value: Vec<i32>) -> i32 {\n        let n = stone_value.len();\n        let mut dp = vec![0; n];\n\n        for i in (0..n).rev() {\n            dp[i] = 0;\n            for j in i + 1..n {\n                dp[i] = dp[i].max(stone_value[i] + stone_value[j] - dp[j]);\n            }\n        }\n\n        dp[0]\n    }\n}",
+  "source_record_sha256": "d3d651861f6a0f74f77c335e2e5bbb058bc4a6170cb48b5e0daed4d83d2b1581"
+}

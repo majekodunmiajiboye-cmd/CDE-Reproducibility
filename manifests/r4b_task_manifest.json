@@ -1,0 +1,2215 @@
+{
+  "confirm": [
+    {
+      "algorithm_tags": [
+        "data structures",
+        "implementation",
+        "sortings"
+      ],
+      "code_sha256": "d45ec73eba229c397c0260cf6400df8696e7a0fc620e68f3a0bc045fe4da9360",
+      "description_sha256": "ced87832965dc40f251e1f4c0887a9788185fc47a284cdfbadd43df57ca8d698",
+      "family": "codeforces",
+      "main_sha256": "68251d75b1fd24571b74d9cb92cd9e250f3cf67574b52345bacce5d671bb7505",
+      "problem": "cf519B",
+      "repo_path": "benchmark/codeforces/cf519B",
+      "selection_rank": "07df9a205761a547f5858b795a20e995b3b4dfb567aca578f73c547e521d834b",
+      "spec_sha256": "6dae3b00b622d74248c06fdf0901a01041ab9b197336447572d0ed2bc1575c66",
+      "stratum": "1100-1400",
+      "tag_metadata": {
+        "rating": 1100,
+        "raw": [
+          "Rating: 1100",
+          "data structures, implementation, sortings",
+          "Solved by: 43400 users"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "math"
+      ],
+      "code_sha256": "e2fbdfb256eae4c9c75c02decf9eaba82d459024bca89d2730e22c9bb746d410",
+      "description_sha256": "ce2a002bddfaa53b83db68789867c640efbf20e190863e5f52f27dea8cfb5237",
+      "family": "codeforces",
+      "main_sha256": "bdc97455d907fd32ef38029d42cb4b682ca1025a2e408ea7f495389d36ebebef",
+      "problem": "cf1373C",
+      "repo_path": "benchmark/codeforces/cf1373C",
+      "selection_rank": "1194fdc1f26de8b62d51f7a5cf5f37e842dd0bd79e6fca4b562a0ff90cafa0f3",
+      "spec_sha256": "ff5ea9a39dade396a71292862a391f21b6c77f372187d105e87e41346af1da38",
+      "stratum": "1100-1400",
+      "tag_metadata": {
+        "rating": 1300,
+        "raw": [
+          "Rating: 1300",
+          "math",
+          "Solved by: 19297 users"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "math"
+      ],
+      "code_sha256": "ad36c3c1f362728dfd8926d99415ed3ba5e067521f4bbb153aeb46f9b1095295",
+      "description_sha256": "51309a684fa6c059681c38c251b314c35c9fbca009548b811420a98ddd2e3e96",
+      "family": "codeforces",
+      "main_sha256": "badca491fad357992f6ec904124c65ec31e4aa9aee1aa30fe19ac222e20f8388",
+      "problem": "cf1213C",
+      "repo_path": "benchmark/codeforces/cf1213C",
+      "selection_rank": "1625f142ff87bd21ce020eeb3beb06da0f91eb620d77254437b546eeb97b32a3",
+      "spec_sha256": "928c116e3f23c46c412608326de10cf05f7b47c91c5d843886193689989beb4f",
+      "stratum": "1100-1400",
+      "tag_metadata": {
+        "rating": 1200,
+        "raw": [
+          "Rating: 1200",
+          "math",
+          "Solved by: 19571 users"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "implementation",
+        "math"
+      ],
+      "code_sha256": "bf35c936ff752238deeb0050e380d715d9dbed6d792619ff44d2b86f83396f05",
+      "description_sha256": "cccb50d1a6828bf757c14090749033524aff48b7f4f78173857870f26012fa6d",
+      "family": "codeforces",
+      "main_sha256": "44ffcf82e4cc2f9f10d003f4624271287ca63417c2e5552b4c0631a4d2199115",
+      "problem": "cf1203C",
+      "repo_path": "benchmark/codeforces/cf1203C",
+      "selection_rank": "167a08004165ac4e2887ac7d6472439423a7b7a867ad1104eaaa10369dd42eb8",
+      "spec_sha256": "2ecf646176f0660f2d809cad279af490b56d736e8a8385818e581d21ba540853",
+      "stratum": "1100-1400",
+      "tag_metadata": {
+        "rating": 1300,
+        "raw": [
+          "Rating: 1300",
+          "implementation, math",
+          "Solved by: 23835 users"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "constructive algorithms",
+        "dp",
+        "math",
+        "number theory"
+      ],
+      "code_sha256": "981ef62af3c34e2d8488e516e5e22c06cf5412efeb5a1786661c21f43bf89619",
+      "description_sha256": "f9418e5eccafc87157256db4bc17245e61b9eb0f6326be59e428541d178387e0",
+      "family": "codeforces",
+      "main_sha256": "c2adc80eb7f93a0cc71053893d359c92314e0b6a29bcfdcd09a2ba996e91b900",
+      "problem": "cf546D",
+      "repo_path": "benchmark/codeforces/cf546D",
+      "selection_rank": "17b21e3ec7ff5e4546c15663d6a1b052c1909ee52100342ec7013e25571baf49",
+      "spec_sha256": "bd73f0e72424139e9eedfadf5bd42827eaf0fb10eb32fe9350011dd107d58aeb",
+      "stratum": "1500-1800",
+      "tag_metadata": {
+        "rating": 1700,
+        "raw": [
+          "Rating: 1700",
+          "constructive algorithms, dp, math, number theory",
+          "Solved by: 13612 users"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "greedy"
+      ],
+      "code_sha256": "df1b94080a1492bde33c26b464e0034b6854cce079c99dea94cd9fc84fac31d2",
+      "description_sha256": "20051a5410f02c557996a16e3f3bdf7407ca47b48ef1516a534da99d4bd2f046",
+      "family": "codeforces",
+      "main_sha256": "46e929b5aabfae0afb96d1bb4c864e7a46d9ca78406369709d8c30eccaf9dd97",
+      "problem": "cf478C",
+      "repo_path": "benchmark/codeforces/cf478C",
+      "selection_rank": "1a3c5caf2520863e0344d98542d185ff76f27a6f71791cc6e84a8b691367acf1",
+      "spec_sha256": "88392eaf7f383ed91323a97f2cca87d50f188f8a21a23c76e006c068dda6c7ce",
+      "stratum": "1500-1800",
+      "tag_metadata": {
+        "rating": 1800,
+        "raw": [
+          "Rating: 1800",
+          "greedy",
+          "Solved by: 20414 users"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "implementation",
+        "sortings"
+      ],
+      "code_sha256": "10e5762531843cf791ed6b8e9e6dab19b2a47d8d09c7dbfeb167f0083da21dbf",
+      "description_sha256": "549042ed67a67be109d20dea5d91cf0e00ac6d94daa581a69b6681166c47a1bf",
+      "family": "codeforces",
+      "main_sha256": "8c7bc68c9802de72b5aa8c3905901f92e8e09f27c8d2fe29eb461b207e547763",
+      "problem": "cf382C",
+      "repo_path": "benchmark/codeforces/cf382C",
+      "selection_rank": "1e889ac749e497ddc078049ee703d365e8a34af650552fb761c8b229537788c0",
+      "spec_sha256": "0654f35551478cdff86bd1383bdbf378ad7801d7bbd4943fc794a6fab3e2f141",
+      "stratum": "1500-1800",
+      "tag_metadata": {
+        "rating": 1700,
+        "raw": [
+          "Rating: 1700",
+          "implementation, sortings",
+          "Solved by: 8694 users"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "implementation",
+        "math"
+      ],
+      "code_sha256": "1be747d94351ebd779548f78a79dccdb3faa2d3cac0497645ae77fdef5602619",
+      "description_sha256": "9c30743e77c1d531786a9538255d3024c62e6aef141304e2f8c87b94af6fcf64",
+      "family": "codeforces",
+      "main_sha256": "cce6a8d836c353bd7704df729baa077e1169c619dd5288829004ae71e4bed221",
+      "problem": "cf1560C",
+      "repo_path": "benchmark/codeforces/cf1560C",
+      "selection_rank": "068dbab0ee6976f7b59f44662d64278bbe9cb3208f1d765b5c0523c2f07fb853",
+      "spec_sha256": "18d313f0df0497325008ebe5298b2b0a0f39abf7bc19d754f0c1c731d8dc3465",
+      "stratum": "<=1000",
+      "tag_metadata": {
+        "rating": 800,
+        "raw": [
+          "Rating: 800",
+          "implementation, math",
+          "Solved by: 27891 users"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "math"
+      ],
+      "code_sha256": "864748092058e6790945de70fbe5cb926cea1b4d4930f465a908446bfc8a6a94",
+      "description_sha256": "82526a680e844fc52af9b81e808b70c9274e8700d3b61d27df3527913a99de68",
+      "family": "codeforces",
+      "main_sha256": "b60ba7ce147e91a8d584455861e739983d71a5d9fa4bdc264eccf8bd001d2f42",
+      "problem": "cf1506A",
+      "repo_path": "benchmark/codeforces/cf1506A",
+      "selection_rank": "071f21b4e93c83dbb56694bd727d116f56ba73cb1d8a12634bfd63894ffd39e5",
+      "spec_sha256": "6378bc55b1ca11759e3d243bba21e0e2045b40b173c65af80f1ed4bacc89d45c",
+      "stratum": "<=1000",
+      "tag_metadata": {
+        "rating": 800,
+        "raw": [
+          "Rating: 800",
+          "math",
+          "Solved by: 32331 users"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "math"
+      ],
+      "code_sha256": "2c5bfa0811c71bb545cf7a6818ad3ac3590080d919ed55b8c4850de8597b8fb2",
+      "description_sha256": "6e1670e331d9989fa1e1ac6874623b91e9d71a8c963eb53ccc6c6497542e222e",
+      "family": "codeforces",
+      "main_sha256": "483aca3045c0eaa44e6bb4ff96a028ca229c95d746c5f9ae0424a024060a31d0",
+      "problem": "cf1256A",
+      "repo_path": "benchmark/codeforces/cf1256A",
+      "selection_rank": "07cc28f182ba8ffbb6c93ed2fd4bc448b08347ab21a7a4fbe6465bdcd3ede1af",
+      "spec_sha256": "3e49df84e12e1f5b1d06f50a44af194681097e34bdba380a68ba72b349fe988e",
+      "stratum": "<=1000",
+      "tag_metadata": {
+        "rating": 1000,
+        "raw": [
+          "Rating: 1000",
+          "math",
+          "Solved by: 32290 users"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "implementation"
+      ],
+      "code_sha256": "a1cd85af812ac84790472fc3165b8b78b89fdc2fe0f26387c28460f6b9a97a27",
+      "description_sha256": "c7c87b8da91c2338d009cbac101695c21dcbf7777cbcfdef21c0c560d5ad13dd",
+      "family": "codeforces",
+      "main_sha256": "f4f8e734d1aae88b1f34c8f6d52f31264b4628883a266dc21ce4cbad6680967e",
+      "problem": "cf935B",
+      "repo_path": "benchmark/codeforces/cf935B",
+      "selection_rank": "08e7139f6860984c4a27404b3e1722cdda45b926dd5a29a6e94946daa06da26a",
+      "spec_sha256": "077dcbfbf11e0b3677b96a707015eac30973968acdd9fe24215ce033da80d0b6",
+      "stratum": "<=1000",
+      "tag_metadata": {
+        "rating": 900,
+        "raw": [
+          "Rating: 900",
+          "implementation",
+          "Solved by: 12339 users"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "greedy",
+        "implementation"
+      ],
+      "code_sha256": "b1299de9900430ce160320714d946a0f266a6c66495b927c5c66b2ad38dcd7a8",
+      "description_sha256": "fa2f9582f540f6a16af003cc9003ff1bf12f6e6e0a19c9a26c7e115f5c702f6f",
+      "family": "codeforces",
+      "main_sha256": "aca60c9ecddf9cd4d79cecc2cc1014c5efcc69714547e58e8d532d66b93c25c9",
+      "problem": "cf2014A",
+      "repo_path": "benchmark/codeforces/cf2014A",
+      "selection_rank": "0c4f4f03e606cf4efdce51fc9615bbebcdf666e68ea49d85e970b1d755d3bf9a",
+      "spec_sha256": "050856c046e339d5a97e5f730a3b9964f47e60624abeb267c2642e0264792d2c",
+      "stratum": "<=1000",
+      "tag_metadata": {
+        "rating": 800,
+        "raw": [
+          "Rating: 800",
+          "greedy, implementation",
+          "Solved by: 45619 users"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "greedy",
+        "sortings"
+      ],
+      "code_sha256": "5928fb67f27c7611aebebc1efeb17c146d7b04d6792db361d9363939b7ccc900",
+      "description_sha256": "024780977195a10da7bb602ccb976f62dbbb1591642f7f80b28a5d4d66d7a476",
+      "family": "codeforces",
+      "main_sha256": "423c90dfaadbeec0690d52f0ee7704b2c486853351e25a5e8ab3c912ac3113f8",
+      "problem": "cf1399A",
+      "repo_path": "benchmark/codeforces/cf1399A",
+      "selection_rank": "0f9f2f0172343d942a8fc594e08b7245dfaa0ca46744d1e2b0f6ce96184c8104",
+      "spec_sha256": "6612346933b73a86fe60ff6c59a49763ae401f1d640b6f4e7ad7c9177a0abdef",
+      "stratum": "<=1000",
+      "tag_metadata": {
+        "rating": 800,
+        "raw": [
+          "Rating: 800",
+          "greedy, sortings",
+          "Solved by: 79323 users"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "games",
+        "greedy",
+        "math"
+      ],
+      "code_sha256": "eaceca7b4f7c0e669708e32c9ddff71818d1baf79587b4f1de24a40a0846dd2e",
+      "description_sha256": "180d064648b0306cd4a9a697c4de49032888bd8e0bccb5422dfdbaca62fea651",
+      "family": "codeforces",
+      "main_sha256": "c0781ebed7e51757e206ed55de3c5218be039f6e7996284eb2d4f2e5a2af7467",
+      "problem": "cf1858A",
+      "repo_path": "benchmark/codeforces/cf1858A",
+      "selection_rank": "109a3b5371984b93c2655e7f25c70e45e7b8b68e820fc801de62bd89b2ba0b8e",
+      "spec_sha256": "0ff688add4a7b354da016f16443ce3c268dde3d36364100d3494e4c182c1d0a7",
+      "stratum": "<=1000",
+      "tag_metadata": {
+        "rating": 800,
+        "raw": [
+          "Rating: 800",
+          "games, greedy, math",
+          "Solved by: 64792 users"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "brute force",
+        "math",
+        "number theory"
+      ],
+      "code_sha256": "004d40a011d224e788b46a04f76fd40a0ab40565e4f89ca41caabfb4a9a0f33e",
+      "description_sha256": "c2654669624081f93e976d98488da12cca4aec716352db13d5f8bcaf47f8f076",
+      "family": "codeforces",
+      "main_sha256": "c70f99ee36845c80832a3709113f62661ba24277c2d53d25fa3106a1623967f3",
+      "problem": "cf1985B",
+      "repo_path": "benchmark/codeforces/cf1985B",
+      "selection_rank": "11302ae28e12cb4512ff7ad4a2e0a18f7e88b5c795ae952a24a15c8910c0b21d",
+      "spec_sha256": "44c9cb88b378bddf69e0e17818ddcb448da9b3fed25daa3b244d16529b8a4012",
+      "stratum": "<=1000",
+      "tag_metadata": {
+        "rating": 800,
+        "raw": [
+          "Rating: 800",
+          "brute force, math, number theory",
+          "Solved by: 56074 users"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "brute force",
+        "implementation"
+      ],
+      "code_sha256": "6c682014adfc41177f2e947029ef5ef23eaf09a66ab167f0bf553bfa2a9cbeb4",
+      "description_sha256": "fa1b033f0b4ce43ab26d717c3c445a45bdeb5ac80471d4b61a927f275d5ae4e4",
+      "family": "codeforces",
+      "main_sha256": "d9c7f9362d332ad51f139cc80075e305c665e69887c6085f239f46e0519ea191",
+      "problem": "cf1772B",
+      "repo_path": "benchmark/codeforces/cf1772B",
+      "selection_rank": "1651af3ea98571f11f17f96fe208eda234eebeab9d79013180082d6b214163d3",
+      "spec_sha256": "7b05aded3b3c972dd36f4cee42c8123152178366bc01b6103481efa9ca790873",
+      "stratum": "<=1000",
+      "tag_metadata": {
+        "rating": 800,
+        "raw": [
+          "Rating: 800",
+          "brute force, implementation",
+          "Solved by: 32903 users"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "implementation"
+      ],
+      "code_sha256": "ad10abbe93cf0b99cda0ba004a52b3c2a71a6f54a7f95829c017b2eef3868e9a",
+      "description_sha256": "fca69b9b41ab23a85e78a36c6b995a723e32bd680a3838109e8a7a81e7aa3ee8",
+      "family": "codeforces",
+      "main_sha256": "65c8efeaa0c4edbb0f03e0c4a1ed50fd2b03f01d83541c7ae000805e36705d03",
+      "problem": "cf302A",
+      "repo_path": "benchmark/codeforces/cf302A",
+      "selection_rank": "18210ba60e4450d6bb7e4603cebce7bb09af07840823a67587fe688a30746f92",
+      "spec_sha256": "98a8dfae2af4ab98284d469d5336a9193cdcd942ea7b3791efe3c5f9949756fe",
+      "stratum": "<=1000",
+      "tag_metadata": {
+        "rating": 800,
+        "raw": [
+          "Rating: 800",
+          "implementation",
+          "Solved by: 9757 users"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "1100",
+        "implementation",
+        "unknown"
+      ],
+      "code_sha256": "552061e75acf1d9f5f2ee4988d00f041fd2d3893f3e51c9744a3833fabc605a7",
+      "description_sha256": "1c616eb56edbd020404876cce82620c7924b7d0fa3e4e6f54535dd68ab4a2405",
+      "family": "codeforces",
+      "main_sha256": "5b7a08ee2d213190ddc267a363f867b735ff9fa877e9bce196f762773bf3a99d",
+      "problem": "cf1669D",
+      "repo_path": "benchmark/codeforces/cf1669D",
+      "selection_rank": "22e01ffa0bed5fec193e749a3eb3b268e57213f90ea8ba84aa95815cc8b0f003",
+      "spec_sha256": "3465640cfe161f0ed1fcd38181ae8fcea57e2a050b1b6de6be9f8ca666b00e34",
+      "stratum": "Unknown",
+      "tag_metadata": {
+        "rating": null,
+        "raw": [
+          "1100",
+          "implementation",
+          "unknown"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "math"
+      ],
+      "code_sha256": "d34d53238dc7e5b2018456ea68b14655453bce7cfd3637246630230667913fd0",
+      "description_sha256": "58fcbc1d8ed130f321229b07982d895bcf4d0cb3a641a360ac4286ad62b411c3",
+      "family": "leetcode",
+      "problem": "lc2235",
+      "repo_path": "benchmark/leetcode/lc2235",
+      "selection_rank": "0805bb3687df106d353448a8131c9a3f0ca69595e73c9d890cbb7ccb8f38a066",
+      "spec_sha256": "5da2853467b95aaedb07167de5535ea5a606eefe127c499c2d43332818ff46e9",
+      "stratum": "Easy",
+      "tag_metadata": {
+        "difficulty": "Easy",
+        "raw": [
+          "Easy",
+          "Math",
+          "Acceptance rate: 88.0%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "array",
+        "binary search"
+      ],
+      "code_sha256": "fe07f09c8955224d3a48269e8eeb6a60f55dd5330eaad1fe0efc9b8c2f12a37a",
+      "description_sha256": "ab3f30ebae5ae49d8179841a2c3d4581b6603f9e2cb48b7dcdcc65278bbdb485",
+      "family": "leetcode",
+      "problem": "lc1539",
+      "repo_path": "benchmark/leetcode/lc1539",
+      "selection_rank": "08d46c489e394f1258e4bb78c63c93115f434e8df4d4f683676134b64415f5ca",
+      "spec_sha256": "b14070bfa75cf2b0cc3e6f13b2adcf907c2bb041b38caa5b60bd1f200ba76a7d",
+      "stratum": "Easy",
+      "tag_metadata": {
+        "difficulty": "Easy",
+        "raw": [
+          "Easy",
+          "Array, Binary Search",
+          "Acceptance rate: 59.0%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "mid level",
+        "array",
+        "hash table",
+        "counting",
+        "weekly contest 386"
+      ],
+      "code_sha256": "5077cf7d92ff5647d34be6a79fc8e527935053f9fcdad777bea8756b259b719d",
+      "description_sha256": "c331cfe0fb53af9d105866321d188a12741dbb1d638be38c01b9cefdd9a3557f",
+      "family": "leetcode",
+      "problem": "lc3046",
+      "repo_path": "benchmark/leetcode/lc3046",
+      "selection_rank": "0a65546a911d2b0a29c38c486528575e343ba3e39801f456b49ef4ecc50140c6",
+      "spec_sha256": "bfb9c59f4f3019d78e7ee9cf232ef1e9e5651239260d2c9de2101d4cfd5c8a8c",
+      "stratum": "Easy",
+      "tag_metadata": {
+        "difficulty": "Easy",
+        "raw": [
+          "Easy",
+          "Mid Level, Array, Hash Table, Counting, Weekly Contest 386",
+          "Acceptance rate: 61.0%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "array",
+        "simulation"
+      ],
+      "code_sha256": "c5a06e9cc7dacce623bd87cd67a8116cb84be046a526e7919c290b7922175172",
+      "description_sha256": "0b79f5c36845b99c53327b9cd39758fc9abbd2d977148bf41ffde79687b9ebd8",
+      "family": "leetcode",
+      "problem": "lc2660",
+      "repo_path": "benchmark/leetcode/lc2660",
+      "selection_rank": "0c4e8375062ad8531ae00e11ce46366d6080c186db4c507cb5f72b97f6583d3d",
+      "spec_sha256": "d5e03226bd507de8bb4f74c11a3189289a3b2198100fe944673eacb2b560f828",
+      "stratum": "Easy",
+      "tag_metadata": {
+        "difficulty": "Easy",
+        "raw": [
+          "Easy",
+          "Array, Simulation",
+          "Acceptance rate: 37.3%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "mid level",
+        "string"
+      ],
+      "code_sha256": "c17b89fae93a5e43b695c1c49ce336e43703a29650d52fbf86f8e10aac459518",
+      "description_sha256": "0b36728df34ce2ab58212e5428f0304535d8e84478b66ab9456079c076e7c55b",
+      "family": "leetcode",
+      "problem": "lc551",
+      "repo_path": "benchmark/leetcode/lc551",
+      "selection_rank": "0c9b2cb17c8b5abbfad4c8198f42c49419b12aea137c8d01037d7a7a7870aba7",
+      "spec_sha256": "0ae6dff0cdd30ef712a0e210c62f4a0a9481b07f4d9334f23c7f24a0c41ba7f0",
+      "stratum": "Easy",
+      "tag_metadata": {
+        "difficulty": "Easy",
+        "raw": [
+          "Easy",
+          "Mid Level, String",
+          "Acceptance rate: 50.0%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "math"
+      ],
+      "code_sha256": "0a2b37dccdeb422e1e18c3aa9e057316472cc0da35b93b7f74ba66945ea65d56",
+      "description_sha256": "bc343f10eeeb414295083500b8e2f2dacd5f3fadc80436724c13f6d505a735c7",
+      "family": "leetcode",
+      "problem": "lc3622",
+      "repo_path": "benchmark/leetcode/lc3622",
+      "selection_rank": "0d71ccbe1f41932c89815cb0a62e456e2fc30d54eb22fbe3d33ce8c32d0777f2",
+      "spec_sha256": "676f39409ceea9b36f51dc68a8f665d78716ca420502eb04c8c01be8b54c1881",
+      "stratum": "Easy",
+      "tag_metadata": {
+        "difficulty": "Easy",
+        "raw": [
+          "Easy",
+          "Math",
+          "Acceptance rate: 69.6%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "array",
+        "sorting",
+        "heap (priority queue)",
+        "83.6%"
+      ],
+      "code_sha256": "5dad4428bbf53fe1aff4fa4fb84aff7dd777108a2cbe07c463f0559bf6824ece",
+      "description_sha256": "fe5f505399a8c0a009349744c44c1cada1c3319be0f5806025608f42a2e7b075",
+      "family": "leetcode",
+      "problem": "lc1464",
+      "repo_path": "benchmark/leetcode/lc1464",
+      "selection_rank": "0d7e63bcfae043b0ddc775bd28bfd3e136a3027942bac39a7b5f83b2ec48ca2e",
+      "spec_sha256": "b514907336432ff9cce92021d4b9fc4e021dc00230aca32769bc490d5f7d65fb",
+      "stratum": "Easy",
+      "tag_metadata": {
+        "difficulty": "Easy",
+        "raw": [
+          "Easy",
+          "Array, Sorting, Heap (Priority Queue)",
+          "83.6%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "math",
+        "number theory",
+        "weekly contest 464"
+      ],
+      "code_sha256": "0fcefb737dfbb4872e085fee3ae5489bd648263c9a2536632ff12a21708335cd",
+      "description_sha256": "b884361072692c9cf4b3c17e7b01520da94236d9f924581028535151024af65c",
+      "family": "leetcode",
+      "problem": "lc3658",
+      "repo_path": "benchmark/leetcode/lc3658",
+      "selection_rank": "0d8d11c24fc3d69d8f6381dfe363a2ba853e3a321674850ab176c7663ee22bb0",
+      "spec_sha256": "c331b6e22382ed6e05a00e48793f522cfd11479accdd2a87a54f0184500197cc",
+      "stratum": "Easy",
+      "tag_metadata": {
+        "difficulty": "Easy",
+        "raw": [
+          "Easy",
+          "Math, Number Theory, Weekly Contest 464",
+          "Acceptance rate: 81.6%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "array",
+        "hash table"
+      ],
+      "code_sha256": "3c9936f4cc80c8bad2bf637e955208a75a10f846a1205cd8ee52ae64ffedd36c",
+      "description_sha256": "1f0717950313bb6a49d9dc66791f69c60e3c9b64a4798668bbf97b81352cb1a6",
+      "family": "leetcode",
+      "problem": "lc2815",
+      "repo_path": "benchmark/leetcode/lc2815",
+      "selection_rank": "0dc42e2cde121dd0cb6cba99ce37184aeb51a414ffa3bfbaa317bd91f9ea3e09",
+      "spec_sha256": "9661c9117c7c65f941ca0080bbd92acfb4b055ea5d9b8580b8d652d338eaf898",
+      "stratum": "Easy",
+      "tag_metadata": {
+        "difficulty": "Easy",
+        "raw": [
+          "Easy",
+          "Array, Hash Table",
+          "Acceptance rate: 60.5%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "array",
+        "queue",
+        "simulation"
+      ],
+      "code_sha256": "682b2ee91ee4b0994e89eaa48a41e12ff7f49b3d54921edc50dfe1feeb4bdfcf",
+      "description_sha256": "ce39c55d9fb0e346d0680a5f5f13ba933dce25bd1171f229d2b33afb7cba18fc",
+      "family": "leetcode",
+      "problem": "lc2073",
+      "repo_path": "benchmark/leetcode/lc2073",
+      "selection_rank": "0e9bec45f3cf9e99e38eb111dbce6e9bc1a761e65ff21a8ae3e7eda7d53f95c4",
+      "spec_sha256": "016430f4d58d8445ca0c952f8f1bd2659bcced116931f90b7dafbd0b1291aa7a",
+      "stratum": "Easy",
+      "tag_metadata": {
+        "difficulty": "Easy",
+        "raw": [
+          "Easy",
+          "Array, Queue, Simulation",
+          "Acceptance rate: 72.3%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "array",
+        "simulation"
+      ],
+      "code_sha256": "625d0ea0ae7ce3dcc8b07c1db25c3520c7a5d77e4a31e31ade2c70fdb7957e89",
+      "description_sha256": "36637c7b9cabf1c76069cb99f8926f229a006054a3920eb259ead55e6fa3f275",
+      "family": "leetcode",
+      "problem": "lc3069",
+      "repo_path": "benchmark/leetcode/lc3069",
+      "selection_rank": "106035fcea5c4c70103e7f5208237ddedbe36aa74229596c7e01e7f7f725bbf0",
+      "spec_sha256": "e28f3e4279d404b8b3861e1e447b4d6b3968e98d3615794e4eecb5933e891594",
+      "stratum": "Easy",
+      "tag_metadata": {
+        "difficulty": "Easy",
+        "raw": [
+          "Easy",
+          "Array, Simulation",
+          "Acceptance rate: 73.9%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "math"
+      ],
+      "code_sha256": "12d5d3622274dcfd990f92696fb2c743310956ab6dd26d9b9c9b848dfc076d6d",
+      "description_sha256": "a3331de26acf6b4cd84b7a03d24a35b06a8859b37d465b371e260697f24b465b",
+      "family": "leetcode",
+      "problem": "lc3270",
+      "repo_path": "benchmark/leetcode/lc3270",
+      "selection_rank": "10e2030f88e2e26eee1d0fbbab510460a8399558e553f167aabe220a9fddb2d2",
+      "spec_sha256": "bd9c9e2595e9f9fd5114e2465173896a88251f202bece702ec5d5d9d017df553",
+      "stratum": "Easy",
+      "tag_metadata": {
+        "difficulty": "Easy",
+        "raw": [
+          "Easy",
+          "Math",
+          "Acceptance rate: 76.5%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "senior",
+        "array",
+        "hash table"
+      ],
+      "code_sha256": "24a79a509b6e5b58e64a2809e8a19695bab912fa9f878ee6a42624d451995c5c",
+      "description_sha256": "b66697c4abfb696a0c4732ac099d60a312329680b9ee9ede3d201a3c44097d03",
+      "family": "leetcode",
+      "problem": "lc575",
+      "repo_path": "benchmark/leetcode/lc575",
+      "selection_rank": "10f89ca90f3e8f441c44ec057bda9fba8f9c078ffad8fc571873acd4cb65c8da",
+      "spec_sha256": "0d84fc39b9da7d6384de95db609020b4b90a50da6918504878385558a831fdfd",
+      "stratum": "Easy",
+      "tag_metadata": {
+        "difficulty": "Easy",
+        "raw": [
+          "Easy",
+          "Senior, Array, Hash Table",
+          "Acceptance rate: 70.8%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "array",
+        "math"
+      ],
+      "code_sha256": "e196746dd7cb62b3ae76ab7bfd9d9842576e22c545ab8c6e3380d0c918893d17",
+      "description_sha256": "aa7bd6ec472889560ec43c8396616c2cc8f6f19994d56a1a50578dd5cef442bb",
+      "family": "leetcode",
+      "problem": "lc1295",
+      "repo_path": "benchmark/leetcode/lc1295",
+      "selection_rank": "116eca1a2da7f01206da7bec538f171fce7b7416553898d98fa550c7d2564d22",
+      "spec_sha256": "2e169ebe25058c49d4181524bc970e5670e064cb02ea21298e19da1125e72446",
+      "stratum": "Easy",
+      "tag_metadata": {
+        "difficulty": "Easy",
+        "raw": [
+          "Easy",
+          "Array, Math",
+          "Acceptance rate: 79.7%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "array",
+        "math"
+      ],
+      "code_sha256": "cb84573bb3204fc0dfc93ea3033f8041bb645a334fda209173f1d26225c3d320",
+      "description_sha256": "a4f28832914daf54b053a82f94cf3145e2b7cf325316f24eb4450f9d739f836c",
+      "family": "leetcode",
+      "problem": "lc2455",
+      "repo_path": "benchmark/leetcode/lc2455",
+      "selection_rank": "12acd1a279a511480ec0b0d9ea7b43a968609b643924de3ff8d25a7b5a1c4264",
+      "spec_sha256": "7950743d688bb3e2408874d00b23ccf8753a43e68c636231da7cd4ec1122d405",
+      "stratum": "Easy",
+      "tag_metadata": {
+        "difficulty": "Easy",
+        "raw": [
+          "Easy",
+          "Array, Math",
+          "Acceptance rate: 63.0%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "array",
+        "hash table",
+        "bit manipulation",
+        "sorting"
+      ],
+      "code_sha256": "093b93f74fc1af4776e127ac3ba2a0ce3df759b5e4675d82f0ea7cb449c32f05",
+      "description_sha256": "1de9bf595cba3cc0711a93ffc3b26e528d0fbf2a21b19177cddeaa61d69942c9",
+      "family": "leetcode",
+      "problem": "lc645",
+      "repo_path": "benchmark/leetcode/lc645",
+      "selection_rank": "1431193ea93adfebca5667a2c18f5f8a1e977fb0326689c11f034a21d1507581",
+      "spec_sha256": "2a8612f9f068a2939c35b6c62218bb97a7e81cd65a177306d8f9509605b6c6c4",
+      "stratum": "Easy",
+      "tag_metadata": {
+        "difficulty": "Easy",
+        "raw": [
+          "Easy",
+          "Array, Hash Table, Bit Manipulation, Sorting",
+          "Acceptance rate: 42.0%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "array",
+        "math",
+        "backtracking",
+        "bit manipulation",
+        "combinatorics",
+        "enumeration"
+      ],
+      "code_sha256": "577fb8ba16c73bd9964ef17cdae830720407d0c9fff4229755ad2b0b3b056c30",
+      "description_sha256": "797d36b14fa053032d997e030ea6d52820abcc25b221fc074e73cda8060981f5",
+      "family": "leetcode",
+      "problem": "lc1863",
+      "repo_path": "benchmark/leetcode/lc1863",
+      "selection_rank": "147d78c3e4f8c4e28745b3f89579bc91d754c61d7121e00df9577de25a98f2d3",
+      "spec_sha256": "0a7ecdcd02e7b24ff3075d76a12700cabd09134bf435a268c4c9e3a970e7bce3",
+      "stratum": "Easy",
+      "tag_metadata": {
+        "difficulty": "Easy",
+        "raw": [
+          "Easy",
+          "Array, Math, Backtracking, Bit Manipulation, Combinatorics, Enumeration",
+          "Acceptance rate: 90.1%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "array"
+      ],
+      "code_sha256": "4b46f8efc5338c30fe97efc6838da6b91770277a4451fbe5dc357239a136d730",
+      "description_sha256": "1c4c7132ffc8f2dbcd3fbc690e3048ee614927928f66bb11627e446884ad159a",
+      "family": "leetcode",
+      "problem": "lc1779",
+      "repo_path": "benchmark/leetcode/lc1779",
+      "selection_rank": "15a9640faf55401d8d97e8ffd45202017ded9152678df0547253d4e4480fabb5",
+      "spec_sha256": "792620b9802d170f47560a4f75f970d3d1643bc446368ccf07c562a5cb54e0f5",
+      "stratum": "Easy",
+      "tag_metadata": {
+        "difficulty": "Easy",
+        "raw": [
+          "Easy",
+          "Array",
+          "Acceptance rate: 69.9%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "array"
+      ],
+      "code_sha256": "70b07103f956bb1f1a0d2a611c469f6e4d22585bd1db61af78af2ae828cd4395",
+      "description_sha256": "2f8aea809488f92adb076107725b6327c9da5582374b7d66b6a319f75f7bc29c",
+      "family": "leetcode",
+      "problem": "lc3000",
+      "repo_path": "benchmark/leetcode/lc3000",
+      "selection_rank": "16d1953e812d78ab3976bdf1aa3330dcd6cd3eb8d4626168d2bd07fd79b10e06",
+      "spec_sha256": "5ca8abce1bcd4ddbe8491d4d984d4f5ac73bf001d0cc5e033c845690c604adc9",
+      "stratum": "Easy",
+      "tag_metadata": {
+        "difficulty": "Easy",
+        "raw": [
+          "Easy",
+          "Array",
+          "Acceptance rate: 45.9%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "hash table",
+        "string",
+        "sorting"
+      ],
+      "code_sha256": "5a5b866805ea45cd751889d39b18c957cc3ec9d5e0f37d3a58803b110694f737",
+      "description_sha256": "7f95a73100d4515916833df6e65482b204b7582a047f01c8e5d63c8682c39948",
+      "family": "leetcode",
+      "problem": "lc242",
+      "repo_path": "benchmark/leetcode/lc242",
+      "selection_rank": "1a72a674853457ccc1d0d21a5d01e3eaa71a45789dbd6a9bb5033af1dc673562",
+      "spec_sha256": "baa61d73a169f27160937fc3f20ef161c392cb64ffab05f65494f5be1494ff98",
+      "stratum": "Easy",
+      "tag_metadata": {
+        "difficulty": "Easy",
+        "raw": [
+          "Easy",
+          "Hash Table, String, Sorting",
+          "Acceptance rate: 67.8%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "array",
+        "dynamic programming"
+      ],
+      "code_sha256": "1bb44f536b7004345ce2ce544e5908dc2849c0923c4be0c52575def7c53f1408",
+      "description_sha256": "fc7ac8534ffc12fe8103f7cf261ce3ab5ba684ca48af7746b155c87b768673ac",
+      "family": "leetcode",
+      "problem": "lc119",
+      "repo_path": "benchmark/leetcode/lc119",
+      "selection_rank": "1b6144db111babd79a8011f0c86e5761fb08d2cfd302a2d5dad24dbc64db7ecb",
+      "spec_sha256": "f100e819c4f7aa6935369d1b33feb945db4244a5a50c33a85b4ed21b3dec0c70",
+      "stratum": "Easy",
+      "tag_metadata": {
+        "difficulty": "Easy",
+        "raw": [
+          "Easy",
+          "Array",
+          "Dynamic Programming",
+          "Acceptance rate: 66.7%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "array"
+      ],
+      "code_sha256": "3d291a0c0e35df73f073a134dc17f0a3f17c6654de09318a21fce762afc9b2b4",
+      "description_sha256": "97a39e5075c7930dfd5981a51d112686ae854106e0d5a3222d974a7b76aa2d0d",
+      "family": "leetcode",
+      "problem": "lc1752",
+      "repo_path": "benchmark/leetcode/lc1752",
+      "selection_rank": "1be9d45ac332a655b35c222c1be1dfdb9c6e48196c76532f47dca5ab9cf40fc2",
+      "spec_sha256": "7d2d65d63ff30576c6ec552bc1f87cdd09d976d1951f7b03cd59e1590a297adf",
+      "stratum": "Easy",
+      "tag_metadata": {
+        "difficulty": "Easy",
+        "raw": [
+          "Easy",
+          "Array",
+          "Acceptance rate: 55.7%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "array",
+        "enumeration"
+      ],
+      "code_sha256": "3e7d584318a76a88ce17ce5d8974d73f1105f8e4acf21332d2bcc4d3d1147354",
+      "description_sha256": "0df58369a1b07c933c8d78bc2e9ccfdf016cf10be717323aa5f7ba5125acee3a",
+      "family": "leetcode",
+      "problem": "lc2765",
+      "repo_path": "benchmark/leetcode/lc2765",
+      "selection_rank": "1c303b325d3c8679539265f5b5b0f9009d379f9f478b9fa053c165097023e2b7",
+      "spec_sha256": "be1b59b09109983af2b2c2f98b8560c835a16d2c24a847f8c91fda6252b755ba",
+      "stratum": "Easy",
+      "tag_metadata": {
+        "difficulty": "Easy",
+        "raw": [
+          "Easy",
+          "Array, Enumeration",
+          "Acceptance rate: 35.2%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "math",
+        "prefix sum"
+      ],
+      "code_sha256": "f69b3f1b63b890bc179c146f7587f535bd81a4fce09a854e2509649accd92d57",
+      "description_sha256": "fc16c1b59453f6ecdb585e88bf7dcd65fa33e9d8e24ea85e4523e99c4b1ecc77",
+      "family": "leetcode",
+      "problem": "lc2485",
+      "repo_path": "benchmark/leetcode/lc2485",
+      "selection_rank": "1c33bc6d2eab0a3928396106387f91e6740c9368e53d257fe623da1ed2f2e9cf",
+      "spec_sha256": "3d61abf6efa13be6d5557987213f58f4f12a479cea69429e3c07f2e3433255ee",
+      "stratum": "Easy",
+      "tag_metadata": {
+        "difficulty": "Easy",
+        "raw": [
+          "Easy",
+          "Math, Prefix Sum",
+          "Acceptance rate: 83.8%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "math"
+      ],
+      "code_sha256": "88a8317b5a33641a77a6b2229d880d7871f72d43342cfa5a7fa9620e08ae48b8",
+      "description_sha256": "b69c29415b24817bd493457b4dc9fc0c52eac954e5c820d4569df0bf4942eb89",
+      "family": "leetcode",
+      "problem": "lc2894",
+      "repo_path": "benchmark/leetcode/lc2894",
+      "selection_rank": "1e0140f2c05b79dea48ec72601e8b00028848c5eca7b823dffa8fbfd7430c4e0",
+      "spec_sha256": "2af424f0e014c57b0ac5f19f18255d151b2f176bc4c31c2b348f7a740ffdfcd4",
+      "stratum": "Easy",
+      "tag_metadata": {
+        "difficulty": "Easy",
+        "raw": [
+          "Easy",
+          "Math",
+          "Acceptance rate: 91.0%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "array",
+        "math"
+      ],
+      "code_sha256": "32270f4ee7d67136564f0a2017fbe1ed029845aca8e02fc7ab4074d390d416a6",
+      "description_sha256": "be1d057750ff36468582ac1ece3f7a14f70e2520e0fdd49153befd530220b46a",
+      "family": "leetcode",
+      "problem": "lc3736",
+      "repo_path": "benchmark/leetcode/lc3736",
+      "selection_rank": "1f67af35eb0a60cb4f0fe5b68839c236f0bb45ab7bf24194728a4b638b66e1c0",
+      "spec_sha256": "25ff42ea82ae96cf98c6c38b2d6279a5910e3a11b9dcfebe37b759daff6b1c42",
+      "stratum": "Easy",
+      "tag_metadata": {
+        "difficulty": "Easy",
+        "raw": [
+          "Easy",
+          "Array, Math",
+          "Acceptance rate: 81.5%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "math",
+        "simulation"
+      ],
+      "code_sha256": "4e0a4492d7413d8b8be4758254eaad9fc68a3d66302b0c474ce76cc3d2ba8146",
+      "description_sha256": "0e98d40953ef1a59c799642487b85eb210f7a1a3906ece46de385ce880320efe",
+      "family": "leetcode",
+      "problem": "lc2582",
+      "repo_path": "benchmark/leetcode/lc2582",
+      "selection_rank": "214aab3158dfcf2547ce8df15209651ccbb9d49e004446652a2df1734dfb0987",
+      "spec_sha256": "3a50bc1031d0de6da76ef61b8c79430fbafaa383b12ba5606b3004f5b64b35d4",
+      "stratum": "Easy",
+      "tag_metadata": {
+        "difficulty": "Easy",
+        "raw": [
+          "Easy",
+          "Math",
+          "Simulation",
+          "Acceptance rate: 56.6%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "array",
+        "queue",
+        "sliding window",
+        "monotonic queue"
+      ],
+      "code_sha256": "bfd3f83b0925ac0f13fe78566e31f2528c2592d3db3d7c5c57028523e8683bc0",
+      "description_sha256": "ce6be6380b31d048127196d84fc9d13454fcfc43172cd746434ea3ad92c6b00b",
+      "family": "leetcode",
+      "problem": "lc2444",
+      "repo_path": "benchmark/leetcode/lc2444",
+      "selection_rank": "0a5930aa932060cc1a4a3474de098dd394ca2538312bbcb06f98f8998e0acf04",
+      "spec_sha256": "cbf3e5c8c9a153b5c741273fa48c3c4b9b66a49a6038f4f7ce6decaaa558e7fa",
+      "stratum": "Hard",
+      "tag_metadata": {
+        "difficulty": "Hard",
+        "raw": [
+          "Hard",
+          "Array, Queue, Sliding Window, Monotonic Queue",
+          "Acceptance rate: 69.2%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "dynamic programming"
+      ],
+      "code_sha256": "ac157ff0fb9d6ec829991cad35692cf1eb576ebda158ecdd464f2d3e6b7990ac",
+      "description_sha256": "65564f680fdea3d42a363da9581569600b00142e0c143280a76837e8e2fbc9ee",
+      "family": "leetcode",
+      "problem": "lc600",
+      "repo_path": "benchmark/leetcode/lc600",
+      "selection_rank": "11f2e6683690b165f3b56d795216af86d869cd0911817b0da5baf0e4a20ec112",
+      "spec_sha256": "eec1d13c8a8c8ce767b85975457867c09652938b668572360d963c1569ef07ac",
+      "stratum": "Hard",
+      "tag_metadata": {
+        "difficulty": "Hard",
+        "raw": [
+          "Hard",
+          "Dynamic Programming",
+          "Acceptance rate: 42.1%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "array",
+        "dynamic programming"
+      ],
+      "code_sha256": "6a341a25a04ff5b2d0167de4f3f7b8fe42e978904dc50eec3c18eb5dbde735ed",
+      "description_sha256": "a7e522e7814864c714be801dd6d2e8c888a13aa2855a2498450094f785c6fb3a",
+      "family": "leetcode",
+      "problem": "lc1770",
+      "repo_path": "benchmark/leetcode/lc1770",
+      "selection_rank": "13a7b418bccf8368203fde71b43eaf8bb45faacd43af06611cf498b563b7f5ec",
+      "spec_sha256": "5210c12494fc86428db97bd89fb1d9f128d3566d47b0c5f95a9c3abdb0fc0ec6",
+      "stratum": "Hard",
+      "tag_metadata": {
+        "difficulty": "Hard",
+        "raw": [
+          "Hard",
+          "Array, Dynamic Programming",
+          "Acceptance rate: 43.2%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "array",
+        "dynamic programming",
+        "bit manipulation",
+        "matrix",
+        "bitmask"
+      ],
+      "code_sha256": "b2d41f9ccfc4cafa85621a01eb73dbbdd180b44694b64fe2ce6422e3621a76a1",
+      "description_sha256": "b0c6923a1ceab960399209cbc43bc3136b229fdca0c221991f7feb9ccb5760b7",
+      "family": "leetcode",
+      "problem": "lc1595",
+      "repo_path": "benchmark/leetcode/lc1595",
+      "selection_rank": "1875deda40e468e69396b5ff90f2e7141ab2bc2bbfd4a3e077c076774254d05d",
+      "spec_sha256": "ab60f2d1bbd702bda8b1442a023b5fbc13a471d850df9eacd24ffdf36704177b",
+      "stratum": "Hard",
+      "tag_metadata": {
+        "difficulty": "Hard",
+        "raw": [
+          "Hard",
+          "Array, Dynamic Programming, Bit Manipulation, Matrix, Bitmask",
+          "Acceptance rate: 49.8%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "array",
+        "stack",
+        "greedy",
+        "sorting",
+        "monotonic stack"
+      ],
+      "code_sha256": "e32eb59811384638bcb2b2d8d7fe5d4e1affc9583771876a9062525a4f48e3b3",
+      "description_sha256": "5673e3c1b715c54959034b1a54456c66eafa09871202cfed769d95cd642c58cd",
+      "family": "leetcode",
+      "problem": "lc768",
+      "repo_path": "benchmark/leetcode/lc768",
+      "selection_rank": "198131da60252b69ea7ab14c6acb9feb8e8a3c041d4a62b3f730344a407ef090",
+      "spec_sha256": "cb01531a3ea49bc801646504d7dc83ddab2f1838eb4839b8873b11c54c52f4b6",
+      "stratum": "Hard",
+      "tag_metadata": {
+        "difficulty": "Hard",
+        "raw": [
+          "Hard",
+          "Array, Stack, Greedy, Sorting, Monotonic Stack",
+          "Acceptance rate: 54.7%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "array",
+        "hash table",
+        "math",
+        "matrix"
+      ],
+      "code_sha256": "7d70d0fe888a665aeb99e1771ea4cab7c96b9454c5810503715dd2c743cd458f",
+      "description_sha256": "523dcaa613918a2d562b2d95df4ed6918618e96c061bb7938b77e36b043532a3",
+      "family": "leetcode",
+      "problem": "lc840",
+      "repo_path": "benchmark/leetcode/lc840",
+      "selection_rank": "06b37f11030f462e4cc0906c50fd048a5245e305153719719019d36a16a2278c",
+      "spec_sha256": "87f175d9a323bb96cec03895dfdb3aae9f9057a2e1dd85ef35b94765743fe33f",
+      "stratum": "Medium",
+      "tag_metadata": {
+        "difficulty": "Medium",
+        "raw": [
+          "Medium",
+          "Array, Hash Table, Math, Matrix",
+          "Acceptance rate: 55.1%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "array",
+        "two pointers",
+        "binary search",
+        "greedy",
+        "sorting"
+      ],
+      "code_sha256": "4bfcffd4d2b52e963a7628355dcbf2fc2b53b3b250108c0f844cf91fbc58fc6f",
+      "description_sha256": "de6fa938513da7c60078a10494ec59e6a0ad64a1b5839f35ff511de45705b2bd",
+      "family": "leetcode",
+      "problem": "lc611",
+      "repo_path": "benchmark/leetcode/lc611",
+      "selection_rank": "0a2f73f811692182aa61571e3c381dd1abfb0fc7737ea3e8c64e11c464ff6df6",
+      "spec_sha256": "6e58d32623b7899b872f0c53d48c2d1f28880aff759221cf4e8b1e66d9398845",
+      "stratum": "Medium",
+      "tag_metadata": {
+        "difficulty": "Medium",
+        "raw": [
+          "Medium",
+          "Array, Two Pointers, Binary Search, Greedy, Sorting",
+          "Acceptance rate: 56.7%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "senior",
+        "array",
+        "binary search",
+        "prefix sum",
+        "weekly contest 398"
+      ],
+      "code_sha256": "680bd83a7cb48c9aa664a5551fbaefc514c7b13c59fb9b6cf99c7b25a8383b9d",
+      "description_sha256": "79f7e7f09df35cdb8665dc9e0ff0d357b1ca970a441382a6863a07839ff7154f",
+      "family": "leetcode",
+      "problem": "lc3152",
+      "repo_path": "benchmark/leetcode/lc3152",
+      "selection_rank": "0ac105295eb70a0dd270d32b77639bdab085275571c6a132adc5a023a7be6cad",
+      "spec_sha256": "6f33002fcccb48de1536e993d86891287ed092ec7c4f915da93538f1b0e44194",
+      "stratum": "Medium",
+      "tag_metadata": {
+        "difficulty": "Medium",
+        "raw": [
+          "Medium",
+          "Senior, Array, Binary Search, Prefix Sum, Weekly Contest 398",
+          "Acceptance rate: 45.8%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "array",
+        "binary search",
+        "sliding window",
+        "prefix sum"
+      ],
+      "code_sha256": "c469a55d1699d067f38c8efe2baaaed0361ec712559c41d9659f0e2a2c3c799b",
+      "description_sha256": "90d4db26b6b2554fe4a06058031e183d0dfd5066a8004b539e5e884e6e865343",
+      "family": "leetcode",
+      "problem": "lc1004",
+      "repo_path": "benchmark/leetcode/lc1004",
+      "selection_rank": "0b7a7d84f12688ff8dc33c494072ee60af6c13daee0cd0444d0b8af487a803bb",
+      "spec_sha256": "30d0946a6539988e45235bf3ec30164816f71d61ad3ddf759c68ff1436cfb542",
+      "stratum": "Medium",
+      "tag_metadata": {
+        "difficulty": "Medium",
+        "raw": [
+          "Medium",
+          "Array, Binary Search, Sliding Window, Prefix Sum",
+          "Acceptance rate: 67.3%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "array",
+        "binary search",
+        "sorting"
+      ],
+      "code_sha256": "8a5d99c070d52db97c5f1dd7feb1ffeff5757ac0090eff69ee877c99ecc0827f",
+      "description_sha256": "35ac6bac479d404dd29ecaa8d0c0911a21d1a28091b4fac437c61bb64e36e8b4",
+      "family": "leetcode",
+      "problem": "lc1300",
+      "repo_path": "benchmark/leetcode/lc1300",
+      "selection_rank": "0b886f4524e68c95c95f86ceb81dd95a0280ea82e6a7d9f80ba7437383770a7d",
+      "spec_sha256": "a65ce7682538486b03cc401f077ba20877e367abb3a19372bb80ba879b942dd3",
+      "stratum": "Medium",
+      "tag_metadata": {
+        "difficulty": "Medium",
+        "raw": [
+          "Medium",
+          "Array, Binary Search, Sorting",
+          "Acceptance rate: 46.2%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "array",
+        "sliding window"
+      ],
+      "code_sha256": "93c27437d182efbb82086b2563e6754ed49bd45768e3e07979fa9e32e5faf8ac",
+      "description_sha256": "91c425553892af95ea592bf6895557b41701a986bb7fd8bf5fe1896952044378",
+      "family": "leetcode",
+      "problem": "lc3208",
+      "repo_path": "benchmark/leetcode/lc3208",
+      "selection_rank": "0c609e3761db13fdad2ebce2c04d3633221933c6bf83c6143bb808b34dbf90a9",
+      "spec_sha256": "aedbc7fe141455a14b3a7ca6c205b95863e0698e9110d51619b33dad6b981b68",
+      "stratum": "Medium",
+      "tag_metadata": {
+        "difficulty": "Medium",
+        "raw": [
+          "Medium",
+          "Array, Sliding Window",
+          "Acceptance rate: 60.0%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "math",
+        "enumeration"
+      ],
+      "code_sha256": "e6c6843747348c677fc017a7d45298033332f39c3514ce1b747dff186eaa1c45",
+      "description_sha256": "9b3a04853bcdb89ebaec1f1acbc86f4f9398dd40c7b57a6cbe7c70aa7dd7347e",
+      "family": "leetcode",
+      "problem": "lc2240",
+      "repo_path": "benchmark/leetcode/lc2240",
+      "selection_rank": "0cf2a1625589879080cad5d09ca7f595f8ecc4e41a799be34ae9037d8b87efc3",
+      "spec_sha256": "68822d685de60e45c902165c557b9b7e83036b585027189c594a1a5f2681cd01",
+      "stratum": "Medium",
+      "tag_metadata": {
+        "difficulty": "Medium",
+        "raw": [
+          "Medium",
+          "Math, Enumeration",
+          "Acceptance rate: 56.7%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "array",
+        "dynamic programming"
+      ],
+      "code_sha256": "f4d2d775dcbe84dad7d87baf69242dd9757e4979848e60f47ea61878e943ef1a",
+      "description_sha256": "5e8e523aae7092a4ae148811be4480c043fa32ccce76744711d770193f41771a",
+      "family": "leetcode",
+      "problem": "lc1049",
+      "repo_path": "benchmark/leetcode/lc1049",
+      "selection_rank": "0dcccd5162ef961cdd77be9c5e021f12ca895019ae15b75d2f45397274b21a9f",
+      "spec_sha256": "0ec316a87d300d75c723d450934da020a39cc751f8e5d68b3c8358866b622fd1",
+      "stratum": "Medium",
+      "tag_metadata": {
+        "difficulty": "Medium",
+        "raw": [
+          "Medium",
+          "Array, Dynamic Programming",
+          "Acceptance rate: 59.4%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "array",
+        "dynamic programming",
+        "greedy"
+      ],
+      "code_sha256": "81a31e2d35fe0c33055b5c6d6449833fbf700942422d01510a132b60b4d28f3b",
+      "description_sha256": "46a2ba8f3b5f7a93fa0b9a06cfd2ecc2ed6c55bce0b06315cdfd6fdd87c732d2",
+      "family": "leetcode",
+      "problem": "lc122",
+      "repo_path": "benchmark/leetcode/lc122",
+      "selection_rank": "0f601219243fdab40149e9782b9a343df7d8cdb38b04c19989b6c9b89750ab71",
+      "spec_sha256": "33e3f50553be7e669bbfd0525af838e1c736b207a59ce0c88858aafb4089c51f",
+      "stratum": "Medium",
+      "tag_metadata": {
+        "difficulty": "Medium",
+        "raw": [
+          "Medium",
+          "Array, Dynamic Programming, Greedy",
+          "Acceptance rate: 70.3%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "array",
+        "dynamic programming"
+      ],
+      "code_sha256": "0c100903ca4f5a5003b8b187802a89f3b3d9a7488fbad6ae1f66943f04960d11",
+      "description_sha256": "9d323b4ebb39c1a9a5479bab4837455aa0c44b1d456785ac45ad0582f6e83e17",
+      "family": "leetcode",
+      "problem": "lc1105",
+      "repo_path": "benchmark/leetcode/lc1105",
+      "selection_rank": "0fe9bad19412b09c24a7ebbeb526edd36c6f533848c644c76e97a316f6374fdf",
+      "spec_sha256": "6aab6e5c57af58e889349201738f44675ee54f5633c05a21fcaa2a04316a438b",
+      "stratum": "Medium",
+      "tag_metadata": {
+        "difficulty": "Medium",
+        "raw": [
+          "Medium",
+          "Array, Dynamic Programming",
+          "Acceptance rate: 68.6%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "array",
+        "dynamic programming"
+      ],
+      "code_sha256": "a18bf2a3a9ba1fdd6e591ad8099974cdc10131bd37098de7dd8775a7e9e004b2",
+      "description_sha256": "c4defd4fb03753e259019a561e317f10b0988e43940f621f87178e114ff1c16a",
+      "family": "leetcode",
+      "problem": "lc1039",
+      "repo_path": "benchmark/leetcode/lc1039",
+      "selection_rank": "11e0ec4a1af0fc923748680e82b9cced13af54fb865b0f95cb232acb53ae8785",
+      "spec_sha256": "463b6dfb336443f27080e35c64ed98e5cc64d661e05f2b6b3773551f85ff6996",
+      "stratum": "Medium",
+      "tag_metadata": {
+        "difficulty": "Medium",
+        "raw": [
+          "Medium",
+          "Array, Dynamic Programming",
+          "Acceptance rate: 67.4%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "math",
+        "greedy",
+        "recursion"
+      ],
+      "code_sha256": "9bcd6363f6a34675263a9830725da673e73e6a6e90248af42ffa7d0bfbcc1b32",
+      "description_sha256": "2abe054cc594b9e4e29e8d2afdaed1697b62b9237a2fbe210bd979ecf7a2fb95",
+      "family": "leetcode",
+      "problem": "lc1969",
+      "repo_path": "benchmark/leetcode/lc1969",
+      "selection_rank": "13191abc85407f493a44ce1a8e670077e5cae6b4f57affb16edec08c0ff36967",
+      "spec_sha256": "f32063f4860734d7ecf0d61023d1ca6ce983aa0721794a90d4545c8e62ca2790",
+      "stratum": "Medium",
+      "tag_metadata": {
+        "difficulty": "Medium",
+        "raw": [
+          "Medium",
+          "Math, Greedy, Recursion",
+          "Acceptance rate: 37.5%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "array",
+        "math"
+      ],
+      "code_sha256": "e4ecbeba78edd58e38d57667792b3116f6fb6a1eb7b564a59f8def9967f832aa",
+      "description_sha256": "bf019e052b84d9b93220c18740eca3c90b1a437f53550dca14d1f3e36b0ae5e2",
+      "family": "leetcode",
+      "problem": "lc3101",
+      "repo_path": "benchmark/leetcode/lc3101",
+      "selection_rank": "13a47e684f22ff2a000ad6db4ca95f37604ac04084dde9d64da3734fd5c23f49",
+      "spec_sha256": "efca06f9c4b8917461ac3597ef840b09a9e0c8b368741467b251f8ebdd4df936",
+      "stratum": "Medium",
+      "tag_metadata": {
+        "difficulty": "Medium",
+        "raw": [
+          "Medium",
+          "Array, Math",
+          "Acceptance rate: 57.4%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "array",
+        "greedy",
+        "sorting"
+      ],
+      "code_sha256": "ffc56e94d94fe00d7b2f4f1da0e17e0648af7adb4a2c589f6b2c4e9fd552a526",
+      "description_sha256": "bc84a3a121fa1fe71a1d3895e9e2810c26e13ac79323dd3ed39f32f1a96dc84b",
+      "family": "leetcode",
+      "problem": "lc1465",
+      "repo_path": "benchmark/leetcode/lc1465",
+      "selection_rank": "14805fc23920c2616b5678ec9fac3bafff892ab7919c986e5bde8d83e709d236",
+      "spec_sha256": "a97f89a5e69166e3b38652aa538539c95f066cdb896bdfcc6077b34d0e3c8265",
+      "stratum": "Medium",
+      "tag_metadata": {
+        "difficulty": "Medium",
+        "raw": [
+          "Medium",
+          "Array, Greedy, Sorting",
+          "Acceptance rate: 41.4%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "array",
+        "simulation"
+      ],
+      "code_sha256": "143ace76e99a8e3cdc3a7a61ee4a39229164529546d55433430d3eb7ff1ffad8",
+      "description_sha256": "289807f092decf7827eeffbe9584cc6406c3cbeee5cfbec769d042ca02860814",
+      "family": "leetcode",
+      "problem": "lc1535",
+      "repo_path": "benchmark/leetcode/lc1535",
+      "selection_rank": "14f4ce57b695a16f3f5aa5bdaf7709744ee5ac8243ac2b27f6f5412f98486727",
+      "spec_sha256": "51041f15e9065a47989f14f0e36c69500e7f9e1e466e6a0d0671e147bb725e95",
+      "stratum": "Medium",
+      "tag_metadata": {
+        "difficulty": "Medium",
+        "raw": [
+          "Medium",
+          "Array, Simulation",
+          "Acceptance rate: 56.8%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "array",
+        "math"
+      ],
+      "code_sha256": "4e6ae8e19a161e453bcf868af0d1859a979ea4ff99c5e2268387759a69dc841f",
+      "description_sha256": "6928baaaadb433ca2440038869000717663f9cc925fe43a9ea12720dfc16cf31",
+      "family": "leetcode",
+      "problem": "lc2348",
+      "repo_path": "benchmark/leetcode/lc2348",
+      "selection_rank": "15cc2366f19d1b26fff77e7f4dfa6eaea01d958cece6ddc178027f9cd97f7c0f",
+      "spec_sha256": "c3f7f6bf3dcdc1b71240bdbc74cba8e92c3924e0ed4595e1801936ac372c9729",
+      "stratum": "Medium",
+      "tag_metadata": {
+        "difficulty": "Medium",
+        "raw": [
+          "Medium",
+          "Array, Math",
+          "Acceptance rate: 70.1%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "array",
+        "sorting"
+      ],
+      "code_sha256": "ec422e4d6a3688fbb179a744eaf79667e50c1f8c4674ba87b1e61ac394897bb9",
+      "description_sha256": "48820e0a8f6e41cb8f932436d525c1ea6e3ec8a0407be6a806bdd7a7d72a2652",
+      "family": "leetcode",
+      "problem": "lc1288",
+      "repo_path": "benchmark/leetcode/lc1288",
+      "selection_rank": "16127366875f28c8293c301ec685298b4ba57b6b31a51847f979cc2bf13cd142",
+      "spec_sha256": "611fe2ac1b36b61f1c2c5e2f00e569d4569fcafe15b2258a2c253bb7925042a6",
+      "stratum": "Medium",
+      "tag_metadata": {
+        "difficulty": "Medium",
+        "raw": [
+          "Medium",
+          "Array, Sorting",
+          "Acceptance rate: 56.1%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "array",
+        "greedy",
+        "bit manipulation"
+      ],
+      "code_sha256": "108805409748e75804c82717b8b8a70ebb1f0f2ddfb91b6ed1788e5bd0dbe138",
+      "description_sha256": "92a0358cb54fd1e5daf61d43c2d68a00e0e77f06a9dc6f067938294df7854fc8",
+      "family": "leetcode",
+      "problem": "lc1558",
+      "repo_path": "benchmark/leetcode/lc1558",
+      "selection_rank": "1685bcda720a8e5fa827d2a78a934e8f2d49beee7f0b7e313e334bdcd71f3ebd",
+      "spec_sha256": "97e98e3fea044ea43654e6310b6cad25371b2456d62961fda153c6a0cfc7b565",
+      "stratum": "Medium",
+      "tag_metadata": {
+        "difficulty": "Medium",
+        "raw": [
+          "Medium",
+          "Array, Greedy, Bit Manipulation",
+          "Acceptance rate: 62.9%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "array",
+        "divide and conquer",
+        "sorting",
+        "heap (priority queue)",
+        "merge sort",
+        "bucket sort",
+        "radix sort",
+        "counting sort"
+      ],
+      "code_sha256": "e6789be8da59b15f9f12ebf541b13560edc9968a23d04731fc8cdbd2cfcabbca",
+      "description_sha256": "d348a193fd8544351038eb0f9e96e4c743a993a629ce2db290b6cc33bda62b82",
+      "family": "leetcode",
+      "problem": "lc912",
+      "repo_path": "benchmark/leetcode/lc912",
+      "selection_rank": "16b50eb673f9a05c1ca6149e74dff71b651b6a983ede4f7433ff9b8e444b3969",
+      "spec_sha256": "362d7052a97942c07335c71866290bf02250bc42d8069df1ca29d2c6b23a0243",
+      "stratum": "Medium",
+      "tag_metadata": {
+        "difficulty": "Medium",
+        "raw": [
+          "Medium",
+          "Array, Divide and Conquer, Sorting, Heap (Priority Queue), Merge Sort, Bucket Sort, Radix Sort, Counting Sort",
+          "Acceptance rate: 56.1%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "array",
+        "math",
+        "divide and conquer"
+      ],
+      "code_sha256": "755db71f24632077926bbf3d0b77c61bf41454d2138fd1188727f16b10321ac0",
+      "description_sha256": "5431487d0f525bf386165f692343f2e3ecf24857de203461b230ec80974e157c",
+      "family": "leetcode",
+      "problem": "lc932",
+      "repo_path": "benchmark/leetcode/lc932",
+      "selection_rank": "16e57672ef3486969f2512ffa50d4a5fb260b03fe46aaf2a73c964c8125f43dc",
+      "spec_sha256": "70d4d295ab88655ebb169235f671ae91a0b3c1bdbcac962805f2429dc4052318",
+      "stratum": "Medium",
+      "tag_metadata": {
+        "difficulty": "Medium",
+        "raw": [
+          "Medium",
+          "Array, Math, Divide and Conquer",
+          "Acceptance rate: 68.8%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "array",
+        "greedy"
+      ],
+      "code_sha256": "2f372efc5515ab59a15e57923dd7d1f35f86e7bb309fc66be9930ba8fae22d24",
+      "description_sha256": "bfd185c15cf291587681ffb4e3e3f96ba5ee146f42602ed1b78d0ab2c15ceefb",
+      "family": "leetcode",
+      "problem": "lc2087",
+      "repo_path": "benchmark/leetcode/lc2087",
+      "selection_rank": "184227db6d021a670f361b6a77f841e74bb57e6cd1019ca0e6cbf59907d6f4c5",
+      "spec_sha256": "f3e706dea088ae0dd47ae38d993f4a2a6032894c352c69b15ec7c4b18e4f45c4",
+      "stratum": "Medium",
+      "tag_metadata": {
+        "difficulty": "Medium",
+        "raw": [
+          "Medium",
+          "Array, Greedy",
+          "Acceptance rate: 51.7%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "array",
+        "greedy",
+        "sorting"
+      ],
+      "code_sha256": "288db2d12304e2f8ab1de5580d0f23e4a1bb9e5b1e16895aa5d58ecebd929e40",
+      "description_sha256": "b48f7b0ce42aacf6c7d0da70f9b4be6e2f7d6cd280a08f68d4dd3b0393ec1654",
+      "family": "leetcode",
+      "problem": "lc1509",
+      "repo_path": "benchmark/leetcode/lc1509",
+      "selection_rank": "1a0976ee522af043f3c08052cb7df953455c9d8d7a4c3cf0bbe34833bfd9ff25",
+      "spec_sha256": "37cb777c09f3427153e487a4316a348d39212ccc4b13766bafedd27c35dee950",
+      "stratum": "Medium",
+      "tag_metadata": {
+        "difficulty": "Medium",
+        "raw": [
+          "Medium",
+          "Array, Greedy, Sorting",
+          "Acceptance rate: 59.2%"
+        ]
+      }
+    }
+  ],
+  "confirm_quotas": {
+    "codeforces::1100-1400": 4,
+    "codeforces::1500-1800": 3,
+    "codeforces::<=1000": 10,
+    "codeforces::Unknown": 1,
+    "leetcode::Easy": 27,
+    "leetcode::Hard": 5,
+    "leetcode::Medium": 22
+  },
+  "n_eligible": 767,
+  "n_semantically_changed_excluded": 179,
+  "pilot": [
+    {
+      "algorithm_tags": [
+        "dp",
+        "greedy",
+        "implementation"
+      ],
+      "code_sha256": "d7421ba72530c9398514297c394e96c5066e32ec879e4f4ee690da8fdbe53dfc",
+      "description_sha256": "5c5e30bfff3cd98681962f2b0cef58679c157546964c03cf2270e430a03a54ea",
+      "family": "codeforces",
+      "main_sha256": "5ffe0838c3a2dcfc7d9756caccf96f4fcf37fa88b524854da024e530866a6486",
+      "problem": "cf1992D",
+      "repo_path": "benchmark/codeforces/cf1992D",
+      "selection_rank": "0370cc5287ed399ded7a9e56609ad35ed1dd256fc227e547b615e3545ac2ed6a",
+      "spec_sha256": "dbbc9a1635528ea8e0732dab3a7cf7145f9ae6d414da3416c70c99a477efe232",
+      "stratum": "1100-1400",
+      "tag_metadata": {
+        "rating": 1200,
+        "raw": [
+          "Rating: 1200",
+          "dp, greedy, implementation",
+          "Solved by: 23973 users"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "binary search",
+        "implementation",
+        "math",
+        "number theory"
+      ],
+      "code_sha256": "267c87bf9d3fb681a497b16ccd9e1bafefbf3105d3d762b68664f642d11559bf",
+      "description_sha256": "e76d696cc5cc49d6c180c925a7b8c41c4ed58c358451ea9e2a7a9ed515c4ebf6",
+      "family": "codeforces",
+      "main_sha256": "54ea9f2fce1c565706d6b755a957a37dae4ea32f980151190a085efa382362b8",
+      "problem": "cf230B",
+      "repo_path": "benchmark/codeforces/cf230B",
+      "selection_rank": "04ff614c79197d32bba0f51d7ffc2daab85c68cebf40bb1bba605da9452b9e36",
+      "spec_sha256": "53550046222275499e66951af2540bb2e88818f9dd7e92dfc47106e84cf1fc79",
+      "stratum": "1100-1400",
+      "tag_metadata": {
+        "rating": 1300,
+        "raw": [
+          "Rating: 1300",
+          "binary search, implementation, math, number theory",
+          "Solved by: 93954 users"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "dp",
+        "implementation"
+      ],
+      "code_sha256": "56a6a495479db003b7c77cc5071381624f89875c8cf9275d0493de9ff978baa6",
+      "description_sha256": "c612de605fd24a495bcee4cb860957793d4b6fa9a04f4560979b60c2ebeb84a3",
+      "family": "codeforces",
+      "main_sha256": "4481c486ae9636b64b1962f3ca44ebcc24770efbc6dd466c56cd647c2872b516",
+      "problem": "cf467C",
+      "repo_path": "benchmark/codeforces/cf467C",
+      "selection_rank": "13df3d8eb5d27a0975167654999711d77f6cd57e13230d7aebd5d114e70c22fd",
+      "spec_sha256": "706cd2fd00a832d0639cda4d29f95ee4367c9207025ba226f130dc9c9636c459",
+      "stratum": "1500-1800",
+      "tag_metadata": {
+        "rating": 1700,
+        "raw": [
+          "Rating: 1700",
+          "dp, implementation",
+          "Solved by: 16420 users"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "math"
+      ],
+      "code_sha256": "6134b9da93ff0e3a0b3f79e169aa3e63dad367dd7a4fdd5f7d36462df22206c3",
+      "description_sha256": "98c590eda6719560d8929b2c2cb3c34b33ff72223564f9567aa212b14fd26835",
+      "family": "codeforces",
+      "main_sha256": "df711046101d7b1afc6f8d4e02128fff77c24e10ae8cf2cd577576a3f224dec2",
+      "problem": "cf1759B",
+      "repo_path": "benchmark/codeforces/cf1759B",
+      "selection_rank": "018105af6e604384e1634977dea78100db21c330100f052ff9e6c394f45ae486",
+      "spec_sha256": "64838d11f6de0bf575cc2043ebc8c96de480a35df288edb66645426bafd99cb8",
+      "stratum": "<=1000",
+      "tag_metadata": {
+        "rating": 800,
+        "raw": [
+          "Rating: 800",
+          "math",
+          "Solved by: 23630 users"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "implementation"
+      ],
+      "code_sha256": "f1a89968b37393e2f724f1ecb5d10d94ddab33b515529360faed18aedac36a11",
+      "description_sha256": "defe03cd53904d5a5551b3a699860610acd531a3d41a77404d46fca8679e0212",
+      "family": "codeforces",
+      "main_sha256": "11b0d829e0d02ee7e36e1fff44e665438f530849c0eae0510ae49360b894c526",
+      "problem": "cf266A",
+      "repo_path": "benchmark/codeforces/cf266A",
+      "selection_rank": "04df27853b4d200ce8fc7f88859f2a688c2b5ed696a8be94278558bf264472c0",
+      "spec_sha256": "91da19b20f1b8e9f2ddbfad479df492bdf9161870e0954e38bf68641e1d4c007",
+      "stratum": "<=1000",
+      "tag_metadata": {
+        "rating": 800,
+        "raw": [
+          "Rating: 800",
+          "implementation",
+          "Solved by: 238676 users"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "brute force",
+        "implementation"
+      ],
+      "code_sha256": "69f28ec18ff6a79b3e716d6aa8eb041a2ef08bc011232259c47fb988050e393f",
+      "description_sha256": "1b746ae28314aa17dde3271d6e23c80d1ec9e508bfcb536ee221af833f6ec8c6",
+      "family": "codeforces",
+      "main_sha256": "486f891f4d865cbce055a6d60135ba296153d1ceca816ccb98854b1b16fc18fc",
+      "problem": "cf509A",
+      "repo_path": "benchmark/codeforces/cf509A",
+      "selection_rank": "051716c65f107ade3f9239160ba50b49d604d61e78aaa3a661ec53b59c3f689c",
+      "spec_sha256": "866bd0fbe307f32869b7219c95923f1edb91068453da0772752bb90685c37e32",
+      "stratum": "<=1000",
+      "tag_metadata": {
+        "rating": 800,
+        "raw": [
+          "Rating: 800",
+          "brute force, implementation",
+          "Solved by: 44053 users"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "mid level",
+        "array"
+      ],
+      "code_sha256": "191b4cd570df52ac1942b09f8c95750b054c39a3675f5626003b96a7afb73b58",
+      "description_sha256": "02541f5c586a2c67483b497816092f7329d443cf69ee215e72b457aa41891e27",
+      "family": "leetcode",
+      "problem": "lc674",
+      "repo_path": "benchmark/leetcode/lc674",
+      "selection_rank": "00393c7234561502371209f5d867ba263da63c70f590e1a6e8705d346d8f8a1c",
+      "spec_sha256": "66e776574b43f7e4d95ea5c1a2f16ffc066f15ecd6d7c4152d08fb2f6c5e10cb",
+      "stratum": "Easy",
+      "tag_metadata": {
+        "difficulty": "Easy",
+        "raw": [
+          "Easy",
+          "Mid Level, Array",
+          "Acceptance Rate: 49.0%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "array",
+        "61.5%"
+      ],
+      "code_sha256": "d65217685fa1e90f0a178264f00bc62b11d0f0c0abcc98ee11f4dba9d2026317",
+      "description_sha256": "8382bc2a8e1c26166b79b63880bf4c3f4a69a66e7a2e841d66e841d2f6c516f6",
+      "family": "leetcode",
+      "problem": "lc3392",
+      "repo_path": "benchmark/leetcode/lc3392",
+      "selection_rank": "00a447240025b0b5bbcf3c84e4a5cb5dc655c41f21e10d0f21a58ea5ca2fac6a",
+      "spec_sha256": "beaf0e3b730d99cf8a7a2cafd7734d778623790a492fac46313841326fbc095b",
+      "stratum": "Easy",
+      "tag_metadata": {
+        "difficulty": "Easy",
+        "raw": [
+          "Easy",
+          "Array",
+          "61.5%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "math"
+      ],
+      "code_sha256": "e21178158d0560ac7f6630c15d8de629258caeda170c9bbd162e131a29144875",
+      "description_sha256": "a8404bf5713dcf81d6c71ba1655442ccacee688befdf867c0069801c72609ef5",
+      "family": "leetcode",
+      "problem": "lc3560",
+      "repo_path": "benchmark/leetcode/lc3560",
+      "selection_rank": "011615856c5d5e29594506ed5823bbd1b672cad94d1b7dda8b7603b0d7fe17c1",
+      "spec_sha256": "dd4c4bf81a82c12f4c4a4336fe9b96e184749f9647707d1b403fef32684cd5d6",
+      "stratum": "Easy",
+      "tag_metadata": {
+        "difficulty": "Easy",
+        "raw": [
+          "Easy",
+          "Math",
+          "Acceptance rate: 42.2%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "mid level",
+        "string"
+      ],
+      "code_sha256": "f57a97d900ada1d3d44e9cc59041f10a6c14422395e8a984997899f8d6dadc8c",
+      "description_sha256": "3e0c936d9ea31abd7c2f375af16955a2926377c3c731b5f4ccd93a9b57fe9592",
+      "family": "leetcode",
+      "problem": "lc520",
+      "repo_path": "benchmark/leetcode/lc520",
+      "selection_rank": "03f07b2a1eff11a341835ae72b9818b17ea01731ed339740f91d1326f6c7fa69",
+      "spec_sha256": "22034acad7dfbf685f94613e5ca14dc01cb9ae26e05a3b902083477dcd3b5994",
+      "stratum": "Easy",
+      "tag_metadata": {
+        "difficulty": "Easy",
+        "raw": [
+          "Easy",
+          "Mid Level, String",
+          "Acceptance rate: 56.4%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "math"
+      ],
+      "code_sha256": "1a885fa00e1b52c3eb37974f675498a5b32204ac71413105a99ecf89388b3fb5",
+      "description_sha256": "a6314b60153170aeb755f3740c8520cb1a899563a883585eda22c58deb2d2f7e",
+      "family": "leetcode",
+      "problem": "lc9",
+      "repo_path": "benchmark/leetcode/lc9",
+      "selection_rank": "04eebeac24f1ab2fe5cd04afdf97973f71cd3f3318d9331cb5443c7329f74bc9",
+      "spec_sha256": "eda28c05bd3ef5258500a5f071a638f9599f44994ec09aaf8ca3021533862461",
+      "stratum": "Easy",
+      "tag_metadata": {
+        "difficulty": "Easy",
+        "raw": [
+          "Easy",
+          "Math",
+          "Acceptance rate: 59.8%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "bit manipulation",
+        "enumeration"
+      ],
+      "code_sha256": "f19e2c6a03fb98204ae393df49bb695154304d7406a38c8a42cc9c71026dc446",
+      "description_sha256": "f58cc4c5e9e61fd512e8744b3e0549674c020fa704dbb976b0066e9a8d330d80",
+      "family": "leetcode",
+      "problem": "lc3827",
+      "repo_path": "benchmark/leetcode/lc3827",
+      "selection_rank": "066c251fdadb62a2e27070672a7f566731d202f3166ebeb9b1aa4b248794fcb7",
+      "spec_sha256": "59c7e2931e57211f8ccf88d576deb85b6fbdfd2f787e698c065f6c07cd3a0c8e",
+      "stratum": "Easy",
+      "tag_metadata": {
+        "difficulty": "Easy",
+        "raw": [
+          "Easy",
+          "Bit Manipulation, Enumeration",
+          "Acceptance rate: 66.2%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "array",
+        "greedy"
+      ],
+      "code_sha256": "e3d648394e21fd48ad8e4f9eb437d3168948dff812ad6db896ea35bfd4c17512",
+      "description_sha256": "4aa92c5bbf4b7ad08089528c94485ff89671648c643f3833672cda94ad978605",
+      "family": "leetcode",
+      "problem": "lc1827",
+      "repo_path": "benchmark/leetcode/lc1827",
+      "selection_rank": "06b45cc4dfdce18949b5fdd4d9a819a44a669b0511d41adaba25ca2c979a3e1e",
+      "spec_sha256": "7a87ff8d5c8bc88786e3a43d84e08f9b87f4ff000c7489a3c516586ecfd41bfa",
+      "stratum": "Easy",
+      "tag_metadata": {
+        "difficulty": "Easy",
+        "raw": [
+          "Easy",
+          "Array, Greedy",
+          "Acceptance rate: 81.9%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "array"
+      ],
+      "code_sha256": "3ead91caf4055a94a9f29eebfef781978ef95bb1df86551a0ec8da6b32e740c0",
+      "description_sha256": "f6fd5c36ba019a05c3d0d87ee23874b850449e7be524a510bbb92043adca07e1",
+      "family": "leetcode",
+      "problem": "lc1313",
+      "repo_path": "benchmark/leetcode/lc1313",
+      "selection_rank": "06b5c53034b254a95d9f738666a82529ae80b1b79871db1b531661a2bbdd1250",
+      "spec_sha256": "a3515dde5b98c964d2457788a106bee533884f4533dd359bf0cabbd492e64600",
+      "stratum": "Easy",
+      "tag_metadata": {
+        "difficulty": "Easy",
+        "raw": [
+          "Easy",
+          "Array",
+          "Acceptance rate: 86.2%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "math",
+        "greedy"
+      ],
+      "code_sha256": "d8e2c66bc7f66b38f86568e4738aecb4e3c09d71c4fb34e1be0225fd910e5459",
+      "description_sha256": "812ed34b955ecc09457158f062066f7630e9a24a3177ef91614488cdbd41b57b",
+      "family": "leetcode",
+      "problem": "lc2600",
+      "repo_path": "benchmark/leetcode/lc2600",
+      "selection_rank": "07b54405fb1f33e9bb9e4b655a0a9ed83aa012316ec776c93af9a9c7e867eeaa",
+      "spec_sha256": "e86522f99e0c80032c15e3f382137878074899a79479a82dd9b33a45dae44943",
+      "stratum": "Easy",
+      "tag_metadata": {
+        "difficulty": "Easy",
+        "raw": [
+          "Easy",
+          "Math, Greedy",
+          "Acceptance rate: 60.2%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "array",
+        "math",
+        "dynamic programming",
+        "game theory"
+      ],
+      "code_sha256": "3498a31115eed34a3d66e5df0cbd840e5daae696184828d5447184b3904dc2e5",
+      "description_sha256": "b94c0ee1749e1b3e0ca1c09f467a69c296cec336420305fef854c186c23f6783",
+      "family": "leetcode",
+      "problem": "lc1563",
+      "repo_path": "benchmark/leetcode/lc1563",
+      "selection_rank": "05b2d99d13d90975dffead21061a50434e6880257c2d1fe4cfd94621a04970f7",
+      "spec_sha256": "474a1b65d9a006cf40268ccbedaad459310970dd422d64743b4803f08f036ed1",
+      "stratum": "Hard",
+      "tag_metadata": {
+        "difficulty": "Hard",
+        "raw": [
+          "Hard",
+          "Array, Math, Dynamic Programming, Game Theory",
+          "Acceptance rate: 41.7%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "array",
+        "dynamic programming",
+        "memoization"
+      ],
+      "code_sha256": "e8c5522b0e106dd2460edb8c7ceb1c18d094f4a8e3e08f02f062c0645aba8470",
+      "description_sha256": "454ac34f7c925931dc38de066f81e86cb02d0c8e1e66e649f332a8a214cd722e",
+      "family": "leetcode",
+      "problem": "lc1575",
+      "repo_path": "benchmark/leetcode/lc1575",
+      "selection_rank": "07e73bf90cf269660266745b0e690eed36027b4291d63a2a850c98e0c14dedef",
+      "spec_sha256": "8a4981935eabfe4238ecc22bf610505fff849953f4bcbf3aebe37fe8234de5a3",
+      "stratum": "Hard",
+      "tag_metadata": {
+        "difficulty": "Hard",
+        "raw": [
+          "Hard",
+          "Array, Dynamic Programming, Memoization",
+          "Acceptance rate: 64.9%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "array",
+        "binary search"
+      ],
+      "code_sha256": "51767efe64db10488837b1b4aa29ad8e926f2e64ae8b7236082aa88495bc340d",
+      "description_sha256": "0d013103a4ec14fbcd0d550aa3f6f6285cfc21dd64bbe177dbf256d424c59264",
+      "family": "leetcode",
+      "problem": "lc33",
+      "repo_path": "benchmark/leetcode/lc33",
+      "selection_rank": "01bd7f1edeecce552ecbf2e4cb4f4aa1517c2b25802e5f716a9943b437c6062b",
+      "spec_sha256": "e9b7808b6e6da6e5d8142b6fe33d0f255fc15d72a8c86a5ed5a0560104cc1d03",
+      "stratum": "Medium",
+      "tag_metadata": {
+        "difficulty": "Medium",
+        "raw": [
+          "Medium",
+          "Array",
+          "Binary Search",
+          "Acceptance rate: 43.7%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "array",
+        "two pointers",
+        "dynamic programming",
+        "enumeration"
+      ],
+      "code_sha256": "a1dda932ef46138fae445d4a471e4d41f1d8ca97d971b19ab9a26cc2616d555a",
+      "description_sha256": "24f843b04ca37f743834cb6a0f51fea4a253d3a58ffe440ff220f8c11027a7d0",
+      "family": "leetcode",
+      "problem": "lc845",
+      "repo_path": "benchmark/leetcode/lc845",
+      "selection_rank": "026f8985d9f0571b100909d44a0cfe0bafba560ef7e0dae9a9269251b74360c6",
+      "spec_sha256": "bb24cc38971f5c9aed4a8d4384be11da85d6633f3beeb1cc47fabe68f5d2a62f",
+      "stratum": "Medium",
+      "tag_metadata": {
+        "difficulty": "Medium",
+        "raw": [
+          "Medium",
+          "Array, Two Pointers, Dynamic Programming, Enumeration",
+          "Acceptance rate: 40.0%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "array",
+        "greedy"
+      ],
+      "code_sha256": "765fdf74620f720ecf15f535e0a1389586b2fb04c75ed114f01ae1df1fdc3ac6",
+      "description_sha256": "27ea617ef78d0ca09162c54103aecef01e53e3b4b2c1cf8b9919f5129acc7e26",
+      "family": "leetcode",
+      "problem": "lc2091",
+      "repo_path": "benchmark/leetcode/lc2091",
+      "selection_rank": "036c70850fcd7a1d187817ea8b5c7fa96953c5dd7e882106cdf2e10640115670",
+      "spec_sha256": "19b245b90daaa33456c16220c24b5c33d4a3357b9299270b808a20dfa1dcc344",
+      "stratum": "Medium",
+      "tag_metadata": {
+        "difficulty": "Medium",
+        "raw": [
+          "Medium",
+          "Array, Greedy",
+          "Acceptance rate: 56.3%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "array",
+        "math"
+      ],
+      "code_sha256": "968514aad2448b64a3bcfad59960a31ca0799e622b9ca6004223eb86debc82a5",
+      "description_sha256": "97347bdb02a34e4ef5ba47b50e2270a8e8f3c178a508e991a810e4b67893027c",
+      "family": "leetcode",
+      "problem": "lc1073",
+      "repo_path": "benchmark/leetcode/lc1073",
+      "selection_rank": "03f62bef5d697af9d8b53596d56a271cf0f9ba175cbfcefa8df6286c2ba854e2",
+      "spec_sha256": "ebdea0c7456f9680885f5781856bdeb36c777a8c5b4c5012d795f7361bcafd41",
+      "stratum": "Medium",
+      "tag_metadata": {
+        "difficulty": "Medium",
+        "raw": [
+          "Medium",
+          "Array, Math",
+          "Acceptance rate: 37.7%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "math",
+        "greedy"
+      ],
+      "code_sha256": "620b642b2ad38061592da61f51ac15d2a505f8569ed649ec250b7c756e545159",
+      "description_sha256": "ac3db257196dd22647524a4c73d3de9203af351467e4aacd16c2533a774082a6",
+      "family": "leetcode",
+      "problem": "lc2139",
+      "repo_path": "benchmark/leetcode/lc2139",
+      "selection_rank": "04de1b84b01489ec73020e77186583f66b340272b7eceb1cbb5be10b0c76ecef",
+      "spec_sha256": "4deac1c08f26604090b0c601bded604ffcd4a771330f63cf64b2ea02ea34055a",
+      "stratum": "Medium",
+      "tag_metadata": {
+        "difficulty": "Medium",
+        "raw": [
+          "Medium",
+          "Math, Greedy",
+          "Acceptance rate: 52.4%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "dynamic programming",
+        "math",
+        "tree",
+        "binary search tree",
+        "binary tree",
+        "55.4%"
+      ],
+      "code_sha256": "b44398fec35c6b96db7baf4d398c2d1021d238a7bbe2ed348b286b005ebe674b",
+      "description_sha256": "935edb0c0322c5e8b95d27d010efa2689abd2babb77a0a4408218ed4010e8b8e",
+      "family": "leetcode",
+      "problem": "lc96",
+      "repo_path": "benchmark/leetcode/lc96",
+      "selection_rank": "05d319d0b8fd012e35b5d327f05dc9d9114b3c1f5cce69eca5b0b77f771369f2",
+      "spec_sha256": "2c45f1e4b00f5d4451e86abe874c596d50a89f109af91ac3437d9443786a101f",
+      "stratum": "Medium",
+      "tag_metadata": {
+        "difficulty": "Medium",
+        "raw": [
+          "Medium",
+          "Dynamic Programming, Math, Tree, Binary Search Tree, Binary Tree",
+          "55.4%"
+        ]
+      }
+    },
+    {
+      "algorithm_tags": [
+        "staff",
+        "array",
+        "binary search",
+        "weekly contest 166"
+      ],
+      "code_sha256": "bf885a624af831886268409959cb3bc656f46b3ba8cae65e8bd85897964ae447",
+      "description_sha256": "e83e0221d0bf51205fdaf7de0f23360993b3f5d32668cf58fe520b4a01e5fb9e",
+      "family": "leetcode",
+      "problem": "lc1283",
+      "repo_path": "benchmark/leetcode/lc1283",
+      "selection_rank": "06634090217601ab2b04242ec3d4107a6c1b61eb29753184f2d270677bd455ed",
+      "spec_sha256": "3a5740f2a5ac67ffe00f7621dec321db1a033ad39450158d9b51e97eb022a136",
+      "stratum": "Medium",
+      "tag_metadata": {
+        "difficulty": "Medium",
+        "raw": [
+          "Medium",
+          "Staff, Array, Binary Search, Weekly Contest 166",
+          "Acceptance rate: 65.5%"
+        ]
+      }
+    }
+  ],
+  "pilot_quotas": {
+    "codeforces::1100-1400": 2,
+    "codeforces::1500-1800": 1,
+    "codeforces::<=1000": 3,
+    "leetcode::Easy": 9,
+    "leetcode::Hard": 2,
+    "leetcode::Medium": 7
+  },
+  "purpose": "CDE R4b outcome-blind development/confirmation task split",
+  "seed": "20260926",
+  "semantic_alignment_rule": "Exclude any main-benchmark problem whose spec.rs, code.rs, or main.rs changed between the original 2026-05-08 benchmark upload and current GitHub HEAD. This conservatively avoids packaged Hugging Face test cases known to be stale for post-release semantic/specification changes.",
+  "vericontest_head_commit": "b9657edf33b68dbd4992b501967730b30883a04e",
+  "vericontest_release_commit": "fce8da7"
+}

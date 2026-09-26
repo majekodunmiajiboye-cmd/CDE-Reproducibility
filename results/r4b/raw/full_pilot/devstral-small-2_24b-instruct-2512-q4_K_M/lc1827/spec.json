@@ -1,0 +1,5 @@
+{
+  "response": "impl Solution {\n    pub fn min_operations(nums: Vec<i32>) -> i32 {\n        if nums.is_empty() {\n            return 0;\n        }\n\n        let mut operations = 0;\n        let mut prev = nums[0];\n\n        for &num in nums.iter().skip(1) {\n            if num <= prev {\n                operations += prev + 1 - num;\n                prev += 1;\n            } else {\n                prev = num;\n            }\n        }\n\n        operations\n    }\n}",
+  "impl": "impl Solution {\n    pub fn min_operations(nums: Vec<i32>) -> i32 {\n        if nums.is_empty() {\n            return 0;\n        }\n\n        let mut operations = 0;\n        let mut prev = nums[0];\n\n        for &num in nums.iter().skip(1) {\n            if num <= prev {\n                operations += prev + 1 - num;\n                prev += 1;\n            } else {\n                prev = num;\n            }\n        }\n\n        operations\n    }\n}",
+  "source_record_sha256": "708f57a84f3fa7e7b52d3d4da7a762bd5de33dc1d00462506c7372b1dc31d3f8"
+}

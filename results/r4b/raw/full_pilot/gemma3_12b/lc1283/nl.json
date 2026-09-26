@@ -1,0 +1,5 @@
+{
+  "response": "pub fn smallest_divisor(nums: Vec<i32>, threshold: i32) -> i32 {\n    let mut left = 1;\n    let mut right = *nums.iter().max().unwrap();\n    let mut ans = right;\n\n    while left <= right {\n        let mid = left + (right - left) / 2;\n        let mut sum = 0;\n        for &num in &nums {\n            sum += (num as f64 / mid as f64).ceil() as i32;\n        }\n\n        if sum <= threshold {\n            ans = mid;\n            right = mid - 1;\n        } else {\n            left = mid + 1;\n        }\n    }\n\n    ans\n}\n",
+  "impl": null,
+  "source_record_sha256": "7ef1c6bf72824102738fc1e108fa7f047e28a56066ab5561b52becdab9e0373d"
+}

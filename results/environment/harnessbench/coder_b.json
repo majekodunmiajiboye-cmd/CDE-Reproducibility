@@ -1,0 +1,229 @@
+{
+  "coder": "Codex (GPT-6)",
+  "harnesses": {
+    "codex": {
+      "observability": {
+        "score": 1,
+        "confidence": "medium",
+        "evidence": "codex.txt documents command_execution with aggregated_output and exit_code, supporting basic workspace inspection through commands."
+      },
+      "action_granularity": {
+        "score": 0,
+        "confidence": "low",
+        "evidence": "codex.txt explicitly identifies shell command execution, but its generic function_call handling and optional MCP copying do not establish an active structured tool suite."
+      },
+      "context_state_management": {
+        "score": 1,
+        "confidence": "medium",
+        "evidence": "codex.txt reads persistent sessions/*.jsonl containing turn_context and conversation items, but supplies no explicit compaction behavior."
+      },
+      "verification": {
+        "score": 1,
+        "confidence": "medium",
+        "evidence": "codex.txt documents command_execution outputs and exit codes that permit manual checks, without establishing a systematic verification workflow."
+      },
+      "recoverability": {
+        "score": 1,
+        "confidence": "low",
+        "evidence": "codex.txt preserves session JSONL history, although the adapter invokes fresh exec commands without an explicit resume or rollback option."
+      },
+      "decomposition_control": {
+        "score": 0,
+        "confidence": "low",
+        "evidence": "codex.txt invokes codex exec, and HARNESSBENCH_CONFIG.yaml adds only model reasoning configuration without documenting active planning or coordination tools."
+      }
+    },
+    "hermes": {
+      "observability": {
+        "score": 2,
+        "confidence": "medium",
+        "evidence": "hermes.txt identifies hermes-cli as the default CLI toolset and includes paginated read_file, ripgrep-backed search_files, and process inspection."
+      },
+      "action_granularity": {
+        "score": 2,
+        "confidence": "medium",
+        "evidence": "hermes.txt documents the default hermes-cli toolset with patch, read_file, search_files, write_file, terminal, and process tools."
+      },
+      "context_state_management": {
+        "score": 1,
+        "confidence": "low",
+        "evidence": "hermes.txt explicitly preserves last_session_id.txt for --resume, while its documented /compress command is not shown as automatic or invoked by the adapter."
+      },
+      "verification": {
+        "score": 1,
+        "confidence": "medium",
+        "evidence": "hermes.txt exposes terminal and file tools for manual checks, while specialized review skills do not establish a default systematic verification workflow."
+      },
+      "recoverability": {
+        "score": 1,
+        "confidence": "high",
+        "evidence": "hermes.txt saves the Hermes session identifier and passes --resume on subsequent invocations, providing explicit session continuation."
+      },
+      "decomposition_control": {
+        "score": 2,
+        "confidence": "medium",
+        "evidence": "hermes.txt includes todo for tasks with three or more steps and delegate_task for isolated subagents in the default hermes-cli toolset."
+      }
+    },
+    "moltis-local": {
+      "observability": {
+        "score": 2,
+        "confidence": "medium",
+        "evidence": "moltis.txt documents injected Runtime context containing host information, sandbox configuration, and execution routing alongside hybrid memory search and cross-session recall."
+      },
+      "action_granularity": {
+        "score": 1,
+        "confidence": "low",
+        "evidence": "moltis.txt establishes exec and four skill-management tools available by default, but does not clearly establish a broad default workspace reading, editing, and search suite."
+      },
+      "context_state_management": {
+        "score": 2,
+        "confidence": "medium",
+        "evidence": "moltis.txt explicitly documents session persistence with auto-compaction, and the adapter supplies --session-id with a durable MOLTIS_DATA_DIR."
+      },
+      "verification": {
+        "score": 1,
+        "confidence": "medium",
+        "evidence": "moltis.txt documents exec and guidance to read files and check context, but its release verification and security checks do not establish systematic task verification."
+      },
+      "recoverability": {
+        "score": 2,
+        "confidence": "medium",
+        "evidence": "moltis.txt documents automatic checkpoints before built-in skill and memory mutations, with checkpointId results and checkpoint_restore tooling."
+      },
+      "decomposition_control": {
+        "score": 1,
+        "confidence": "low",
+        "evidence": "moltis.txt establishes default skill-management tools and a Skills listing in the prompt, but does not establish that explicit multistep planning accompanies delegation in this invocation."
+      }
+    },
+    "nanobot": {
+      "observability": {
+        "score": 1,
+        "confidence": "low",
+        "evidence": "nanobot.txt establishes built-in file and shell tools, while richer activity inspection is described through WebUI and TUI surfaces absent from the adapter invocation."
+      },
+      "action_granularity": {
+        "score": 1,
+        "confidence": "medium",
+        "evidence": "nanobot.txt documents built-in file tools including read_file alongside exec, supporting mixed structured actions and shell execution."
+      },
+      "context_state_management": {
+        "score": 2,
+        "confidence": "medium",
+        "evidence": "nanobot.txt describes a compacted summary and raw session suffix available to the next agent turn, persistent session JSONL storage, and adapter selection through --session."
+      },
+      "verification": {
+        "score": 1,
+        "confidence": "medium",
+        "evidence": "nanobot.txt demonstrates agent --message using exec and documents file access, enabling manual checks without establishing an automatic verification workflow."
+      },
+      "recoverability": {
+        "score": 1,
+        "confidence": "high",
+        "evidence": "nanobot.txt states that --session resumes a conversation and documents persistent session JSONL files, matching the adapter's explicit --session argument."
+      },
+      "decomposition_control": {
+        "score": 1,
+        "confidence": "low",
+        "evidence": "nanobot.txt says skills are pulled into the core agent loop as context and lists built-in subagents, but does not establish explicit multistep planning in the benchmark invocation."
+      }
+    },
+    "nullclaw": {
+      "observability": {
+        "score": 1,
+        "confidence": "medium",
+        "evidence": "nullclaw.txt documents shell and file_read tools and maps the benchmark workspace into the agent, while richer browser capabilities lack benchmark activation evidence."
+      },
+      "action_granularity": {
+        "score": 1,
+        "confidence": "medium",
+        "evidence": "nullclaw.txt explicitly instructs the benchmark agent to switch from restricted shell commands to file_write and file_append, establishing mixed shell and structured file actions."
+      },
+      "context_state_management": {
+        "score": 1,
+        "confidence": "high",
+        "evidence": "nullclaw.txt supplies SQLite memory with auto_save enabled when unspecified and passes NULLCLAW_SESSION_ID, without documenting active compaction."
+      },
+      "verification": {
+        "score": 1,
+        "confidence": "medium",
+        "evidence": "nullclaw.txt exposes shell and file_read for checking work, while security audit logging does not establish agent-facing task verification."
+      },
+      "recoverability": {
+        "score": 1,
+        "confidence": "low",
+        "evidence": "nullclaw.txt links session history to memory.auto_save and preserves memory database files, but recreates the internal workspace and establishes no checkpoint restoration."
+      },
+      "decomposition_control": {
+        "score": 0,
+        "confidence": "low",
+        "evidence": "nullclaw.txt describes named profiles for delegate and /subagents spawn, but the adapter and HARNESSBENCH_CONFIG.yaml do not establish configured profiles or an active planning mechanism."
+      }
+    },
+    "openclaw-local": {
+      "observability": {
+        "score": 1,
+        "confidence": "low",
+        "evidence": "openclaw.txt documents host-executed main-session tools and exec requests, but HARNESSBENCH_CONFIG.yaml selects agent --local and the adapter removes channel and plugin wiring."
+      },
+      "action_granularity": {
+        "score": 0,
+        "confidence": "low",
+        "evidence": "openclaw.txt supplies exec-related evidence but does not identify a structured workspace tool suite remaining active after the adapter clears plugin entries and installs."
+      },
+      "context_state_management": {
+        "score": 1,
+        "confidence": "low",
+        "evidence": "openclaw.txt passes --session-id and OPENCLAW_STATE_DIR, while its /compact example appears in channel documentation and does not establish automatic local-mode compaction."
+      },
+      "verification": {
+        "score": 1,
+        "confidence": "low",
+        "evidence": "openclaw.txt documents host tools and command execution results that plausibly support manual checks, without establishing a dedicated local verification workflow."
+      },
+      "recoverability": {
+        "score": 1,
+        "confidence": "medium",
+        "evidence": "openclaw.txt retains a local state directory and explicit --session-id, supporting basic session persistence without crediting channel-specific crash recovery."
+      },
+      "decomposition_control": {
+        "score": 0,
+        "confidence": "low",
+        "evidence": "openclaw.txt discusses skills and channel-bound subagents, but the adapter removes channel and plugin wiring and supplies no explicit planning or coordination configuration."
+      }
+    },
+    "zeroclaw-local": {
+      "observability": {
+        "score": 1,
+        "confidence": "medium",
+        "evidence": "zeroclaw.txt documents core shell and file tools, and the adapter adds benchmark paths to allowed_roots without establishing active browser automation."
+      },
+      "action_granularity": {
+        "score": 1,
+        "confidence": "medium",
+        "evidence": "zeroclaw.txt identifies core shell, file, git, and memory recall/store tools, supporting mixed structured actions and command execution."
+      },
+      "context_state_management": {
+        "score": 1,
+        "confidence": "high",
+        "evidence": "zeroclaw.txt explicitly invokes --session-state-file with a session-specific JSON path, but does not document active conversation compaction."
+      },
+      "verification": {
+        "score": 1,
+        "confidence": "medium",
+        "evidence": "zeroclaw.txt documents shell and file tools for manual checks, while cryptographic tool receipts establish action provenance rather than systematic task verification."
+      },
+      "recoverability": {
+        "score": 1,
+        "confidence": "high",
+        "evidence": "zeroclaw.txt explicitly preserves session state through --session-state-file and documents retrying failed streaming requests in non-streaming mode."
+      },
+      "decomposition_control": {
+        "score": 0,
+        "confidence": "low",
+        "evidence": "zeroclaw.txt describes configured skill bundles and event-triggered SOPs, but the adapter and HARNESSBENCH_CONFIG.yaml establish neither installed skills nor an active workflow."
+      }
+    }
+  }
+}

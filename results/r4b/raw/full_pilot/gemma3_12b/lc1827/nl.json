@@ -1,0 +1,5 @@
+{
+  "response": "pub fn min_operations(nums: Vec<i32>) -> i32 {\n    let n = nums.len();\n    if n <= 1 {\n        return 0;\n    }\n\n    let mut ops = 0;\n    let mut prev = nums[0];\n\n    for i in 1..n {\n        if nums[i] <= prev {\n            ops += prev - nums[i] + 1;\n            prev += 1;\n        } else {\n            prev = nums[i];\n        }\n    }\n\n    ops\n}\n",
+  "impl": null,
+  "source_record_sha256": "65aeca4510483783da6abc076e72a391b63966991cf9bfa2b0f63b71b122bd96"
+}

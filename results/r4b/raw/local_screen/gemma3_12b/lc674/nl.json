@@ -1,0 +1,5 @@
+{
+  "response": "impl Solution {\n    pub fn find_length_of_lcis(nums: Vec<i32>) -> i32 {\n        if nums.is_empty() {\n            return 0;\n        }\n\n        let mut max_len = 1;\n        let mut current_len = 1;\n\n        for i in 1..nums.len() {\n            if nums[i] > nums[i - 1] {\n                current_len += 1;\n            } else {\n                max_len = max_len.max(current_len);\n                current_len = 1;\n            }\n        }\n\n        max_len.max(current_len)\n    }\n}\n",
+  "impl": "impl Solution {\n    pub fn find_length_of_lcis(nums: Vec<i32>) -> i32 {\n        if nums.is_empty() {\n            return 0;\n        }\n\n        let mut max_len = 1;\n        let mut current_len = 1;\n\n        for i in 1..nums.len() {\n            if nums[i] > nums[i - 1] {\n                current_len += 1;\n            } else {\n                max_len = max_len.max(current_len);\n                current_len = 1;\n            }\n        }\n\n        max_len.max(current_len)\n    }\n}",
+  "source_record_sha256": "9c11fbb701fb888822579ab436c274c949b9daf235860fe4924d5f42261d3b16"
+}

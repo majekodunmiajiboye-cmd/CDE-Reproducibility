@@ -1,0 +1,102 @@
+{
+  "analysis": "CDE R1 ADeLe preregistered implementation supplement",
+  "benchmark_holdout_sensitivity": {
+    "delta_ll_domain_minus_m1": 0.016308814344230205,
+    "delta_ll_m0_minus_m1": 0.017423989156662933,
+    "domain": {
+      "brier": 0.12759441731551677,
+      "log_loss": 0.3993203071723434
+    },
+    "m0": {
+      "brier": 0.1277893285593841,
+      "log_loss": 0.40043548198477613
+    },
+    "m1": {
+      "brier": 0.12174986912435183,
+      "log_loss": 0.3830114928281132
+    },
+    "relative_ll_reduction": 0.043512600507577805
+  },
+  "demand_features": [
+    "AS",
+    "CEc",
+    "CEe",
+    "CL",
+    "KNn",
+    "KNa",
+    "KNc",
+    "KNf",
+    "KNs",
+    "MCt",
+    "MCu",
+    "MCr",
+    "MS",
+    "QLq",
+    "QLl",
+    "SNs",
+    "VO",
+    "AT"
+  ],
+  "frozen_gate": {
+    "bootstrap_delta_ll_ci_excludes_zero_positive": true,
+    "m1_not_worse_than_domain_control": true,
+    "pass": true,
+    "relative_reduction_ge_5pct": true
+  },
+  "model_names": [
+    "DK-R1-Dist-Qwen-1.5B",
+    "DK-R1-Dist-Qwen-14B",
+    "DK-R1-Dist-Qwen-32B",
+    "DK-R1-Dist-Qwen-7B",
+    "babbage-002",
+    "davinci-002",
+    "gpt-35-turbo",
+    "gpt4o",
+    "llama3d1-405b",
+    "llama3d2-11b",
+    "llama3d2-1b",
+    "llama3d2-3b",
+    "llama3d2-90b",
+    "o1-mini",
+    "o1_re=low"
+  ],
+  "n_benchmarks": 20,
+  "n_instances_after_ug75_complete_case_filter": 16108,
+  "n_models": 15,
+  "n_task_families": 63,
+  "seed": 20260926,
+  "task_family_bootstrap": {
+    "delta_ll_ci_2p5_50_97p5": [
+      0.018883521695665914,
+      0.026525315964884083,
+      0.03668376664823458
+    ],
+    "n_boot": 1000,
+    "relative_ll_reduction_ci_2p5_50_97p5": [
+      0.047478812593661456,
+      0.06740632728980143,
+      0.09185284476780071
+    ],
+    "seed": 20260926
+  },
+  "task_holdout": {
+    "delta_ll_domain_minus_m1": 0.0031744744670333946,
+    "delta_ll_m0_minus_m1": 0.026636918214715588,
+    "domain": {
+      "brier": 0.11767219099451327,
+      "log_loss": 0.37126933383826805
+    },
+    "m0": {
+      "brier": 0.1258857618386684,
+      "log_loss": 0.39473177758595024
+    },
+    "m1": {
+      "brier": 0.11632275674026774,
+      "log_loss": 0.36809485937123465
+    },
+    "relative_ll_reduction": 0.06748105860039498
+  },
+  "two_pl_fallback_rate": 1.0,
+  "two_pl_fallback_reason": "14 calibration models per target/item is below the implementation supplement's predeclared minimum of 20; use Jeffreys-smoothed external-panel 1PL item easiness.",
+  "two_pl_min_panel_models_predeclared": 20
+}

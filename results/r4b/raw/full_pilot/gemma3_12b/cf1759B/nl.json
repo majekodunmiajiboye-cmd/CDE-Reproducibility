@@ -1,0 +1,5 @@
+{
+  "response": "pub fn lost_permutation(b: Vec<u32>, m: usize, s: u32) -> bool {\n    let n = m + (s as usize);\n    let mut missing_sum = s;\n    let mut present = vec![false; n + 1];\n    for &x in &b {\n        if x as usize <= n {\n            present[x as usize] = true;\n        }\n    }\n\n    let mut missing = Vec::new();\n    for i in 1..=n {\n        if !present[i] {\n            missing.push(i as u32);\n        }\n    }\n\n    if missing.iter().sum::<u32>() != s {\n        return false;\n    }\n\n    let mut combined = b.clone();\n    combined.extend(missing);\n    combined.sort();\n\n    let mut seen = vec![false; n + 1];\n    for &x in &combined {\n        if x as usize <= n && seen[x as usize] {\n            return false;\n        }\n        if x as usize <= n {\n            seen[x as usize] = true;\n        }\n    }\n\n    for i in 1..=n {\n        if !seen[i] {\n            return false;\n        }\n    }\n\n    true\n}\n",
+  "impl": null,
+  "source_record_sha256": "9236a0d87be6dc4ca5e830f0bad0ace723f94e9c76e328f243e7a68ba82719d1"
+}

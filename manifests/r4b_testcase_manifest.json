@@ -1,0 +1,872 @@
+{
+  "files": [
+    {
+      "bytes": 123671,
+      "family": "codeforces",
+      "hf_path": "codeforces/cf1203C/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/codeforces/cf1203C/testcases.jsonl",
+      "problem": "cf1203C",
+      "sha256": "5a339c4eb7b70a72ecda2c4c154459bc50771e9864f93b27cf766e6f0a60e335",
+      "split": "confirm"
+    },
+    {
+      "bytes": 1027222,
+      "family": "codeforces",
+      "hf_path": "codeforces/cf1213C/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/codeforces/cf1213C/testcases.jsonl",
+      "problem": "cf1213C",
+      "sha256": "09cea9ee4729b2564ced5c55aff6c3ac2f1dd825b4334ff32f87ad28f83681ce",
+      "split": "confirm"
+    },
+    {
+      "bytes": 1467780,
+      "family": "codeforces",
+      "hf_path": "codeforces/cf1256A/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/codeforces/cf1256A/testcases.jsonl",
+      "problem": "cf1256A",
+      "sha256": "8203403688b3a7c0591d55de2c61fc1236b15bc627f93e0f8c15140e74c3f6f5",
+      "split": "confirm"
+    },
+    {
+      "bytes": 2025527,
+      "family": "codeforces",
+      "hf_path": "codeforces/cf1373C/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/codeforces/cf1373C/testcases.jsonl",
+      "problem": "cf1373C",
+      "sha256": "98654807eed96149eb747ea91db39caeb5b8b6d97f6bcda85b56dc2d8c10499b",
+      "split": "confirm"
+    },
+    {
+      "bytes": 3076106,
+      "family": "codeforces",
+      "hf_path": "codeforces/cf1399A/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/codeforces/cf1399A/testcases.jsonl",
+      "problem": "cf1399A",
+      "sha256": "346fe1651c5fb9846e3455b77009a43115881f4e1d2524016036b516b4ee4be7",
+      "split": "confirm"
+    },
+    {
+      "bytes": 3412703,
+      "family": "codeforces",
+      "hf_path": "codeforces/cf1506A/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/codeforces/cf1506A/testcases.jsonl",
+      "problem": "cf1506A",
+      "sha256": "870615aba762d8446d50b2e259de0deefddcc3f6449482b2471f50996a57b5e9",
+      "split": "confirm"
+    },
+    {
+      "bytes": 125050,
+      "family": "codeforces",
+      "hf_path": "codeforces/cf1560C/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/codeforces/cf1560C/testcases.jsonl",
+      "problem": "cf1560C",
+      "sha256": "505b7057c777d03ed910539573759301aefb7883e12435c28538c88ef20a93fa",
+      "split": "confirm"
+    },
+    {
+      "bytes": 99767,
+      "family": "codeforces",
+      "hf_path": "codeforces/cf1669D/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/codeforces/cf1669D/testcases.jsonl",
+      "problem": "cf1669D",
+      "sha256": "823359d9bbe9ff19e7f7e43cae232e483c8e56ef16c0a39edc306e7c68453ea8",
+      "split": "confirm"
+    },
+    {
+      "bytes": 360632,
+      "family": "codeforces",
+      "hf_path": "codeforces/cf1772B/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/codeforces/cf1772B/testcases.jsonl",
+      "problem": "cf1772B",
+      "sha256": "56e3c62429714a58b0f9b08a127abd992bc195b5e914ccabca76a61454ed4558",
+      "split": "confirm"
+    },
+    {
+      "bytes": 433600,
+      "family": "codeforces",
+      "hf_path": "codeforces/cf1858A/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/codeforces/cf1858A/testcases.jsonl",
+      "problem": "cf1858A",
+      "sha256": "e996f24d8c88d831e1dad18c90171069df9ca0b09f96b24279173801859f2695",
+      "split": "confirm"
+    },
+    {
+      "bytes": 55078,
+      "family": "codeforces",
+      "hf_path": "codeforces/cf1985B/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/codeforces/cf1985B/testcases.jsonl",
+      "problem": "cf1985B",
+      "sha256": "3b3311f388adf048824f7208f3c81ede7c68b0602421d18b14513173434afa6f",
+      "split": "confirm"
+    },
+    {
+      "bytes": 250448,
+      "family": "codeforces",
+      "hf_path": "codeforces/cf2014A/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/codeforces/cf2014A/testcases.jsonl",
+      "problem": "cf2014A",
+      "sha256": "e90dce40b828e2ec45c7551110963db0a134c81eb24ef6410a2b36301ee3e97e",
+      "split": "confirm"
+    },
+    {
+      "bytes": 665468,
+      "family": "codeforces",
+      "hf_path": "codeforces/cf302A/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/codeforces/cf302A/testcases.jsonl",
+      "problem": "cf302A",
+      "sha256": "b614b1d2a2120edd2e89e9ebff8f829baa54c0f4c4d7bb271b0ffc5dedef2045",
+      "split": "confirm"
+    },
+    {
+      "bytes": 16074388,
+      "family": "codeforces",
+      "hf_path": "codeforces/cf382C/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/codeforces/cf382C/testcases.jsonl",
+      "problem": "cf382C",
+      "sha256": "d2e281fdbd04595f89a7a014551d70e040078cbd94e726e0645508214e4a5124",
+      "split": "confirm"
+    },
+    {
+      "bytes": 16639,
+      "family": "codeforces",
+      "hf_path": "codeforces/cf478C/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/codeforces/cf478C/testcases.jsonl",
+      "problem": "cf478C",
+      "sha256": "570f93b7df2b3f6460f33f9be3bb8b1b0eade4098c18cb3e5b656f0620e62eb8",
+      "split": "confirm"
+    },
+    {
+      "bytes": 190448029,
+      "family": "codeforces",
+      "hf_path": "codeforces/cf519B/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/codeforces/cf519B/testcases.jsonl",
+      "problem": "cf519B",
+      "sha256": "42a65cf7f8dab598ccccbb9226b9df2baa6d020826e8f9eb1465a676c54e4bc2",
+      "split": "confirm"
+    },
+    {
+      "bytes": 5536664,
+      "family": "codeforces",
+      "hf_path": "codeforces/cf546D/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/codeforces/cf546D/testcases.jsonl",
+      "problem": "cf546D",
+      "sha256": "ca4908b8ef76f2d6e29946ae21d57570f3069c2e1143d302a04adb56b7912a67",
+      "split": "confirm"
+    },
+    {
+      "bytes": 4830904,
+      "family": "codeforces",
+      "hf_path": "codeforces/cf935B/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/codeforces/cf935B/testcases.jsonl",
+      "problem": "cf935B",
+      "sha256": "29c9baf37049f4d8b43b9392d06ebceff8a2210ecf01a595bbc9bd5df1828cab",
+      "split": "confirm"
+    },
+    {
+      "bytes": 1869562,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc1004/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc1004/testcases.jsonl",
+      "problem": "lc1004",
+      "sha256": "fddfef8abbfc6ef69a778c46d072bb5bdf16f81c5dfdc459779a030ddf1c4881",
+      "split": "confirm"
+    },
+    {
+      "bytes": 13069,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc1039/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc1039/testcases.jsonl",
+      "problem": "lc1039",
+      "sha256": "e066e28354f266d3316b5bad288134501b46e381d20ceaf30e70f829b9282d4c",
+      "split": "confirm"
+    },
+    {
+      "bytes": 15803,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc1049/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc1049/testcases.jsonl",
+      "problem": "lc1049",
+      "sha256": "c4417a9803ca688142f7dc7c2352e7fd0998e978b3290abe0d925166303416fb",
+      "split": "confirm"
+    },
+    {
+      "bytes": 295090,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc1105/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc1105/testcases.jsonl",
+      "problem": "lc1105",
+      "sha256": "3f1c8f65c1eb382e36fd5b2c296b357888e0e458da4f4187830e6e4de5af8840",
+      "split": "confirm"
+    },
+    {
+      "bytes": 4573,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc119/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc119/testcases.jsonl",
+      "problem": "lc119",
+      "sha256": "6b28026512895895de8dd71ad72255fd1d419728c3f5d7007957f9673d915992",
+      "split": "confirm"
+    },
+    {
+      "bytes": 2831373,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc122/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc122/testcases.jsonl",
+      "problem": "lc122",
+      "sha256": "82f7a97446f7642cbf4a1a5e4a3e56b9bf4da25473da9ebb0d705ad01b0ea987",
+      "split": "confirm"
+    },
+    {
+      "bytes": 788062,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc1288/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc1288/testcases.jsonl",
+      "problem": "lc1288",
+      "sha256": "8c53adb4c4d7f9a0f40b1ab6d21dea52f7f5d9a9329d84b5191eaac4289267bb",
+      "split": "confirm"
+    },
+    {
+      "bytes": 236865,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc1295/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc1295/testcases.jsonl",
+      "problem": "lc1295",
+      "sha256": "21ebf68e1130ba2e405d33581ea55d67a00547a36f15cfc6ef9666695b67dbb2",
+      "split": "confirm"
+    },
+    {
+      "bytes": 162819,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc1300/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc1300/testcases.jsonl",
+      "problem": "lc1300",
+      "sha256": "202b9f4de023b48a4c2ddc67ffb6f8459aad8731eadf6d6d2df530152c638091",
+      "split": "confirm"
+    },
+    {
+      "bytes": 233128,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc1464/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc1464/testcases.jsonl",
+      "problem": "lc1464",
+      "sha256": "bf19e29e75eaf22f4a681afaa1e3d0419637b643533ff72092b9a9bf75925214",
+      "split": "confirm"
+    },
+    {
+      "bytes": 8707511,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc1465/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc1465/testcases.jsonl",
+      "problem": "lc1465",
+      "sha256": "3e5c1a7a3b5de70cfc9ce027cd9a30d5109f714df968d8c2c489f73e465a735d",
+      "split": "confirm"
+    },
+    {
+      "bytes": 1732949,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc1509/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc1509/testcases.jsonl",
+      "problem": "lc1509",
+      "sha256": "1cdd96385dd4314324ccd90561d378fcf1a4b94ddac95b5140e58df827123b2c",
+      "split": "confirm"
+    },
+    {
+      "bytes": 15980969,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc1535/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc1535/testcases.jsonl",
+      "problem": "lc1535",
+      "sha256": "0db432351bf1a82b8fb17bcebfcc17c69d6cc7ec21fdbbe815a22814f51213fe",
+      "split": "confirm"
+    },
+    {
+      "bytes": 272755,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc1539/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc1539/testcases.jsonl",
+      "problem": "lc1539",
+      "sha256": "a474e3ba55769a195aa1f303b1666e3e07d0729a520d53318299ac7c1038edba",
+      "split": "confirm"
+    },
+    {
+      "bytes": 18441936,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc1558/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc1558/testcases.jsonl",
+      "problem": "lc1558",
+      "sha256": "a2631ceee7306f99096995ea8eda16b28472f855dfa30030310c91e27ecdd1ff",
+      "split": "confirm"
+    },
+    {
+      "bytes": 28795,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc1595/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc1595/testcases.jsonl",
+      "problem": "lc1595",
+      "sha256": "075f314c75f760d247b638e9a064d2296518bf5b49fe3e3f268623ccf501c4ba",
+      "split": "confirm"
+    },
+    {
+      "bytes": 33004,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc1752/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc1752/testcases.jsonl",
+      "problem": "lc1752",
+      "sha256": "a0589ae1787fc93cf2330bec79fe9ce3369b7f5b677dc2d6ac4f6a2eecacd74d",
+      "split": "confirm"
+    },
+    {
+      "bytes": 412757,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc1770/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc1770/testcases.jsonl",
+      "problem": "lc1770",
+      "sha256": "ffc9abafbb0ce4c4e0df1ce8e6ffc11f4fe37f500a05b3e805eab3cc30e03d41",
+      "split": "confirm"
+    },
+    {
+      "bytes": 3616990,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc1779/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc1779/testcases.jsonl",
+      "problem": "lc1779",
+      "sha256": "f4d7ef70c2a54da432637d03e3ea41964260ab3eeffd777d651f85d1d4412d10",
+      "split": "confirm"
+    },
+    {
+      "bytes": 7668,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc1863/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc1863/testcases.jsonl",
+      "problem": "lc1863",
+      "sha256": "4d87140dcfb5b4de79475e3ba52182c0b9b70f37c497c5bce414686de3b3c4fe",
+      "split": "confirm"
+    },
+    {
+      "bytes": 2241,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc1969/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc1969/testcases.jsonl",
+      "problem": "lc1969",
+      "sha256": "07e07611e3187cdb8e8dc4f4483b10e45c5a3b05dff045ff411b5197fb8e4fe7",
+      "split": "confirm"
+    },
+    {
+      "bytes": 45922,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc2073/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc2073/testcases.jsonl",
+      "problem": "lc2073",
+      "sha256": "96cdcdeffebea7c168e87d14998a0bbf9c94a6b3d617aff9c0826f7f06a42d74",
+      "split": "confirm"
+    },
+    {
+      "bytes": 15638450,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc2087/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc2087/testcases.jsonl",
+      "problem": "lc2087",
+      "sha256": "2846652cbd3dddd67f9a4c68d19cf52d53e8946322b8fe9d388747616598e813",
+      "split": "confirm"
+    },
+    {
+      "bytes": 9028,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc2235/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc2235/testcases.jsonl",
+      "problem": "lc2235",
+      "sha256": "037725823aad620d5f361e7098cd46b4a72d6a7cb412e623c2aa36493a4d8351",
+      "split": "confirm"
+    },
+    {
+      "bytes": 12796,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc2240/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc2240/testcases.jsonl",
+      "problem": "lc2240",
+      "sha256": "a0e9725b66fcf463be9784a96c1b1472c5c7c5491c35efad019b9f9a57c486fd",
+      "split": "confirm"
+    },
+    {
+      "bytes": 37934652,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc2348/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc2348/testcases.jsonl",
+      "problem": "lc2348",
+      "sha256": "d307f5b0aa12b059080da3d107e2f13c47ad6d73015843445ce4729406296888",
+      "split": "confirm"
+    },
+    {
+      "bytes": 3731343,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc242/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc242/testcases.jsonl",
+      "problem": "lc242",
+      "sha256": "a6726d7a109fe542118541e98fe475bcb1e0ce9d4868b078fbc5655615984833",
+      "split": "confirm"
+    },
+    {
+      "bytes": 13562782,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc2444/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc2444/testcases.jsonl",
+      "problem": "lc2444",
+      "sha256": "077b368bad66c1560792484f3e5578b499d9b02b9d2e767cfcd20fa62ed82585",
+      "split": "confirm"
+    },
+    {
+      "bytes": 227967,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc2455/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc2455/testcases.jsonl",
+      "problem": "lc2455",
+      "sha256": "151793a7584b3cd25f540f363659ea5d2f1849c4df24ed057d688e8e3e5b2134",
+      "split": "confirm"
+    },
+    {
+      "bytes": 3858,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc2485/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc2485/testcases.jsonl",
+      "problem": "lc2485",
+      "sha256": "f0e2d86bf1f13e8f5f14255650c7eb98159668ca89fb760c6cb2b425bd276e10",
+      "split": "confirm"
+    },
+    {
+      "bytes": 9110,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc2582/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc2582/testcases.jsonl",
+      "problem": "lc2582",
+      "sha256": "5fc35de7ce2081dc19a36a936a8fe70e3a4bdb429d090f8669aa231705cf2fc5",
+      "split": "confirm"
+    },
+    {
+      "bytes": 155553,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc2660/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc2660/testcases.jsonl",
+      "problem": "lc2660",
+      "sha256": "2298e3560c7621514c580a5479477d4cef1def1dca18fa87c7758297359d6ad4",
+      "split": "confirm"
+    },
+    {
+      "bytes": 53240,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc2765/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc2765/testcases.jsonl",
+      "problem": "lc2765",
+      "sha256": "75471955f643766014059144f8cf5ab04ed66fafee037955cefb19409f3f2ec6",
+      "split": "confirm"
+    },
+    {
+      "bytes": 53894,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc2815/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc2815/testcases.jsonl",
+      "problem": "lc2815",
+      "sha256": "92fd1038e038a7fddc20e2473530f9dad00a8a1726a148ad5d7350594a85d0f3",
+      "split": "confirm"
+    },
+    {
+      "bytes": 9576,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc2894/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc2894/testcases.jsonl",
+      "problem": "lc2894",
+      "sha256": "537d795eb5242530a45237e77498926bd8c8a4433db4f71f4d7eee61ffe00ebb",
+      "split": "confirm"
+    },
+    {
+      "bytes": 58801,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc3000/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc3000/testcases.jsonl",
+      "problem": "lc3000",
+      "sha256": "9d331e3d5e57ed16d85c2c84b88bb2b090d46632a58e05b5f92d61e8679b0469",
+      "split": "confirm"
+    },
+    {
+      "bytes": 38562,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc3046/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc3046/testcases.jsonl",
+      "problem": "lc3046",
+      "sha256": "9ba7aba6bfc577531021b2508e8479c20cbbfa1840991204c09ef823e64c2890",
+      "split": "confirm"
+    },
+    {
+      "bytes": 13930,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc3069/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc3069/testcases.jsonl",
+      "problem": "lc3069",
+      "sha256": "e7b8616bad63b99a92c7bf6bf12f05660e494c07865181e3cac78a7dd1fb7732",
+      "split": "confirm"
+    },
+    {
+      "bytes": 1831535,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc3101/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc3101/testcases.jsonl",
+      "problem": "lc3101",
+      "sha256": "5fa123549bbf7fa5fd21e0ef28077ed8ecbbae169cbbe30694a14416074fdb11",
+      "split": "confirm"
+    },
+    {
+      "bytes": 9543317,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc3152/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc3152/testcases.jsonl",
+      "problem": "lc3152",
+      "sha256": "964aed57e1ad35f5e2b4d9c52ff5935970d19ad2154d51814637ce0317992b46",
+      "split": "confirm"
+    },
+    {
+      "bytes": 254063,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc3208/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc3208/testcases.jsonl",
+      "problem": "lc3208",
+      "sha256": "1ac5ae53c93dcd4c2e64e18505f59ab7d4fc99cb39fd019dc06202538f18fb71",
+      "split": "confirm"
+    },
+    {
+      "bytes": 11232,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc3270/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc3270/testcases.jsonl",
+      "problem": "lc3270",
+      "sha256": "993214d0bc7be4226d46f44f87dcc25e0c896821431dfac739f5519fbd2e87da",
+      "split": "confirm"
+    },
+    {
+      "bytes": 4788,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc3622/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc3622/testcases.jsonl",
+      "problem": "lc3622",
+      "sha256": "d5bb9c0d9b3190c5f3e35e62562d7cb858a4e1c14c1688d8a22d271371c1e6f8",
+      "split": "confirm"
+    },
+    {
+      "bytes": 4585,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc3658/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc3658/testcases.jsonl",
+      "problem": "lc3658",
+      "sha256": "6c4bf17a4686958019e920456335dca5261981906ae2716f81cf4c4c14bc96b4",
+      "split": "confirm"
+    },
+    {
+      "bytes": 27353,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc3736/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc3736/testcases.jsonl",
+      "problem": "lc3736",
+      "sha256": "9126262c80ae77ecf87cb82cb66357c376fcb89ffb4ce012345c211d4315a122",
+      "split": "confirm"
+    },
+    {
+      "bytes": 15644,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc551/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc551/testcases.jsonl",
+      "problem": "lc551",
+      "sha256": "fc8743ce0afdba20169374b443092886fae3cad4439276c2498c32adb6dab91b",
+      "split": "confirm"
+    },
+    {
+      "bytes": 3062638,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc575/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc575/testcases.jsonl",
+      "problem": "lc575",
+      "sha256": "865114685846ae3937c3b3f4a5dce9da39c3b8668d347f47393e0300abbc2362",
+      "split": "confirm"
+    },
+    {
+      "bytes": 9113,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc600/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc600/testcases.jsonl",
+      "problem": "lc600",
+      "sha256": "076bac7e42fe62b37a194615fb458556e70f0ae4ab9d96a56dd5d58b654c4226",
+      "split": "confirm"
+    },
+    {
+      "bytes": 176371,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc611/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc611/testcases.jsonl",
+      "problem": "lc611",
+      "sha256": "bdb4b0a916caaa136bcca098d70a9bbae9ca3c873874e305865f6ce4bdcca5f5",
+      "split": "confirm"
+    },
+    {
+      "bytes": 296521,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc645/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc645/testcases.jsonl",
+      "problem": "lc645",
+      "sha256": "9ce33dee82f773bed47b6ab39f91628c2c2ef19500229c930ccacd978d244d9b",
+      "split": "confirm"
+    },
+    {
+      "bytes": 777141,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc768/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc768/testcases.jsonl",
+      "problem": "lc768",
+      "sha256": "4ef4fa53c76003e43440641e0496021f8058d257dd910dcced0c3fa30e1c55af",
+      "split": "confirm"
+    },
+    {
+      "bytes": 25980,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc840/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc840/testcases.jsonl",
+      "problem": "lc840",
+      "sha256": "2c096631966c9f5fd43a4569b3cee1f99906e41fb35df4d59a3b74ff787ea9c4",
+      "split": "confirm"
+    },
+    {
+      "bytes": 12235766,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc912/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc912/testcases.jsonl",
+      "problem": "lc912",
+      "sha256": "fb1eb3de08a474ed38af36b2a8f3f6a211cb3fe0b3cb4781e2acca93257f139f",
+      "split": "confirm"
+    },
+    {
+      "bytes": 297964,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc932/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc932/testcases.jsonl",
+      "problem": "lc932",
+      "sha256": "337bb987dabd98411ab163f4f18e8a1388dea5745e6aaaadaea5a7cde41a9234",
+      "split": "confirm"
+    },
+    {
+      "bytes": 66092,
+      "family": "codeforces",
+      "hf_path": "codeforces/cf1759B/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/codeforces/cf1759B/testcases.jsonl",
+      "problem": "cf1759B",
+      "sha256": "a5b5faaff81c275276c6b74c087c16048db3073b412718d5f48699c48206461c",
+      "split": "pilot"
+    },
+    {
+      "bytes": 63236,
+      "family": "codeforces",
+      "hf_path": "codeforces/cf1992D/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/codeforces/cf1992D/testcases.jsonl",
+      "problem": "cf1992D",
+      "sha256": "b0eb6136da3e686aa472c06642682bdc834875203892cdfe55845153058e5c9d",
+      "split": "pilot"
+    },
+    {
+      "bytes": 36657316,
+      "family": "codeforces",
+      "hf_path": "codeforces/cf230B/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/codeforces/cf230B/testcases.jsonl",
+      "problem": "cf230B",
+      "sha256": "2bbd8dcb86c447c827888300d0301d0bac40e19da07b4c615a023a079d2a8811",
+      "split": "pilot"
+    },
+    {
+      "bytes": 16671,
+      "family": "codeforces",
+      "hf_path": "codeforces/cf266A/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/codeforces/cf266A/testcases.jsonl",
+      "problem": "cf266A",
+      "sha256": "61ed714a9005e46a9706a8b0a210fa4ac4f15596df989147440781d805424516",
+      "split": "pilot"
+    },
+    {
+      "bytes": 2956715,
+      "family": "codeforces",
+      "hf_path": "codeforces/cf467C/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/codeforces/cf467C/testcases.jsonl",
+      "problem": "cf467C",
+      "sha256": "3137e256be7d22179aeebe77136deb975d7d074ea14b7d1f5b2dbdb974e457b1",
+      "split": "pilot"
+    },
+    {
+      "bytes": 9432,
+      "family": "codeforces",
+      "hf_path": "codeforces/cf509A/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/codeforces/cf509A/testcases.jsonl",
+      "problem": "cf509A",
+      "sha256": "4827ea44df7fda931e1ed81647533e617ae2d3c6a689fa12004a5281676141da",
+      "split": "pilot"
+    },
+    {
+      "bytes": 251505,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc1073/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc1073/testcases.jsonl",
+      "problem": "lc1073",
+      "sha256": "cb498c371629788dd035afe92aaa600d8d7b02272a839f606d23ca5750f3c61f",
+      "split": "pilot"
+    },
+    {
+      "bytes": 6883961,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc1283/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc1283/testcases.jsonl",
+      "problem": "lc1283",
+      "sha256": "a40e8d7e99f13b2e00167197bd337bf0ad559679a4c9013cb404898cc2c21337",
+      "split": "pilot"
+    },
+    {
+      "bytes": 753007,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc1313/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc1313/testcases.jsonl",
+      "problem": "lc1313",
+      "sha256": "c077764d593e3e1cbb40a4254c46da4dbf401891248637f961c8fa1f9c9b297e",
+      "split": "pilot"
+    },
+    {
+      "bytes": 108502,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc1563/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc1563/testcases.jsonl",
+      "problem": "lc1563",
+      "sha256": "683d726f87c5bc008ce934f3e51e75f9117c5280a49d5d6411a3b3998ff4197c",
+      "split": "pilot"
+    },
+    {
+      "bytes": 69521,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc1575/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc1575/testcases.jsonl",
+      "problem": "lc1575",
+      "sha256": "11208a161e6ef84416fa26529288f8f2ab1d36518f80617e153693d9af261729",
+      "split": "pilot"
+    },
+    {
+      "bytes": 560283,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc1827/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc1827/testcases.jsonl",
+      "problem": "lc1827",
+      "sha256": "08e0b65ad3c174e4f5d97af8c0806863806c83daf49c210cbc02eeda005e378f",
+      "split": "pilot"
+    },
+    {
+      "bytes": 3997267,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc2091/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc2091/testcases.jsonl",
+      "problem": "lc2091",
+      "sha256": "f3ac19edc3b8256ef2e1dec5c078423cb980a670269c2207ec2edf4954208516",
+      "split": "pilot"
+    },
+    {
+      "bytes": 12454,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc2139/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc2139/testcases.jsonl",
+      "problem": "lc2139",
+      "sha256": "c926673464df56227f6e7c8f990a67052c97a84df7f72c91ca5651cf14e2dbf7",
+      "split": "pilot"
+    },
+    {
+      "bytes": 18639,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc2600/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc2600/testcases.jsonl",
+      "problem": "lc2600",
+      "sha256": "bc8eb722c2e0ba749f111b3597823e5d25c0570fe0186c797252da6882764038",
+      "split": "pilot"
+    },
+    {
+      "bytes": 704285,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc33/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc33/testcases.jsonl",
+      "problem": "lc33",
+      "sha256": "31b6f946e9533c984d6160f1f332f5424af955d783c1646821a7b3d1971ed458",
+      "split": "pilot"
+    },
+    {
+      "bytes": 40380,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc3392/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc3392/testcases.jsonl",
+      "problem": "lc3392",
+      "sha256": "24f111d56b64c0c5a5e2ac997164af8e5f99811ba575c5b348c791a2562dea89",
+      "split": "pilot"
+    },
+    {
+      "bytes": 15580,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc3560/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc3560/testcases.jsonl",
+      "problem": "lc3560",
+      "sha256": "48772552c9e3018a82b8abd59e35f21d5b3886e6c7330676f959af6b9fc3363d",
+      "split": "pilot"
+    },
+    {
+      "bytes": 3546,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc3827/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc3827/testcases.jsonl",
+      "problem": "lc3827",
+      "sha256": "13ae7fdb7a71ea55fe581a7e55ebed364479ba64dd1386106f18a35346197ad1",
+      "split": "pilot"
+    },
+    {
+      "bytes": 18732,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc520/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc520/testcases.jsonl",
+      "problem": "lc520",
+      "sha256": "0a0e9246d401262c202eaa79bc24a73623320bc67348a243e5924c1614114072",
+      "split": "pilot"
+    },
+    {
+      "bytes": 2096829,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc674/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc674/testcases.jsonl",
+      "problem": "lc674",
+      "sha256": "4ce3f32ccdec04e9ced9aafcdc203282072a600ab6f800a2a916a51b30cd95b8",
+      "split": "pilot"
+    },
+    {
+      "bytes": 69818,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc845/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc845/testcases.jsonl",
+      "problem": "lc845",
+      "sha256": "9f683d94e4ac7af56ad3e9fa94c3f3dbb6d2e85fd773e6241c4d18e495ec23c0",
+      "split": "pilot"
+    },
+    {
+      "bytes": 9161,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc9/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc9/testcases.jsonl",
+      "problem": "lc9",
+      "sha256": "d0c8f02a925c926135884b4338df6b378d32ecb3634873e438d7d55df52c2597",
+      "split": "pilot"
+    },
+    {
+      "bytes": 635,
+      "family": "leetcode",
+      "hf_path": "leetcode/lc96/tests/testcases.jsonl",
+      "path": "runtime/cde-20260926/data/vericontest_hf/selected/leetcode/lc96/testcases.jsonl",
+      "problem": "lc96",
+      "sha256": "314443b668447fbb3369d65ef8448ca68cbccac431c52b2289db6e1cb5a24fb5",
+      "split": "pilot"
+    }
+  ],
+  "n_files": 96,
+  "selection_manifest": "runtime/cde-20260926/results/r4b_task_manifest.json",
+  "source": "Gax-c/VeriContest Hugging Face positive testcases",
+  "total_bytes": 441234637
+}

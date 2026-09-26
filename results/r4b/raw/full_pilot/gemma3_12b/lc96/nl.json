@@ -1,0 +1,5 @@
+{
+  "response": "pub fn num_trees(n: i32) -> i32 {\n    let mut dp = vec![0; (n + 1) as usize];\n    dp[0] = 1;\n    dp[1] = 1;\n\n    for i in 2..=n {\n        for j in 1..=i {\n            dp[i as usize] += dp[(j - 1) as usize] * dp[(i - j) as usize];\n        }\n    }\n\n    dp[n as usize]\n}\n",
+  "impl": null,
+  "source_record_sha256": "0f481818787b40816a054539344a3ad658a495b1b8271fa3fab471425c5aeeef"
+}

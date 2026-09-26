@@ -1,0 +1,27 @@
+{
+  "r4b": {
+    "devstral-small-2:24b-instruct-2512-q4_K_M": {
+      "ollama_id": "24277f07f62d",
+      "parameters": "24.0B",
+      "quantization": "Q4_K_M"
+    },
+    "gemma3:12b": {
+      "ollama_id": "f4031aab637d",
+      "parameters": "12.2B",
+      "quantization": "Q4_K_M"
+    },
+    "gpt-oss:20b": {
+      "ollama_id": "17052f91a42e",
+      "role": "competence screen only; excluded at ceiling"
+    }
+  },
+  "text_control": {
+    "nomic-embed-text:latest": {
+      "ollama_id": "0a109f422b47",
+      "architecture": "nomic-bert",
+      "parameters": "137M",
+      "quantization": "F16",
+      "embedding_dims": 768
+    }
+  }
+}

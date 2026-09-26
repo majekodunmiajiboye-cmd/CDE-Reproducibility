@@ -1,0 +1,1485 @@
+{
+  "arms": [
+    "nl",
+    "spec",
+    "both"
+  ],
+  "models": [
+    "devstral-small-2:24b-instruct-2512-q4_K_M",
+    "gpt-oss:20b",
+    "gemma3:12b"
+  ],
+  "n_tasks": 6,
+  "results": [
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": false,
+        "error": "mplementation for `i128 + i64`\n    |\n    = help: the trait `Add<i64>` is not implemented for `i128`\nhelp: the following other types implement trait `Add<Rhs>`\n   --> /opt/homebrew/Cellar/rust/1.98.1/lib/rustlib/src/rust/library/core/src/ops/arith.rs:98:9\n    |\n 98 |         const impl Add for $t {\n    |         ^^^^^^^^^^^^^^^^^^^^^ `i128` implements `Add`\n...\n113 | add_impl! { usize u8 u16 u32 u64 u128 isize i8 i16 i32 i64 i128 f16 f32 f64 f128 }\n    | ---------------------------------------------------------------------------------- in this macro invocation\n    |\n   ::: /opt/homebrew/Cellar/rust/1.98.1/lib/rustlib/src/rust/library/core/src/internal_macros.rs:22:9\n    |\n 22 |         const impl $imp<$u> for &$t {\n    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^ `&i128` implements `Add<i128>`\n...\n 33 |         const impl $imp<&$u> for $t {\n    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^ `i128` implements `Add<&i128>`\n...\n 44 |         const impl $imp<&$u> for &$t {\n    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `&i128` implements `Add`\n    = note: this error originates in the macro `add_impl` (in Nightly builds, run with -Z macro-backtrace for more info)\n\nerror[E0308]: mismatched types\n  --> <temporary-directory>/candidate.rs:25:58\n   |\n25 | ...                   dp[i][j + 1] = current + sum;\n   |                                                ^^^ expected `i128`, found `i64`\n\nerror[E0277]: cannot add `i64` to `i128`\n   --> <temporary-directory>/candidate.rs:25:56\n    |\n 25 | ...                   dp[i][j + 1] = current + sum;\n    |                                              ^ no implementation for `i128 + i64`\n    |\n    = help: the trait `Add<i64>` is not implemented for `i128`\nhelp: the following other types implement trait `Add<Rhs>`\n   --> /opt/homebrew/Cellar/rust/1.98.1/lib/rustlib/src/rust/library/core/src/ops/arith.rs:98:9\n    |\n 98 |         const impl Add for $t {\n    |         ^^^^^^^^^^^^^^^^^^^^^ `i128` implements `Add`\n...\n113 | add_impl! { usize u8 u16 u32 u64 u128 isize i8 i16 i32 i64 i128 f16 f32 f64 f128 }\n    | ---------------------------------------------------------------------------------- in this macro invocation\n    |\n   ::: /opt/homebrew/Cellar/rust/1.98.1/lib/rustlib/src/rust/library/core/src/internal_macros.rs:22:9\n    |\n 22 |         const impl $imp<$u> for &$t {\n    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^ `&i128` implements `Add<i128>`\n...\n 33 |         const impl $imp<&$u> for $t {\n    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^ `i128` implements `Add<&i128>`\n...\n 44 |         const impl $imp<&$u> for &$t {\n    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `&i128` implements `Add`\n    = note: this error originates in the macro `add_impl` (in Nightly builds, run with -Z macro-backtrace for more info)\n\nerror: aborting due to 4 previous errors\n\nSome errors have detailed explanations: E0277, E0308.\nFor more information about an error, try `rustc --explain E0277`.\n",
+        "semantic_pass": false
+      },
+      "family": "codeforces",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 289,
+        "eval_duration": 7975933000,
+        "load_duration": 3644770833,
+        "prompt_eval_count": 1097,
+        "prompt_eval_duration": 1300697000,
+        "total_duration": 12928497375,
+        "wall_seconds_client": 12.939144849777222
+      },
+      "problem": "cf467C",
+      "prompt_chars": 1770,
+      "response_chars": 1156,
+      "target_signature": "pub fn max_k_segments_sum(nums: Vec<i64>, m: usize, k: usize) -> i128",
+      "task_index": 1
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 300,
+        "semantic_pass": true
+      },
+      "family": "codeforces",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 308,
+        "eval_duration": 8580182000,
+        "load_duration": 2972375,
+        "prompt_eval_count": 1640,
+        "prompt_eval_duration": 1228604000,
+        "total_duration": 9828520041,
+        "wall_seconds_client": 9.833309173583984
+      },
+      "problem": "cf467C",
+      "prompt_chars": 3741,
+      "response_chars": 1032,
+      "target_signature": "pub fn max_k_segments_sum(nums: Vec<i64>, m: usize, k: usize) -> i128",
+      "task_index": 1
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "error": "runtime timeout",
+        "n_checked": 101,
+        "semantic_pass": false
+      },
+      "family": "codeforces",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 269,
+        "eval_duration": 7488046000,
+        "load_duration": 2351459,
+        "prompt_eval_count": 2002,
+        "prompt_eval_duration": 1629582000,
+        "total_duration": 9166786459,
+        "wall_seconds_client": 9.171798944473267
+      },
+      "problem": "cf467C",
+      "prompt_chars": 4727,
+      "response_chars": 976,
+      "target_signature": "pub fn max_k_segments_sum(nums: Vec<i64>, m: usize, k: usize) -> i128",
+      "task_index": 1
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 290,
+        "semantic_pass": true
+      },
+      "family": "codeforces",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 72,
+        "eval_duration": 1948245000,
+        "load_duration": 3341292,
+        "prompt_eval_count": 1020,
+        "prompt_eval_duration": 444912000,
+        "total_duration": 2444480250,
+        "wall_seconds_client": 2.447809934616089
+      },
+      "problem": "cf266A",
+      "prompt_chars": 1811,
+      "response_chars": 254,
+      "target_signature": "pub fn min_stones_to_remove(colors: Vec<u8>, n: usize) -> usize",
+      "task_index": 2
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 290,
+        "semantic_pass": true
+      },
+      "family": "codeforces",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 72,
+        "eval_duration": 1952128000,
+        "load_duration": 1680167,
+        "prompt_eval_count": 1083,
+        "prompt_eval_duration": 459324000,
+        "total_duration": 2422427417,
+        "wall_seconds_client": 2.4256861209869385
+      },
+      "problem": "cf266A",
+      "prompt_chars": 1878,
+      "response_chars": 254,
+      "target_signature": "pub fn min_stones_to_remove(colors: Vec<u8>, n: usize) -> usize",
+      "task_index": 2
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 290,
+        "semantic_pass": true
+      },
+      "family": "codeforces",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 72,
+        "eval_duration": 1961346000,
+        "load_duration": 1701500,
+        "prompt_eval_count": 1375,
+        "prompt_eval_duration": 906594000,
+        "total_duration": 2874691833,
+        "wall_seconds_client": 2.8843109607696533
+      },
+      "problem": "cf266A",
+      "prompt_chars": 2911,
+      "response_chars": 254,
+      "target_signature": "pub fn min_stones_to_remove(colors: Vec<u8>, n: usize) -> usize",
+      "task_index": 2
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 269,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 119,
+        "eval_duration": 3253199000,
+        "load_duration": 1473209,
+        "prompt_eval_count": 959,
+        "prompt_eval_duration": 446880000,
+        "total_duration": 3729544792,
+        "wall_seconds_client": 3.7397971153259277
+      },
+      "problem": "lc674",
+      "prompt_chars": 1566,
+      "response_chars": 481,
+      "target_signature": "pub fn find_length_of_lcis(nums: Vec<i32>) -> i32",
+      "task_index": 3
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 269,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 126,
+        "eval_duration": 3481297000,
+        "load_duration": 2448667,
+        "prompt_eval_count": 1054,
+        "prompt_eval_duration": 500739000,
+        "total_duration": 3992012834,
+        "wall_seconds_client": 4.0014519691467285
+      },
+      "problem": "lc674",
+      "prompt_chars": 1811,
+      "response_chars": 509,
+      "target_signature": "pub fn find_length_of_lcis(nums: Vec<i32>) -> i32",
+      "task_index": 3
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 269,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 119,
+        "eval_duration": 3315494000,
+        "load_duration": 1935542,
+        "prompt_eval_count": 1287,
+        "prompt_eval_duration": 885969000,
+        "total_duration": 4210769500,
+        "wall_seconds_client": 4.219153881072998
+      },
+      "problem": "lc674",
+      "prompt_chars": 2613,
+      "response_chars": 481,
+      "target_signature": "pub fn find_length_of_lcis(nums: Vec<i32>) -> i32",
+      "task_index": 3
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": true,
+        "error": "wrong output",
+        "n_checked": 200,
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 277,
+        "eval_duration": 7913874000,
+        "load_duration": 2281625,
+        "prompt_eval_count": 1190,
+        "prompt_eval_duration": 696604000,
+        "total_duration": 8644620916,
+        "wall_seconds_client": 8.654402017593384
+      },
+      "problem": "lc1563",
+      "prompt_chars": 2402,
+      "response_chars": 1056,
+      "target_signature": "pub fn stone_game_v(stone_value: Vec<i32>) -> i32",
+      "task_index": 4
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 263,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 246,
+        "eval_duration": 6921683000,
+        "load_duration": 2414542,
+        "prompt_eval_count": 1319,
+        "prompt_eval_duration": 887926000,
+        "total_duration": 7852400459,
+        "wall_seconds_client": 7.859652996063232
+      },
+      "problem": "lc1563",
+      "prompt_chars": 2675,
+      "response_chars": 951,
+      "target_signature": "pub fn stone_game_v(stone_value: Vec<i32>) -> i32",
+      "task_index": 4
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "error": "wrong output",
+        "n_checked": 200,
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 274,
+        "eval_duration": 7593713000,
+        "load_duration": 2228834,
+        "prompt_eval_count": 1783,
+        "prompt_eval_duration": 778714000,
+        "total_duration": 8420216375,
+        "wall_seconds_client": 8.42628812789917
+      },
+      "problem": "lc1563",
+      "prompt_chars": 4313,
+      "response_chars": 1066,
+      "target_signature": "pub fn stone_game_v(stone_value: Vec<i32>) -> i32",
+      "task_index": 4
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 320,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 224,
+        "eval_duration": 6199839000,
+        "load_duration": 2438667,
+        "prompt_eval_count": 1116,
+        "prompt_eval_duration": 610619000,
+        "total_duration": 6905133417,
+        "wall_seconds_client": 6.909417152404785
+      },
+      "problem": "lc33",
+      "prompt_chars": 1913,
+      "response_chars": 976,
+      "target_signature": "pub fn search(nums: Vec<i32>, target: i32) -> i32",
+      "task_index": 5
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 320,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 190,
+        "eval_duration": 5333479000,
+        "load_duration": 2336750,
+        "prompt_eval_count": 1128,
+        "prompt_eval_duration": 625330000,
+        "total_duration": 5972578917,
+        "wall_seconds_client": 5.976431846618652
+      },
+      "problem": "lc33",
+      "prompt_chars": 1989,
+      "response_chars": 790,
+      "target_signature": "pub fn search(nums: Vec<i32>, target: i32) -> i32",
+      "task_index": 5
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 320,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 228,
+        "eval_duration": 6423305000,
+        "load_duration": 1357375,
+        "prompt_eval_count": 1516,
+        "prompt_eval_duration": 1196802000,
+        "total_duration": 7631634084,
+        "wall_seconds_client": 7.636122703552246
+      },
+      "problem": "lc33",
+      "prompt_chars": 3138,
+      "response_chars": 993,
+      "target_signature": "pub fn search(nums: Vec<i32>, target: i32) -> i32",
+      "task_index": 5
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": true,
+        "error": "runtime timeout",
+        "n_checked": 200,
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 255,
+        "eval_duration": 7146771000,
+        "load_duration": 1814209,
+        "prompt_eval_count": 1034,
+        "prompt_eval_duration": 484938000,
+        "total_duration": 7692048875,
+        "wall_seconds_client": 7.695960760116577
+      },
+      "problem": "lc845",
+      "prompt_chars": 1645,
+      "response_chars": 1013,
+      "target_signature": "pub fn longest_mountain(arr: Vec<i32>) -> i32",
+      "task_index": 6
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 240,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 313,
+        "eval_duration": 9036217000,
+        "load_duration": 3346875,
+        "prompt_eval_count": 1104,
+        "prompt_eval_duration": 558490000,
+        "total_duration": 9611115542,
+        "wall_seconds_client": 9.614924669265747
+      },
+      "problem": "lc845",
+      "prompt_chars": 1908,
+      "response_chars": 1257,
+      "target_signature": "pub fn longest_mountain(arr: Vec<i32>) -> i32",
+      "task_index": 6
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "error": "wrong output",
+        "n_checked": 200,
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 246,
+        "eval_duration": 7010950000,
+        "load_duration": 3049209,
+        "prompt_eval_count": 1414,
+        "prompt_eval_duration": 890712000,
+        "total_duration": 7918801417,
+        "wall_seconds_client": 7.923279285430908
+      },
+      "problem": "lc845",
+      "prompt_chars": 2793,
+      "response_chars": 1017,
+      "target_signature": "pub fn longest_mountain(arr: Vec<i32>) -> i32",
+      "task_index": 6
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 300,
+        "semantic_pass": true
+      },
+      "family": "codeforces",
+      "impl_extracted": true,
+      "model": "gpt-oss:20b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 1948,
+        "eval_duration": 17252800000,
+        "load_duration": 3966688292,
+        "prompt_eval_count": 599,
+        "prompt_eval_duration": 203209000,
+        "total_duration": 21427739792,
+        "wall_seconds_client": 21.4381582736969
+      },
+      "problem": "cf467C",
+      "prompt_chars": 1770,
+      "response_chars": 848,
+      "target_signature": "pub fn max_k_segments_sum(nums: Vec<i64>, m: usize, k: usize) -> i128",
+      "task_index": 1
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 300,
+        "semantic_pass": true
+      },
+      "family": "codeforces",
+      "impl_extracted": true,
+      "model": "gpt-oss:20b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 1048,
+        "eval_duration": 9237736000,
+        "load_duration": 1686875,
+        "prompt_eval_count": 1111,
+        "prompt_eval_duration": 383754000,
+        "total_duration": 9645415209,
+        "wall_seconds_client": 9.654530048370361
+      },
+      "problem": "cf467C",
+      "prompt_chars": 3741,
+      "response_chars": 1038,
+      "target_signature": "pub fn max_k_segments_sum(nums: Vec<i64>, m: usize, k: usize) -> i128",
+      "task_index": 1
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 300,
+        "semantic_pass": true
+      },
+      "family": "codeforces",
+      "impl_extracted": true,
+      "model": "gpt-oss:20b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 1006,
+        "eval_duration": 8934798000,
+        "load_duration": 1762166,
+        "prompt_eval_count": 1474,
+        "prompt_eval_duration": 429753000,
+        "total_duration": 9389452416,
+        "wall_seconds_client": 9.4004647731781
+      },
+      "problem": "cf467C",
+      "prompt_chars": 4727,
+      "response_chars": 929,
+      "target_signature": "pub fn max_k_segments_sum(nums: Vec<i64>, m: usize, k: usize) -> i128",
+      "task_index": 1
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 290,
+        "semantic_pass": true
+      },
+      "family": "codeforces",
+      "impl_extracted": true,
+      "model": "gpt-oss:20b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 337,
+        "eval_duration": 2933461000,
+        "load_duration": 1547958,
+        "prompt_eval_count": 535,
+        "prompt_eval_duration": 166603000,
+        "total_duration": 3119588167,
+        "wall_seconds_client": 3.1239800453186035
+      },
+      "problem": "cf266A",
+      "prompt_chars": 1811,
+      "response_chars": 268,
+      "target_signature": "pub fn min_stones_to_remove(colors: Vec<u8>, n: usize) -> usize",
+      "task_index": 2
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 290,
+        "semantic_pass": true
+      },
+      "family": "codeforces",
+      "impl_extracted": true,
+      "model": "gpt-oss:20b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 274,
+        "eval_duration": 2393472000,
+        "load_duration": 1465583,
+        "prompt_eval_count": 567,
+        "prompt_eval_duration": 142774000,
+        "total_duration": 2549403458,
+        "wall_seconds_client": 2.5535449981689453
+      },
+      "problem": "cf266A",
+      "prompt_chars": 1878,
+      "response_chars": 277,
+      "target_signature": "pub fn min_stones_to_remove(colors: Vec<u8>, n: usize) -> usize",
+      "task_index": 2
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 290,
+        "semantic_pass": true
+      },
+      "family": "codeforces",
+      "impl_extracted": true,
+      "model": "gpt-oss:20b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 267,
+        "eval_duration": 2337006000,
+        "load_duration": 1617750,
+        "prompt_eval_count": 870,
+        "prompt_eval_duration": 249097000,
+        "total_duration": 2605013791,
+        "wall_seconds_client": 2.609156847000122
+      },
+      "problem": "cf266A",
+      "prompt_chars": 2911,
+      "response_chars": 259,
+      "target_signature": "pub fn min_stones_to_remove(colors: Vec<u8>, n: usize) -> usize",
+      "task_index": 2
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 269,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gpt-oss:20b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 301,
+        "eval_duration": 2649790000,
+        "load_duration": 1607416,
+        "prompt_eval_count": 460,
+        "prompt_eval_duration": 124471000,
+        "total_duration": 2787984041,
+        "wall_seconds_client": 2.7926361560821533
+      },
+      "problem": "lc674",
+      "prompt_chars": 1566,
+      "response_chars": 489,
+      "target_signature": "pub fn find_length_of_lcis(nums: Vec<i32>) -> i32",
+      "task_index": 3
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 269,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gpt-oss:20b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 359,
+        "eval_duration": 3169831000,
+        "load_duration": 1571042,
+        "prompt_eval_count": 529,
+        "prompt_eval_duration": 144944000,
+        "total_duration": 3325735875,
+        "wall_seconds_client": 3.331027030944824
+      },
+      "problem": "lc674",
+      "prompt_chars": 1811,
+      "response_chars": 493,
+      "target_signature": "pub fn find_length_of_lcis(nums: Vec<i32>) -> i32",
+      "task_index": 3
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 269,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gpt-oss:20b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 346,
+        "eval_duration": 3040909000,
+        "load_duration": 2305333,
+        "prompt_eval_count": 760,
+        "prompt_eval_duration": 196291000,
+        "total_duration": 3260371291,
+        "wall_seconds_client": 3.2666428089141846
+      },
+      "problem": "lc674",
+      "prompt_chars": 2613,
+      "response_chars": 481,
+      "target_signature": "pub fn find_length_of_lcis(nums: Vec<i32>) -> i32",
+      "task_index": 3
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 263,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gpt-oss:20b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 1279,
+        "eval_duration": 11258653000,
+        "load_duration": 2302167,
+        "prompt_eval_count": 682,
+        "prompt_eval_duration": 202757000,
+        "total_duration": 11481676584,
+        "wall_seconds_client": 11.490512132644653
+      },
+      "problem": "lc1563",
+      "prompt_chars": 2402,
+      "response_chars": 1148,
+      "target_signature": "pub fn stone_game_v(stone_value: Vec<i32>) -> i32",
+      "task_index": 4
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 263,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gpt-oss:20b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 973,
+        "eval_duration": 8562632000,
+        "load_duration": 2084041,
+        "prompt_eval_count": 807,
+        "prompt_eval_duration": 229847000,
+        "total_duration": 8816958750,
+        "wall_seconds_client": 8.825582265853882
+      },
+      "problem": "lc1563",
+      "prompt_chars": 2675,
+      "response_chars": 1569,
+      "target_signature": "pub fn stone_game_v(stone_value: Vec<i32>) -> i32",
+      "task_index": 4
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 263,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gpt-oss:20b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 1110,
+        "eval_duration": 9856022000,
+        "load_duration": 2015834,
+        "prompt_eval_count": 1260,
+        "prompt_eval_duration": 384273000,
+        "total_duration": 10269625750,
+        "wall_seconds_client": 10.277785778045654
+      },
+      "problem": "lc1563",
+      "prompt_chars": 4313,
+      "response_chars": 1233,
+      "target_signature": "pub fn stone_game_v(stone_value: Vec<i32>) -> i32",
+      "task_index": 4
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 320,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gpt-oss:20b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 685,
+        "eval_duration": 5998409000,
+        "load_duration": 2394125,
+        "prompt_eval_count": 619,
+        "prompt_eval_duration": 188786000,
+        "total_duration": 6210835375,
+        "wall_seconds_client": 6.215863227844238
+      },
+      "problem": "lc33",
+      "prompt_chars": 1913,
+      "response_chars": 1051,
+      "target_signature": "pub fn search(nums: Vec<i32>, target: i32) -> i32",
+      "task_index": 5
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 320,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gpt-oss:20b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 1057,
+        "eval_duration": 9282142000,
+        "load_duration": 2263417,
+        "prompt_eval_count": 596,
+        "prompt_eval_duration": 150052000,
+        "total_duration": 9448422375,
+        "wall_seconds_client": 9.455217123031616
+      },
+      "problem": "lc33",
+      "prompt_chars": 1989,
+      "response_chars": 1107,
+      "target_signature": "pub fn search(nums: Vec<i32>, target: i32) -> i32",
+      "task_index": 5
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 320,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gpt-oss:20b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 837,
+        "eval_duration": 7497564000,
+        "load_duration": 1920125,
+        "prompt_eval_count": 985,
+        "prompt_eval_duration": 275218000,
+        "total_duration": 7797345250,
+        "wall_seconds_client": 7.805800914764404
+      },
+      "problem": "lc33",
+      "prompt_chars": 3138,
+      "response_chars": 987,
+      "target_signature": "pub fn search(nums: Vec<i32>, target: i32) -> i32",
+      "task_index": 5
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 240,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gpt-oss:20b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 469,
+        "eval_duration": 4160638000,
+        "load_duration": 1808792,
+        "prompt_eval_count": 530,
+        "prompt_eval_duration": 166186000,
+        "total_duration": 4341110000,
+        "wall_seconds_client": 4.34734320640564
+      },
+      "problem": "lc845",
+      "prompt_chars": 1645,
+      "response_chars": 988,
+      "target_signature": "pub fn longest_mountain(arr: Vec<i32>) -> i32",
+      "task_index": 6
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 240,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gpt-oss:20b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 984,
+        "eval_duration": 8959220000,
+        "load_duration": 1895250,
+        "prompt_eval_count": 586,
+        "prompt_eval_duration": 147838000,
+        "total_duration": 9126272209,
+        "wall_seconds_client": 9.133347034454346
+      },
+      "problem": "lc845",
+      "prompt_chars": 1908,
+      "response_chars": 849,
+      "target_signature": "pub fn longest_mountain(arr: Vec<i32>) -> i32",
+      "task_index": 6
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 240,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gpt-oss:20b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 1167,
+        "eval_duration": 10830187000,
+        "load_duration": 1965792,
+        "prompt_eval_count": 889,
+        "prompt_eval_duration": 253343000,
+        "total_duration": 11106683625,
+        "wall_seconds_client": 11.115123987197876
+      },
+      "problem": "lc845",
+      "prompt_chars": 2793,
+      "response_chars": 859,
+      "target_signature": "pub fn longest_mountain(arr: Vec<i32>) -> i32",
+      "task_index": 6
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": false,
+        "error": "error[E0689]: can't call method `count_ones` on ambiguous numeric type `{integer}`\n  --> <temporary-directory>/candidate.rs:11:18\n   |\n10 |         for i in 0..(1 << n) {\n   |             - you must specify a type for this binding, like `i32`\n11 |             if i.count_ones() as usize != k {\n   |                  ^^^^^^^^^^\n\nerror: aborting due to 1 previous error\n\nFor more information about this error, try `rustc --explain E0689`.\n",
+        "semantic_pass": false
+      },
+      "family": "codeforces",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 426,
+        "eval_duration": 7426418000,
+        "load_duration": 2686961541,
+        "prompt_eval_count": 641,
+        "prompt_eval_duration": 511379000,
+        "total_duration": 10628595958,
+        "wall_seconds_client": 10.631885051727295
+      },
+      "problem": "cf467C",
+      "prompt_chars": 1770,
+      "response_chars": 1623,
+      "target_signature": "pub fn max_k_segments_sum(nums: Vec<i64>, m: usize, k: usize) -> i128",
+      "task_index": 1
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "error": "runtime timeout",
+        "n_checked": 12,
+        "semantic_pass": false
+      },
+      "family": "codeforces",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 406,
+        "eval_duration": 7610125000,
+        "load_duration": 794875,
+        "prompt_eval_count": 1221,
+        "prompt_eval_duration": 963618000,
+        "total_duration": 8655161958,
+        "wall_seconds_client": 8.658706903457642
+      },
+      "problem": "cf467C",
+      "prompt_chars": 3741,
+      "response_chars": 1373,
+      "target_signature": "pub fn max_k_segments_sum(nums: Vec<i64>, m: usize, k: usize) -> i128",
+      "task_index": 1
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "error": "runtime timeout",
+        "n_checked": 12,
+        "semantic_pass": false
+      },
+      "family": "codeforces",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 519,
+        "eval_duration": 9852437000,
+        "load_duration": 2113750,
+        "prompt_eval_count": 1665,
+        "prompt_eval_duration": 1093514000,
+        "total_duration": 11081097416,
+        "wall_seconds_client": 11.085540771484375
+      },
+      "problem": "cf467C",
+      "prompt_chars": 4727,
+      "response_chars": 1894,
+      "target_signature": "pub fn max_k_segments_sum(nums: Vec<i64>, m: usize, k: usize) -> i128",
+      "task_index": 1
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": false,
+        "error": "no impl Solution block",
+        "semantic_pass": false
+      },
+      "family": "codeforces",
+      "impl_extracted": false,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 119,
+        "eval_duration": 2091643999,
+        "load_duration": 1630959,
+        "prompt_eval_count": 511,
+        "prompt_eval_duration": 285437000,
+        "total_duration": 2474992334,
+        "wall_seconds_client": 2.4772462844848633
+      },
+      "problem": "cf266A",
+      "prompt_chars": 1811,
+      "response_chars": 312,
+      "target_signature": "pub fn min_stones_to_remove(colors: Vec<u8>, n: usize) -> usize",
+      "task_index": 2
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 290,
+        "semantic_pass": true
+      },
+      "family": "codeforces",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 90,
+        "eval_duration": 1627178000,
+        "load_duration": 632458,
+        "prompt_eval_count": 585,
+        "prompt_eval_duration": 471440000,
+        "total_duration": 2113220208,
+        "wall_seconds_client": 2.1152729988098145
+      },
+      "problem": "cf266A",
+      "prompt_chars": 1878,
+      "response_chars": 259,
+      "target_signature": "pub fn min_stones_to_remove(colors: Vec<u8>, n: usize) -> usize",
+      "task_index": 2
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "error": "wrong output",
+        "n_checked": 2,
+        "semantic_pass": false
+      },
+      "family": "codeforces",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 161,
+        "eval_duration": 2903823000,
+        "load_duration": 1507459,
+        "prompt_eval_count": 907,
+        "prompt_eval_duration": 593897000,
+        "total_duration": 3535041084,
+        "wall_seconds_client": 3.5381743907928467
+      },
+      "problem": "cf266A",
+      "prompt_chars": 2911,
+      "response_chars": 497,
+      "target_signature": "pub fn min_stones_to_remove(colors: Vec<u8>, n: usize) -> usize",
+      "task_index": 2
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 269,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 163,
+        "eval_duration": 2905582000,
+        "load_duration": 2082125,
+        "prompt_eval_count": 425,
+        "prompt_eval_duration": 291417000,
+        "total_duration": 3272228708,
+        "wall_seconds_client": 3.2749738693237305
+      },
+      "problem": "lc674",
+      "prompt_chars": 1566,
+      "response_chars": 475,
+      "target_signature": "pub fn find_length_of_lcis(nums: Vec<i32>) -> i32",
+      "task_index": 3
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 269,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 137,
+        "eval_duration": 2442376000,
+        "load_duration": 1877875,
+        "prompt_eval_count": 542,
+        "prompt_eval_duration": 344552000,
+        "total_duration": 2825945958,
+        "wall_seconds_client": 2.8285348415374756
+      },
+      "problem": "lc674",
+      "prompt_chars": 1811,
+      "response_chars": 394,
+      "target_signature": "pub fn find_length_of_lcis(nums: Vec<i32>) -> i32",
+      "task_index": 3
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 269,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 156,
+        "eval_duration": 2789400000,
+        "load_duration": 2070875,
+        "prompt_eval_count": 778,
+        "prompt_eval_duration": 568403000,
+        "total_duration": 3428713833,
+        "wall_seconds_client": 3.431504011154175
+      },
+      "problem": "lc674",
+      "prompt_chars": 2613,
+      "response_chars": 458,
+      "target_signature": "pub fn find_length_of_lcis(nums: Vec<i32>) -> i32",
+      "task_index": 3
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": true,
+        "error": "wrong output",
+        "n_checked": 200,
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 136,
+        "eval_duration": 2404736000,
+        "load_duration": 2094875,
+        "prompt_eval_count": 671,
+        "prompt_eval_duration": 467306000,
+        "total_duration": 2950791166,
+        "wall_seconds_client": 2.9540891647338867
+      },
+      "problem": "lc1563",
+      "prompt_chars": 2402,
+      "response_chars": 351,
+      "target_signature": "pub fn stone_game_v(stone_value: Vec<i32>) -> i32",
+      "task_index": 4
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "error": "wrong output",
+        "n_checked": 200,
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 261,
+        "eval_duration": 4729735000,
+        "load_duration": 2045708,
+        "prompt_eval_count": 867,
+        "prompt_eval_duration": 578568000,
+        "total_duration": 5387327625,
+        "wall_seconds_client": 5.390787124633789
+      },
+      "problem": "lc1563",
+      "prompt_chars": 2675,
+      "response_chars": 696,
+      "target_signature": "pub fn stone_game_v(stone_value: Vec<i32>) -> i32",
+      "task_index": 4
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "error": "wrong output",
+        "n_checked": 200,
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 213,
+        "eval_duration": 3871579000,
+        "load_duration": 3280000,
+        "prompt_eval_count": 1350,
+        "prompt_eval_duration": 1029773999,
+        "total_duration": 4987743333,
+        "wall_seconds_client": 4.991878986358643
+      },
+      "problem": "lc1563",
+      "prompt_chars": 4313,
+      "response_chars": 600,
+      "target_signature": "pub fn stone_game_v(stone_value: Vec<i32>) -> i32",
+      "task_index": 4
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 320,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 232,
+        "eval_duration": 4105084000,
+        "load_duration": 1555250,
+        "prompt_eval_count": 603,
+        "prompt_eval_duration": 357215000,
+        "total_duration": 4574194375,
+        "wall_seconds_client": 4.577228784561157
+      },
+      "problem": "lc33",
+      "prompt_chars": 1913,
+      "response_chars": 838,
+      "target_signature": "pub fn search(nums: Vec<i32>, target: i32) -> i32",
+      "task_index": 5
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "error": "wrong output",
+        "n_checked": 200,
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 156,
+        "eval_duration": 2817852000,
+        "load_duration": 2094959,
+        "prompt_eval_count": 628,
+        "prompt_eval_duration": 361443000,
+        "total_duration": 3211498167,
+        "wall_seconds_client": 3.2142467498779297
+      },
+      "problem": "lc33",
+      "prompt_chars": 1989,
+      "response_chars": 506,
+      "target_signature": "pub fn search(nums: Vec<i32>, target: i32) -> i32",
+      "task_index": 5
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 320,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 232,
+        "eval_duration": 4254416000,
+        "load_duration": 2130167,
+        "prompt_eval_count": 1043,
+        "prompt_eval_duration": 811799000,
+        "total_duration": 5144697292,
+        "wall_seconds_client": 5.148789882659912
+      },
+      "problem": "lc33",
+      "prompt_chars": 3138,
+      "response_chars": 838,
+      "target_signature": "pub fn search(nums: Vec<i32>, target: i32) -> i32",
+      "task_index": 5
+    },
+    {
+      "arm": "nl",
+      "eval": {
+        "compile_ok": false,
+        "error": "no impl Solution block",
+        "semantic_pass": false
+      },
+      "family": "leetcode",
+      "impl_extracted": false,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 215,
+        "eval_duration": 3941017000,
+        "load_duration": 1660708,
+        "prompt_eval_count": 511,
+        "prompt_eval_duration": 287178000,
+        "total_duration": 4315075541,
+        "wall_seconds_client": 4.31852912902832
+      },
+      "problem": "lc845",
+      "prompt_chars": 1645,
+      "response_chars": 587,
+      "target_signature": "pub fn longest_mountain(arr: Vec<i32>) -> i32",
+      "task_index": 6
+    },
+    {
+      "arm": "spec",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 240,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 223,
+        "eval_duration": 3988785000,
+        "load_duration": 1170500,
+        "prompt_eval_count": 594,
+        "prompt_eval_duration": 530178000,
+        "total_duration": 4545021917,
+        "wall_seconds_client": 4.547780990600586
+      },
+      "problem": "lc845",
+      "prompt_chars": 1908,
+      "response_chars": 689,
+      "target_signature": "pub fn longest_mountain(arr: Vec<i32>) -> i32",
+      "task_index": 6
+    },
+    {
+      "arm": "both",
+      "eval": {
+        "compile_ok": true,
+        "n_checked": 240,
+        "semantic_pass": true
+      },
+      "family": "leetcode",
+      "impl_extracted": true,
+      "model": "gemma3:12b",
+      "ollama": {
+        "done_reason": "stop",
+        "eval_count": 223,
+        "eval_duration": 4181158000,
+        "load_duration": 1876416,
+        "prompt_eval_count": 921,
+        "prompt_eval_duration": 687473000,
+        "total_duration": 4919061583,
+        "wall_seconds_client": 4.9243152141571045
+      },
+      "problem": "lc845",
+      "prompt_chars": 2793,
+      "response_chars": 689,
+      "target_signature": "pub fn longest_mountain(arr: Vec<i32>) -> i32",
+      "task_index": 6
+    }
+  ],
+  "seed": 20260926,
+  "summary": {
+    "devstral-small-2:24b-instruct-2512-q4_K_M": {
+      "both": {
+        "compile_rate": 1.0,
+        "n": 6,
+        "semantic_success_rate": 0.5
+      },
+      "nl": {
+        "compile_rate": 0.8333333333333334,
+        "n": 6,
+        "semantic_success_rate": 0.5
+      },
+      "spec": {
+        "compile_rate": 1.0,
+        "n": 6,
+        "semantic_success_rate": 1.0
+      }
+    },
+    "gemma3:12b": {
+      "both": {
+        "compile_rate": 1.0,
+        "n": 6,
+        "semantic_success_rate": 0.5
+      },
+      "nl": {
+        "compile_rate": 0.5,
+        "n": 6,
+        "semantic_success_rate": 0.3333333333333333
+      },
+      "spec": {
+        "compile_rate": 1.0,
+        "n": 6,
+        "semantic_success_rate": 0.5
+      }
+    },
+    "gpt-oss:20b": {
+      "both": {
+        "compile_rate": 1.0,
+        "n": 6,
+        "semantic_success_rate": 1.0
+      },
+      "nl": {
+        "compile_rate": 1.0,
+        "n": 6,
+        "semantic_success_rate": 1.0
+      },
+      "spec": {
+        "compile_rate": 1.0,
+        "n": 6,
+        "semantic_success_rate": 1.0
+      }
+    }
+  }
+}

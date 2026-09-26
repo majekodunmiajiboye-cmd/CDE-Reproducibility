@@ -1,0 +1,5 @@
+{
+  "response": "impl Solution {\n    pub fn smallest_divisor(nums: Vec<i32>, threshold: i32) -> i32 {\n        let mut left = 1;\n        let mut right = *nums.iter().max().unwrap();\n\n        while left < right {\n            let mid = left + (right - left) / 2;\n            let sum = nums.iter().map(|&num| (num + mid - 1) / mid).sum::<i32>();\n\n            if sum > threshold {\n                left = mid + 1;\n            } else {\n                right = mid;\n            }\n        }\n\n        left\n    }\n}",
+  "impl": "impl Solution {\n    pub fn smallest_divisor(nums: Vec<i32>, threshold: i32) -> i32 {\n        let mut left = 1;\n        let mut right = *nums.iter().max().unwrap();\n\n        while left < right {\n            let mid = left + (right - left) / 2;\n            let sum = nums.iter().map(|&num| (num + mid - 1) / mid).sum::<i32>();\n\n            if sum > threshold {\n                left = mid + 1;\n            } else {\n                right = mid;\n            }\n        }\n\n        left\n    }\n}",
+  "source_record_sha256": "57a431f4e2757776f23dedec9d82baea763c4ee1b154c498ef7d1e95898b984b"
+}

@@ -1,0 +1,5 @@
+{
+  "response": "pub fn min_stones_to_remove(colors: Vec<u8>, n: usize) -> usize {\n    let mut stones_to_remove = 0;\n    let mut i = 0;\n    while i < n - 1 {\n        if colors[i] == colors[i + 1] {\n            stones_to_remove += 1;\n            i += 2;\n        } else {\n            i += 1;\n        }\n    }\n    stones_to_remove\n}\n",
+  "impl": null,
+  "source_record_sha256": "2709c33d8f7399372c9f6bbc3597175b14aea33c6826e575f180c90d3fc2053b"
+}

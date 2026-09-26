@@ -1,0 +1,79 @@
+{
+  "input_hashes": {
+    "adele_canonical_battery_sha256": "b978cdf1538d5c07e01bfb4a2636293641ac9a404b3385fdb1936fe6aec5b056",
+    "adele_subject_manifest_sha256": "b2e8f2d17e0a60625aa6a6c39bccef0a55fe2e1027eeb60a6132e8480473b2f4",
+    "governed_r4_harnessbench": {
+      "docs_manifest": "b6fed104bc564976d07afbb652c015b794866602c2d82183d0eb8b96737d31d2",
+      "feature_consensus": "0bd7ae69e3f0731e74d154d1f1464b58d32b732e761347a2efbfb802ecf84348",
+      "leaderboard_scores": "9ec6627148bcee70a0894b1c9640500c71817bba3595b6473620809b6876b218"
+    },
+    "harness_docs_combined_sha256": "b6fed104bc564976d07afbb652c015b794866602c2d82183d0eb8b96737d31d2",
+    "harness_docs_sha256": {
+      "codex.txt": "4d4014aa4e7ff68e9c40cd9a2b2603fa14a1f5aafd69fcd404559c5ff1a39d44",
+      "hermes.txt": "a49bd68948bce5924456be01031791f549d184812e0083db4610986139732e75",
+      "moltis.txt": "5803bf9a92d67a6f16287e673251d419b8b242505ae19879641dc93a43d9901e",
+      "nanobot.txt": "691e344642b106d9f888df2a7497f3ef599301b28c9fbe1474883f35e584b856",
+      "nullclaw.txt": "b559c0391cc9b51ec95e3d12499aa1a061216572670a0d1622861815ede44810",
+      "openclaw.txt": "1915392d15802f2d1a06524378333618d83a4491e63b3c64b88edc037cb68999",
+      "zeroclaw.txt": "91f9d805beac2929fd35d793fab74dab2a28a879353ef70e104a29fc579ce739"
+    },
+    "harness_feature_consensus_sha256": "0bd7ae69e3f0731e74d154d1f1464b58d32b732e761347a2efbfb802ecf84348",
+    "harnessbench_leaderboard_scores_sha256": "9ec6627148bcee70a0894b1c9640500c71817bba3595b6473620809b6876b218",
+    "vericontest_hf_manifest_sha256": "a46dfb0caca91cbc0997e53b9bc6f61c2134b764f264791ecf00f05be022b578"
+  },
+  "upstreams": {
+    "adele": {
+      "commit": "a93722320b5c46a371ef94c60c4333def37bbd57",
+      "license": "code MIT; dataset CC BY-SA 4.0",
+      "url": "https://github.com/Kinds-of-Intelligence-CFI/ADeLe-AIEvaluation.git"
+    },
+    "agent_psychometrics": {
+      "commit": "1c34d34a0ee82c92b1c63deb834495c5440bd362",
+      "url": "https://github.com/dariakryvosheieva/agent-psychometrics.git"
+    },
+    "harness_docs": {
+      "codex": {
+        "commit": "e72da2b53805894878023d01949a25a082e0a5cb",
+        "url": "https://github.com/openai/codex.git"
+      },
+      "hermes": {
+        "commit": "036cbdfa0a3158454a0a2a7a7388cf70353326b4",
+        "url": "https://github.com/hermes-agent-org/hermes.git"
+      },
+      "moltis": {
+        "commit": "1f6d28ea750d6654d52d5899b8be67727ebf7a19",
+        "url": "https://github.com/moltis-org/moltis.git"
+      },
+      "nanobot": {
+        "commit": "f62e0da9f6ac7a02fdd056bb2c19c58365952956",
+        "url": "https://github.com/HKUDS/nanobot.git"
+      },
+      "nullclaw": {
+        "commit": "f154dad5c4830543ed57da23cde8c57aaefe13eb",
+        "url": "https://github.com/nullclaw/nullclaw.git"
+      },
+      "openclaw": {
+        "commit": "785fdcaa54574186236343ccf3f98680083bf459",
+        "url": "https://github.com/openclaw/openclaw.git"
+      },
+      "zeroclaw": {
+        "commit": "7374ac7353d3228f8c7bdd1cae6b81a4d50b9d2e",
+        "url": "https://github.com/zeroclaw-labs/zeroclaw.git"
+      }
+    },
+    "harnessbench": {
+      "commit": "1025086a446653702b80cfb48babbeec35db6b2c",
+      "license": "no LICENSE file found in inspected checkout; source data not redistributed here",
+      "url": "https://github.com/Qihoo360/harness-bench.git"
+    },
+    "tocs": {
+      "commit": "e617928f612c839c4b40debb875249472ab4d765",
+      "url": "https://github.com/che-shr-cat/tocs.git"
+    },
+    "vericontest": {
+      "commit": "b9657edf33b68dbd4992b501967730b30883a04e",
+      "license": "Apache-2.0",
+      "url": "https://github.com/HIPREL-Group/VeriContest.git"
+    }
+  }
+}

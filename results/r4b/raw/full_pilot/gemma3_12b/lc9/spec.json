@@ -1,0 +1,5 @@
+{
+  "response": "impl Solution {\n    pub fn is_palindrome(x: i32) -> bool {\n        if x < 0 {\n            return false;\n        }\n\n        let mut reversed = 0;\n        let mut original = x;\n\n        while original > 0 {\n            let digit = original % 10;\n            original /= 10;\n\n            if reversed > i32::MAX / 10 || reversed > i32::MAX - digit {\n                return false;\n            }\n\n            reversed = reversed * 10 + digit;\n        }\n\n        reversed == x\n    }\n}\n",
+  "impl": "impl Solution {\n    pub fn is_palindrome(x: i32) -> bool {\n        if x < 0 {\n            return false;\n        }\n\n        let mut reversed = 0;\n        let mut original = x;\n\n        while original > 0 {\n            let digit = original % 10;\n            original /= 10;\n\n            if reversed > i32::MAX / 10 || reversed > i32::MAX - digit {\n                return false;\n            }\n\n            reversed = reversed * 10 + digit;\n        }\n\n        reversed == x\n    }\n}",
+  "source_record_sha256": "beb82259cd2bf7d57fc6122a9ac68d331401a4741d7e74def1cb9e3d65641b47"
+}

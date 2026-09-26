@@ -1,0 +1,553 @@
+{
+  "analysis": "CDE submission-readiness generic text control",
+  "benchmark_identity_check": {
+    "encoding": "OneHotEncoder(handle_unknown='ignore'); unseen held-out benchmark maps to the all-zero benchmark block",
+    "n_folds_benchmark_unseen_in_training": 7,
+    "n_folds_total": 63
+  },
+  "comparisons": {
+    "demand_increment_over_response": {
+      "ci_2p5_50_97p5": [
+        0.0034402529387516207,
+        0.006254948926198962,
+        0.00913293552176092
+      ],
+      "delta_ll_lhs_minus_rhs": 0.006199955010174614,
+      "lhs": "response",
+      "n_boot": 1000,
+      "relative_ll_reduction_of_rhs_vs_lhs": 0.017383681885046194,
+      "rhs": "demand",
+      "seed": 20260926
+    },
+    "demand_increment_over_text": {
+      "ci_2p5_50_97p5": [
+        -0.00011513970682593037,
+        0.001567158387432534,
+        0.0029392751664045736
+      ],
+      "delta_ll_lhs_minus_rhs": 0.001476346779221252,
+      "lhs": "text",
+      "n_boot": 1000,
+      "relative_ll_reduction_of_rhs_vs_lhs": 0.004202121957853748,
+      "rhs": "text_demand",
+      "seed": 20260926
+    },
+    "demand_vs_text": {
+      "ci_2p5_50_97p5": [
+        -0.0007918062703548618,
+        0.000964857047912797,
+        0.002368886558950359
+      ],
+      "delta_ll_lhs_minus_rhs": 0.0008798578862381129,
+      "lhs": "text",
+      "n_boot": 1000,
+      "relative_ll_reduction_of_rhs_vs_lhs": 0.002504337189330414,
+      "rhs": "demand",
+      "seed": 20260926
+    },
+    "text_increment_over_demand": {
+      "ci_2p5_50_97p5": [
+        2.315672464950603e-05,
+        0.0005993645071346673,
+        0.0012288965463635307
+      ],
+      "delta_ll_lhs_minus_rhs": 0.0005964888929831384,
+      "lhs": "demand",
+      "n_boot": 1000,
+      "relative_ll_reduction_of_rhs_vs_lhs": 0.001702047268796578,
+      "rhs": "text_demand",
+      "seed": 20260926
+    },
+    "text_increment_over_response": {
+      "ci_2p5_50_97p5": [
+        0.0033752445892118875,
+        0.0052718635957579325,
+        0.008052132810554126
+      ],
+      "delta_ll_lhs_minus_rhs": 0.0053200971239365,
+      "lhs": "response",
+      "n_boot": 1000,
+      "relative_ll_reduction_of_rhs_vs_lhs": 0.01491670114513567,
+      "rhs": "text",
+      "seed": 20260926
+    }
+  },
+  "fold_metadata": [
+    {
+      "benchmark": "Math",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 69,
+      "task": "AMPS_Hard",
+      "text_pca_explained_variance": 0.4927477538585663
+    },
+    {
+      "benchmark": "GRE & GMAT",
+      "benchmark_seen_in_training": false,
+      "n_test_items": 203,
+      "task": "AQuA-RAT",
+      "text_pca_explained_variance": 0.4930488169193268
+    },
+    {
+      "benchmark": "OmniMath",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 337,
+      "task": "Algebra",
+      "text_pca_explained_variance": 0.49487680196762085
+    },
+    {
+      "benchmark": "OmniMath",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 302,
+      "task": "Applied Mathematics",
+      "text_pca_explained_variance": 0.4945566952228546
+    },
+    {
+      "benchmark": "OmniMath",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 30,
+      "task": "Calculus",
+      "text_pca_explained_variance": 0.4917766749858856
+    },
+    {
+      "benchmark": "SciBench",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 142,
+      "task": "Chemistry",
+      "text_pca_explained_variance": 0.4923965632915497
+    },
+    {
+      "benchmark": "Date Arithmetic",
+      "benchmark_seen_in_training": false,
+      "n_test_items": 493,
+      "task": "Date Arithmetic",
+      "text_pca_explained_variance": 0.48558634519577026
+    },
+    {
+      "benchmark": "OmniMath",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 314,
+      "task": "Discrete Mathematics",
+      "text_pca_explained_variance": 0.49389100074768066
+    },
+    {
+      "benchmark": "TruthQuest",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 344,
+      "task": "E",
+      "text_pca_explained_variance": 0.4828244149684906
+    },
+    {
+      "benchmark": "OmniMath",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 329,
+      "task": "Geometry",
+      "text_pca_explained_variance": 0.4943360686302185
+    },
+    {
+      "benchmark": "TruthQuest",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 371,
+      "task": "I",
+      "text_pca_explained_variance": 0.482040137052536
+    },
+    {
+      "benchmark": "LSAT",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 187,
+      "task": "LSAT-AR",
+      "text_pca_explained_variance": 0.4941607713699341
+    },
+    {
+      "benchmark": "LSAT",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 470,
+      "task": "LSAT-LR",
+      "text_pca_explained_variance": 0.49541518092155457
+    },
+    {
+      "benchmark": "LSAT",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 253,
+      "task": "LSAT-RC",
+      "text_pca_explained_variance": 0.49488767981529236
+    },
+    {
+      "benchmark": "Civil Service Examination",
+      "benchmark_seen_in_training": false,
+      "n_test_items": 408,
+      "task": "LogiQA-en",
+      "text_pca_explained_variance": 0.4960521459579468
+    },
+    {
+      "benchmark": "MCTACO",
+      "benchmark_seen_in_training": false,
+      "n_test_items": 205,
+      "task": "MCTACO",
+      "text_pca_explained_variance": 0.49393564462661743
+    },
+    {
+      "benchmark": "SciBench",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 105,
+      "task": "Math",
+      "text_pca_explained_variance": 0.49259334802627563
+    },
+    {
+      "benchmark": "MenatQA",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 130,
+      "task": "MenatQA-Counterfactual",
+      "text_pca_explained_variance": 0.49031248688697815
+    },
+    {
+      "benchmark": "MenatQA",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 157,
+      "task": "MenatQA-Order",
+      "text_pca_explained_variance": 0.4899868965148926
+    },
+    {
+      "benchmark": "MenatQA",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 393,
+      "task": "MenatQA-Scope",
+      "text_pca_explained_variance": 0.48826664686203003
+    },
+    {
+      "benchmark": "OmniMath",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 322,
+      "task": "Number Theory",
+      "text_pca_explained_variance": 0.49379703402519226
+    },
+    {
+      "benchmark": "SciBench",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 108,
+      "task": "Physics",
+      "text_pca_explained_variance": 0.4923303425312042
+    },
+    {
+      "benchmark": "OmniMath",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 30,
+      "task": "Precalculus",
+      "text_pca_explained_variance": 0.4917411804199219
+    },
+    {
+      "benchmark": "TruthQuest",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 340,
+      "task": "S",
+      "text_pca_explained_variance": 0.4830603003501892
+    },
+    {
+      "benchmark": "SAT",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 196,
+      "task": "SAT-En",
+      "text_pca_explained_variance": 0.4942340552806854
+    },
+    {
+      "benchmark": "SAT",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 214,
+      "task": "SAT-Math",
+      "text_pca_explained_variance": 0.49370792508125305
+    },
+    {
+      "benchmark": "TempReason",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 318,
+      "task": "TempReason-L2",
+      "text_pca_explained_variance": 0.49077704548835754
+    },
+    {
+      "benchmark": "TempReason",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 339,
+      "task": "TempReason-L3",
+      "text_pca_explained_variance": 0.4909322261810303
+    },
+    {
+      "benchmark": "TimeDial",
+      "benchmark_seen_in_training": false,
+      "n_test_items": 340,
+      "task": "TimeDial",
+      "text_pca_explained_variance": 0.4916216731071472
+    },
+    {
+      "benchmark": "TimeQA",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 379,
+      "task": "TimeQA-explicit",
+      "text_pca_explained_variance": 0.48976245522499084
+    },
+    {
+      "benchmark": "TimeQA",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 348,
+      "task": "TimeQA-implicit",
+      "text_pca_explained_variance": 0.48993566632270813
+    },
+    {
+      "benchmark": "MMLU-Pro",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 447,
+      "task": "biology",
+      "text_pca_explained_variance": 0.49588248133659363
+    },
+    {
+      "benchmark": "MMLU-Pro",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 410,
+      "task": "business",
+      "text_pca_explained_variance": 0.49388012290000916
+    },
+    {
+      "benchmark": "MMLU-Pro",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 368,
+      "task": "chemistry",
+      "text_pca_explained_variance": 0.49359479546546936
+    },
+    {
+      "benchmark": "MMLU-Pro",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 345,
+      "task": "computer science",
+      "text_pca_explained_variance": 0.4967328906059265
+    },
+    {
+      "benchmark": "Language",
+      "benchmark_seen_in_training": false,
+      "n_test_items": 29,
+      "task": "connections",
+      "text_pca_explained_variance": 0.4920121729373932
+    },
+    {
+      "benchmark": "Data Analysis",
+      "benchmark_seen_in_training": false,
+      "n_test_items": 33,
+      "task": "cta",
+      "text_pca_explained_variance": 0.49241527915000916
+    },
+    {
+      "benchmark": "MedCalcBench",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 27,
+      "task": "date",
+      "text_pca_explained_variance": 0.4916037619113922
+    },
+    {
+      "benchmark": "MedCalcBench",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 14,
+      "task": "diagnosis",
+      "text_pca_explained_variance": 0.491362065076828
+    },
+    {
+      "benchmark": "MedCalcBench",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 20,
+      "task": "dosage",
+      "text_pca_explained_variance": 0.49166518449783325
+    },
+    {
+      "benchmark": "MMLU-Pro",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 428,
+      "task": "economics",
+      "text_pca_explained_variance": 0.49459442496299744
+    },
+    {
+      "benchmark": "MMLU-Pro",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 296,
+      "task": "engineering",
+      "text_pca_explained_variance": 0.4942190945148468
+    },
+    {
+      "benchmark": "MMLU-Pro",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 411,
+      "task": "health",
+      "text_pca_explained_variance": 0.49499601125717163
+    },
+    {
+      "benchmark": "MMLU-Pro",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 304,
+      "task": "history",
+      "text_pca_explained_variance": 0.493884414434433
+    },
+    {
+      "benchmark": "MedCalcBench",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 180,
+      "task": "lab",
+      "text_pca_explained_variance": 0.4903496503829956
+    },
+    {
+      "benchmark": "MMLU-Pro",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 362,
+      "task": "law",
+      "text_pca_explained_variance": 0.4942726194858551
+    },
+    {
+      "benchmark": "MMLU-Pro",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 425,
+      "task": "math",
+      "text_pca_explained_variance": 0.4955625832080841
+    },
+    {
+      "benchmark": "Math",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 78,
+      "task": "math_comp",
+      "text_pca_explained_variance": 0.49241265654563904
+    },
+    {
+      "benchmark": "ChemLLMBench",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 160,
+      "task": "molecule_captioning",
+      "text_pca_explained_variance": 0.48970696330070496
+    },
+    {
+      "benchmark": "ChemLLMBench",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 295,
+      "task": "molecule_design",
+      "text_pca_explained_variance": 0.4901893734931946
+    },
+    {
+      "benchmark": "ChemLLMBench",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 476,
+      "task": "name_prediction",
+      "text_pca_explained_variance": 0.48568153381347656
+    },
+    {
+      "benchmark": "Math",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 26,
+      "task": "olympiad",
+      "text_pca_explained_variance": 0.49185818433761597
+    },
+    {
+      "benchmark": "MMLU-Pro",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 429,
+      "task": "other",
+      "text_pca_explained_variance": 0.4960314929485321
+    },
+    {
+      "benchmark": "MMLU-Pro",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 402,
+      "task": "philosophy",
+      "text_pca_explained_variance": 0.49480387568473816
+    },
+    {
+      "benchmark": "MedCalcBench",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 214,
+      "task": "physical",
+      "text_pca_explained_variance": 0.49154895544052124
+    },
+    {
+      "benchmark": "MMLU-Pro",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 377,
+      "task": "physics",
+      "text_pca_explained_variance": 0.4946531653404236
+    },
+    {
+      "benchmark": "MMLU-Pro",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 427,
+      "task": "psychology",
+      "text_pca_explained_variance": 0.49564024806022644
+    },
+    {
+      "benchmark": "ChemLLMBench",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 412,
+      "task": "reaction_prediction",
+      "text_pca_explained_variance": 0.48327961564064026
+    },
+    {
+      "benchmark": "ChemLLMBench",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 380,
+      "task": "retrosynthesis",
+      "text_pca_explained_variance": 0.48495373129844666
+    },
+    {
+      "benchmark": "MedCalcBench",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 84,
+      "task": "risk",
+      "text_pca_explained_variance": 0.4910014569759369
+    },
+    {
+      "benchmark": "MedCalcBench",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 17,
+      "task": "severity",
+      "text_pca_explained_variance": 0.49137943983078003
+    },
+    {
+      "benchmark": "Reasoning",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 34,
+      "task": "spatial",
+      "text_pca_explained_variance": 0.4918348491191864
+    },
+    {
+      "benchmark": "Reasoning",
+      "benchmark_seen_in_training": true,
+      "n_test_items": 22,
+      "task": "zebra_puzzle",
+      "text_pca_explained_variance": 0.49182677268981934
+    }
+  ],
+  "metrics": {
+    "demand": {
+      "brier": 0.11038466145222213,
+      "log_loss": 0.35045377641296777
+    },
+    "response": {
+      "brier": 0.1125421461554928,
+      "log_loss": 0.35665373142314255
+    },
+    "text": {
+      "brier": 0.11076399617394946,
+      "log_loss": 0.35133363429920594
+    },
+    "text_demand": {
+      "brier": 0.11023939444466943,
+      "log_loss": 0.34985728751998457
+    }
+  },
+  "model": "L2 logistic regression, C=1, liblinear, same response-profile and benchmark features in every arm",
+  "n_items": 16108,
+  "n_models": 15,
+  "n_task_families": 63,
+  "primary_interpretation_rule": "Demand-specific signal beyond generic text is supported only if LL(text)-LL(text+demand) has a 95% task-family bootstrap CI entirely >0. Direct demand-vs-text performance is reported separately.",
+  "status": "supplementary reviewer control; exact analysis frozen before text-control outcomes were run",
+  "text_representation": {
+    "architecture": "nomic-bert",
+    "embedding_model": "nomic-embed-text:latest",
+    "ollama_model_id": "0a109f422b47",
+    "parameters": "137M",
+    "quantization": "F16",
+    "raw_embedding_dims": 768,
+    "reduced_dims": 18,
+    "reduction": "PCA fitted within each leave-one-task-family-out training fold; held-out text is transform-only",
+    "source": "ADeLe item `question` field only"
+  }
+}

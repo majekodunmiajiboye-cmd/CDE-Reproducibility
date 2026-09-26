@@ -1,0 +1,61 @@
+{
+  "coder": "Claude Opus 5.5 (claude-opus-5-5) via Claude Agent SDK",
+  "harnesses": {
+    "codex": {
+      "observability": {"score": 1, "confidence": "medium", "evidence": "codex.txt: the adapter runs `codex exec` and its trace only records 'command_execution' items mapped to a 'shell' tool; the supplied text documents no structured search or browser tools."},
+      "action_granularity": {"score": 1, "confidence": "low", "evidence": "codex.txt: the session parser handles generic 'function_call' items, but the exec-JSON fallback reduces all actions to 'shell'; no fine-grained edit or search tool list is supplied."},
+      "context_state_management": {"score": 1, "confidence": "low", "evidence": "codex.txt: the adapter reads persisted session JSONL files under 'sessions' and tracks token counts; no compaction or summarisation is documented in the supplied text."},
+      "verification": {"score": 1, "confidence": "medium", "evidence": "codex.txt: in 'workspace-write' sandbox mode the model can run commands and see 'exit_code' and 'aggregated_output', but there is no built-in check workflow."},
+      "recoverability": {"score": 1, "confidence": "low", "evidence": "codex.txt: session JSONL files are persisted in CODEX_HOME, but the one-shot `exec` invocation never resumes them and no checkpoint or rollback is documented."},
+      "decomposition_control": {"score": 0, "confidence": "low", "evidence": "codex.txt: the supplied adapter and README describe no planning, task-list or subagent mechanism for the `exec` invocation."}
+    },
+    "hermes": {
+      "observability": {"score": 2, "confidence": "medium", "evidence": "hermes.txt: the default 'hermes-cli' toolset ('all 38 tools') includes 'read_file', ripgrep-backed 'search_files' and 'browser_snapshot'/'browser_console'."},
+      "action_granularity": {"score": 2, "confidence": "high", "evidence": "hermes.txt: the 'file' toolset bundles read_file, write_file, patch and search_files, and the terminal tool says to use them instead of cat or grep."},
+      "context_state_management": {"score": 1, "confidence": "medium", "evidence": "hermes.txt: the adapter persists 'last_session_id.txt' and resumes with '--resume', and memory/session search exist, but compaction is only a manual '/compress' command."},
+      "verification": {"score": 1, "confidence": "low", "evidence": "hermes.txt: 'patch' says it 'Auto-runs syntax checks after editing', which is a narrow check; otherwise the model verifies manually through 'terminal'."},
+      "recoverability": {"score": 1, "confidence": "medium", "evidence": "hermes.txt: the adapter resumes sessions with '--resume' or '-c', and '/retry' and '/undo' exist; no file checkpoint or rollback is documented."},
+      "decomposition_control": {"score": 2, "confidence": "medium", "evidence": "hermes.txt: the default 'hermes-cli' toolset includes the 'todo' task list ('for complex tasks with 3+ steps') and 'delegate_task' for spawning subagents."}
+    },
+    "moltis-local": {
+      "observability": {"score": 1, "confidence": "low", "evidence": "moltis.txt: the README lists sandboxed exec and 'browser automation', but the `moltis agent` invocation has no documented structured read or search tools and browser use is not shown to be active."},
+      "action_granularity": {"score": 2, "confidence": "low", "evidence": "moltis.txt: commands.md names structured 'Write', 'Edit' and 'MultiEdit' tool calls alongside exec and 'parallel tool execution'."},
+      "context_state_management": {"score": 2, "confidence": "medium", "evidence": "moltis.txt: the README describes 'session persistence with auto-compaction' and memory-surfaces.md a 'session_state' table; the adapter passes '--session-id'."},
+      "verification": {"score": 1, "confidence": "medium", "evidence": "moltis.txt: only sandboxed command execution is available for manual checks; there is no dedicated verification workflow."},
+      "recoverability": {"score": 1, "confidence": "low", "evidence": "moltis.txt: 'Before every Write, Edit, or MultiEdit' files are snapshotted, but restoring is an operator '/rollback' command, which a one-shot run is unlikely to use."},
+      "decomposition_control": {"score": 1, "confidence": "low", "evidence": "moltis.txt: the README mentions 'sub-agent delegation' via 'spawn_agent' and modes.md has a 'plan' mode, but the adapter does not show either being active."}
+    },
+    "nanobot": {
+      "observability": {"score": 1, "confidence": "medium", "evidence": "nanobot.txt: the README lists tools 'such as files, shell, web search, web fetch'; the rich inspection it describes (diffs, '/context') lives in the WebUI/TUI, not the `nanobot agent` invocation."},
+      "action_granularity": {"score": 1, "confidence": "low", "evidence": "nanobot.txt: 'built-in file, shell, web' tools and a 'read_file' reference suggest mixed structure, but no full fine-grained tool list is supplied."},
+      "context_state_management": {"score": 2, "confidence": "medium", "evidence": "nanobot.txt: cli-reference.md describes 'the compacted summary and raw session suffix available to the next agent turn' plus session JSONL files, and the adapter passes '--session'."},
+      "verification": {"score": 1, "confidence": "medium", "evidence": "nanobot.txt: the 'exec' shell tool allows manual command or test runs; no built-in check workflow is documented."},
+      "recoverability": {"score": 1, "confidence": "medium", "evidence": "nanobot.txt: '--session selects a specific existing session' and the README notes 'durable history and recovery'; no checkpoint or rollback of work is documented."},
+      "decomposition_control": {"score": 1, "confidence": "low", "evidence": "nanobot.txt: 'subagent' tools and 'multi-agent delegation' are listed, but no planning or task-list mechanism is documented for the agent invocation."}
+    },
+    "nullclaw": {
+      "observability": {"score": 1, "confidence": "medium", "evidence": "nullclaw.txt: 'shell' and 'file_read' tools give basic inspection; 'browser_open' and 'screenshot' exist, but the adapter's supervised, workspace-only setup makes rich use unlikely."},
+      "action_granularity": {"score": 2, "confidence": "medium", "evidence": "nullclaw.txt: the tools table lists file_read, file_write, file_edit, file_edit_hashed, file_append and git, and the adapter prompt tells the model to switch from shell to 'file_write'/'file_append'."},
+      "context_state_management": {"score": 1, "confidence": "medium", "evidence": "nullclaw.txt: the adapter defaults memory to 'sqlite' with 'auto_save', but no session id is passed on the CLI and no compaction is documented."},
+      "verification": {"score": 1, "confidence": "low", "evidence": "nullclaw.txt: the model can run 'shell', but the adapter warns that redirections, pipes and chained commands may be blocked by policy ('supervised', 'max_actions_per_hour': 20)."},
+      "recoverability": {"score": 0, "confidence": "low", "evidence": "nullclaw.txt: the adapter runs one-shot `agent -m` without session resume and wipes the runtime workspace in '_prepare_internal_workspace'; no checkpoint or rollback is documented."},
+      "decomposition_control": {"score": 0, "confidence": "low", "evidence": "nullclaw.txt: the 'delegate' tool needs named 'agents.list' profiles that the adapter does not configure, and no planning tool is documented."}
+    },
+    "openclaw-local": {
+      "observability": {"score": 1, "confidence": "low", "evidence": "openclaw.txt: tool groups 'group:fs', 'group:runtime' and 'browser' are mentioned only in deny-list examples; the supplied text shows no active rich inspection surface."},
+      "action_granularity": {"score": 1, "confidence": "low", "evidence": "openclaw.txt: filesystem and runtime tool groups exist ('group:fs', 'group:runtime'), but no fine-grained tool list is supplied, and the adapter clears plugin entries."},
+      "context_state_management": {"score": 1, "confidence": "low", "evidence": "openclaw.txt: the adapter passes '--session-id' to the Gateway-managed sessions; the only compaction evidence is a manual '/compact' channel command."},
+      "verification": {"score": 1, "confidence": "low", "evidence": "openclaw.txt: the runtime tool group implies manual command execution; no verification workflow is documented."},
+      "recoverability": {"score": 1, "confidence": "low", "evidence": "openclaw.txt: the Gateway is the 'control plane for sessions' and '--session-id' is supplied; no checkpoint or rollback is documented."},
+      "decomposition_control": {"score": 1, "confidence": "low", "evidence": "openclaw.txt: 'native subagent' thread spawns and 'skills' are mentioned, but not shown to be active in the local `agent --local` invocation."}
+    },
+    "zeroclaw-local": {
+      "observability": {"score": 1, "confidence": "medium", "evidence": "zeroclaw.txt: the README says it 'acts through tools (shell, browser, HTTP...)'; there is no evidence of structured file or search inspection in the one-shot agent run."},
+      "action_granularity": {"score": 1, "confidence": "low", "evidence": "zeroclaw.txt: tools are described coarsely as shell, browser, HTTP and hardware; no fine-grained file-edit or search tools are documented in the supplied text."},
+      "context_state_management": {"score": 1, "confidence": "medium", "evidence": "zeroclaw.txt: the adapter passes '--session-state-file' and service.md says session state is written to SQLite; 'context_compression' appears only as a config key in portability.md."},
+      "verification": {"score": 1, "confidence": "low", "evidence": "zeroclaw.txt: the shell tool allows manual checks, but default autonomy is 'supervised' ('medium-risk ops require approval'), which may limit it; no check workflow."},
+      "recoverability": {"score": 1, "confidence": "medium", "evidence": "zeroclaw.txt: the per-session '--session-state-file' and incremental SQLite writes ('does not corrupt already-committed memory') support persistence; no file rollback is documented."},
+      "decomposition_control": {"score": 0, "confidence": "low", "evidence": "zeroclaw.txt: 'delegates' need sibling agents and the 'SOP engine' is event-triggered; neither is configured by the adapter."}
+    }
+  }
+}

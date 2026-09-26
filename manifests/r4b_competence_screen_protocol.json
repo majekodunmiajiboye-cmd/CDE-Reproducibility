@@ -1,0 +1,44 @@
+{
+  "arms": [
+    "nl",
+    "spec",
+    "both"
+  ],
+  "frozen_before_model_outcomes": true,
+  "inference": {
+    "num_ctx": 32768,
+    "num_predict": 4096,
+    "one_shot": true,
+    "repair_rounds": 0,
+    "seed": 20260926,
+    "temperature": 0.0
+  },
+  "interpretation_guard": "Do not infer D\u00d7E, choose a pair, or inspect confirmation outcomes from this six-task screen. It exists only to detect floor/ceiling and pipeline failure cheaply.",
+  "judge_preflight_sha256": "963fd3151e34113352b9f639f6e87c5215909883c2563be55763cd01f2c60bd6",
+  "models": [
+    "devstral-small-2:24b-instruct-2512-q4_K_M",
+    "gpt-oss:20b",
+    "gemma3:12b"
+  ],
+  "per_model_technical_gate": {
+    "compile_ok_min_of_18": 12,
+    "impl_extracted_min_of_18": 15,
+    "semantic_success_max_of_18": 17,
+    "semantic_success_min_of_18": 1
+  },
+  "pilot_script_sha256": "49f8fea1ae452d55cd15feb99fd4907801d2bde389b4af76e6b243346a7565bb",
+  "pool_gate": "Proceed to the full 24-task local pair-selection pilot only if at least two of the three local models pass the per-model technical gate. Otherwise local models are an inadequate competence range and stronger/API models are required.",
+  "primary_screen_outcome": "semantic success on every packaged positive testcase for the task; compile failure or any wrong case is failure",
+  "purpose": "R4b local-model infrastructure/competence screen only; not scientific evidence and not model-pair selection",
+  "task_feature_manifest_sha256": "00ad3cc27f691c355299dc38a1350933ae1225d13b22a8233d7de793d1f0fe52",
+  "task_manifest_sha256": "4f94a1089a5ae5c6109a7ed5af2906082b556875dc5e72bbbb2bd5f276b9c7c6",
+  "task_rationale": "Outcome-blind subset of the already frozen pilot spanning both sources and public difficulty strata: CF <=1000 and 1500-1800; LC Easy, Medium, Hard.",
+  "tasks": [
+    "cf266A",
+    "cf467C",
+    "lc674",
+    "lc33",
+    "lc1563",
+    "lc845"
+  ]
+}

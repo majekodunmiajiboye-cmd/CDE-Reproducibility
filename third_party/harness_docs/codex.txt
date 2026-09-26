@@ -1,0 +1,770 @@
+# codex
+## HarnessBench adapter
+from __future__ import annotations
+
+import os
+import json
+import shutil
+import subprocess
+import sys
+import threading
+from pathlib import Path
+from typing import Any, TextIO
+
+from harnessbench.adapters.base import BaseAdapter
+from harnessbench.models import AdapterRunContext, AdapterRunResult
+
+
+def _project_root() -> Path:
+    return Path(__file__).resolve().parents[3]
+
+
+def _resolve_project_path(raw: str | Path) -> Path:
+    p = Path(os.path.expanduser(str(raw)))
+    if not p.is_absolute():
+        p = _project_root() / p
+    return p.resolve()
+
+
+def _copy_if_exists(src: Path, dst: Path) -> None:
+    if not src.exists():
+        return
+    dst.parent.mkdir(parents=True, exist_ok=True)
+    if src.is_dir():
+        shutil.copytree(src, dst, dirs_exist_ok=True)
+    else:
+        shutil.copy2(src, dst)
+
+
+def _sync_minimal_codex_state(source_config: Path, target_home: Path) -> None:
+    source_home = source_config.resolve().parent
+    _copy_if_exists(source_config, target_home / "config.toml")
+    for name in ("auth.json", "credentials.json", "organization.json"):
+        _copy_if_exists(source_home / name, target_home / name)
+    _copy_if_exists(source_home / "mcp", target_home / "mcp")
+
+
+def _toml_string(value: str) -> str:
+    return json.dumps(value, ensure_ascii=False)
+
+
+def _set_top_level_toml_string(path: Path, key: str, value: str) -> None:
+    if not path.is_file() or not value:
+        return
+    lines = path.read_text(encoding="utf-8", errors="replace").splitlines()
+    target_prefix = f"{key} ="
+    section_index = next((i for i, line in enumerate(lines) if line.lstrip().startswith("[")), len(lines))
+    replacement = f"{key} = {_toml_string(value)}"
+    for i, line in enumerate(lines[:section_index]):
+        stripped = line.strip()
+        if stripped.startswith(target_prefix):
+            lines[i] = replacement
+            path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+            return
+    lines.insert(section_index, replacement)
+    path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
+def _reasoning_effort_from_overrides(items: Any) -> str:
+    for item in items or []:
+        text = str(item).strip()
+        if not text.startswith("model_reasoning_effort="):
+            continue
+        raw = text.split("=", 1)[1].strip()
+        try:
+            parsed = json.loads(raw)
+        except json.JSONDecodeError:
+            parsed = raw.strip('"')
+        return str(parsed).strip()
+    return ""
+
+
+def _latest_codex_session_file(codex_home: Path) -> Path | None:
+    sessions_dir = codex_home / "sessions"
+    if not sessions_dir.is_dir():
+        return None
+    files = sorted(
+        sessions_dir.rglob("*.jsonl"),
+        key=lambda p: p.stat().st_mtime,
+        reverse=True,
+    )
+    return files[0] if files else None
+
+
+def _codex_content_to_text(content: Any) -> str:
+    if content is None:
+        return ""
+    if isinstance(content, str):
+        return content
+    if isinstance(content, list):
+        parts: list[str] = []
+        for item in content:
+            if isinstance(item, dict):
+                text = item.get("text")
+                if isinstance(text, str):
+                    parts.append(text)
+            elif isinstance(item, str):
+                parts.append(item)
+        return "\n".join(parts)
+    return str(content)
+
+
+def _parse_arguments(raw: Any) -> Any:
+    if isinstance(raw, str):
+        try:
+            return json.loads(raw)
+        except json.JSONDecodeError:
+            return raw
+    return raw
+
+
+def _synthetic_tool_calls(tool_calls: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    out: list[dict[str, Any]] = []
+    for item in tool_calls:
+        args = item.get("arguments", "")
+        if not isinstance(args, str):
+            args = json.dumps(args, ensure_ascii=False)
+        out.append(
+            {
+                "id": item.get("id") or item.get("call_id") or "",
+                "type": "function",
+                "function": {
+                    "name": str(item.get("name") or ""),
+                    "arguments": args,
+                },
+            }
+        )
+    return out
+
+
+def _write_codex_session_as_proxy_trace(
+    *,
+    session_file: Path,
+    proxy_dir: Path,
+    task_id: str,
+    session_id: str,
+    model_id: str,
+    response_model: str,
+) -> dict[str, Any]:
+    responses_dir = proxy_dir / "responses"
+    responses_dir.mkdir(parents=True, exist_ok=True)
+    requests_log = proxy_dir / "requests.jsonl"
+
+    conversation: list[dict[str, str]] = []
+    request_snapshot: list[dict[str, str]] | None = None
+    assistant_parts: list[str] = []
+    tool_calls: list[dict[str, Any]] = []
+    response_count = 0
+    last_usage: dict[str, int] = {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0,
+        "total_tokens": 0,
+    }
+    usage_rows: list[str] = []
+
+    def start_assistant_group() -> None:
+        nonlocal request_snapshot
+        if request_snapshot is None:
+            request_snapshot = [dict(m) for m in conversation]
+
+    def flush_assistant_group() -> None:
+        nonlocal request_snapshot, assistant_parts, tool_calls, response_count
+        if request_snapshot is None:
+            return
+        assistant_text = "\n".join(part for part in assistant_parts if part).strip()
+        if not assistant_text and not tool_calls:
+            request_snapshot = None
+            assistant_parts = []
+            tool_calls = []
+            return
+
+        response_count += 1
+        response_path = responses_dir / f"codex-{response_count:04d}.json"
+        synthetic_tcs = _synthetic_tool_calls(tool_calls)
+        raw_record = {
+            "task_id": task_id,
+            "session_id": session_id,
+            "model_id": model_id,
+            "framework": "codex",
+            "provider": "codex-session",
+            "request_body": json.dumps({"messages": request_snapshot}, ensure_ascii=False),
+            "response_json": {
+                "model": response_model,
+                "choices": [
+                    {
+                        "message": {
+                            "role": "assistant",
+                            "content": assistant_text,
+                            "tool_calls": synthetic_tcs,
+                        }
+                    }
+                ],
+            },
+            "source_session_file": str(session_file),
+        }
+        response_path.write_text(json.dumps(raw_record, ensure_ascii=False, indent=2), encoding="utf-8")
+        usage_row = {
+            "task_id": task_id,
+            "session_id": session_id,
+            "model_id": model_id,
+            "framework": "codex",
+            "provider": "codex-session",
+            "raw_response_file": str(response_path),
+            "input_tokens": last_usage["input_tokens"],
+            "output_tokens": last_usage["output_tokens"],
+            "cache_read_tokens": last_usage["cache_read_tokens"],
+            "cache_write_tokens": last_usage["cache_write_tokens"],
+            "total_tokens": last_usage["total_tokens"],
+            "response_model": response_model,
+        }
+        usage_rows.append(json.dumps(usage_row, ensure_ascii=False))
+
+        conversation.append({"role": "assistant", "content": assistant_text})
+        request_snapshot = None
+        assistant_parts = []
+        tool_calls = []
+
+    for line in session_file.read_text(encoding="utf-8", errors="replace").splitlines():
+        if not line.strip():
+            continue
+        try:
+            row = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        payload = row.get("payload")
+        if not isinstance(payload, dict):
+            continue
+        payload_type = str(payload.get("type") or "")
+
+        if row.get("type") == "turn_context":
+            model = str(payload.get("model") or "").strip()
+            if model:
+                response_model = model
+            continue
+
+        if row.get("type") == "event_msg" and payload_type == "token_count":
+            info = payload.get("info")
+            if isinstance(info, dict):
+                usage = info.get("last_token_usage") or info.get("total_token_usage") or {}
+                if isinstance(usage, dict):
+                    last_usage = {
+                        "input_tokens": int(usage.get("input_tokens", 0) or 0),
+                        "output_tokens": int(usage.get("output_tokens", 0) or 0),
+                        "cache_read_tokens": int(usage.get("cached_input_tokens", 0) or 0),
+                        "cache_write_tokens": 0,
+                        "total_tokens": int(usage.get("total_tokens", 0) or 0),
+                    }
+            continue
+
+        if row.get("type") != "response_item":
+            continue
+
+        if payload_type == "message":
+            role = str(payload.get("role") or "")
+            content = _codex_content_to_text(payload.get("content"))
+            if role == "assistant":
+                start_assistant_group()
+                if content:
+                    assistant_parts.append(content)
+            elif role == "user":
+                flush_assistant_group()
+                if content and (not conversation or conversation[-1] != {"role": "user", "content": content}):
+                    conversation.append({"role": "user", "content": content})
+            continue
+
+        if payload_type == "function_call":
+            start_assistant_group()
+            raw_args = payload.get("arguments")
+            tool_calls.append(
+                {
+                    "call_id": str(payload.get("call_id") or ""),
+                    "name": str(payload.get("name") or ""),
+                    "arguments": _parse_arguments(raw_args),
+                }
+            )
+            continue
+
+        if payload_type == "function_call_output":
+            flush_assistant_group()
+            output = _codex_content_to_text(payload.get("output"))
+            if output:
+                item = {"role": "tool", "content": output}
+                call_id = str(payload.get("call_id") or "")
+                if call_id:
+                    item["tool_call_id"] = call_id
+                conversation.append(item)
+
+    flush_assistant_group()
+    if usage_rows:
+        requests_log.write_text("\n".join(usage_rows) + "\n", encoding="utf-8")
+
+    return {
+        "session_file": str(session_file),
+        "proxy_dir": str(proxy_dir),
+        "response_count": response_count,
+        "requests_log": str(requests_log),
+    }
+
+
+def _write_codex_exec_json_as_proxy_trace(
+    *,
+    stdout_text: str,
+    stdout_log_file: Path,
+    proxy_dir: Path,
+    task_id: str,
+    session_id: str,
+    model_id: str,
+    response_model: str,
+    initial_prompt: str,
+) -> dict[str, Any]:
+    responses_dir = proxy_dir / "responses"
+    responses_dir.mkdir(parents=True, exist_ok=True)
+    requests_log = proxy_dir / "requests.jsonl"
+
+    conversation: list[dict[str, str]] = [{"role": "user", "content": initial_prompt}]
+    response_count = 0
+    usage_rows: list[str] = []
+    last_usage: dict[str, int] = {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0,
+        "total_tokens": 0,
+    }
+
+    def write_response(*, assistant_text: str = "", tool_calls: list[dict[str, Any]] | None = None) -> None:
+        nonlocal response_count
+        tool_calls = tool_calls or []
+        if not assistant_text and not tool_calls:
+            return
+        response_count += 1
+        response_path = responses_dir / f"codex-stdout-{response_count:04d}.json"
+        request_snapshot = [dict(m) for m in conversation]
+        raw_record = {
+            "task_id": task_id,
+            "session_id": session_id,
+            "model_id": model_id,
+            "framework": "codex",
+            "provider": "codex-exec-json",
+            "request_body": json.dumps({"messages": request_snapshot}, ensure_ascii=False),
+            "response_json": {
+                "model": response_model,
+                "choices": [
+                    {
+                        "message": {
+                            "role": "assistant",
+                            "content": assistant_text,
+                            "tool_calls": _synthetic_tool_calls(tool_calls),
+                        }
+                    }
+                ],
+            },
+            "source_stdout_log_file": str(stdout_log_file),
+        }
+        response_path.write_text(json.dumps(raw_record, ensure_ascii=False, indent=2), encoding="utf-8")
+        usage_row = {
+            "task_id": task_id,
+            "session_id": session_id,
+            "model_id": model_id,
+            "framework": "codex",
+            "provider": "codex-exec-json",
+            "raw_response_file": str(response_path),
+            "input_tokens": last_usage["input_tokens"],
+            "output_tokens": last_usage["output_tokens"],
+            "cache_read_tokens": last_usage["cache_read_tokens"],
+            "cache_write_tokens": last_usage["cache_write_tokens"],
+            "total_tokens": last_usage["total_tokens"],
+            "response_model": response_model,
+        }
+        usage_rows.append(json.dumps(usage_row, ensure_ascii=False))
+        conversation.append({"role": "assistant", "content": assistant_text})
+
+    for line in stdout_text.splitlines():
+        if not line.strip():
+            continue
+        try:
+            row = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        row_type = str(row.get("type") or "")
+        item = row.get("item")
+        if row_type == "item.completed" and isinstance(item, dict):
+            item_type = str(item.get("type") or "")
+            if item_type == "agent_message":
+                write_response(assistant_text=str(item.get("text") or ""))
+                continue
+            if item_type == "command_execution":
+                command = str(item.get("command") or "")
+                output = str(item.get("aggregated_output") or "")
+                exit_code = item.get("exit_code")
+                status = str(item.get("status") or "")
+                write_response(
+                    tool_calls=[
+                        {
+                            "call_id": str(item.get("id") or ""),
+                            "name": "shell",
+                            "arguments": {
+                                "command": command,
+                                "status": status,
+                                "exit_code": exit_code,
+                            },
+                        }
+                    ]
+                )
+                tool_content = output
+                if exit_code is not None:
+                    tool_content = f"exit_code={exit_code}\n{tool_content}"
+                conversation.append(
+                    {
+                        "role": "tool",
+                        "tool_call_id": str(item.get("id") or ""),
+                        "content": tool_content,
+                    }
+                )
+                continue
+
+        if row_type == "turn.completed":
+            usage = row.get("usage")
+            if isinstance(usage, dict):
+                input_tokens = int(usage.get("input_tokens", 0) or 0)
+                output_tokens = int(usage.get("output_tokens", 0) or 0)
+                cache_read = int(usage.get("cached_input_tokens", 0) or 0)
+                last_usage = {
+                    "input_tokens": input_tokens,
+                    "output_tokens": output_tokens,
+                    "cache_read_tokens": cache_read,
+                    "cache_write_tokens": 0,
+                    "total_tokens": int(usage.get("total_tokens", 0) or input_tokens + output_tokens),
+                }
+
+    if usage_rows:
+        requests_log.write_text("\n".join(usage_rows) + "\n", encoding="utf-8")
+
+    return {
+        "stdout_log_file": str(stdout_log_file),
+        "proxy_dir": str(proxy_dir),
+        "response_count": response_count,
+        "requests_log": str(requests_log),
+    }
+
+
+class CodexAdapter(BaseAdapter):
+    name = "codex"
+
+    def run(self, ctx: AdapterRunContext) -> AdapterRunResult:
+        command = str(ctx.model_config.get("command") or "codex")
+        user_config_raw = str(ctx.model_config.get("user_config") or "~/.codex/config.toml")
+        user_config = _resolve_project_path(user_config_raw)
+        if not user_config.is_file():
+            return AdapterRunResult(ok=False, stderr=f"missing Codex source config: {user_config}")
+
+        isolated_home = ctx.sandbox
+        codex_home = isolated_home / ".codex"
+        codex_home.mkdir(parents=True, exist_ok=True)
+        _sync_minimal_codex_state(user_config, codex_home)
+        model = str(ctx.model_config.get("model") or "").strip()
+        if model:
+            _set_top_level_toml_string(codex_home / "config.toml", "model", model)
+        reasoning_effort = (
+            str(ctx.model_config.get("model_reasoning_effort") or "").strip()
+            or _reasoning_effort_from_overrides(ctx.model_config.get("config_overrides"))
+        )
+        if reasoning_effort:
+            _set_top_level_toml_string(codex_home / "config.toml", "model_reasoning_effort", reasoning_effort)
+
+        last_message_file = ctx.sandbox / "codex-last-message.txt"
+        cmd = [
+            command,
+            "exec",
+            "--cd",
+            str(ctx.workspace),
+            "--skip-git-repo-check",
+            "--sandbox",
+            str(ctx.model_config.get("sandbox") or "workspace-write"),
+            "--output-last-message",
+            str(last_message_file),
+        ]
+        ask_for_approval = str(ctx.model_config.get("ask_for_approval") or "").strip()
+        if ask_for_approval:
+            cmd.extend(["--ask-for-approval", ask_for_approval])
+        if bool(ctx.model_config.get("json", True)):
+            cmd.append("--json")
+        profile = str(ctx.model_config.get("profile") or "").strip()
+        if profile:
+            cmd.extend(["--profile", profile])
+        if model:
+            cmd.extend(["--model", model])
+        for item in ctx.model_config.get("config_overrides") or []:
+            cmd.extend(["--config", str(item)])
+        for item in ctx.model_config.get("extra_args") or []:
+            cmd.append(str(item))
+        cmd.append("-")
+
+        env = os.environ.copy()
+        env.update(ctx.env)
+        env["HOME"] = str(isolated_home)
+        env["CODEX_HOME"] = str(codex_home)
+        env["WORKSPACE"] = str(ctx.workspace)
+        env["HARNESSBENCH_TASK_ID"] = ctx.task.task_id
+        env["HARNESSBENCH_WORKSPACE"] = str(ctx.workspace)
+        env["HARNESSBENCH_SANDBOX"] = str(ctx.sandbox)
+        env["HARNESSBENCH_SESSION_ID"] = ctx.session_id
+        env["HARNESSBENCH_PROMPT_FILE"] = str(ctx.prompt_file)
+        env["HARNESSBENCH_MODEL_ID"] = ctx.model_id
+
+        log_stem = f"codex-{ctx.prompt_file.stem}"
+        stdout_log_file = ctx.sandbox / f"{log_stem}.stdout.jsonl"
+        stderr_log_file = ctx.sandbox / f"{log_stem}.stderr.log"
+        stream_to_console = bool(ctx.model_config.get("stream_to_console", False))
+        print(f"[harnessbench:codex] stdout_log={stdout_log_file}", flush=True)
+        print(f"[harnessbench:codex] stderr_log={stderr_log_file}", flush=True)
+
+        proc = subprocess.Popen(
+            cmd,
+            cwd=str(ctx.workspace),
+            text=True,
+            stdin=subprocess.PIPE,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            env=env,
+            bufsize=1,
+        )
+
+        stdout_chunks: list[str] = []
+        stderr_chunks: list[str] = []
+
+        def _reader(pipe: TextIO | None, sink: list[str], log_file: Path, mirror: TextIO | None = None) -> None:
+            try:
+                assert pipe is not None
+                log_file.parent.mkdir(parents=True, exist_ok=True)
+                with log_file.open("w", encoding="utf-8", buffering=1) as fh:
+                    for line in iter(pipe.readline, ""):
+                        sink.append(line)
+                        fh.write(line)
+                        if mirror is not None:
+                            mirror.write(line)
+                            mirror.flush()
+            finally:
+                if pipe is not None:
+                    pipe.close()
+
+        stdout_thread = threading.Thread(
+            target=_reader,
+            args=(proc.stdout, stdout_chunks, stdout_log_file, sys.stdout if stream_to_console else None),
+            daemon=True,
+        )
+        stderr_thread = threading.Thread(
+            target=_reader,
+            args=(proc.stderr, stderr_chunks, stderr_log_file, sys.stderr if stream_to_console else None),
+            daemon=True,
+        )
+        stdout_thread.start()
+        stderr_thread.start()
+
+        if proc.stdin is not None:
+            try:
+                proc.stdin.write(ctx.prompt)
+                proc.stdin.close()
+            except BrokenPipeError:
+                pass
+
+        timed_out = False
+        try:
+            returncode = proc.wait(timeout=ctx.timeout_sec)
+        except subprocess.TimeoutExpired:
+            timed_out = True
+            proc.kill()
+            returncode = proc.wait()
+
+        stdout_thread.join(timeout=1 if timed_out else None)
+        stderr_thread.join(timeout=1 if timed_out else None)
+        stdout_text = "".join(stdout_chunks)
+        stderr_text = "".join(stderr_chunks)
+        codex_session_file = _latest_codex_session_file(codex_home)
+        synthetic_proxy_trace: dict[str, Any] = {}
+        if codex_session_file is not None:
+            synthetic_proxy_trace = _write_codex_session_as_proxy_trace(
+                session_file=codex_session_file,
+                proxy_dir=ctx.sandbox / "usage-proxy",
+                task_id=ctx.task.task_id,
+                session_id=ctx.session_id,
+                model_id=ctx.model_id,
+                response_model=model or ctx.model_id,
+            )
+        if not synthetic_proxy_trace.get("response_count"):
+            synthetic_proxy_trace = _write_codex_exec_json_as_proxy_trace(
+                stdout_text=stdout_text,
+                stdout_log_file=stdout_log_file,
+                proxy_dir=ctx.sandbox / "usage-proxy",
+                task_id=ctx.task.task_id,
+                session_id=ctx.session_id,
+                model_id=ctx.model_id,
+                response_model=model or ctx.model_id,
+                initial_prompt=ctx.prompt,
+            )
+
+        return AdapterRunResult(
+            ok=returncode == 0,
+            command=cmd,
+            stdout=stdout_text,
+            stderr=stderr_text,
+            metadata={
+                "returncode": returncode,
+                "timed_out": timed_out,
+                "isolated_home": str(isolated_home),
+                "codex_home": str(codex_home),
+                "state_dir": str(codex_home),
+                "source_user_config_path": str(user_config),
+                "codex_config_path": str(codex_home / "config.toml"),
+                "last_message_file": str(last_message_file),
+                "stdout_log_file": str(stdout_log_file),
+                "stderr_log_file": str(stderr_log_file),
+                "codex_session_file": str(codex_session_file) if codex_session_file else "",
+                "synthetic_proxy_trace": synthetic_proxy_trace,
+                "workspace": str(ctx.workspace),
+            },
+        )
+
+## Upstream README
+<p align="center"><strong>Codex CLI</strong> is a coding agent from OpenAI that runs locally on your computer.
+<p align="center">
+  <img src="https://github.com/openai/codex/blob/main/.github/codex-cli-splash.png" alt="Codex CLI splash" width="80%" />
+</p>
+</br>
+If you want Codex in your code editor (VS Code, Cursor, Windsurf), <a href="https://developers.openai.com/codex/ide">install in your IDE.</a>
+</br>If you want the desktop app experience, run <code>codex app</code> or visit <a href="https://chatgpt.com/codex?app-landing-page=true">the Codex App page</a>.
+</br>If you are looking for the <em>cloud-based agent</em> from OpenAI, <strong>Codex Web</strong>, go to <a href="https://chatgpt.com/codex">chatgpt.com/codex</a>.</p>
+
+---
+
+## Quickstart
+
+### Installing and running Codex CLI
+
+Run the following on Mac or Linux to install Codex CLI:
+
+```shell
+curl -fsSL https://chatgpt.com/codex/install.sh | sh
+```
+
+Run the following on Windows to install Codex CLI:
+
+```shell
+powershell -ExecutionPolicy ByPass -c "irm https://chatgpt.com/codex/install.ps1 | iex"
+```
+
+The standalone installers download from `https://releases.openai.com/codex` by default and fall back to GitHub Releases if a metadata or asset download is unavailable. To force GitHub Releases, set `CODEX_INSTALLER_USE_RELEASES_OPENAI_COM` to `false` (`0` and `no` are also accepted):
+
+```shell
+curl -fsSL https://chatgpt.com/codex/install.sh | CODEX_INSTALLER_USE_RELEASES_OPENAI_COM=false sh
+```
+
+```powershell
+$env:CODEX_INSTALLER_USE_RELEASES_OPENAI_COM='false'; irm https://chatgpt.com/codex/install.ps1 | iex
+```
+
+Codex CLI can also be installed via the following package managers:
+
+```shell
+# Install using npm
+npm install -g @openai/codex
+```
+
+```shell
+# Install using Homebrew
+brew install --cask codex
+```
+
+Then simply run `codex` to get started.
+
+<details>
+<summary>You can also go to the <a href="https://github.com/openai/codex/releases/latest">latest GitHub Release</a> and download the appropriate binary for your platform.</summary>
+
+Each GitHub Release contains many executables, but in practice, you likely want one of these:
+
+- macOS
+  - Apple Silicon/arm64: `codex-aarch64-apple-darwin.tar.gz`
+  - x86_64 (older Mac hardware): `codex-x86_64-apple-darwin.tar.gz`
+- Linux
+  - x86_64: `codex-x86_64-unknown-linux-musl.tar.gz`
+  - arm64: `codex-aarch64-unknown-linux-musl.tar.gz`
+
+Each archive contains a single entry with the platform baked into the name (e.g., `codex-x86_64-unknown-linux-musl`), so you likely want to rename it to `codex` after extracting it.
+
+</details>
+
+### Using Codex with your ChatGPT plan
+
+Run `codex` and select **Sign in with ChatGPT**. We recommend signing into your ChatGPT account to use Codex as part of your Plus, Pro, Business, Edu, or Enterprise plan. [Learn more about what's included in your ChatGPT plan](https://help.openai.com/en/articles/11369540-codex-in-chatgpt).
+
+You can also use Codex with an API key, but this requires [additional setup](https://developers.openai.com/codex/auth#sign-in-with-an-api-key).
+
+## Docs
+
+- [**Codex Documentation**](https://developers.openai.com/codex)
+- [**Contributing**](./docs/contributing.md)
+- [**Installing & building**](./docs/install.md)
+- [**Open source fund**](./docs/open-source-fund.md)
+
+This repository is licensed under the [Apache-2.0 License](LICENSE).
+
+## Relevant upstream documentation snippets
+runtime/cde-20260926/external/codex-docs/docs/contributing.md-7-### Why we do not accept external code contributions
+runtime/cde-20260926/external/codex-docs/docs/contributing.md-8-
+runtime/cde-20260926/external/codex-docs/docs/contributing.md:9:Effective changes to Codex require architectural context, an understanding of system-level constraints, and visibility into the project's roadmap. External pull requests often focus on issues that are lower priority, affect a small number of users, or need substantial changes to fit the broader system. Reviewing and iterating on those changes can take more time than implementing a fix directly, diverting attention from higher-priority work.
+runtime/cde-20260926/external/codex-docs/docs/contributing.md-10-
+runtime/cde-20260926/external/codex-docs/docs/contributing.md-11-Community expertise is most valuable when shared through detailed bug reports, reproduction steps, logs, root-cause analysis, and design discussions in issues. Understanding the problem, identifying the right solution, and prioritizing the work are typically the hard parts; implementation is comparatively straightforward with the help of Codex itself.
+--
+runtime/cde-20260926/external/codex-docs/docs/contributing.md-15-### Reporting bugs
+runtime/cde-20260926/external/codex-docs/docs/contributing.md-16-
+runtime/cde-20260926/external/codex-docs/docs/contributing.md:17:Before opening a new issue, search the issue tracker to see whether the problem has already been reported. If it has, add any new information to the existing issue.
+runtime/cde-20260926/external/codex-docs/docs/contributing.md-18-
+runtime/cde-20260926/external/codex-docs/docs/contributing.md-19-When reporting a bug, include as much relevant detail as possible:
+--
+runtime/cde-20260926/external/codex-docs/docs/config.md-10-
+runtime/cde-20260926/external/codex-docs/docs/config.md-11-Admins can set top-level `allow_managed_hooks_only = true` in
+runtime/cde-20260926/external/codex-docs/docs/config.md:12:`requirements.toml` to ignore user, project, and session hook configs while
+runtime/cde-20260926/external/codex-docs/docs/config.md-13-still allowing managed hooks from requirements and managed config layers. This
+runtime/cde-20260926/external/codex-docs/docs/config.md-14-setting is only supported in `requirements.toml`; putting it in `config.toml`
+--
+runtime/cde-20260926/external/codex-docs/docs/install.md-15-### Build from source
+runtime/cde-20260926/external/codex-docs/docs/install.md-16-
+runtime/cde-20260926/external/codex-docs/docs/install.md:17:```bash
+runtime/cde-20260926/external/codex-docs/docs/install.md:18:# Clone the repository and navigate to the root of the Cargo workspace.
+runtime/cde-20260926/external/codex-docs/docs/install.md-19-git clone https://github.com/openai/codex.git
+runtime/cde-20260926/external/codex-docs/docs/install.md-20-cd codex/codex-rs
+runtime/cde-20260926/external/codex-docs/docs/install.md-21-
+runtime/cde-20260926/external/codex-docs/docs/install.md:22:# Install the Rust toolchain, if necessary.
+runtime/cde-20260926/external/codex-docs/docs/install.md-23-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+runtime/cde-20260926/external/codex-docs/docs/install.md-24-source "$HOME/.cargo/env"
+runtime/cde-20260926/external/codex-docs/docs/install.md-25-rustup component add rustfmt
+runtime/cde-20260926/external/codex-docs/docs/install.md-26-rustup component add clippy
+runtime/cde-20260926/external/codex-docs/docs/install.md:27:# Install helper tools used by the workspace justfile:
+runtime/cde-20260926/external/codex-docs/docs/install.md-28-cargo install --locked just
+runtime/cde-20260926/external/codex-docs/docs/install.md:29:# DotSlash fetches pinned development tools such as buildifier on first use.
+runtime/cde-20260926/external/codex-docs/docs/install.md-30-cargo install --locked dotslash
+runtime/cde-20260926/external/codex-docs/docs/install.md:31:# Install nextest for the `just test` helper.
+runtime/cde-20260926/external/codex-docs/docs/install.md:32:cargo install --locked cargo-nextest
+runtime/cde-20260926/external/codex-docs/docs/install.md-33-
+runtime/cde-20260926/external/codex-docs/docs/install.md-34-# Build Codex.
+--
+runtime/cde-20260926/external/codex-docs/docs/install.md-42-just fix -p <crate-you-touched>
+runtime/cde-20260926/external/codex-docs/docs/install.md-43-
+runtime/cde-20260926/external/codex-docs/docs/install.md:44:# Run the relevant tests (project-specific is fastest), for example:
+runtime/cde-20260926/external/codex-docs/docs/install.md:45:just test -p codex-tui
+runtime/cde-20260926/external/codex-docs/docs/install.md:46:# `just test` runs the test suite via nextest:
+runtime/cde-20260926/external/codex-docs/docs/install.md:47:just test
+runtime/cde-20260926/external/codex-docs/docs/install.md-48-# Avoid `--all-features` for routine local runs because it increases build
+runtime/cde-20260926/external/codex-docs/docs/install.md-49-# time and `target/` disk usage by compiling additional feature combinations.
+--
+runtime/cde-20260926/external/codex-docs/docs/install.md-56-The TUI records diagnostics in bounded local stores by default. Set `log_dir` explicitly to enable a plaintext TUI log for a run:
+runtime/cde-20260926/external/codex-docs/docs/install.md-57-
+runtime/cde-20260926/external/codex-docs/docs/install.md:58:```bash
+runtime/cde-20260926/external/codex-docs/docs/install.md-59-codex -c log_dir=./.codex-log
+runtime/cde-20260926/external/codex-docs/docs/install.md-60-tail -F ./.codex-log/codex-tui.log
+--
+runtime/cde-20260926/external/codex-docs/docs/install.md-63-The non-interactive mode (`codex exec`) defaults to `RUST_LOG=error`, but messages are printed inline, so there is no need to monitor a separate file.
+runtime/cde-20260926/external/codex-docs/docs/install.md-64-
+runtime/cde-20260926/external/codex-docs/docs/install.md:65:See the Rust documentation on [`RUST_LOG`](https://docs.rs/env_logger/latest/env_logger/#enabling-logging) for more information on the configuration options.

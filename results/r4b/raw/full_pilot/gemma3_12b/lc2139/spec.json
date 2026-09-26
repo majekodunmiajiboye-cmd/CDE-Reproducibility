@@ -1,0 +1,5 @@
+{
+  "response": "impl Solution {\n    pub fn min_moves(target: i32, max_doubles: i32) -> i32 {\n        if target <= 1 {\n            0\n        } else if max_doubles <= 0 {\n            target - 1\n        } else if target % 2 == 0 {\n            1 + Solution::min_moves(target / 2, max_doubles - 1)\n        } else {\n            1 + Solution::min_moves(target - 1, max_doubles)\n        }\n    }\n}\n",
+  "impl": "impl Solution {\n    pub fn min_moves(target: i32, max_doubles: i32) -> i32 {\n        if target <= 1 {\n            0\n        } else if max_doubles <= 0 {\n            target - 1\n        } else if target % 2 == 0 {\n            1 + Solution::min_moves(target / 2, max_doubles - 1)\n        } else {\n            1 + Solution::min_moves(target - 1, max_doubles)\n        }\n    }\n}",
+  "source_record_sha256": "bfcd75789fe3d52cd4f3319db9df85ffea585634a950295f88f46ed9df4f51bc"
+}

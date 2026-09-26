@@ -1,0 +1,5 @@
+{
+  "response": "impl Solution {\n    pub fn detect_capital_use(word: String) -> bool {\n        let all_upper = word.chars().all(|c| c.is_uppercase());\n        let all_lower = word.chars().all(|c| c.is_lowercase());\n        let first_upper_rest_lower = word.chars().next().map_or(false, |c| c.is_uppercase()) &&\n            word.chars().skip(1).all(|c| c.is_lowercase());\n\n        all_upper || all_lower || first_upper_rest_lower\n    }\n}",
+  "impl": "impl Solution {\n    pub fn detect_capital_use(word: String) -> bool {\n        let all_upper = word.chars().all(|c| c.is_uppercase());\n        let all_lower = word.chars().all(|c| c.is_lowercase());\n        let first_upper_rest_lower = word.chars().next().map_or(false, |c| c.is_uppercase()) &&\n            word.chars().skip(1).all(|c| c.is_lowercase());\n\n        all_upper || all_lower || first_upper_rest_lower\n    }\n}",
+  "source_record_sha256": "d164df73274db7fdbdf51f124795de344df3f1d21331cac8f123a07d59215cc8"
+}

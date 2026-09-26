@@ -1,0 +1,5 @@
+{
+  "response": "impl Solution {\n    pub fn decompress_rl_elist(nums: Vec<i32>) -> Vec<i32> {\n        let mut result = Vec::new();\n        for i in 0..nums.len() / 2 {\n            let count = nums[2 * i] as usize;\n            let val = nums[2 * i + 1];\n            for _ in 0..count {\n                result.push(val);\n            }\n        }\n        result\n    }\n}\n",
+  "impl": "impl Solution {\n    pub fn decompress_rl_elist(nums: Vec<i32>) -> Vec<i32> {\n        let mut result = Vec::new();\n        for i in 0..nums.len() / 2 {\n            let count = nums[2 * i] as usize;\n            let val = nums[2 * i + 1];\n            for _ in 0..count {\n                result.push(val);\n            }\n        }\n        result\n    }\n}",
+  "source_record_sha256": "4eef9c35db69b570d1d1f6ee7fa11def360f243664f6e85910aa9409060bba3f"
+}

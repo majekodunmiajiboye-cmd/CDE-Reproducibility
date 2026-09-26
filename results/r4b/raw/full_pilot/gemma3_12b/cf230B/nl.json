@@ -1,0 +1,5 @@
+{
+  "response": "pub fn classify_t_primes(nums: Vec<u64>) -> Vec<bool> {\n    let mut result = Vec::new();\n    for &num in &nums {\n        result.push(is_t_prime(num));\n    }\n    result\n}\n\nfn is_t_prime(n: u64) -> bool {\n    if n <= 1 {\n        return false;\n    }\n\n    let mut count = 0;\n    let mut i = 1;\n    while i * i <= n {\n        if n % i == 0 {\n            if i * i == n {\n                count += 1;\n            } else {\n                count += 2;\n            }\n        }\n        i += 1;\n    }\n\n    count == 3\n}\n",
+  "impl": null,
+  "source_record_sha256": "d75b1960ea159605ff176e17ae4f15747ab7c6f824f2c0de062b45ac91494b94"
+}

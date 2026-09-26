@@ -1,0 +1,5 @@
+{
+  "response": "impl Solution {\n    pub fn min_stones_to_remove(colors: Vec<u8>, n: usize) -> usize {\n        let mut removals = 0usize;\n        for i in 1..n {\n            if colors[i] == colors[i - 1] {\n                removals += 1;\n            }\n        }\n        removals\n    }\n}",
+  "impl": "impl Solution {\n    pub fn min_stones_to_remove(colors: Vec<u8>, n: usize) -> usize {\n        let mut removals = 0usize;\n        for i in 1..n {\n            if colors[i] == colors[i - 1] {\n                removals += 1;\n            }\n        }\n        removals\n    }\n}",
+  "source_record_sha256": "389d108ffbd7095f6fe0e903381ac6465127e85dd5d5d6949137c699360ae44a"
+}

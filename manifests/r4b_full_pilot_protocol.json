@@ -1,0 +1,37 @@
+{
+  "analysis": {
+    "b1": "model + environment + model\u00d7environment + source family + public scalar difficulty",
+    "bootstrap": "1000 task-cluster bootstrap of strong-profile minus CDE OOF loss is descriptive at pilot stage; no CI pass threshold is imposed before independent confirmation",
+    "cde": "strong profile baseline + all five demand\u00d7environment terms for spec and both vs NL; no outcome-driven feature selection",
+    "competence": "both candidate models must have overall semantic success between 10% and 90%",
+    "confirm_gate": "both models nonfloor/nonceiling AND abs selected DiD >=0.10 AND CDE leave-one-task-out LL < strong profile baseline LL",
+    "cv": "leave-one-task-out log loss",
+    "secondary_direction": "among spec-vs-NL and both-vs-NL choose the contrast with largest absolute model difference-in-differences; require absolute DiD >=0.10; freeze its sign for confirmation",
+    "strong_profile_baseline": "B1 + all five frozen outcome-blind demand proxies + model\u00d7demand terms"
+  },
+  "analysis_script_sha256": "a5ccefa18c8e6126267d1e9fa66e585f8d3d9b12781b44aaca227681e7f9671c",
+  "arms": [
+    "nl",
+    "spec",
+    "both"
+  ],
+  "candidate_models": [
+    "devstral-small-2:24b-instruct-2512-q4_K_M",
+    "gemma3:12b"
+  ],
+  "candidate_selection": "the only two local models passing the pre-frozen competence screen; GPT-OSS excluded because 18/18 ceiling",
+  "demand_feature_manifest_sha256": "00ad3cc27f691c355299dc38a1350933ae1225d13b22a8233d7de793d1f0fe52",
+  "inference": {
+    "num_ctx": 32768,
+    "num_predict": 4096,
+    "repair_rounds": 0,
+    "seed": 20260926,
+    "temperature": 0.0
+  },
+  "judge_preflight_sha256": "963fd3151e34113352b9f639f6e87c5215909883c2563be55763cd01f2c60bd6",
+  "outcome": "one-shot hidden semantic correctness across all packaged positive testcases; compile or any wrong case is failure",
+  "pilot_runner_sha256": "49f8fea1ae452d55cd15feb99fd4907801d2bde389b4af76e6b243346a7565bb",
+  "status": "frozen before full 24-task development-pilot outcomes",
+  "task_manifest_sha256": "4f94a1089a5ae5c6109a7ed5af2906082b556875dc5e72bbbb2bd5f276b9c7c6",
+  "tasks": "all 24 tasks in the frozen R4b pilot split"
+}

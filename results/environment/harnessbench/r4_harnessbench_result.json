@@ -1,0 +1,120 @@
+{
+  "analysis": "CDE R4 Harness-Bench blinded-feature replication",
+  "cell_holdout": {
+    "metrics": {
+      "categorical": {
+        "brier": 0.09547065654264664,
+        "log_loss": 0.30399792732526915
+      },
+      "coded": {
+        "brier": 0.09532037373823059,
+        "log_loss": 0.30362675051300175
+      },
+      "doc": {
+        "brier": 0.09537706331648474,
+        "log_loss": 0.30371239360607877
+      },
+      "noenv": {
+        "brier": 0.09616703525532536,
+        "log_loss": 0.3058371258699135
+      }
+    },
+    "task_cluster_bootstrap_differences": {
+      "categorical_minus_coded": {
+        "ci_2p5_50_97p5": [
+          0.00022242698564487723,
+          0.0003738064342700309,
+          0.0005306562808705964
+        ],
+        "point": 0.0003711768122673931
+      },
+      "doc_minus_coded": {
+        "ci_2p5_50_97p5": [
+          -0.0002552822111314492,
+          8.981587476176574e-05,
+          0.0004750655338428203
+        ],
+        "point": 8.564309307701468e-05
+      },
+      "noenv_minus_coded": {
+        "ci_2p5_50_97p5": [
+          -0.00019988236819123604,
+          0.0021971468925718754,
+          0.004932805084108427
+        ],
+        "point": 0.0022103753569117646
+      }
+    }
+  },
+  "coded_representation": "arithmetic-mean consensus of two independently blinded 0/1/2 coders on six predeclared features",
+  "codex_exclusion_reason": "only gpt-5.4 x codex is present; no other model x codex cells, so a held model x harness cell cannot leave codex observed in training",
+  "documentation_baseline": "stateless 256-d char_wb hashing of outcome-blind local harness documentation plus model and task fixed effects",
+  "execution_optimisation": "documentation hashes precomputed once per unique harness; task-cluster bootstrap uses exact per-task loss-sum aggregation",
+  "frozen_checks": {
+    "cell_coded_no_worse_than_categorical": true,
+    "unseen_coded_beats_doc": true,
+    "unseen_coded_beats_noenv": true
+  },
+  "n_models_primary": 8,
+  "n_primary_rows": 5085,
+  "n_source_rows_with_completion": 5191,
+  "n_tasks_primary": 106,
+  "outcome": "completion == 1.0",
+  "overall_full_completion_rate": 0.25332305914082065,
+  "primary_full_coverage_harnesses": [
+    "hermes",
+    "moltis-local",
+    "nanobot",
+    "nullclaw",
+    "openclaw-local",
+    "zeroclaw-local"
+  ],
+  "replication_pass": true,
+  "seed": 20260926,
+  "unseen_harness": {
+    "metrics": {
+      "categorical": {
+        "brier": 0.09759816827435754,
+        "log_loss": 0.31483632701409076
+      },
+      "coded": {
+        "brier": 0.09623204195004118,
+        "log_loss": 0.30788912879603075
+      },
+      "doc": {
+        "brier": 0.09760908452336693,
+        "log_loss": 0.3110914361169139
+      },
+      "noenv": {
+        "brier": 0.09776112845737843,
+        "log_loss": 0.311813468189493
+      }
+    },
+    "task_cluster_bootstrap_differences": {
+      "categorical_minus_coded": {
+        "ci_2p5_50_97p5": [
+          0.004249205240288063,
+          0.007004514567875954,
+          0.009682456588122296
+        ],
+        "point": 0.006947198218060002
+      },
+      "doc_minus_coded": {
+        "ci_2p5_50_97p5": [
+          0.0008144910397307191,
+          0.0032234616705600115,
+          0.005941800848821273
+        ],
+        "point": 0.0032023073208831687
+      },
+      "noenv_minus_coded": {
+        "ci_2p5_50_97p5": [
+          0.001192076598956831,
+          0.003951119298851375,
+          0.006895917325666548
+        ],
+        "point": 0.003924339393462262
+      }
+    }
+  }
+}
