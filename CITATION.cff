@@ -13,3 +13,5 @@ abstract: >-
   Analysis code, frozen protocols and manifests, out-of-fold predictions,
   controlled-pilot outputs, and provenance for the study "Task content survives
   strong controls; taxonomy-specific and structured environment-transform claims do not".
+doi: "10.5281/zenodo.22984125"
+repository-code: "https://github.com/majekodunmiajiboye-cmd/CDE-Reproducibility"

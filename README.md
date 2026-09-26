@@ -42,6 +42,8 @@ The main protocol and later R4b development gate were prospectively frozen in th
 
 Original CDE analysis code is released under the [MIT License](LICENSE), copyright 2026 Majekodunmi Ajiboye. See [`THIRD_PARTY.md`](THIRD_PARTY.md) for upstream materials and derived-data terms. ADeLe-derived data remain subject to CC BY-SA 4.0.
 
+Archive DOI: https://doi.org/10.5281/zenodo.22984125
+Latest study version: https://doi.org/10.5281/zenodo.22984124
 
 The generated response text and extracted implementations are retained unchanged. Original benchmark prompts and duplicated model-response envelopes are not redistributed; the original combined records are retained privately. Each response-only record includes the original record digest.
 
