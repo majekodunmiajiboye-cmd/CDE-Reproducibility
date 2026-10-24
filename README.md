@@ -1,6 +1,17 @@
-# CDE reproducibility bundle
+# CDE: public preprint and reproducibility
 
-This repository packages the analysis code, frozen task and protocol manifests, result artifacts, model generations, and provenance needed to audit the paper:
+
+Latest paper: **Separating task information from evaluation effects in language-model performance**.
+
+Author: Majekodunmi Ajiboye · [ORCID](https://orcid.org/0009-0000-5812-3925)
+
+[Read the public preprint](revisions/rev5-20261024/Task_Information_Preprint.pdf) · [Supplement](revisions/rev5-20261024/Task_Information_Preprint_Supplement.pdf) · [Complete package](revisions/rev5-20261024/Task_Information_Public_Preprint.zip)
+
+Latest paper DOI: https://doi.org/10.5281/zenodo.23619633
+All versions: https://doi.org/10.5281/zenodo.22984124
+
+## September study materials
+The root analysis/data directories retain the September study materials. The October paper and its companion sources are in the linked preprint package. The September working title was:
 
 **Task content survives strong controls; taxonomy-specific and structured environment-transform claims do not** (26 September 2026).
 
